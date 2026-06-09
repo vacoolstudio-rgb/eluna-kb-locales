@@ -272,6 +272,29 @@
     },
     "calendarScreen": {
       "ttcContext": "Kontekst TTC režima",
+      "months": [
+        "Јануар",
+        "Фебруар",
+        "Март",
+        "Април",
+        "Мај",
+        "Јун",
+        "Јул",
+        "Август",
+        "Септембар",
+        "Октобар",
+        "Новембар",
+        "Децембар"
+      ],
+      "weekdays": [
+        "пон",
+        "уто",
+        "сре",
+        "чет",
+        "пет",
+        "суб",
+        "нед"
+      ],
       "today": "Danas",
       "searchPlaceholder": "Pretraži simptom",
       "logForToday": "Dnevnik za:",

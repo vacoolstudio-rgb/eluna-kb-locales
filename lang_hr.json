@@ -272,6 +272,29 @@
     },
     "calendarScreen": {
       "ttcContext": "Kontekst TTC načina",
+      "months": [
+        "Siječanj",
+        "Veljača",
+        "Ožujak",
+        "Travanj",
+        "Svibanj",
+        "Lipanj",
+        "Srpanj",
+        "Kolovoz",
+        "Rujan",
+        "Listopad",
+        "Studeni",
+        "Prosinac"
+      ],
+      "weekdays": [
+        "pon",
+        "uto",
+        "sri",
+        "čet",
+        "pet",
+        "sub",
+        "ned"
+      ],
       "today": "Danas",
       "searchPlaceholder": "Pretraži simptom",
       "logForToday": "Zapis za:",

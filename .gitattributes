@@ -1,0 +1,5 @@
+# Language packs are integrity-checked by the sha256 stored in manifest.json.
+# Treat every JSON as binary/verbatim so git NEVER rewrites a single byte
+# (no LF<->CRLF conversion via core.autocrlf, no BOM stripping/adding).
+# Any byte change would break sha256 verification in the app.
+*.json -text

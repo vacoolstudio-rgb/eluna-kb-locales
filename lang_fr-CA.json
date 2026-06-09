@@ -272,6 +272,29 @@
     },
     "calendarScreen": {
       "ttcContext": "Contexte du mode TTC",
+      "months": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "weekdays": [
+        "lun.",
+        "mar.",
+        "mer.",
+        "jeu.",
+        "ven.",
+        "sam.",
+        "dim."
+      ],
       "today": "Aujourd'hui",
       "searchPlaceholder": "Rechercher un symptôme",
       "logForToday": "Journal pour :",

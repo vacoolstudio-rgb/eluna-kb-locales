@@ -272,6 +272,29 @@
     },
     "calendarScreen": {
       "ttcContext": "Context del mode TTC",
+      "months": [
+        "Gener",
+        "Febrer",
+        "Març",
+        "Abril",
+        "Maig",
+        "Juny",
+        "Juliol",
+        "Agost",
+        "Setembre",
+        "Octubre",
+        "Novembre",
+        "Desembre"
+      ],
+      "weekdays": [
+        "dl.",
+        "dt.",
+        "dc.",
+        "dj.",
+        "dv.",
+        "ds.",
+        "dg."
+      ],
       "today": "Avui",
       "searchPlaceholder": "Cerca símptoma",
       "logForToday": "Registre per a:",

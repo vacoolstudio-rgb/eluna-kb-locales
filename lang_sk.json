@@ -272,6 +272,29 @@
     },
     "calendarScreen": {
       "ttcContext": "Kontekst režimu TTC",
+      "months": [
+        "Január",
+        "Február",
+        "Marec",
+        "Apríl",
+        "Máj",
+        "Jún",
+        "Júl",
+        "August",
+        "September",
+        "Október",
+        "November",
+        "December"
+      ],
+      "weekdays": [
+        "po",
+        "ut",
+        "st",
+        "št",
+        "pi",
+        "so",
+        "ne"
+      ],
       "today": "Dnes",
       "searchPlaceholder": "Hľadať symptóm",
       "logForToday": "Záznam pre:",

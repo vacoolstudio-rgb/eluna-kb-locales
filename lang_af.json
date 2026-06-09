@@ -272,6 +272,29 @@
     },
     "calendarScreen": {
       "ttcContext": "TTC modus konteks",
+      "months": [
+        "Januarie",
+        "Februarie",
+        "Maart",
+        "April",
+        "Mei",
+        "Junie",
+        "Julie",
+        "Augustus",
+        "September",
+        "Oktober",
+        "November",
+        "Desember"
+      ],
+      "weekdays": [
+        "Ma.",
+        "Di.",
+        "Wo.",
+        "Do.",
+        "Vr.",
+        "Sa.",
+        "So."
+      ],
       "today": "Vandag",
       "searchPlaceholder": "Soek simptoom",
       "logForToday": "Log vir:",

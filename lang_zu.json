@@ -272,6 +272,29 @@
     },
     "calendarScreen": {
       "ttcContext": "Uhlaka lwe-TTC",
+      "months": [
+        "Januwari",
+        "Februwari",
+        "Mashi",
+        "Ephreli",
+        "Meyi",
+        "Juni",
+        "Julayi",
+        "Agasti",
+        "Septhemba",
+        "Okthoba",
+        "Novemba",
+        "Disemba"
+      ],
+      "weekdays": [
+        "Mso",
+        "Bil",
+        "Tha",
+        "Sin",
+        "Hla",
+        "Mgq",
+        "Son"
+      ],
       "today": "Namuhla",
       "searchPlaceholder": "Sesha izimpawu",
       "logForToday": "Bhala ku:",
