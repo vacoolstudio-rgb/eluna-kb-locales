@@ -160,8 +160,8 @@
     },
     "sw": {
       "file": "lang_sw.json",
-      "sha256": "a2b0b9ae26aeb0a0a50cb166fb2529e7dbd0cf1bd8c96501c7d0b2eac63d18b0",
-      "totalSize": 595530
+      "sha256": "f08876a5a5b6a9a3d1f4a6077c9f63ac8e7e47bf6f555bfd4efcec7648982303",
+      "totalSize": 592071
     },
     "pa": {
       "file": "lang_pa.json",
