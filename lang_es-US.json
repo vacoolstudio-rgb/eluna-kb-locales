@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Elimina anuncios y desbloquea funciones PRO por $5.99",
-      "inDays": "en {{days}} días"
+      "inDays": "en {{count}} días",
+      "phaseInfo":"Información de la fase"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Promedio histórico"
         },
         "cycleLength": "Duración del ciclo",
-        "periodLength": "Duración del periodo"
+        "periodLength": "Duración del periodo",
+        "needsReview":"Requiere revisión"
       },
       "cycleCore": {
         "title": "Pasaporte del Ciclo",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Cambios moderados",
         "statusUsuallyStable": "Mayormente regular",
         "statusVeryStable": "Como un reloj",
-        "missingBleeding": "No registrado"
+        "missingBleeding": "No registrado",
+        "insufficientData":"Aún no hay suficientes datos"
       },
       "symptomPattern": {
         "titleSuffix": "Patrón",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Aprende Más",
         "desc": "Sumérgete en la base de conocimiento clínico para entender mejor tu cuerpo.",
-        "viewFull": "Ver Base de Conocimiento Completa"
+        "viewFull": "Ver Base de Conocimiento Completa",
+        "tag":{"recommended":"Recomendado","foundational":"Vale la pena saberlo","phaseContext":"Para tu fase","symptomMatch":"Porque lo registraste hoy","patternMatch":"Porque esto se repite"}
       },
       "kb": {
         "definition": "¿Qué es esto?",
@@ -605,7 +609,8 @@
         "follicular": "Folicular",
         "fertile": "Ventana Fértil",
         "luteal": "Lútea",
-        "late_luteal": "Lútea Tardía (SPM)"
+        "late_luteal": "Lútea Tardía (SPM)",
+        "delayed":"El período está retrasado"
       },
       "explanation": {
         "title": "¿Por qué te sientes así?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} registros",
       "days": "días",
       "success": "Éxito",
-      "unknown": "Desconocido"
+      "unknown": "Desconocido",
+      "ok":"Aceptar",
+      "somethingWentWrong":"Algo salió mal. Inténtalo de nuevo.",
+      "migrationError":"Error de migración"
     },
     "about": {
       "title": "Acerca de la App",
@@ -979,7 +987,8 @@
       "ghostReport": "Recordatorio del diario de Eluna",
       "reportTitle": "Informe nocturno",
       "reportDesc": "No has llenado tu registro hoy. ¿Cómo te sientes?",
-      "warnDaysPrompt": "Recuérdame en X días"
+      "warnDaysPrompt": "Recuérdame en X días",
+      "channelName":"Recordatorios"
     },
     "customBuilder": {
       "step1Title": "PASO 1: ELEGIR ÓRBITA\\n(CATEGORÍA)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Aprende sobre tu cuerpo y ciclo",
         "topics": "temas"
       }
-    }
+    },
+    "kbLoading":{"loading":"Cargando la base de conocimiento…","errorTitle":"No se pudo cargar la base de conocimiento","errorSubtitle":"Los datos del idioma no están disponibles. Puedes reintentar o continuar en inglés.","retry":"Reintentar","continueInEnglish":"Continuar en inglés"},
+    "fertility":{"bbt":{"range":"34.0–42.0 °C o 93.2–107.6 °F. Ejemplo: 36.60","invalid":"\"{{value}}\" no es una temperatura basal. Ingresa 34.0–42.0 °C o 93.2–107.6 °F — por ejemplo 36.60 o 97.70. Usa punto o coma para los decimales.","unreliable":"Lectura confiable (desmarca si estabas enferma, dormiste mal o mediste tarde)","hint":"Mídela apenas despiertes, antes de levantarte. La temperatura sube DESPUÉS de la ovulación, así que confirma el día en lugar de predecirlo — se necesitan unos seis días de mediciones para notar ese ascenso."}},
+    "delayBanner":{"activeSearch":{"title":"Tu período está retrasado","desc":"Unos días de diferencia son normales: el estrés, los viajes o una enfermedad pueden mover el ciclo. ¿Empezó el sangrado?","btnYes":"Sí, registrar mi período","btnNo":"Todavía no"},"clinicalDelay":{"title":"Tu período está muy retrasado","desc":"Estás en el día {{days}} de este ciclo y aún no registraste el período. Las predicciones están en pausa hasta que lo hagas. Si un retraso así no es habitual en ti, vale la pena consultarlo con un médico."},"amenorrhea":{"title":"Sin período por más de un mes","desc":"Pasar tanto tiempo sin período conviene consultarlo con un médico: hay muchas causas posibles y la mayoría tienen tratamiento. Si ya sangraste y simplemente no lo registraste, puedes iniciar un ciclo nuevo aquí.","btnNewCycle":"Iniciar un ciclo nuevo"},"cardWaiting":"En espera","ringWaiting":"Esperando tu período","ringClinical":"Período muy retrasado","ringAmenorrhea":"Sin período por más de un mes"}
   },
   "kb": {
     "lang": "en",
@@ -3292,7 +3304,7 @@
       "t2102": "sueño_y_pms",
       "t2103": "Ejercicio moderado durante la menstruación",
       "t2104": "La actividad física moderada durante la menstruación es segura para muchos e incluso puede reducir el dolor, la fatiga y la tensión.",
-      "t2105": "La menstruación en sí no proh��be el ejercicio; la guía debe ser cómo se siente uno, la intensidad del dolor y el volumen de sangrado.",
+      "t2105": "La menstruación en sí no prohíbe el ejercicio; la guía debe ser cómo se siente uno, la intensidad del dolor y el volumen de sangrado.",
       "t2106": "El ejercicio moderado durante la menstruación es a menudo aceptable y beneficioso.",
       "t2107": "El ACOG recomienda la actividad física regular como beneficiosa para los períodos dolorosos y el PMS. En la práctica, es importante no forzarse a hacer ejercicio 'hasta el colapso', pero tampoco ver la menstruación como una prohibición absoluta del movimiento. La actividad suave a menudo se tolera mejor que la inmovilización completa.",
       "t2108": "desmayo, debilidad extrema o sangrado abundante",
@@ -3322,7 +3334,7 @@
       "t2132": "entrenamiento_intenso_ovulación",
       "t2133": "Yoga y prácticas de relajación para el PMS",
       "t2134": "El yoga, la respiración y las prácticas de relajación pueden ayudar a algunas personas con el PMS como una forma de reducir la tensión, el dolor y el malestar subjetivo.",
-      "t2135": "Estas son herramientas de apoyo útiles, pero no un sustituto para el diagn��stico y tratamiento del PMS severo o PMDD.",
+      "t2135": "Estas son herramientas de apoyo útiles, pero no un sustituto para el diagnóstico y tratamiento del PMS severo o PMDD.",
       "t2136": "Las prácticas de relajación pueden ser parte del autocuidado para el PMS.",
       "t2137": "MedlinePlus y otras fuentes clínicas incluyen prácticas de relajación en la lista de medidas no farmacológicas útiles para el dolor menstrual y los síntomas relacionados. A nivel de razonamiento clínico, este es un buen complemento de bajo riesgo, especialmente si una persona experimenta estrés significativo, irritabilidad y tensión física antes de su período.",
       "t2138": "el yoga no ayuda, y los síntomas son severos",
@@ -7084,7 +7096,7 @@
       "t5893": "Revisión de percepciones subjetivas y objetivas del ejercicio y la resistencia.",
       "t5894": "Revisión del vínculo entre la retirada hormonal y los síntomas neurológicos/dolor cíclicos.",
       "t5895": "Revisión de la fisiología del ciclo menstrual, fases, descamación endometrial y síntomas típicos.",
-      "t5896": "Revisi��n clásica del ciclo normal, fases hormonales y el mecanismo de la menstruación.",
+      "t5896": "Revisión clásica del ciclo normal, fases hormonales y el mecanismo de la menstruación.",
       "t5897": "Algoritmo moderno para la evaluación de la menstruación retrasada y ausente.",
       "t5898": "Criterios FIGO para parámetros normales y anormales de sangrado menstrual.",
       "t5899": "Revisión de la definición, síntomas y manejo del sangrado menstrual abundante.",

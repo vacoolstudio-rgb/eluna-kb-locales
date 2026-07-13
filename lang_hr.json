@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Uklonite oglase i otključajte PRO značajke za 5,99 USD",
-      "inDays": "za {{days}} dana"
+      "inDays": "za {{count}} dana",
+      "phaseInfo":"Informacije o fazi"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Povijesni prosjek"
         },
         "cycleLength": "Duljina ciklusa",
-        "periodLength": "Duljina menstruacije"
+        "periodLength": "Duljina menstruacije",
+        "needsReview":"Potreban pregled"
       },
       "cycleCore": {
         "title": "Putovnica ciklusa",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Umjereni pomaci",
         "statusUsuallyStable": "Uglavnom redovito",
         "statusVeryStable": "Kao sat",
-        "missingBleeding": "Nije zabilježeno"
+        "missingBleeding": "Nije zabilježeno",
+        "insufficientData":"Još nema dovoljno podataka"
       },
       "symptomPattern": {
         "titleSuffix": "Obrazac",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Saznajte više",
         "desc": "Uronite u kliničku bazu znanja kako biste bolje razumjeli svoje tijelo.",
-        "viewFull": "Pogledajte cijelu bazu znanja"
+        "viewFull": "Pogledajte cijelu bazu znanja",
+        "tag":{"recommended":"Preporučeno","foundational":"Vrijedi znati","phaseContext":"Za tvoju fazu","symptomMatch":"Jer si to danas zabilježila","patternMatch":"Jer se ovo ponavlja"}
       },
       "kb": {
         "definition": "Što je ovo?",
@@ -605,7 +609,8 @@
         "follicular": "Folikularna",
         "fertile": "Plodni prozor",
         "luteal": "Lutealna",
-        "late_luteal": "Kasna lutealna (PMS)"
+        "late_luteal": "Kasna lutealna (PMS)",
+        "delayed":"Menstruacija kasni"
       },
       "explanation": {
         "title": "Zašto se osjećate ovako?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} zapisa",
       "days": "dana",
       "success": "Uspjeh",
-      "unknown": "Nepoznato"
+      "unknown": "Nepoznato",
+      "ok":"U redu",
+      "somethingWentWrong":"Nešto je pošlo po zlu. Pokušajte ponovno.",
+      "migrationError":"Pogreška migracije"
     },
     "about": {
       "title": "O aplikaciji",
@@ -979,7 +987,8 @@
       "ghostReport": "Podsjetnik za dnevnik Elune",
       "reportTitle": "Večernje izvješće",
       "reportDesc": "Niste ispunili svoj dnevnik danas. Kako se osjećate?",
-      "warnDaysPrompt": "Podsjeti me za X dana"
+      "warnDaysPrompt": "Podsjeti me za X dana",
+      "channelName":"Podsjetnici"
     },
     "customBuilder": {
       "step1Title": "KORAK 1: ODABERITE ORBITU\\n(KATEGORIJU)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Saznajte više o svom tijelu i ciklusu",
         "topics": "teme"
       }
-    }
+    },
+    "kbLoading":{"loading":"Učitavanje baze znanja…","errorTitle":"Nije moguće učitati bazu znanja","errorSubtitle":"Jezični podaci nisu dostupni. Pokušajte ponovno ili nastavite na engleskom.","retry":"Pokušaj ponovno","continueInEnglish":"Nastavi na engleskom"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C ili 93,2–107,6 °F. Primjer: 36,60","invalid":"\"{{value}}\" nije bazalna temperatura. Unesi 34,0–42,0 °C ili 93,2–107,6 °F — na primjer 36,60 ili 97,70. Za decimale koristi točku ili zarez.","unreliable":"Pouzdano mjerenje (odznači ako si bila bolesna, loše spavala ili mjerila kasno)","hint":"Mjeri odmah nakon buđenja, prije nego ustaneš. Temperatura raste NAKON ovulacije, pa dan potvrđuje, a ne predviđa — potrebno je oko šest dana mjerenja da se taj porast uoči."}},
+    "delayBanner":{"activeSearch":{"title":"Tvoja menstruacija kasni","desc":"Nekoliko dana razlike je normalno — stres, putovanje ili bolest mogu pomaknuti ciklus. Je li počelo krvarenje?","btnYes":"Da, zabilježi menstruaciju","btnNo":"Još ne"},"clinicalDelay":{"title":"Tvoja menstruacija znatno kasni","desc":"Na {{days}}. si danu ovog ciklusa i još nisi zabilježila menstruaciju. Predviđanja su pauzirana dok to ne učiniš. Ako je ovako dugo kašnjenje neuobičajeno za tebe, vrijedi to spomenuti liječniku."},"amenorrhea":{"title":"Nema menstruacije više od mjesec dana","desc":"Ovako dugo bez menstruacije vrijedi razgovarati s liječnikom — mogućih razloga je mnogo i većina se može liječiti. Ako si već krvarila, a jednostavno to nisi zabilježila, ovdje možeš započeti novi ciklus.","btnNewCycle":"Započni novi ciklus"},"cardWaiting":"Na čekanju","ringWaiting":"Čeka se menstruacija","ringClinical":"Menstruacija znatno kasni","ringAmenorrhea":"Nema menstruacije više od mjesec dana"}
   },
   "kb": {
     "lang": "en",

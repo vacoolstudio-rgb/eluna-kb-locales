@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Verwyder advertensies en ontsluit PRO-funksies vir $5.99",
-      "inDays": "oor {{days}} dae"
+      "inDays": "oor {{count}} dae",
+      "phaseInfo":"Fase-inligting"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Historiese gemiddelde"
         },
         "cycleLength": "Sikluslengte",
-        "periodLength": "Periode lengte"
+        "periodLength": "Periode lengte",
+        "needsReview":"Moet nagegaan word"
       },
       "cycleCore": {
         "title": "Siklus Paspoort",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Matige verskuiwings",
         "statusUsuallyStable": "Meestal gereeld",
         "statusVeryStable": "Soos klokslag",
-        "missingBleeding": "Nie aangeteken nie"
+        "missingBleeding": "Nie aangeteken nie",
+        "insufficientData":"Nog nie genoeg data nie"
       },
       "symptomPattern": {
         "titleSuffix": "Patroon",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Leer Meer",
         "desc": "Duik in die kliniese kennisbasis om jou liggaam beter te verstaan.",
-        "viewFull": "Sien Volledige Kennisbasis"
+        "viewFull": "Sien Volledige Kennisbasis",
+        "tag":{"recommended":"Aanbeveel","foundational":"Die moeite werd om te weet","phaseContext":"Vir jou fase","symptomMatch":"Omdat jy dit vandag aangeteken het","patternMatch":"Omdat dit bly terugkom"}
       },
       "kb": {
         "definition": "Wat is dit?",
@@ -605,7 +609,8 @@
         "follicular": "Follikulêr",
         "fertile": "Vrugbare Venster",
         "luteal": "Luteaal",
-        "late_luteal": "Laat Luteaal (PMS)"
+        "late_luteal": "Laat Luteaal (PMS)",
+        "delayed":"Menstruasie is laat"
       },
       "explanation": {
         "title": "Hoekom voel jy so?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} aantekeninge",
       "days": "dae",
       "success": "Sukses",
-      "unknown": "Onbekend"
+      "unknown": "Onbekend",
+      "ok":"OK",
+      "somethingWentWrong":"Iets het verkeerd geloop. Probeer asseblief weer.",
+      "migrationError":"Migrasiefout"
     },
     "about": {
       "title": "Oor App",
@@ -979,7 +987,8 @@
       "ghostReport": "Eluna dagboek herinnering",
       "reportTitle": "Aand verslag",
       "reportDesc": "Jy het nie jou logboek vandag ingevul nie. Hoe voel jy?",
-      "warnDaysPrompt": "Herinner my oor X dae"
+      "warnDaysPrompt": "Herinner my oor X dae",
+      "channelName":"Herinneringe"
     },
     "customBuilder": {
       "step1Title": "STAP 1: KIES WENTELBAAN\\n(KATEGORIE)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Leer oor jou liggaam & siklus",
         "topics": "onderwerpe"
       }
-    }
+    },
+    "kbLoading":{"loading":"Kennisbasis laai…","errorTitle":"Kon nie kennisbasis laai nie","errorSubtitle":"Taaldata is nie beskikbaar nie. Probeer weer of gaan voort in Engels.","retry":"Probeer weer","continueInEnglish":"Gaan voort in Engels"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C of 93,2–107,6 °F. Voorbeeld: 36,60","invalid":"\"{{value}}\" is nie ’n basale temperatuur nie. Voer 34,0–42,0 °C of 93,2–107,6 °F in — byvoorbeeld 36,60 of 97,70. Gebruik ’n punt of ’n komma vir desimale.","unreliable":"Betroubare lesing (merk af as jy siek was, sleg geslaap het of laat gemeet het)","hint":"Meet dadelik na ontwaking, voordat jy opstaan. Die temperatuur styg NÁ ovulasie, dus bevestig dit die dag eerder as om dit te voorspel — sowat ses dae se lesings is nodig voordat daardie styging opgemerk kan word."}},
+    "delayBanner":{"activeSearch":{"title":"Jou menstruasie is laat","desc":"N paar dae heen of weer is normaal, en stres, reis of siekte kan almal ’n siklus verskuif. Het jy begin bloei?","btnYes":"Ja, teken my menstruasie aan","btnNo":"Nog nie"},"clinicalDelay":{"title":"Jou menstruasie is aansienlik laat","desc":"Jy is op dag {{days}} van hierdie siklus en het nog geen menstruasie aangeteken nie. Voorspellings is gepouseer totdat jy dit doen. As so ’n lang vertraging vir jou ongewoon is, is dit die moeite werd om dit met ’n dokter te bespreek."},"amenorrhea":{"title":"Geen menstruasie vir meer as ’n maand nie","desc":"Om so lank sonder menstruasie te gaan, is die moeite werd om met ’n dokter te bespreek — daar is baie moontlike redes en die meeste is behandelbaar. As jy reeds gebloei het en dit net nie aangeteken het nie, kan jy hier ’n nuwe siklus begin.","btnNewCycle":"Begin ’n nuwe siklus"},"cardWaiting":"In afwagting","ringWaiting":"Wag vir jou menstruasie","ringClinical":"Menstruasie aansienlik laat","ringAmenorrhea":"Geen menstruasie vir meer as ’n maand nie"}
   },
   "kb": {
     "lang": "en",
@@ -6953,7 +6965,7 @@
       "t5763": "Menstruasie mag vroeër voorkom as gevolg van 'n korter siklus, vroeë ovulasie, of intermenstruele bloeding wat vir 'n periode aangesien word.",
       "t5764": "‘n Eenmalige vroeëre siklus word dikwels geassosieer met normale variasie.",
       "t5765": "Vroeë aanvang van bloeding beteken nie altyd 'n werklik vroeëre menstruasie nie.",
-      "t5766": "Bloeding wat 'n pasiënt as vroe�� periodes beskou, mag ware menstruasie wees na 'n korter siklus, of dit kan deurbraakbloeding of 'n ander variant van AUB wees.",
+      "t5766": "Bloeding wat 'n pasiënt as vroeë periodes beskou, mag ware menstruasie wees na 'n korter siklus, of dit kan deurbraakbloeding of 'n ander variant van AUB wees.",
       "t5767": "siklusse konsekwent korter as 24 dae",
       "t5768": "gereelde intermenstruele bloeding",
       "t5769": "bloeding na 'n vertraging en pyn",

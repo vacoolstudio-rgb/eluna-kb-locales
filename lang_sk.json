@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Odstráňte reklamy a odomknite PRO funkcie za 5,99 $",
-      "inDays": "za {{days}} dní"
+      "inDays": "za {{count}} dní",
+      "phaseInfo":"Informácie o fáze"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Historický priemer"
         },
         "cycleLength": "Dĺžka cyklu",
-        "periodLength": "Dĺžka periódy"
+        "periodLength": "Dĺžka periódy",
+        "needsReview":"Vyžaduje kontrolu"
       },
       "cycleCore": {
         "title": "Cyklický pas",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Mierne posuny",
         "statusUsuallyStable": "Väčšinou pravidelný",
         "statusVeryStable": "Ako hodinky",
-        "missingBleeding": "Nezaznamenané"
+        "missingBleeding": "Nezaznamenané",
+        "insufficientData":"Zatiaľ málo údajov"
       },
       "symptomPattern": {
         "titleSuffix": "Vzor",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Zistite viac",
         "desc": "Ponorte sa do klinickej znalostnej základne, aby ste lepšie pochopili svoje telo.",
-        "viewFull": "Zobraziť celú znalostnú základňu"
+        "viewFull": "Zobraziť celú znalostnú základňu",
+        "tag":{"recommended":"Odporúčané","foundational":"Dobré vedieť","phaseContext":"Pre tvoju fázu","symptomMatch":"Pretože si to dnes zaznamenala","patternMatch":"Pretože sa to opakuje"}
       },
       "kb": {
         "definition": "Čo je to?",
@@ -605,7 +609,8 @@
         "follicular": "Folikulárna",
         "fertile": "Plodné okno",
         "luteal": "Luteálna",
-        "late_luteal": "Neskorá luteálna (PMS)"
+        "late_luteal": "Neskorá luteálna (PMS)",
+        "delayed":"Menštruácia mešká"
       },
       "explanation": {
         "title": "Prečo sa takto cítite?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} záznamov",
       "days": "dni",
       "success": "Úspech",
-      "unknown": "Neznáme"
+      "unknown": "Neznáme",
+      "ok":"OK",
+      "somethingWentWrong":"Niečo sa pokazilo. Skúste to znova.",
+      "migrationError":"Chyba migrácie"
     },
     "about": {
       "title": "O aplikácii",
@@ -979,7 +987,8 @@
       "ghostReport": "Pripomienka denníka Eluna",
       "reportTitle": "Večerný prehľad",
       "reportDesc": "Dnes ste nezaplnili svoj denník. Ako sa cítite?",
-      "warnDaysPrompt": "Pripomeňte mi za X dní"
+      "warnDaysPrompt": "Pripomeňte mi za X dní",
+      "channelName":"Pripomienky"
     },
     "customBuilder": {
       "step1Title": "KROK 1: VYBERTE ORBITU\\n(KATEGÓRIA)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Zistite viac o svojom tele a cykle",
         "topics": "témy"
       }
-    }
+    },
+    "kbLoading":{"loading":"Načítava sa databáza znalostí…","errorTitle":"Databázu znalostí sa nepodarilo načítať","errorSubtitle":"Jazykové údaje nie sú dostupné. Skúste to znova alebo pokračujte v angličtine.","retry":"Skúsiť znova","continueInEnglish":"Pokračovať v angličtine"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C alebo 93,2–107,6 °F. Príklad: 36,60","invalid":"\"{{value}}\" nie je bazálna teplota. Zadaj 34,0–42,0 °C alebo 93,2–107,6 °F — napríklad 36,60 či 97,70. Na desatinné miesta použi bodku alebo čiarku.","unreliable":"Spoľahlivé meranie (zruš označenie, ak si bola chorá, zle spala alebo merala neskoro)","hint":"Meraj hneď po prebudení, ešte pred vstávaním. Teplota stúpa AŽ PO ovulácii, takže deň potvrdzuje, nie predpovedá — kým bude vzostup viditeľný, treba asi šesť dní meraní."}},
+    "delayBanner":{"activeSearch":{"title":"Tvoja menštruácia mešká","desc":"Pár dní rozdielu je normálnych — stres, cestovanie či choroba môžu cyklus posunúť. Začalo krvácanie?","btnYes":"Áno, zaznamenať menštruáciu","btnNo":"Ešte nie"},"clinicalDelay":{"title":"Tvoja menštruácia výrazne mešká","desc":"Si na {{days}}. dni tohto cyklu a menštruáciu si ešte nezaznamenala. Predpovede sú pozastavené, kým tak neurobíš. Ak je takto dlhé meškanie pre teba nezvyčajné, stojí za to spomenúť to lekárovi."},"amenorrhea":{"title":"Bez menštruácie viac ako mesiac","desc":"Takto dlho bez menštruácie stojí za rozhovor s lekárom — možných príčin je veľa a väčšina sa dá liečiť. Ak si už krvácala a len si to nezaznamenala, tu môžeš začať nový cyklus.","btnNewCycle":"Začať nový cyklus"},"cardWaiting":"Čaká sa","ringWaiting":"Čaká sa na menštruáciu","ringClinical":"Menštruácia výrazne mešká","ringAmenorrhea":"Bez menštruácie viac ako mesiac"}
   },
   "kb": {
     "lang": "en",
@@ -3545,7 +3557,7 @@
       "t2356": "Kalendárová metóda je výrazne menej spoľahlivá ako väčšina moderných antikoncepcií, najmä pri nepravidelných cykloch.",
       "t2357": "Aj pri dokonalom použití závisia metódy sledovania plodnosti od metódy a disciplíny, a pri typickom použití je účinnosť výrazne nižšia ako pri LARC a hormonálnych metódach.",
       "t2358": "Kalendárová metóda sa nepovažuje za vysoko spoľahlivú formu antikoncepcie.",
-      "t2359": "ACOG uvádza, že metódy sledovania plodnosti sú všeobecne menej účinné ako mnohé iné metódy antikoncepcie, a kalendárový prístup je obzvlášť zraniteľný, ak sa ovulácia posunie. Preto je kalendár ako jediný nástroj zle vhodný pre tých, pre ktorých je tehotenstvo momentálne ve��mi nežiadúce.",
+      "t2359": "ACOG uvádza, že metódy sledovania plodnosti sú všeobecne menej účinné ako mnohé iné metódy antikoncepcie, a kalendárový prístup je obzvlášť zraniteľný, ak sa ovulácia posunie. Preto je kalendár ako jediný nástroj zle vhodný pre tých, pre ktorých je tehotenstvo momentálne veľmi nežiadúce.",
       "t2360": "vysoká dôležitosť vyhnutia sa tehotenstvu",
       "t2361": "ako spoľahlivá je kalendárová metóda",
       "t2362": "spoľahlivosť kalendárovej metódy",
@@ -4687,7 +4699,7 @@
       "t3498": "Očkovanie pred tehotenstvom",
       "t3499": "Očkovanie pred tehotenstvom",
       "t3500": "Je dôležité diskutovať o očkovaní pred tehotenstvom vopred, pretože niektoré očkovania je najlepšie skontrolovať a podať počas plánovacej fázy.",
-      "t3501": "Kľúčovým cieľom je zn��žiť preventívne riziká pre tehotnú ženu a plod.",
+      "t3501": "Kľúčovým cieľom je znížiť preventívne riziká pre tehotnú ženu a plod.",
       "t3502": "Očkovanie je súčasťou starostlivosti pred tehotenstvom.",
       "t3503": "Poradenstvo pred tehotenstvom zahŕňa prehľad imunitného statusu a diskusiu o očkovaniach na základe veku, histórie a rizikových faktorov.",
       "t3504": "neznámy imunitný status pre dôležité infekcie",
@@ -5272,7 +5284,7 @@
       "t4083": "kedy môže bolesť naznačovať endometriózu",
       "t4084": "kedy myslieť na endometriózu",
       "t4085": "bolesť_naznačujúca_endometriózu",
-      "t4086": "Kedy môže bolesť nazna��ovať zápal",
+      "t4086": "Kedy môže bolesť naznačovať zápal",
       "t4087": "Kedy myslieť na zápal",
       "t4088": "Zápal je pravdepodobnejšie indikovaný bolesťou kombinovanou s horúčkou, citlivosťou pri vyšetrení, abnormálnym výtokom alebo významným všeobecným zhoršením.",
       "t4089": "Na rozdiel od typickej cyklickej bolesti sa zápalová bolesť často javí viac systémová, infekčná a menej predvídateľne viazaná na fázu cyklu.",

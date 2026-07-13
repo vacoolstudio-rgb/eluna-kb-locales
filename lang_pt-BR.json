@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Remova anúncios e desbloqueie recursos PRO por $5,99",
-      "inDays": "em {{days}} dias"
+      "inDays": "em {{count}} dias",
+      "phaseInfo":"Informações da fase"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Média histórica"
         },
         "cycleLength": "Duração do ciclo",
-        "periodLength": "Duração do período"
+        "periodLength": "Duração do período",
+        "needsReview":"Precisa de revisão"
       },
       "cycleCore": {
         "title": "Passaporte do Ciclo",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Mudanças moderadas",
         "statusUsuallyStable": "Principalmente regular",
         "statusVeryStable": "Como um relógio",
-        "missingBleeding": "Não registrado"
+        "missingBleeding": "Não registrado",
+        "insufficientData":"Ainda não há dados suficientes"
       },
       "symptomPattern": {
         "titleSuffix": "Padrão",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Saiba Mais",
         "desc": "Mergulhe na base de conhecimento clínico para entender melhor seu corpo.",
-        "viewFull": "Ver Base de Conhecimento Completa"
+        "viewFull": "Ver Base de Conhecimento Completa",
+        "tag":{"recommended":"Recomendado","foundational":"Vale a pena saber","phaseContext":"Para a sua fase","symptomMatch":"Porque você registrou isso hoje","patternMatch":"Porque isso se repete"}
       },
       "kb": {
         "definition": "O que é isso?",
@@ -605,7 +609,8 @@
         "follicular": "Folicular",
         "fertile": "Janela Fértil",
         "luteal": "Lútea",
-        "late_luteal": "Lútea Tardia (TPM)"
+        "late_luteal": "Lútea Tardia (TPM)",
+        "delayed":"A menstruação está atrasada"
       },
       "explanation": {
         "title": "Por que você se sente assim?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} registros",
       "days": "dias",
       "success": "Sucesso",
-      "unknown": "Desconhecido"
+      "unknown": "Desconhecido",
+      "ok":"OK",
+      "somethingWentWrong":"Algo deu errado. Tente novamente.",
+      "migrationError":"Erro de migração"
     },
     "about": {
       "title": "Sobre o App",
@@ -979,7 +987,8 @@
       "ghostReport": "Lembrete do diário Eluna",
       "reportTitle": "Relatório noturno",
       "reportDesc": "Você não preencheu seu registro hoje. Como você está se sentindo?",
-      "warnDaysPrompt": "Lembrar em X dias"
+      "warnDaysPrompt": "Lembrar em X dias",
+      "channelName":"Lembretes"
     },
     "customBuilder": {
       "step1Title": "PASSO 1: ESCOLHA A ÓRBITA\\n(CATEGORIA)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Aprenda sobre seu corpo e ciclo",
         "topics": "tópicos"
       }
-    }
+    },
+    "kbLoading":{"loading":"Carregando a base de conhecimento…","errorTitle":"Não foi possível carregar a base de conhecimento","errorSubtitle":"Dados do idioma indisponíveis. Você pode tentar novamente ou continuar em inglês.","retry":"Tentar novamente","continueInEnglish":"Continuar em inglês"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C ou 93,2–107,6 °F. Exemplo: 36,60","invalid":"\"{{value}}\" não é uma temperatura basal. Digite 34,0–42,0 °C ou 93,2–107,6 °F — por exemplo 36,60 ou 97,70. Use ponto ou vírgula para os decimais.","unreliable":"Medição confiável (desmarque se você estava doente, dormiu mal ou mediu tarde)","hint":"Meça logo ao acordar, antes de levantar. A temperatura sobe DEPOIS da ovulação, então ela confirma o dia em vez de prevê-lo — são necessários cerca de seis dias de medições até essa subida aparecer."}},
+    "delayBanner":{"activeSearch":{"title":"Sua menstruação está atrasada","desc":"Alguns dias de diferença são normais: estresse, viagens ou doenças podem deslocar o ciclo. O sangramento começou?","btnYes":"Sim, registrar minha menstruação","btnNo":"Ainda não"},"clinicalDelay":{"title":"Sua menstruação está muito atrasada","desc":"Você está no dia {{days}} deste ciclo e ainda não registrou a menstruação. As previsões estão pausadas até que você registre. Se um atraso assim não é comum para você, vale a pena mencionar a um médico."},"amenorrhea":{"title":"Sem menstruação há mais de um mês","desc":"Ficar tanto tempo sem menstruar merece uma conversa com um médico — há muitas causas possíveis e a maioria tem tratamento. Se você já sangrou e apenas não registrou, pode iniciar um novo ciclo aqui.","btnNewCycle":"Iniciar um novo ciclo"},"cardWaiting":"Em espera","ringWaiting":"Aguardando sua menstruação","ringClinical":"Menstruação muito atrasada","ringAmenorrhea":"Sem menstruação há mais de um mês"}
   },
   "kb": {
     "lang": "en",
@@ -2023,7 +2035,7 @@
       "t833": "avaliar o alcance e a magnitude da variação",
       "t834": "considerar a idade",
       "t835": "verificar sintomas e ovulação",
-      "t836": "explica��ão da norma",
+      "t836": "explicação da norma",
       "t837": "quando é motivo para verificar",
       "t838": "Um ciclo normal em adultos é mais frequentemente de 24–38 dias.",
       "t839": "Na adolescência e idades de transição, a variabilidade do ciclo permitida é maior.",
@@ -3264,7 +3276,7 @@
       "t2074": "Como reduzir cólicas sem medicação",
       "t2075": "O alívio não farmacológico para cólicas menstruais pode incluir calor, movimento, sono, práticas de relaxamento suave e rotina geral, mas não substitui uma avaliação da causa da dor severa.",
       "t2076": "Se a dor for típica e moderada, tais medidas podem ser significativamente úteis. Se a dor for debilitante, não apenas o autocuidado, mas também uma revisão clínica é necessária.",
-      "t2077": "A assistência não medicamentosa pode reduzir c��licas, mas não deve mascarar a dor secundária.",
+      "t2077": "A assistência não medicamentosa pode reduzir cólicas, mas não deve mascarar a dor secundária.",
       "t2078": "O ACOG e o MedlinePlus apoiam medidas de suporte simples: calor, atividade, sono e práticas de relaxamento. Este é um bom primeiro passo para dor não complicada. Mas se uma pessoa está incapacitada a cada ciclo, apenas procurando novos truques de vida e não avaliando possíveis endometriose ou dismenorreia secundária, isso é um erro clínico.",
       "t2079": "dor impede o funcionamento",
       "t2080": "dor está progredindo ou acompanhada de outros sintomas",
@@ -3875,7 +3887,7 @@
       "t2685": "hipotálamo/hipófise/ovários/endométrio/útero → formam um ciclo normal",
       "t2686": "distúrbios endócrinos, metabólicos, estruturais e iatrogênicos → alteram a frequência, volume ou presença de sangramento",
       "t2687": "uma única variação no ciclo pode ser uma variação temporária",
-      "t2688": "um padr��o persistente de desvios geralmente requer avaliação diagnóstica da causa",
+      "t2688": "um padrão persistente de desvios geralmente requer avaliação diagnóstica da causa",
       "t2689": "amenorreia ou ciclos muito infrequentes",
       "t2690": "sangramento intenso, frequente ou intermenstrual",
       "t2691": "um ciclo com dor, infertilidade, hiperandrogenismo ou sintomas sistêmicos",

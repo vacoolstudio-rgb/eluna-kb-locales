@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Supprimez les publicités et débloquez les fonctionnalités PRO pour 5,99 $",
-      "inDays": "dans {{days}} jours"
+      "inDays": "dans {{count}} jours",
+      "phaseInfo":"Infos sur la phase"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -236,7 +237,7 @@
         "tip2": "Conseil : Réduisez la consommation de sel et ajoutez un léger drainage lymphatique.",
         "cat3": "Humeur",
         "short3": "Bouclier émotionnel",
-        "desc3": "La chute hormonale pré-cycle peut provoquer de l'irritabilit�� (SPM).",
+        "desc3": "La chute hormonale pré-cycle peut provoquer de l'irritabilité (SPM).",
         "tip3": "Conseil : Pratiquez la méditation et créez l'environnement le plus confortable possible autour de vous."
       }
     },
@@ -497,7 +498,8 @@
           "average": "Moyenne historique"
         },
         "cycleLength": "Longueur du cycle",
-        "periodLength": "Durée de la période"
+        "periodLength": "Durée de la période",
+        "needsReview":"À vérifier"
       },
       "cycleCore": {
         "title": "Passeport du cycle",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Changements modérés",
         "statusUsuallyStable": "Principalement régulier",
         "statusVeryStable": "Comme une horloge",
-        "missingBleeding": "Non enregistré"
+        "missingBleeding": "Non enregistré",
+        "insufficientData":"Pas encore assez de données"
       },
       "symptomPattern": {
         "titleSuffix": "Modèle",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "En Savoir Plus",
         "desc": "Plongez dans la base de connaissances cliniques pour mieux comprendre votre corps.",
-        "viewFull": "Voir la Base de Connaissances Complète"
+        "viewFull": "Voir la Base de Connaissances Complète",
+        "tag":{"recommended":"Recommandé","foundational":"Bon à savoir","phaseContext":"Pour ta phase","symptomMatch":"Parce que tu l'as noté aujourd'hui","patternMatch":"Parce que cela revient souvent"}
       },
       "kb": {
         "definition": "Qu'est-ce que c'est?",
@@ -605,7 +609,8 @@
         "follicular": "Folliculaire",
         "fertile": "Fenêtre Fertile",
         "luteal": "Lutéale",
-        "late_luteal": "Lutéale Tardive (SPM)"
+        "late_luteal": "Lutéale Tardive (SPM)",
+        "delayed":"Règles en retard"
       },
       "explanation": {
         "title": "Pourquoi ressentez-vous cela?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} enregistrements",
       "days": "jours",
       "success": "Succès",
-      "unknown": "Inconnu"
+      "unknown": "Inconnu",
+      "ok":"OK",
+      "somethingWentWrong":"Une erreur s'est produite. Veuillez réessayer.",
+      "migrationError":"Erreur de migration"
     },
     "about": {
       "title": "À Propos de l'Application",
@@ -979,7 +987,8 @@
       "ghostReport": "Rappel de journal Eluna",
       "reportTitle": "Rapport du soir",
       "reportDesc": "Vous n'avez pas rempli votre journal aujourd'hui. Comment vous sentez-vous?",
-      "warnDaysPrompt": "Rappelez-moi dans X jours"
+      "warnDaysPrompt": "Rappelez-moi dans X jours",
+      "channelName":"Rappels"
     },
     "customBuilder": {
       "step1Title": "ÉTAPE 1 : CHOISIR L'ORBIT\\n(CATÉGORIE)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Apprenez à connaître votre corps et votre cycle",
         "topics": "sujets"
       }
-    }
+    },
+    "kbLoading":{"loading":"Chargement de la base de connaissances…","errorTitle":"Impossible de charger la base de connaissances","errorSubtitle":"Données linguistiques indisponibles. Vous pouvez réessayer ou continuer en anglais.","retry":"Réessayer","continueInEnglish":"Continuer en anglais"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C ou 93,2–107,6 °F. Exemple : 36,60","invalid":"« {{value}} » n’est pas une température basale. Saisis 34,0–42,0 °C ou 93,2–107,6 °F — par exemple 36,60 ou 97,70. Utilise un point ou une virgule pour les décimales.","unreliable":"Mesure fiable (décoche si tu étais malade, as mal dormi ou as mesuré tard)","hint":"Mesure juste au réveil, avant de te lever. La température monte APRÈS l’ovulation : elle confirme le jour au lieu de le prédire — il faut environ six jours de relevés pour que cette hausse soit visible."}},
+    "delayBanner":{"activeSearch":{"title":"Tes règles sont en retard","desc":"Quelques jours d’écart, c’est normal : le stress, les voyages ou une maladie peuvent décaler un cycle. As-tu commencé à saigner ?","btnYes":"Oui, enregistrer mes règles","btnNo":"Pas encore"},"clinicalDelay":{"title":"Tes règles sont nettement en retard","desc":"Tu es au jour {{days}} de ce cycle et tu n’as pas encore enregistré de règles. Les prévisions sont en pause tant que ce n’est pas fait. Si un retard aussi long est inhabituel pour toi, cela vaut la peine d’en parler à un médecin."},"amenorrhea":{"title":"Aucune menstruation depuis plus d’un mois","desc":"Rester aussi longtemps sans règles mérite d’en parler à un médecin : les causes possibles sont nombreuses et la plupart se traitent. Si tu as déjà saigné sans l’enregistrer, tu peux démarrer un nouveau cycle ici.","btnNewCycle":"Commencer un nouveau cycle"},"cardWaiting":"En attente","ringWaiting":"En attente de tes règles","ringClinical":"Règles nettement en retard","ringAmenorrhea":"Aucune menstruation depuis plus d’un mois"}
   },
   "kb": {
     "lang": "en",
@@ -2075,7 +2087,7 @@
       "t885": "Phase lutéale",
       "t886": "La phase lutéale est la seconde moitié du cycle après l'ovulation, lorsque le corps jaune produit de la progestérone.",
       "t887": "La phase lutéale commence après l'ovulation et dure jusqu'aux prochaines menstruations. Son hormone principale est la progestérone, qui est produite par le corps jaune sous l'influence de la LH. Sous l'action de la progestérone, l'endomètre devient sécrétoire, la température corporelle basale augmente généralement de 0,3 à 0,6 °C, et le mucus cervical s'épaissit et devient moins perméable aux spermatozoïdes.",
-      "t888": "Apr��s l'ovulation, la paroi du follicule rompu s'effondre, et les cellules de la granulosa et de la thèque lutéinisent pour former le corps jaune. Cette structure endocrine temporaire commence à synthétiser activement la progestérone et, dans une moindre mesure, l'estradiol. La progestérone fait passer l'endomètre d'un état prolifératif à un état sécrétoire : les glandes deviennent plus enroulées, accumulent du glycogène, le réseau vasculaire devient plus riche, et le tissu est mieux préparé pour une implantation potentielle. Les marqueurs physiques de la seconde phase incluent une légère augmentation de la température matinale, une diminution de la quantité de mucus aqueux, et parfois une sensibilité accrue des seins, une somnolence ou des symptômes prémenstruels. Chez la plupart des gens, la durée de la phase lutéale est plus stable que la phase folliculaire et est souvent proche de 12 à 14 jours. Si l'hCG n'apparaît pas, le corps jaune régresse, la progestérone chute rapidement, et cela déclenche les menstruations. Si le cycle est systématiquement court en raison de la seconde phase ou si des taches commencent rapidement après l'ovulation, c'est une raison de ne pas s'autodiagnostiquer mais de discuter de la situation avec un médecin. Une évaluation de non seulement la durée de la phase mais aussi la confirmation de l'ovulation elle-même, l'état de l'endomètre et d'autres causes de saignement est nécessaire.",
+      "t888": "Après l'ovulation, la paroi du follicule rompu s'effondre, et les cellules de la granulosa et de la thèque lutéinisent pour former le corps jaune. Cette structure endocrine temporaire commence à synthétiser activement la progestérone et, dans une moindre mesure, l'estradiol. La progestérone fait passer l'endomètre d'un état prolifératif à un état sécrétoire : les glandes deviennent plus enroulées, accumulent du glycogène, le réseau vasculaire devient plus riche, et le tissu est mieux préparé pour une implantation potentielle. Les marqueurs physiques de la seconde phase incluent une légère augmentation de la température matinale, une diminution de la quantité de mucus aqueux, et parfois une sensibilité accrue des seins, une somnolence ou des symptômes prémenstruels. Chez la plupart des gens, la durée de la phase lutéale est plus stable que la phase folliculaire et est souvent proche de 12 à 14 jours. Si l'hCG n'apparaît pas, le corps jaune régresse, la progestérone chute rapidement, et cela déclenche les menstruations. Si le cycle est systématiquement court en raison de la seconde phase ou si des taches commencent rapidement après l'ovulation, c'est une raison de ne pas s'autodiagnostiquer mais de discuter de la situation avec un médecin. Une évaluation de non seulement la durée de la phase mais aussi la confirmation de l'ovulation elle-même, l'état de l'endomètre et d'autres causes de saignement est nécessaire.",
       "t889": "Que se passe-t-il dans les ovaires pendant le cycle",
       "t890": "Ovaires dans le cycle",
       "t891": "Dans les ovaires, la croissance d'une cohorte de follicules, la sélection d'un follicule dominant, l'ovulation et la formation du corps jaune se produisent séquentiellement.",
@@ -2690,7 +2702,7 @@
       "t1500": "expliquer les marqueurs de l'ovulation",
       "t1501": "décrire le rôle de la progestérone",
       "t1502": "vérifier le schéma sur plusieurs cycles",
-      "t1503": "avec diff��rences",
+      "t1503": "avec différences",
       "t1504": "L'ovulation peut-elle ne pas se produire chaque mois",
       "t1505": "Peut-il y avoir un cycle sans ovulation",
       "t1506": "Oui, l'ovulation peut ne pas se produire à chaque cycle.",
@@ -2722,7 +2734,7 @@
       "t1532": "\"Normal\" est un schéma récurrent, tolérable sans progression.",
       "t1533": "L'évaluation repose sur 4 critères : intensité, durée, régularité et impact sur la qualité de vie. Les fluctuations ponctuelles sont généralement sans danger, tandis que les symptômes persistants, progressifs ou sévères nécessitent un diagnostic.",
       "t1534": "la récurrence est plus importante qu'un seul épisode",
-      "t1535": "intensité et impact sur la vie �� marqueurs clés",
+      "t1535": "intensité et impact sur la vie — marqueurs clés",
       "t1536": "l'âge et le contexte changent l'interprétation",
       "t1537": "le symptôme se répète pendant plusieurs cycles",
       "t1538": "il y a un impact sur le travail/sommeil/vie",
@@ -5501,7 +5513,7 @@
       "t4311": "stress, maladie, sommeil, alcool, quantité de liquide ingérée",
       "t4312": "Le seuil et la sensibilité dépendent de la marque du test, tandis que la signification clinique dépend du schéma global du cycle.",
       "t4313": "croissance folliculaire → estradiol → pic de LH → ovulation probable → progestérone et deuxième phase",
-      "t4314": "un test positif aide g��néralement à restreindre la fenêtre fertile",
+      "t4314": "un test positif aide généralement à restreindre la fenêtre fertile",
       "t4315": "l'absence d'un test positif dans un cycle ne signifie pas encore un diagnostic d'anovulation",
       "t4316": "tests constamment positifs ou chaotiques",
       "t4317": "plusieurs cycles sans tests positifs malgré un bon timing",
@@ -6416,7 +6428,7 @@
       "t5226": "Comment l'énergie change selon les phases du cycle",
       "t5227": "Énergie",
       "t5228": "L'énergie selon les phases du cycle change individuellement : pour certaines personnes, elle est plus basse pendant les menstruations et la phase lutéale tardive et plus élevée après les règles et autour de l'ovulation.",
-      "t5229": "Il existe un schéma subjectif commun de moins d'��nergie pendant les menstruations et avant les règles, et plus au milieu du cycle, mais ce n'est pas universel et dépend fortement de la douleur, du sommeil, de la carence en fer et de la charge de travail.",
+      "t5229": "Il existe un schéma subjectif commun de moins d'énergie pendant les menstruations et avant les règles, et plus au milieu du cycle, mais ce n'est pas universel et dépend fortement de la douleur, du sommeil, de la carence en fer et de la charge de travail.",
       "t5230": "L'énergie selon les phases du cycle ne change pas de la même manière pour tout le monde.",
       "t5231": "Le bien-être est déterminé non seulement par les hormones mais aussi par la douleur, le sommeil, le stress, l'exercice, la nutrition et la carence en fer. Par conséquent, la même étape hormonale est ressentie différemment par différentes personnes. Si l'énergie basse est sévère, constante ou non liée à la phase du cycle, d'autres causes doivent être recherchées plutôt que d'expliquer tout par les hormones seules.",
       "t5232": "fatigue sévère indépendamment de la phase",

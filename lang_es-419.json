@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Elimina anuncios y desbloquea funciones PRO por $5.99",
-      "inDays": "en {{days}} días"
+      "inDays": "en {{count}} días",
+      "phaseInfo":"Información de la fase"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Promedio histórico"
         },
         "cycleLength": "Duración del ciclo",
-        "periodLength": "Duración del periodo"
+        "periodLength": "Duración del periodo",
+        "needsReview":"Requiere revisión"
       },
       "cycleCore": {
         "title": "Pasaporte del Ciclo",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Cambios moderados",
         "statusUsuallyStable": "Mayormente regular",
         "statusVeryStable": "Como un reloj",
-        "missingBleeding": "No registrado"
+        "missingBleeding": "No registrado",
+        "insufficientData":"Aún no hay suficientes datos"
       },
       "symptomPattern": {
         "titleSuffix": "Patrón",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Aprende Más",
         "desc": "Sumérgete en la base de conocimientos clínicos para entender mejor tu cuerpo.",
-        "viewFull": "Ver Base de Conocimientos Completa"
+        "viewFull": "Ver Base de Conocimientos Completa",
+        "tag":{"recommended":"Recomendado","foundational":"Vale la pena saberlo","phaseContext":"Para tu fase","symptomMatch":"Porque lo registraste hoy","patternMatch":"Porque esto se repite"}
       },
       "kb": {
         "definition": "¿Qué es esto?",
@@ -605,7 +609,8 @@
         "follicular": "Folicular",
         "fertile": "Ventana Fértil",
         "luteal": "Lútea",
-        "late_luteal": "Lútea Tardía (SPM)"
+        "late_luteal": "Lútea Tardía (SPM)",
+        "delayed":"El período está retrasado"
       },
       "explanation": {
         "title": "¿Por qué te sientes así?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} registros",
       "days": "días",
       "success": "Éxito",
-      "unknown": "Desconocido"
+      "unknown": "Desconocido",
+      "ok":"Aceptar",
+      "somethingWentWrong":"Algo salió mal. Inténtalo de nuevo.",
+      "migrationError":"Error de migración"
     },
     "about": {
       "title": "Acerca de la App",
@@ -979,7 +987,8 @@
       "ghostReport": "Recordatorio del diario de Eluna",
       "reportTitle": "Informe nocturno",
       "reportDesc": "No has llenado tu registro hoy. ¿Cómo te sientes?",
-      "warnDaysPrompt": "Recuérdame en X días"
+      "warnDaysPrompt": "Recuérdame en X días",
+      "channelName":"Recordatorios"
     },
     "customBuilder": {
       "step1Title": "PASO 1: ELEGIR ÓRBITA\\n(CATEGORÍA)",
@@ -1183,7 +1192,9 @@
         "subtitle": "Aprende sobre tu cuerpo y ciclo",
         "topics": "temas"
       }
-    }
+    },
+    "kbLoading":{"loading":"Cargando la base de conocimiento…","errorTitle":"No se pudo cargar la base de conocimiento","errorSubtitle":"Los datos del idioma no están disponibles. Puedes reintentar o continuar en inglés.","retry":"Reintentar","continueInEnglish":"Continuar en inglés"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C o 93,2–107,6 °F. Ejemplo: 36,60","invalid":"\"{{value}}\" no es una temperatura basal. Ingresa 34,0–42,0 °C o 93,2–107,6 °F — por ejemplo 36,60 o 97,70. Usa punto o coma para los decimales.","unreliable":"Lectura confiable (desmarca si estabas enferma, dormiste mal o mediste tarde)","hint":"Mídela apenas despiertes, antes de levantarte. La temperatura sube DESPUÉS de la ovulación, así que confirma el día en lugar de predecirlo — se necesitan unos seis días de mediciones para notar ese ascenso."}}
   },
   "kb": {
     "lang": "en",
@@ -1258,7 +1269,7 @@
       "t68": "La glándula pituitaria traduce las señales de GnRH en secreción de FSH y LH.",
       "t69": "La pituitaria anterior responde a GnRH liberando FSH y LH, que a su vez desencadenan el crecimiento folicular, la síntesis de estradiol, la ovulación y la luteinización.",
       "t70": "El papel de la glándula pituitaria en el ciclo es un elemento clave de la regulación hormonal.",
-      "t71": "La glándula pituitaria es el mediador central entre el hipotálamo y los ovarios. La FSH apoya principalmente el crecimiento folicular y la síntesis de estradiol en las células de la granulosa, mientras que la LH estimula las c��lulas de la teca y está involucrada en la ovulación y la formación del cuerpo lúteo. Los cambios a nivel pituitario pueden interrumpir el ciclo ovulatorio incluso cuando los ovarios están intactos.",
+      "t71": "La glándula pituitaria es el mediador central entre el hipotálamo y los ovarios. La FSH apoya principalmente el crecimiento folicular y la síntesis de estradiol en las células de la granulosa, mientras que la LH estimula las células de la teca y está involucrada en la ovulación y la formación del cuerpo lúteo. Los cambios a nivel pituitario pueden interrumpir el ciclo ovulatorio incluso cuando los ovarios están intactos.",
       "t72": "irregularidades recurrentes del ciclo",
       "t73": "ausencia prolongada de ovulación",
       "t74": "síntomas que empeoran con el tiempo",
@@ -1897,7 +1908,7 @@
       "t707": "Cómo funciona el ciclo: visión general",
       "t708": "Diagrama del ciclo",
       "t709": "El ciclo consta de la fase folicular, la ovulación y la fase lútea; estas están controladas por los cambios secuenciales en FSH, estradiol, LH y progesterona.",
-      "t710": "Al comienzo del ciclo, los niveles bajos de estradiol y progesterona permiten que la FSH estimule el crecimiento folicular. El folículo dominante produce estradiol; los niveles altos de estradiol desencadenan un aumento de LH, que inicia la ovulación. Después de la ovulación, el cuerpo lúteo produce progesterona y forma la fase lútea. Si no ocurre el embarazo, los niveles de progesterona caen y comienza la menstruaci��n.",
+      "t710": "Al comienzo del ciclo, los niveles bajos de estradiol y progesterona permiten que la FSH estimule el crecimiento folicular. El folículo dominante produce estradiol; los niveles altos de estradiol desencadenan un aumento de LH, que inicia la ovulación. Después de la ovulación, el cuerpo lúteo produce progesterona y forma la fase lútea. Si no ocurre el embarazo, los niveles de progesterona caen y comienza la menstruación.",
       "t711": "El esquema general del ciclo es un cambio secuencial de fases y retroalimentación entre el hipotálamo, la glándula pituitaria, los ovarios y el endometrio.",
       "t712": "Al inicio del ciclo, el cuerpo lúteo del ciclo anterior ya ha regresado, por lo que los niveles de progesterona y estradiol son bajos. Esto elimina la inhibición sobre la glándula pituitaria, y la FSH comienza a apoyar el crecimiento de varios folículos antrales. A medida que los folículos crecen, secretan estradiol e inhibina B, y uno de ellos se vuelve dominante. Cuando el estradiol alcanza un nivel alto y sostenido, la glándula pituitaria cambia a retroalimentación positiva, y ocurre un aumento de LH. Es el aumento de LH lo que desencadena la maduración final del ovocito, la ruptura del folículo y la ovulación. Después de esto, el folículo luteiniza, se forma el cuerpo lúteo, y comienza la fase de progesterona o lútea. La progesterona hace que el endometrio sea secretor, aumenta la temperatura basal del cuerpo y disminuye la permeabilidad del moco cervical. Si el embrión no se implanta, el cuerpo lúteo regresa, los niveles de progesterona y estradiol caen, y comienza un nuevo ciclo. Clínicamente, es importante que la duración del ciclo esté determinada principalmente por la duración de la fase folicular, no la fase lútea. Por lo tanto, la ovulación no necesariamente tiene que ocurrir el día 14.",
       "t713": "si no hay signos de ovulación",

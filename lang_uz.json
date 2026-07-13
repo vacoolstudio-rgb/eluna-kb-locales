@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Reklamalarni olib tashlang va PRO xususiyatlarni $5.99 evaziga oching",
-      "inDays": "{{days}} kunda"
+      "inDays": "{{count}} kunda",
+      "phaseInfo":"Faza haqida"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Tarixiy o'rtacha"
         },
         "cycleLength": "Sikl uzunligi",
-        "periodLength": "Hayz uzunligi"
+        "periodLength": "Hayz uzunligi",
+        "needsReview":"Tekshirish kerak"
       },
       "cycleCore": {
         "title": "Sikl Pasporti",
@@ -514,7 +516,8 @@
         "statusModerateVar": "O'rtacha o'zgarishlar",
         "statusUsuallyStable": "Ko'pincha muntazam",
         "statusVeryStable": "Soat kabi",
-        "missingBleeding": "Qayd etilmagan"
+        "missingBleeding": "Qayd etilmagan",
+        "insufficientData":"Hozircha maʼlumot yetarli emas"
       },
       "symptomPattern": {
         "titleSuffix": "Naqsh",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Ko'proq bilib oling",
         "desc": "Tanangizni yaxshiroq tushunish uchun klinik bilimlar bazasiga sho'ng'ing.",
-        "viewFull": "To'liq bilimlar bazasini ko'rish"
+        "viewFull": "To'liq bilimlar bazasini ko'rish",
+        "tag":{"recommended":"Tavsiya etiladi","foundational":"Bilish foydali","phaseContext":"Sizning fazangiz uchun","symptomMatch":"Bugun buni belgilaganingiz uchun","patternMatch":"Chunki bu qayta-qayta takrorlanadi"}
       },
       "kb": {
         "definition": "Bu nima?",
@@ -605,7 +609,8 @@
         "follicular": "Follikulyar",
         "fertile": "Fertilitet oynasi",
         "luteal": "Luteal",
-        "late_luteal": "Kech Luteal (PMS)"
+        "late_luteal": "Kech Luteal (PMS)",
+        "delayed":"Hayz kechikmoqda"
       },
       "explanation": {
         "title": "Nega o'zingizni shunday his qilyapsiz?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} yozuvlar",
       "days": "kunlar",
       "success": "Muvaffaqiyat",
-      "unknown": "Noma'lum"
+      "unknown": "Noma'lum",
+      "ok":"OK",
+      "somethingWentWrong":"Nimadir xato ketdi. Iltimos, qayta urinib ko‘ring.",
+      "migrationError":"Migratsiya xatosi"
     },
     "about": {
       "title": "Ilova haqida",
@@ -979,7 +987,8 @@
       "ghostReport": "Eluna kundaligi eslatmasi",
       "reportTitle": "Kechki hisobot",
       "reportDesc": "Siz bugun kundaligingizni to'ldirmadingiz. O'zingizni qanday his qilyapsiz?",
-      "warnDaysPrompt": "Menga X kunda eslat"
+      "warnDaysPrompt": "Menga X kunda eslat",
+      "channelName":"Eslatmalar"
     },
     "customBuilder": {
       "step1Title": "1-QADAM: ORBITANI TANLANG\\n(KATEGORIYA)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Tanangiz va siklingiz haqida bilib oling",
         "topics": "mavzular"
       }
-    }
+    },
+    "kbLoading":{"loading":"Bilimlar bazasi yuklanmoqda…","errorTitle":"Bilimlar bazasini yuklab boʻlmadi","errorSubtitle":"Til maʼlumotlari mavjud emas. Qayta urinib koʻring yoki ingliz tilida davom eting.","retry":"Qayta urinish","continueInEnglish":"Ingliz tilida davom etish"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C yoki 93,2–107,6 °F. Misol: 36,60","invalid":"\"{{value}}\" bazal harorat emas. 34,0–42,0 °C yoki 93,2–107,6 °F kiriting — masalan 36,60 yoki 97,70. Kasr uchun nuqta yoki vergul ishlating.","unreliable":"Ishonchli oʻlchov (kasal boʻlgan, yomon uxlagan yoki kech oʻlchagan boʻlsangiz, belgini olib tashlang)","hint":"Uygʻongach darhol, oʻrindan turmasdan oʻlchang. Harorat ovulyatsiyadan KEYIN koʻtariladi, shuning uchun u kunni bashorat qilmaydi, tasdiqlaydi — bu koʻtarilishni koʻrish uchun taxminan olti kunlik oʻlchov kerak."}},
+    "delayBanner":{"activeSearch":{"title":"Hayzingiz kechikmoqda","desc":"Bir necha kun farq normal holat; stress, safar yoki kasallik siklni surishi mumkin. Qon ketish boshlandimi?","btnYes":"Ha, hayzimni belgilash","btnNo":"Hali yoʻq"},"clinicalDelay":{"title":"Hayzingiz ancha kechikmoqda","desc":"Siz bu siklning {{days}}-kunidasiz va hali hayzni belgilamadingiz. Belgilamaguningizcha bashoratlar toʻxtatilgan. Bunday uzoq kechikish siz uchun odatiy boʻlmasa, shifokorga aytish maʼqul."},"amenorrhea":{"title":"Bir oydan ortiq hayz yoʻq","desc":"Buncha uzoq vaqt hayz boʻlmasligini shifokor bilan muhokama qilish maʼqul — sabablar koʻp boʻlishi mumkin va koʻpchiligi davolanadi. Agar qon ketgan boʻlsa-yu, shunchaki belgilamagan boʻlsangiz, bu yerdan yangi sikl boshlashingiz mumkin.","btnNewCycle":"Yangi sikl boshlash"},"cardWaiting":"Kutilmoqda","ringWaiting":"Hayzingiz kutilmoqda","ringClinical":"Hayz ancha kechikdi","ringAmenorrhea":"Bir oydan ortiq hayz yoʻq"}
   },
   "kb": {
     "lang": "en",

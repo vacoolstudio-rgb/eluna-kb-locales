@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Susa izikhangiso futhi uvule izici ze-PRO ngo-$5.99",
-      "inDays": "ngemva kwezinsuku ezingu-{{days}}"
+      "inDays": "ngemva kwezinsuku ezingu-{{count}}",
+      "phaseInfo":"Ulwazi lwesigaba"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Isilinganiso somlando"
         },
         "cycleLength": "Ubude bomjikelezo",
-        "periodLength": "Ubude besikhathi"
+        "periodLength": "Ubude besikhathi",
+        "needsReview":"Kudinga ukubuyekezwa"
       },
       "cycleCore": {
         "title": "Iphasipoti Lomjikelezo",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Ukushintsha okuphakathi",
         "statusUsuallyStable": "Ngokuvamile kujwayelekile",
         "statusVeryStable": "Njengewashi",
-        "missingBleeding": "Akubhalwanga"
+        "missingBleeding": "Akubhalwanga",
+        "insufficientData":"Ayikho idatha eyanele okwamanje"
       },
       "symptomPattern": {
         "titleSuffix": "Iphethini",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Funda Okuningi",
         "desc": "Ngena kumininingwane yezokwelapha ukuze uqonde kangcono umzimba wakho.",
-        "viewFull": "Buka Isisekelo Solwazi Esigcwele"
+        "viewFull": "Buka Isisekelo Solwazi Esigcwele",
+        "tag":{"recommended":"Kunconyiwe","foundational":"Kufanele wazi","phaseContext":"Esigabeni sakho","symptomMatch":"Ngoba ukubhale namuhla","patternMatch":"Ngoba lokhu kuqhubeka kubuya"}
       },
       "kb": {
         "definition": "Kuyini lokhu?",
@@ -605,7 +609,8 @@
         "follicular": "Isikhathi se-follicular",
         "fertile": "Isikhathi Sokuzala",
         "luteal": "Isikhathi se-luteal",
-        "late_luteal": "Isikhathi se-Luteal (PMS)"
+        "late_luteal": "Isikhathi se-Luteal (PMS)",
+        "delayed":"Isikhathi sesephuzile"
       },
       "explanation": {
         "title": "Kungani uzizwa kanje?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} imibhalo",
       "days": "izinsuku",
       "success": "Impumelelo",
-      "unknown": "Okungaziwa"
+      "unknown": "Okungaziwa",
+      "ok":"KULUNGILE",
+      "somethingWentWrong":"Kukhona okungahambanga kahle. Sicela uzame futhi.",
+      "migrationError":"Iphutha lokufuduka"
     },
     "about": {
       "title": "Mayelana Nohlelo",
@@ -979,7 +987,8 @@
       "ghostReport": "Isikhumbuzo sencwadi ye-Eluna",
       "reportTitle": "Umbiko wasebusuku",
       "reportDesc": "Awugcwalanga incwadi yakho namuhla. Uzizwa kanjani?",
-      "warnDaysPrompt": "Ngikhumbuze ngemuva kwezinsuku X"
+      "warnDaysPrompt": "Ngikhumbuze ngemuva kwezinsuku X",
+      "channelName":"Izikhumbuzi"
     },
     "customBuilder": {
       "step1Title": "ISINYATHELO 1: KHETHA I-ORBIT\\n(ISIGABA)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Funda ngomzimba wakho nomjikelezo",
         "topics": "izihloko"
       }
-    }
+    },
+    "kbLoading":{"loading":"Ilayisha isisekelo solwazi…","errorTitle":"Ayikwazanga ukulayisha isisekelo solwazi","errorSubtitle":"Idatha yolimi ayitholakali. Ungazama futhi noma uqhubeke ngesiNgisi.","retry":"Zama futhi","continueInEnglish":"Qhubeka ngesiNgisi"},
+    "fertility":{"bbt":{"range":"34.0–42.0 °C noma 93.2–107.6 °F. Isibonelo: 36.60","invalid":"U-\"{{value}}\" akulona izinga lokushisa eliyisisekelo. Faka 34.0–42.0 °C noma 93.2–107.6 °F — isibonelo 36.60 noma 97.70. Sebenzisa ichashazi noma ukhefana kokwedlulele.","unreliable":"Isilinganiso esethembekile (susa uphawu uma ubugula, ulale kabi noma ukala sekwephuzile)","hint":"Kala ngokushesha nje uma uvuka, ungakasukumi embhedeni. Izinga lokushisa likhuphuka NGEMUVA kokuqhuma keqanda, ngakho liqinisekisa usuku kunokulubikezela — kudingeka izilinganiso zezinsuku ezingaba yisithupha ngaphambi kokuba lokho kukhuphuka kubonakale."}},
+    "delayBanner":{"activeSearch":{"title":"Isikhathi sakho sesephuzile","desc":"Izinsuku ezimbalwa umehluko kuvamile; ukucindezeleka, ukuhamba noma ukugula kungashintsha umjikelezo. Ingabe ukopha sekuqalile?","btnYes":"Yebo, bhala isikhathi sami","btnNo":"Akukho okwamanje"},"clinicalDelay":{"title":"Isikhathi sakho sesephuze kakhulu","desc":"Usosukwini lwe-{{days}} lomjikelezo futhi awukabhali isikhathi. Izibikezelo zimisiwe uze ubhale. Uma ukwephuza okungaka kungajwayelekile kuwe, kubalulekile ukukusho kudokotela."},"amenorrhea":{"title":"Awukabi nesikhathi inyanga engaphezulu","desc":"Ukuhlala isikhathi eside kangaka ngaphandle kwesikhathi kufanele kuxoxwe nodokotela — zinengi izizathu ezingenzeka futhi eziningi ziyelapheka. Uma usukophile kodwa ungakubhalanga, ungaqala umjikelezo omusha lapha.","btnNewCycle":"Qala umjikelezo omusha"},"cardWaiting":"Kulindile","ringWaiting":"Kulindwe isikhathi sakho","ringClinical":"Isikhathi sesephuze kakhulu","ringAmenorrhea":"Awukabi nesikhathi inyanga engaphezulu"}
   },
   "kb": {
     "lang": "zu",

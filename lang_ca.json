@@ -180,7 +180,8 @@
       },
       "proBannerTitle": "Eluna Pro",
       "proBannerDesc": "Elimina anuncis i desbloqueja funcions PRO per 5,99 $",
-      "inDays": "en {{days}} dies"
+      "inDays": "en {{count}} dies",
+      "phaseInfo":"Informació de la fase"
     },
     "lifestyleCards": {
       "menstruation": {
@@ -497,7 +498,8 @@
           "average": "Mitjana històrica"
         },
         "cycleLength": "Durada del cicle",
-        "periodLength": "Durada del període"
+        "periodLength": "Durada del període",
+        "needsReview":"Cal revisar-ho"
       },
       "cycleCore": {
         "title": "Passaport del cicle",
@@ -514,7 +516,8 @@
         "statusModerateVar": "Canvis moderats",
         "statusUsuallyStable": "Principalment regular",
         "statusVeryStable": "Com un rellotge",
-        "missingBleeding": "No registrat"
+        "missingBleeding": "No registrat",
+        "insufficientData":"Encara no hi ha prou dades"
       },
       "symptomPattern": {
         "titleSuffix": "Patró",
@@ -548,7 +551,8 @@
       "learnMore": {
         "title": "Aprèn més",
         "desc": "Endinsa't en la base de coneixements clínics per entendre millor el teu cos.",
-        "viewFull": "Veure la base de coneixements completa"
+        "viewFull": "Veure la base de coneixements completa",
+        "tag":{"recommended":"Recomanat","foundational":"Val la pena saber-ho","phaseContext":"Per a la teva fase","symptomMatch":"Perquè ho has registrat avui","patternMatch":"Perquè això es repeteix"}
       },
       "kb": {
         "definition": "Què és això?",
@@ -605,7 +609,8 @@
         "follicular": "Fol·licular",
         "fertile": "Finestra Fèrtil",
         "luteal": "Luteïna",
-        "late_luteal": "Luteïna Tardana (PMS)"
+        "late_luteal": "Luteïna Tardana (PMS)",
+        "delayed":"La regla es retarda"
       },
       "explanation": {
         "title": "Per què et sents així?"
@@ -785,7 +790,10 @@
       "logsCount": "{{count}} registres",
       "days": "dies",
       "success": "Èxit",
-      "unknown": "Desconegut"
+      "unknown": "Desconegut",
+      "ok":"D'acord",
+      "somethingWentWrong":"Alguna cosa ha anat malament. Torna-ho a provar.",
+      "migrationError":"Error de migració"
     },
     "about": {
       "title": "Sobre l'aplicació",
@@ -979,7 +987,8 @@
       "ghostReport": "Recordatori del diari d'Eluna",
       "reportTitle": "Informe del vespre",
       "reportDesc": "No has omplert el teu registre avui. Com et sents?",
-      "warnDaysPrompt": "Recorda'm en X dies"
+      "warnDaysPrompt": "Recorda'm en X dies",
+      "channelName":"Recordatoris"
     },
     "customBuilder": {
       "step1Title": "PAS 1: TRIA ÒRBITA\\n(CATEGORIA)",
@@ -1183,7 +1192,10 @@
         "subtitle": "Aprèn sobre el teu cos i cicle",
         "topics": "temes"
       }
-    }
+    },
+    "kbLoading":{"loading":"Carregant la base de coneixement…","errorTitle":"No s’ha pogut carregar la base de coneixement","errorSubtitle":"Les dades de l’idioma no estan disponibles. Pots tornar-ho a provar o continuar en anglès.","retry":"Torna-ho a provar","continueInEnglish":"Continua en anglès"},
+    "fertility":{"bbt":{"range":"34,0–42,0 °C o 93,2–107,6 °F. Exemple: 36,60","invalid":"\"{{value}}\" no és una temperatura basal. Introdueix 34,0–42,0 °C o 93,2–107,6 °F — per exemple 36,60 o 97,70. Fes servir un punt o una coma per als decimals.","unreliable":"Lectura fiable (desmarca-ho si estaves malalta, has dormit malament o has mesurat tard)","hint":"Mesura-la just en despertar-te, abans d’aixecar-te. La temperatura puja DESPRÉS de l’ovulació, de manera que confirma el dia en lloc de predir-lo — calen uns sis dies de mesures perquè es pugui detectar aquesta pujada."}},
+    "delayBanner":{"activeSearch":{"title":"La teva regla es retarda","desc":"Uns dies amunt o avall són normals: l’estrès, els viatges o una malaltia poden desplaçar el cicle. Has començat a sagnar?","btnYes":"Sí, registra la meva regla","btnNo":"Encara no"},"clinicalDelay":{"title":"La teva regla es retarda molt","desc":"Ets al dia {{days}} d’aquest cicle i encara no has registrat la regla. Les prediccions estan en pausa fins que ho facis. Si un retard tan llarg no és habitual en tu, val la pena comentar-ho amb un metge."},"amenorrhea":{"title":"Sense regla des de fa més d’un mes","desc":"Passar tant de temps sense regla val la pena comentar-ho amb un metge: hi ha moltes causes possibles i la majoria tenen tractament. Si ja has sagnat i simplement no ho has registrat, pots iniciar un cicle nou aquí.","btnNewCycle":"Comença un cicle nou"},"cardWaiting":"En espera","ringWaiting":"Esperant la regla","ringClinical":"Regla molt endarrerida","ringAmenorrhea":"Sense regla des de fa més d’un mes"}
   },
   "kb": {
     "lang": "en",
