@@ -671,11 +671,6 @@
    "title": "Nastavitve",
    "time": "Čas",
    "chooseTime": "Izberite čas",
-   "pro": {
-    "activate": "Aktiviraj PRO",
-    "removeAds": "Odstrani oglase",
-    "restore": "Obnovi nakupe"
-   },
    "sections": {
     "privacy": "VARNOST IN ZASEBNOST",
     "cycle": "NAČINI IN IZVOZ",
@@ -706,7 +701,6 @@
     "exportBackup": "Izvozi varnostno kopijo",
     "importBackup": "Uvozi varnostno kopijo",
     "cloudSync": "Sinhronizacija v oblaku",
-    "adPrivacy": "Zasebnost oglasov",
     "ourApps": "Naše druge aplikacije"
    },
    "footer": "Vsi podatki so šifrirani in shranjeni samo na tej napravi",
@@ -1021,9 +1015,12 @@
    "anomalyLong": "Predolg (> 35 dni)",
    "anomalyIrregular": "Nereden",
    "attention": "Pozor",
-   "excludedCycles": "${stats.excludedCount} cikel(ov) je izključenih iz izračunov povprečne dolžine zaradi nepravilnih vrednosti.",
    "anomalyWarning": "Opozorilo: presega tipičen razpon (upoštevano v analizi)",
-   "anomalySevere": "Nepravilnost: presega dopustne meje (izključeno iz analitike)"
+   "anomalySevere": "Nepravilnost: presega dopustne meje (izključeno iz analitike)",
+   "sourcesTitle": "Medicinski viri",
+   "sourcesIntro": "Referenčni razponi in norme cikla, uporabljeni v tem poročilu, temeljijo na naslednjih kliničnih virih.",
+   "excludedCycles_one": "{{count}} cikel je bil izključen iz izračuna povprečne dolžine, ker so bile njegove vrednosti nenavadne.",
+   "excludedCycles_other": "{{count}} ciklov je bilo izključenih iz izračuna povprečne dolžine, ker so bile njihove vrednosti nenavadne."
   },
   "analytics": {
    "pulseTitle": "Merjenje utripa ...",
@@ -1257,44 +1254,7 @@
    "chip_ads": "Preveč oglasov",
    "chip_other": "Drugo"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Napaka",
-    "connectionError": "Povezava s trgovino ni na voljo. Poskusite znova pozneje.",
-    "purchaseErrorTitle": "Napaka pri nakupu",
-    "defaultError": "Nekaj je šlo narobe.",
-    "successTitle": "Uspešno",
-    "restoreSuccess": "Nakupi so bili uspešno obnovljeni.",
-    "infoTitle": "Informacija",
-    "noPurchases": "Ni bilo mogoče najti aktivnih nakupov.",
-    "restoreErrorTitle": "Napaka pri obnovitvi"
-   },
-   "no_ads": {
-    "title": "Odstranite oglase za vedno"
-   },
-   "pro": {
-    "title": "Različica PRO za vedno"
-   },
-   "features": {
-    "no_ads": "Brez oglasov",
-    "themes": "Vrhunske teme",
-    "icons": "Nadomestne ikone",
-    "advanced": "Napredne funkcije",
-    "no_ads_desc": "Za vedno odstrani vse oglase iz aplikacije. Podprite razvijalca!"
-   },
-   "title": "Podprite razvoj aplikacije",
-   "subtitle": "Izberite najboljšo možnost za odklep novih funkcij in odstranitev oglasov. Enkratno plačilo, brez naročnin.",
-   "buy": "Kupi",
-   "restore": "Obnovi nakupe",
-   "privacy": "Pravilnik o zasebnosti",
-   "terms": "Pogoji uporabe"
-  },
   "cancel": "Prekliči",
-  "purchase": {
-   "restoreSuccess": "Nakupi obnovljeni",
-   "noPurchases": "Ni najdenih nakupov",
-   "restoreError": "Napaka pri obnavljanju nakupov"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Klinični dokazi",
@@ -1317,6 +1277,33 @@
     "desc": "Spremljajte vse, kar gledate – serije, anime in filme – s koledarjem izidov, opomniki za naslednjo epizodo in popolno zasebnostjo. Vsak vnos ostane na vaši napravi.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Kupi mi kavo",
+   "header": "Ti je Eluna všeč?",
+   "body": "Eluna je popolnoma brezplačna — brez oglasov, brez naročnine, za vedno. Če si je prislužila mesto v tvojem telefonu, lahko pustiš majhno napitnino v podporo njenemu razvoju. To je povsem neobvezno in vseeno hvala. ☕",
+   "thanks": "Najlepša hvala! ☕ To res pomaga, da Eluna teče naprej.",
+   "failed": "Napitnine ni bilo mogoče dokončati. Poskusi znova.",
+   "storeUnavailable": "Nakupi v aplikaciji trenutno na tej napravi niso na voljo.",
+   "paymentPending": "Plačilo se obdeluje — hvala! Tvoja napitnina bo samodejno izvedena."
+  },
+  "medicalSources": {
+   "title": "Medicinski viri",
+   "sources": "Viri",
+   "countLabel_one": "{{count}} referenca",
+   "countLabel_other": "{{count}} referenc",
+   "intro": "Vsaka razlaga o zdravju, opis faze in izračun cikla v aplikaciji Eluna temelji na kliničnih smernicah in strokovno pregledanih raziskavah, navedenih spodaj. Tapnite kateri koli vnos, da odprete izvirno publikacijo.",
+   "disclaimer": "Eluna ni medicinski pripomoček in ne postavlja diagnoze. O svojih simptomih se pogovorite z zdravstvenim strokovnjakom.",
+   "sectionGuidelines": "Klinične smernice",
+   "sectionResearch": "Raziskave in pregledi",
+   "forecastNote": "Šestdnevno plodno okno, ocena ovulacije in približno 14-dnevna lutealna faza sledijo smernicam odbora ASRM in smernicam za bolnike ACOG; meje faz sledijo standardnim kliničnim fiziološkim virom. Napovedi so statistične ocene — niso diagnoza in niso kontracepcijska metoda.",
+   "phasesNote": "Opisi faz sledijo standardnim kliničnim fiziološkim virom; plodno okno sledi smernicam ASRM in ACOG, predmenstrualni simptomi pa sledijo kliničnim smernicam ACOG.",
+   "explanationNote": "Hormonska fiziologija in vzorci simptomov, opisani tukaj, sledijo strokovno pregledanim kliničnim pregledom.",
+   "footer_one": "Zdravstvene informacije v aplikaciji Eluna navajajo {{count}} medicinski vir",
+   "footer_other": "Zdravstvene informacije v aplikaciji Eluna navajajo {{count}} medicinskih virov",
+   "conceptionNote": "Verjetnost spočetja glede na posamezni dan sledi Wilcox et al. (NEJM 1995) ter smernicam ASRM/ACOG o zavedanju plodnosti. Gre za oceno na podlagi vaših zabeleženih ciklov — ne za kontracepcijsko metodo.",
+   "phaseTipsNote": "Fiziologija faz in učinki, opisani tukaj, sledijo strokovno pregledanim kliničnim virom. Splošni predlogi za dobro počutje, ne medicinsko zdravljenje.",
+   "cycleStatsNote": "Norme dolžine cikla in to, kaj šteje za normalno variacijo, sledijo smernicam ACOG in strokovno pregledanim raziskavam."
   }
  },
  "kb": {

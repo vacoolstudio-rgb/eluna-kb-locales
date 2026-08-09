@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormones at Regulasyon",
      "cycle_basics": "Mga Batayan ng Cycle",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Babala sa Pananakit",
      "fertility_help": "Tulong sa Fertility",
      "lifestyle_selfhelp": "Pamumuhay at Pangangalaga sa Sarili",
-     "medical_advice": "When to see a doctor",
      "general": "Pangkalahatan",
      "pms": "PMS",
      "fertility": "Fertility",
@@ -673,11 +671,6 @@
    "title": "Mga Setting",
    "time": "Oras",
    "chooseTime": "Pumili ng oras",
-   "pro": {
-    "activate": "I-activate ang PRO",
-    "removeAds": "Alisin ang mga ad",
-    "restore": "Ibalik ang mga binili"
-   },
    "sections": {
     "privacy": "SEGURIDAD AT PRIVACY",
     "cycle": "MGA MODE AT EXPORT",
@@ -708,7 +701,6 @@
     "exportBackup": "I-export ang Backup",
     "importBackup": "I-import ang Backup",
     "cloudSync": "Cloud Sync",
-    "adPrivacy": "Privacy ng ad",
     "ourApps": "Iba pang app namin"
    },
    "footer": "Lahat ng data ay naka-encrypt at nakaimbak lamang sa device na ito",
@@ -845,9 +837,12 @@
    "anomalyLong": "Masyadong mahaba (>35 araw)",
    "anomalyIrregular": "Hindi regular",
    "attention": "Atensyon",
-   "excludedCycles": "${stats.excludedCount} (na) cycle ang hindi isinama sa pagkalkula ng average na haba dahil sa mga anomalyang halaga.",
    "anomalyWarning": "Babala: lampas sa karaniwang saklaw (isinama sa pagsusuri)",
-   "anomalySevere": "Anomalya: lampas sa mga katanggap-tanggap na pamantayan (hindi isinama sa analytics)"
+   "anomalySevere": "Anomalya: lampas sa mga katanggap-tanggap na pamantayan (hindi isinama sa analytics)",
+   "sourcesTitle": "Mga Medikal na Sanggunian",
+   "sourcesIntro": "Ang mga saklaw ng sanggunian at pamantayan ng siklo na ginamit sa ulat na ito ay nakabatay sa mga sumusunod na klinikal na sanggunian.",
+   "excludedCycles_one": "{{count}} siklo ang hindi isinama sa pagkalkula ng average na haba dahil hindi normal ang mga halaga nito.",
+   "excludedCycles_other": "{{count}} na siklo ang hindi isinama sa pagkalkula ng average na haba dahil hindi normal ang mga halaga ng mga ito."
   },
   "analytics": {
    "pulseTitle": "Sinusukat ang kalagayan...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Nagugustuhan mo ba ang Eluna?",
-   "subtitle": "Malaking tulong ang suporta mo para mas mapaganda pa namin ang app.",
-   "no": "Hindi masyado",
-   "yes": "Sobrang gusto ko!",
    "later": "Siguro mamaya",
-   "feedback_title": "Paumanhin!",
-   "feedback_msg": "Pakisulat sa aming support team para mas mapaganda pa namin ito.",
    "title_new": "Tulungan mo kaming pagbutihin pa",
    "description_new": "Araw-araw naming pinapaganda ang Eluna para maging perpektong gabay mo ito. Paki-rate ang app — napakalaking bagay nito para sa amin!",
    "best_hint_new": "Ang 5 stars ang pinakamagandang gantimpala para sa amin 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Subukan muli",
    "errorOldFormat": "Ang backup na ito ay ginawa ng mas lumang bersyon ng Eluna at hindi na mabubuksan. Mag-export ng bago mula sa device na mayroon pa ng iyong data."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Error",
-    "connectionError": "Hindi available ang koneksyon sa store. Subukan ulit mamaya.",
-    "purchaseErrorTitle": "Error sa Pagbili",
-    "defaultError": "May nangyaring mali.",
-    "successTitle": "Tagumpay",
-    "restoreSuccess": "Matagumpay na na-restore ang mga purchase.",
-    "infoTitle": "Impormasyon",
-    "noPurchases": "Walang nakitang aktibong purchase.",
-    "restoreErrorTitle": "Error sa Restore"
-   },
-   "no_ads": {
-    "title": "Tanggalin ang Ads Habambuhay"
-   },
-   "pro": {
-    "title": "PRO Version Habambuhay"
-   },
-   "features": {
-    "no_ads": "Walang Ads",
-    "themes": "Premium Themes",
-    "icons": "Alternative Icons",
-    "advanced": "Advanced Features",
-    "no_ads_desc": "Tinatanggal ang lahat ng ads sa app habambuhay. Suportahan ang developer!"
-   },
-   "title": "Suportahan ang Pag-develop ng App",
-   "subtitle": "Piliin ang pinakamagandang opsyon para ma-unlock ang mga bagong feature at maalis ang ads. Isang beses lang ang bayad, walang subscription.",
-   "buy": "Bilhin",
-   "restore": "I-restore ang Purchases",
-   "privacy": "Patakaran sa Privacy",
-   "terms": "Terms of Service"
-  },
   "cancel": "Kanselahin",
-  "purchase": {
-   "restoreSuccess": "Na-restore ang mga purchase",
-   "noPurchases": "Walang nahanap na purchase",
-   "restoreError": "Error sa pag-restore ng mga purchase"
-  },
   "delayBanner": {
    "cardWaiting": "Naka-hold",
    "ringWaiting": "Naghihintay ng iyong period",
@@ -1329,6 +1281,33 @@
     "desc": "Subaybayan ang lahat ng pinapanood mo — serye, anime, at pelikula — gamit ang release calendar, mga paalala sa susunod na episode, at ganap na privacy. Nananatili sa iyong device ang bawat entry.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Ibili mo ako ng kape",
+   "header": "Nage-enjoy sa Eluna?",
+   "body": "Ganap na libre ang Eluna — walang ads, walang subscription, kailanman. Kung nakahanap ito ng lugar sa iyong telepono, maaari kang mag-iwan ng maliit na tip para suportahan ang pagbuo nito. Ganap itong opsyonal, at maraming salamat sa alinmang paraan. ☕",
+   "thanks": "Maraming-maraming salamat! ☕ Talagang nakakatulong ito para patuloy na tumakbo ang Eluna.",
+   "failed": "Hindi makumpleto ang tip. Pakisubukan muli.",
+   "storeUnavailable": "Hindi available ang in-app purchases sa device na ito sa ngayon.",
+   "paymentPending": "Pinoproseso ang bayad — salamat! Awtomatikong matatapos ang iyong tip."
+  },
+  "medicalSources": {
+   "title": "Mga Medikal na Sanggunian",
+   "sources": "Mga Sanggunian",
+   "countLabel_one": "{{count}} sanggunian",
+   "countLabel_other": "{{count}} na sanggunian",
+   "intro": "Ang bawat paliwanag sa kalusugan, paglalarawan ng yugto at pagkalkula ng siklo sa Eluna ay nakabatay sa mga klinikal na gabay at peer-reviewed na pananaliksik na nakalista sa ibaba. I-tap ang anumang entry upang buksan ang orihinal na publikasyon.",
+   "disclaimer": "Ang Eluna ay hindi isang medikal na kagamitan at hindi nagbibigay ng diagnosis. Talakayin ang iyong mga sintomas sa isang propesyonal sa pangangalagang pangkalusugan.",
+   "sectionGuidelines": "Mga klinikal na gabay",
+   "sectionResearch": "Pananaliksik at pagsusuri",
+   "forecastNote": "Ang anim na araw na mataba na yugto, ang tantiya ng obulasyon at ang ~14 araw na luteal phase ay sumusunod sa gabay ng komite ng ASRM at gabay para sa pasyente ng ACOG; ang mga hangganan ng yugto ay sumusunod sa mga karaniwang klinikal na sanggunian sa physiology. Ang mga hula ay mga estadistikal na tantiya — hindi diagnosis at hindi paraan ng kontrasepsiyon.",
+   "phasesNote": "Ang mga paglalarawan ng yugto ay sumusunod sa mga karaniwang klinikal na sanggunian sa physiology; ang mataba na yugto ay sumusunod sa gabay ng ASRM at ACOG, at ang mga sintomas bago ang regla ay sumusunod sa klinikal na gabay ng ACOG.",
+   "explanationNote": "Ang hormonal physiology at ang mga pattern ng sintomas na inilarawan dito ay sumusunod sa peer-reviewed na klinikal na pagsusuri.",
+   "footer_one": "Ang impormasyon sa kalusugan sa Eluna ay bumabanggit ng {{count}} medikal na sanggunian",
+   "footer_other": "Ang impormasyon sa kalusugan sa Eluna ay bumabanggit ng {{count}} na medikal na sanggunian",
+   "conceptionNote": "Ang partikular sa araw na posibilidad ng paglilihi ay sumusunod sa Wilcox et al. (NEJM 1995) at gabay sa kamalayan sa pagkamayabong ng ASRM/ACOG. Ito ay isang tantiya mula sa iyong mga naitalang siklo — hindi paraan ng kontrasepsiyon.",
+   "phaseTipsNote": "Ang physiology ng yugto at ang mga epektong inilarawan dito ay sumusunod sa peer-reviewed na klinikal na sanggunian. Mga pangkalahatang mungkahi para sa kagalingan, hindi medikal na paggamot.",
+   "cycleStatsNote": "Ang mga pamantayan sa haba ng siklo at kung ano ang itinuturing na normal na pagkakaiba-iba ay sumusunod sa gabay ng ACOG at peer-reviewed na pananaliksik."
   }
  },
  "kb": {

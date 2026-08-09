@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Nội tiết tố & điều hòa",
      "cycle_basics": "Kiến thức cơ bản về chu kỳ",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Cảnh báo đau",
      "fertility_help": "Hỗ trợ sinh sản",
      "lifestyle_selfhelp": "Lối sống & tự chăm sóc",
-     "medical_advice": "When to see a doctor",
      "general": "Tổng quan",
      "pms": "PMS",
      "fertility": "Khả năng sinh sản",
@@ -673,11 +671,6 @@
    "title": "Cài đặt",
    "time": "Thời gian",
    "chooseTime": "Chọn thời gian",
-   "pro": {
-    "activate": "Kích hoạt PRO",
-    "removeAds": "Xóa quảng cáo",
-    "restore": "Khôi phục giao dịch"
-   },
    "sections": {
     "privacy": "BẢO MẬT & QUYỀN RIÊNG TƯ",
     "cycle": "CHẾ ĐỘ & XUẤT DỮ LIỆU",
@@ -708,7 +701,6 @@
     "exportBackup": "Xuất bản sao lưu",
     "importBackup": "Nhập bản sao lưu",
     "cloudSync": "Đồng bộ đám mây",
-    "adPrivacy": "Quyền riêng tư quảng cáo",
     "ourApps": "Ứng dụng khác của chúng tôi"
    },
    "footer": "Mọi dữ liệu đều được mã hóa và chỉ lưu trên thiết bị này",
@@ -845,9 +837,12 @@
    "anomalyLong": "Quá dài (>35 ngày)",
    "anomalyIrregular": "Không đều",
    "attention": "Chú ý",
-   "excludedCycles": "${stats.excludedCount} chu kỳ bị loại khỏi việc tính toán độ dài trung bình do các chỉ số bất thường.",
    "anomalyWarning": "Cảnh báo: nằm ngoài phạm vi điển hình (đã tính vào phân tích)",
-   "anomalySevere": "Bất thường: vượt quá giới hạn cho phép (đã loại khỏi phân tích)"
+   "anomalySevere": "Bất thường: vượt quá giới hạn cho phép (đã loại khỏi phân tích)",
+   "sourcesTitle": "Nguồn y khoa",
+   "sourcesIntro": "Các khoảng tham chiếu và chuẩn chu kỳ được sử dụng trong báo cáo này dựa trên các nguồn lâm sàng sau đây.",
+   "excludedCycles_one": "{{count}} chu kỳ đã bị loại khỏi phép tính độ dài trung bình vì các giá trị của nó bất thường.",
+   "excludedCycles_other": "{{count}} chu kỳ đã bị loại khỏi phép tính độ dài trung bình vì các giá trị của chúng bất thường."
   },
   "analytics": {
    "pulseTitle": "Đang đánh giá thể trạng...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Bạn có thích Eluna không?",
-   "subtitle": "Sự ủng hộ của bạn giúp chúng tôi cải thiện ứng dụng.",
-   "no": "Không hẳn",
-   "yes": "Rất thích!",
    "later": "Để sau",
-   "feedback_title": "Chúng tôi rất tiếc!",
-   "feedback_msg": "Vui lòng liên hệ bộ phận hỗ trợ để chúng tôi có thể cải thiện tốt hơn.",
    "title_new": "Giúp chúng tôi cải thiện",
    "description_new": "Mỗi ngày, Eluna đều được hoàn thiện để trở thành người bạn đồng hành lý tưởng của bạn. Hãy đánh giá ứng dụng — điều đó có ý nghĩa rất lớn với chúng tôi!",
    "best_hint_new": "5 sao là món quà tuyệt vời nhất dành cho chúng tôi 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Thử lại",
    "errorOldFormat": "Bản sao lưu này được tạo bởi một phiên bản Eluna cũ hơn và không thể mở được nữa. Hãy xuất một bản mới từ thiết bị vẫn còn dữ liệu của bạn."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Lỗi",
-    "connectionError": "Không thể kết nối với cửa hàng. Vui lòng thử lại sau.",
-    "purchaseErrorTitle": "Lỗi mua hàng",
-    "defaultError": "Đã xảy ra sự cố.",
-    "successTitle": "Thành công",
-    "restoreSuccess": "Đã khôi phục giao dịch thành công.",
-    "infoTitle": "Thông tin",
-    "noPurchases": "Không tìm thấy giao dịch đang hoạt động.",
-    "restoreErrorTitle": "Lỗi khôi phục"
-   },
-   "no_ads": {
-    "title": "Xóa quảng cáo vĩnh viễn"
-   },
-   "pro": {
-    "title": "Phiên bản PRO trọn đời"
-   },
-   "features": {
-    "no_ads": "Không quảng cáo",
-    "themes": "Giao diện cao cấp",
-    "icons": "Biểu tượng thay thế",
-    "advanced": "Tính năng nâng cao",
-    "no_ads_desc": "Loại bỏ toàn bộ quảng cáo khỏi ứng dụng vĩnh viễn. Hãy ủng hộ nhà phát triển!"
-   },
-   "title": "Hỗ trợ phát triển ứng dụng",
-   "subtitle": "Chọn gói phù hợp nhất để mở khóa tính năng mới và loại bỏ quảng cáo. Thanh toán một lần, không đăng ký định kỳ.",
-   "buy": "Mua",
-   "restore": "Khôi phục giao dịch",
-   "privacy": "Chính sách quyền riêng tư",
-   "terms": "Điều khoản dịch vụ"
-  },
   "cancel": "Hủy",
-  "purchase": {
-   "restoreSuccess": "Đã khôi phục giao dịch",
-   "noPurchases": "Không tìm thấy giao dịch",
-   "restoreError": "Lỗi khi khôi phục giao dịch"
-  },
   "delayBanner": {
    "cardWaiting": "Đang tạm dừng",
    "ringWaiting": "Đang chờ kỳ kinh của bạn",
@@ -1329,6 +1281,33 @@
     "desc": "Theo dõi mọi thứ bạn xem — phim bộ, anime và phim lẻ — với lịch phát hành, nhắc nhở tập tiếp theo và bảo mật tuyệt đối. Mọi mục đều được lưu ngay trên thiết bị của bạn.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Mời tôi một ly cà phê",
+   "header": "Bạn thích Eluna chứ?",
+   "body": "Eluna hoàn toàn miễn phí — không quảng cáo, không đăng ký thuê bao, mãi mãi. Nếu nó đã có một chỗ trên điện thoại của bạn, bạn có thể để lại một khoản tip nhỏ để hỗ trợ việc phát triển. Việc này hoàn toàn tùy chọn, và dù thế nào cũng xin cảm ơn bạn. ☕",
+   "thanks": "Cảm ơn bạn rất nhiều! ☕ Điều này thực sự giúp Eluna tiếp tục hoạt động.",
+   "failed": "Không thể hoàn tất khoản tip. Vui lòng thử lại.",
+   "storeUnavailable": "Hiện tại không thể mua hàng trong ứng dụng trên thiết bị này.",
+   "paymentPending": "Thanh toán đang được xử lý — cảm ơn bạn! Khoản tip của bạn sẽ tự động hoàn tất."
+  },
+  "medicalSources": {
+   "title": "Nguồn y khoa",
+   "sources": "Nguồn",
+   "countLabel_one": "{{count}} tài liệu tham khảo",
+   "countLabel_other": "{{count}} tài liệu tham khảo",
+   "intro": "Mọi giải thích về sức khỏe, mô tả giai đoạn và tính toán chu kỳ trong Eluna đều dựa trên các hướng dẫn lâm sàng và nghiên cứu được bình duyệt được liệt kê dưới đây. Nhấn vào bất kỳ mục nào để mở ấn phẩm gốc.",
+   "disclaimer": "Eluna không phải là thiết bị y tế và không cung cấp chẩn đoán. Hãy trao đổi về các triệu chứng của bạn với chuyên gia y tế.",
+   "sectionGuidelines": "Hướng dẫn lâm sàng",
+   "sectionResearch": "Nghiên cứu và tổng quan",
+   "forecastNote": "Cửa sổ thụ thai sáu ngày, ước tính rụng trứng và giai đoạn hoàng thể khoảng 14 ngày tuân theo hướng dẫn của ủy ban ASRM và hướng dẫn dành cho bệnh nhân của ACOG; ranh giới các giai đoạn tuân theo các tài liệu tham khảo sinh lý học lâm sàng tiêu chuẩn. Các dự đoán là ước tính thống kê, không phải là chẩn đoán và không phải là phương pháp tránh thai.",
+   "phasesNote": "Mô tả các giai đoạn tuân theo các tài liệu tham khảo sinh lý học lâm sàng tiêu chuẩn; cửa sổ thụ thai tuân theo hướng dẫn của ASRM và ACOG, và các triệu chứng tiền kinh nguyệt tuân theo hướng dẫn lâm sàng của ACOG.",
+   "explanationNote": "Sinh lý học nội tiết tố và các dạng triệu chứng được mô tả ở đây tuân theo các bài tổng quan lâm sàng được bình duyệt.",
+   "footer_one": "Thông tin sức khỏe trong Eluna trích dẫn {{count}} nguồn y khoa",
+   "footer_other": "Thông tin sức khỏe trong Eluna trích dẫn {{count}} nguồn y khoa",
+   "conceptionNote": "Xác suất thụ thai theo từng ngày cụ thể tuân theo Wilcox et al. (NEJM 1995) và hướng dẫn nhận biết khả năng sinh sản của ASRM/ACOG. Đây là ước tính từ các chu kỳ bạn đã ghi lại, không phải là phương pháp tránh thai.",
+   "phaseTipsNote": "Sinh lý học các giai đoạn và các tác động được mô tả ở đây tuân theo các tài liệu tham khảo lâm sàng được bình duyệt. Đây là các gợi ý chăm sóc sức khỏe tổng quát, không phải điều trị y tế.",
+   "cycleStatsNote": "Các chuẩn về độ dài chu kỳ và mức được coi là biến động bình thường tuân theo hướng dẫn của ACOG và nghiên cứu được bình duyệt."
   }
  },
  "kb": {

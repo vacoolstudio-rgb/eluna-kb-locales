@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "ホルモンと調整",
      "cycle_basics": "生理周期の基本",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "痛みの注意サイン",
      "fertility_help": "妊活サポート",
      "lifestyle_selfhelp": "ライフスタイルとセルフケア",
-     "medical_advice": "When to see a doctor",
      "general": "一般",
      "pms": "PMS",
      "fertility": "妊娠しやすさ",
@@ -673,11 +671,6 @@
    "title": "設定",
    "time": "時刻",
    "chooseTime": "時刻を選択",
-   "pro": {
-    "activate": "PROを有効にする",
-    "removeAds": "広告を非表示",
-    "restore": "購入を復元"
-   },
    "sections": {
     "privacy": "セキュリティとプライバシー",
     "cycle": "モードとエクスポート",
@@ -708,7 +701,6 @@
     "exportBackup": "バックアップをエクスポート",
     "importBackup": "バックアップをインポート",
     "cloudSync": "クラウド同期",
-    "adPrivacy": "広告のプライバシー",
     "ourApps": "その他のアプリ"
    },
    "footer": "すべてのデータは暗号化され、この端末内にのみ保存されます",
@@ -845,9 +837,12 @@
    "anomalyLong": "長すぎる（35日超）",
    "anomalyIrregular": "不規則",
    "attention": "注意",
-   "excludedCycles": "異常な数値のため、${stats.excludedCount}周期が平均長の計算から除外されました。",
    "anomalyWarning": "警告：一般的な範囲を超えています（分析には反映済み）",
-   "anomalySevere": "異常：許容基準を超えています（分析から除外）"
+   "anomalySevere": "異常：許容基準を超えています（分析から除外）",
+   "sourcesTitle": "医学的根拠",
+   "sourcesIntro": "本レポートで使用する基準範囲および周期の基準は、以下の臨床的出典に基づいています。",
+   "excludedCycles_one": "値が異常であったため、{{count}}件の周期が平均長の計算から除外されました。",
+   "excludedCycles_other": "値が異常であったため、{{count}}件の周期が平均長の計算から除外されました。"
   },
   "analytics": {
    "pulseTitle": "ウェルネス指数を分析中...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Elunaを気に入っていますか？",
-   "subtitle": "あなたの応援が、アプリの改善につながります。",
-   "no": "あまり",
-   "yes": "大好き！",
    "later": "あとで",
-   "feedback_title": "申し訳ありません",
-   "feedback_msg": "改善のため、ぜひサポートまでご意見をお寄せください。",
    "title_new": "より良いアプリにするために",
    "description_new": "Elunaは毎日進化し、あなたにとって理想のガイドを目指しています。ぜひアプリを評価してください。とても励みになります！",
    "best_hint_new": "★5の評価をいただけると最高にうれしいです 💛",
@@ -1171,44 +1160,7 @@
    "retry": "再試行",
    "errorOldFormat": "このバックアップは旧バージョンのElunaで作成されたため、開くことができなくなりました。データが残っている端末から新しいバックアップをエクスポートしてください。"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "エラー",
-    "connectionError": "ストアに接続できません。しばらくしてからもう一度お試しください。",
-    "purchaseErrorTitle": "購入エラー",
-    "defaultError": "問題が発生しました。",
-    "successTitle": "完了",
-    "restoreSuccess": "購入を復元しました。",
-    "infoTitle": "お知らせ",
-    "noPurchases": "有効な購入が見つかりませんでした。",
-    "restoreErrorTitle": "復元エラー"
-   },
-   "no_ads": {
-    "title": "広告を永久に非表示"
-   },
-   "pro": {
-    "title": "PRO版を永久に利用"
-   },
-   "features": {
-    "no_ads": "広告なし",
-    "themes": "プレミアムテーマ",
-    "icons": "追加アイコン",
-    "advanced": "高度な機能",
-    "no_ads_desc": "アプリ内の広告を永久にすべて削除します。開発者の応援にもつながります！"
-   },
-   "title": "アプリ開発を応援",
-   "subtitle": "新機能の利用と広告の非表示には、最適なプランをお選びください。買い切り型で、サブスクリプションはありません。",
-   "buy": "購入する",
-   "restore": "購入を復元",
-   "privacy": "プライバシーポリシー",
-   "terms": "利用規約"
-  },
   "cancel": "キャンセル",
-  "purchase": {
-   "restoreSuccess": "購入を復元しました",
-   "noPurchases": "購入が見つかりませんでした",
-   "restoreError": "購入の復元中にエラーが発生しました"
-  },
   "delayBanner": {
    "cardWaiting": "保留中",
    "ringWaiting": "月経を待っています",
@@ -1329,6 +1281,33 @@
     "desc": "観るものすべてを記録——ドラマ、アニメ、映画まで。配信カレンダー、次のエピソードのリマインダー、そして万全のプライバシー。すべてのデータは端末内に保存されます。",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "コーヒーをおごる",
+   "header": "Eluna は気に入りましたか？",
+   "body": "Eluna は完全に無料です。広告もサブスクリプションも一切ありません。あなたのスマホに置く価値があると感じたら、開発を応援するために少しだけチップを贈ることができます。もちろん任意ですので、どちらでも大丈夫です。いつもありがとうございます。☕",
+   "thanks": "本当にありがとうございます！☕ Eluna を続けていく大きな支えになります。",
+   "failed": "チップを完了できませんでした。もう一度お試しください。",
+   "storeUnavailable": "現在、この端末ではアプリ内課金をご利用いただけません。",
+   "paymentPending": "お支払いを処理しています。ありがとうございます！チップは自動的に完了します。"
+  },
+  "medicalSources": {
+   "title": "医学的根拠",
+   "sources": "出典",
+   "countLabel_one": "{{count}}件の文献",
+   "countLabel_other": "{{count}}件の文献",
+   "intro": "Elunaにおけるすべての健康に関する説明、フェーズの解説、周期の計算は、以下に記載する臨床ガイドラインおよび査読済み研究に基づいています。各項目をタップすると、元の出版物を開けます。",
+   "disclaimer": "Elunaは医療機器ではなく、診断を行うものではありません。症状については医療専門家にご相談ください。",
+   "sectionGuidelines": "臨床ガイドライン",
+   "sectionResearch": "研究とレビュー",
+   "forecastNote": "6日間の妊娠可能期間、排卵の推定、約14日間の黄体期は、ASRM委員会の指針およびACOGの患者向け指針に従っています。フェーズの境界は標準的な臨床生理学の文献に基づいています。予測は統計的な推定であり、診断でも避妊法でもありません。",
+   "phasesNote": "フェーズの解説は標準的な臨床生理学の文献に従っています。妊娠可能期間はASRMおよびACOGの指針に、月経前症状はACOGの臨床指針に従っています。",
+   "explanationNote": "ここで説明するホルモン生理学および症状のパターンは、査読済みの臨床レビューに従っています。",
+   "footer_one": "Elunaの健康情報は{{count}}件の医学的出典を引用しています",
+   "footer_other": "Elunaの健康情報は{{count}}件の医学的出典を引用しています",
+   "conceptionNote": "特定の日ごとの受胎確率は、Wilcox et al. (NEJM 1995) およびASRM/ACOGの妊よう性認識に関する指針に従っています。これはあなたの記録した周期に基づく推定であり、避妊法ではありません。",
+   "phaseTipsNote": "フェーズの生理学およびここで説明する効果は、査読済みの臨床文献に従っています。医療的な治療ではなく、一般的な健康維持のための提案です。",
+   "cycleStatsNote": "周期の長さの基準および正常な変動とみなされる範囲は、ACOGの指針および査読済み研究に従っています。"
   }
  },
  "kb": {

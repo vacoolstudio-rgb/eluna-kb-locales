@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormonok és szabályozás",
      "cycle_basics": "A ciklus alapjai",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Fájdalomra figyelmeztető jelek",
      "fertility_help": "Termékenységi támogatás",
      "lifestyle_selfhelp": "Életmód és öngondoskodás",
-     "medical_advice": "When to see a doctor",
      "general": "Általános",
      "pms": "PMS",
      "fertility": "Termékenység",
@@ -673,11 +671,6 @@
    "title": "Beállítások",
    "time": "Idő",
    "chooseTime": "Idő kiválasztása",
-   "pro": {
-    "activate": "PRO aktiválása",
-    "removeAds": "Hirdetések eltávolítása",
-    "restore": "Vásárlások visszaállítása"
-   },
    "sections": {
     "privacy": "BIZTONSÁG ÉS ADATVÉDELEM",
     "cycle": "MÓDOK ÉS EXPORTÁLÁS",
@@ -708,7 +701,6 @@
     "exportBackup": "Biztonsági mentés exportálása",
     "importBackup": "Biztonsági mentés importálása",
     "cloudSync": "Felhőszinkronizálás",
-    "adPrivacy": "Hirdetési adatvédelem",
     "ourApps": "Egyéb alkalmazásaink"
    },
    "footer": "Minden adat titkosítva van, és kizárólag ezen az eszközön tárolódik",
@@ -845,9 +837,12 @@
    "anomalyLong": "Túl hosszú (>35 nap)",
    "anomalyIrregular": "Rendszertelen",
    "attention": "Figyelem",
-   "excludedCycles": "${stats.excludedCount} ciklus kizárva az átlagos hossz számításából a rendellenes értékek miatt.",
    "anomalyWarning": "Figyelmeztetés: a szokásos tartományon kívül esik (figyelembe véve az elemzésben)",
-   "anomalySevere": "Rendellenesség: meghaladja a megengedett értékeket (kizárva az elemzésből)"
+   "anomalySevere": "Rendellenesség: meghaladja a megengedett értékeket (kizárva az elemzésből)",
+   "sourcesTitle": "Orvosi források",
+   "sourcesIntro": "A jelentésben használt referenciatartományok és ciklusnormák a következő klinikai forrásokon alapulnak.",
+   "excludedCycles_one": "{{count}} ciklus kimaradt az átlagos hossz számításából, mert értékei rendellenesek voltak.",
+   "excludedCycles_other": "{{count}} ciklus kimaradt az átlagos hossz számításából, mert értékeik rendellenesek voltak."
   },
   "analytics": {
    "pulseTitle": "Állapot felmérése...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Tetszik az Eluna?",
-   "subtitle": "A támogatásoddal még jobbá tehetjük az alkalmazást.",
-   "no": "Nem igazán",
-   "yes": "Imádom!",
    "later": "Talán később",
-   "feedback_title": "Sajnáljuk!",
-   "feedback_msg": "Kérjük, írj az ügyfélszolgálatunknak, hogy tovább fejleszthessük az alkalmazást.",
    "title_new": "Segíts, hogy még jobbak lehessünk",
    "description_new": "Minden nap azon dolgozunk, hogy az Eluna a lehető legjobb útmutatód legyen. Értékeld az appot — nagyon sokat jelent nekünk!",
    "best_hint_new": "Az 5 csillag a legnagyobb elismerés számunkra 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Próbáld újra",
    "errorOldFormat": "Ezt a biztonsági mentést az Eluna egy régebbi verziója készítette, és már nem nyitható meg. Készíts egy újat arról az eszközről, amelyen még megvannak az adataid."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Hiba",
-    "connectionError": "Az áruházkapcsolat nem érhető el. Próbáld újra később.",
-    "purchaseErrorTitle": "Vásárlási hiba",
-    "defaultError": "Valami hiba történt.",
-    "successTitle": "Siker",
-    "restoreSuccess": "A vásárlások sikeresen visszaállítva.",
-    "infoTitle": "Információ",
-    "noPurchases": "Nem található aktív vásárlás.",
-    "restoreErrorTitle": "Visszaállítási hiba"
-   },
-   "no_ads": {
-    "title": "Hirdetések eltávolítása örökre"
-   },
-   "pro": {
-    "title": "PRO verzió örökre"
-   },
-   "features": {
-    "no_ads": "Nincsenek hirdetések",
-    "themes": "Prémium témák",
-    "icons": "Alternatív ikonok",
-    "advanced": "Haladó funkciók",
-    "no_ads_desc": "Örökre eltávolít minden hirdetést az alkalmazásból. Támogasd a fejlesztőt!"
-   },
-   "title": "Támogasd az alkalmazás fejlesztését",
-   "subtitle": "Válaszd a számodra legjobb lehetőséget az új funkciók feloldásához és a hirdetések eltávolításához. Egyszeri fizetés, előfizetés nélkül.",
-   "buy": "Vásárlás",
-   "restore": "Vásárlások visszaállítása",
-   "privacy": "Adatvédelmi szabályzat",
-   "terms": "Felhasználási feltételek"
-  },
   "cancel": "Mégse",
-  "purchase": {
-   "restoreSuccess": "A vásárlások visszaállítva",
-   "noPurchases": "Nem található vásárlás",
-   "restoreError": "Hiba a vásárlások visszaállításakor"
-  },
   "delayBanner": {
    "cardWaiting": "Felfüggesztve",
    "ringWaiting": "Menstruációra várva",
@@ -1329,6 +1281,33 @@
     "desc": "Kövess nyomon mindent, amit nézel — sorozatokat, animéket és filmeket — megjelenési naptárral, emlékeztetőkkel a következő epizódokról és teljes adatvédelemmel. Minden bejegyzés a készülékeden marad.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Hívj meg egy kávéra",
+   "header": "Tetszik az Eluna?",
+   "body": "Az Eluna teljesen ingyenes — nincs reklám, nincs előfizetés, soha. Ha kiérdemelte a helyét a telefonodon, egy kis borravalóval támogathatod a fejlesztését. Teljesen önkéntes, és így is köszönjük. ☕",
+   "thanks": "Nagyon köszönjük! ☕ Ez tényleg segít, hogy az Eluna tovább működjön.",
+   "failed": "A borravalót nem sikerült teljesíteni. Kérjük, próbáld újra.",
+   "storeUnavailable": "Az alkalmazáson belüli vásárlások jelenleg nem érhetők el ezen az eszközön.",
+   "paymentPending": "A fizetés folyamatban van — köszönjük! A borravalód automatikusan teljesül."
+  },
+  "medicalSources": {
+   "title": "Orvosi források",
+   "sources": "Források",
+   "countLabel_one": "{{count}} hivatkozás",
+   "countLabel_other": "{{count}} hivatkozás",
+   "intro": "Az Eluna minden egészségügyi magyarázata, fázisleírása és ciklusszámítása az alább felsorolt klinikai irányelveken és szakértők által lektorált kutatásokon alapul. Az eredeti publikáció megnyitásához koppintson bármelyik bejegyzésre.",
+   "disclaimer": "Az Eluna nem orvostechnikai eszköz, és nem ad diagnózist. Beszélje meg tüneteit egészségügyi szakemberrel.",
+   "sectionGuidelines": "Klinikai irányelvek",
+   "sectionResearch": "Kutatások és áttekintések",
+   "forecastNote": "A hatnapos termékeny időszak, az ovuláció becslése és a körülbelül 14 napos luteális fázis az ASRM bizottsági útmutatását és az ACOG betegtájékoztatóját követi; a fázishatárok a szabványos klinikai fiziológiai forrásokat követik. Az előrejelzések statisztikai becslések — nem diagnózis és nem fogamzásgátló módszer.",
+   "phasesNote": "A fázisleírások a szabványos klinikai fiziológiai forrásokat követik; a termékeny időszak az ASRM és ACOG útmutatását követi, a menstruáció előtti tünetek pedig az ACOG klinikai útmutatását követik.",
+   "explanationNote": "Az itt leírt hormonális fiziológia és tünetmintázatok szakértők által lektorált klinikai áttekintéseket követnek.",
+   "footer_one": "Az Eluna egészségügyi információi {{count}} orvosi forrásra hivatkoznak",
+   "footer_other": "Az Eluna egészségügyi információi {{count}} orvosi forrásra hivatkoznak",
+   "conceptionNote": "A napspecifikus fogamzási valószínűség a Wilcox et al. (NEJM 1995) tanulmányt és az ASRM/ACOG termékenységtudatossági útmutatását követi. Ez a rögzített ciklusaiból származó becslés — nem fogamzásgátló módszer.",
+   "phaseTipsNote": "A fázisok fiziológiája és az itt leírt hatások szakértők által lektorált klinikai forrásokat követnek. Általános jólléti javaslatok, nem orvosi kezelés.",
+   "cycleStatsNote": "A ciklushossz normái és az, hogy mi számít normális ingadozásnak, az ACOG útmutatását és szakértők által lektorált kutatásokat követnek."
   }
  },
  "kb": {

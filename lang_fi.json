@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormonit ja säätely",
      "cycle_basics": "Kierron perusteet",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Kivun varoitusmerkit",
      "fertility_help": "Tukea hedelmällisyyteen",
      "lifestyle_selfhelp": "Elämäntavat ja omahoito",
-     "medical_advice": "When to see a doctor",
      "general": "Yleistä",
      "pms": "PMS",
      "fertility": "Hedelmällisyys",
@@ -673,11 +671,6 @@
    "title": "Asetukset",
    "time": "Aika",
    "chooseTime": "Valitse aika",
-   "pro": {
-    "activate": "Aktivoi PRO",
-    "removeAds": "Poista mainokset",
-    "restore": "Palauta ostot"
-   },
    "sections": {
     "privacy": "TURVALLISUUS JA YKSITYISYYS",
     "cycle": "TILAT JA VIENTI",
@@ -708,7 +701,6 @@
     "exportBackup": "Vie varmuuskopio",
     "importBackup": "Tuo varmuuskopio",
     "cloudSync": "Pilvisynkronointi",
-    "adPrivacy": "Mainosten tietosuoja",
     "ourApps": "Muut sovelluksemme"
    },
    "footer": "Kaikki tiedot on salattu ja tallennettu vain tälle laitteelle",
@@ -845,9 +837,12 @@
    "anomalyLong": "Liian pitkä (>35 päivää)",
    "anomalyIrregular": "Epäsäännöllinen",
    "attention": "Huomio",
-   "excludedCycles": "${stats.excludedCount} sykli(ä) jätetty pois keskimääräisen keston laskennasta poikkeavien arvojen vuoksi.",
    "anomalyWarning": "Varoitus: tavanomaisen vaihteluvälin ulkopuolella (huomioitu analyysissä)",
-   "anomalySevere": "Poikkeama: ylittää sallitut rajat (jätetty pois analytiikasta)"
+   "anomalySevere": "Poikkeama: ylittää sallitut rajat (jätetty pois analytiikasta)",
+   "sourcesTitle": "Lääketieteelliset lähteet",
+   "sourcesIntro": "Tässä raportissa käytetyt viitearvot ja kiertonormit perustuvat seuraaviin kliinisiin lähteisiin.",
+   "excludedCycles_one": "{{count}} kierto jätettiin pois keskimääräisen pituuden laskennasta, koska sen arvot olivat poikkeavia.",
+   "excludedCycles_other": "{{count}} kiertoa jätettiin pois keskimääräisen pituuden laskennasta, koska niiden arvot olivat poikkeavia."
   },
   "analytics": {
    "pulseTitle": "Hyvinvointia analysoidaan...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Pidätkö Elunasta?",
-   "subtitle": "Tukesi auttaa meitä kehittämään sovellusta entistä paremmaksi.",
-   "no": "En oikein",
-   "yes": "Rakastan sitä!",
    "later": "Ehkä myöhemmin",
-   "feedback_title": "Olemme pahoillamme!",
-   "feedback_msg": "Kirjoita tukitiimillemme, jotta voimme parantaa sovellusta.",
    "title_new": "Auta meitä kehittymään",
    "description_new": "Kehitämme Elunaa joka päivä, jotta se olisi sinulle täydellinen opas. Arvioi sovellus — se merkitsee meille todella paljon!",
    "best_hint_new": "5 tähteä on meille paras mahdollinen kiitos 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Yritä uudelleen",
    "errorOldFormat": "Tämä varmuuskopio on tehty Elunan vanhemmalla versiolla, eikä sitä voi enää avata. Vie uusi varmuuskopio laitteesta, jossa tietosi vielä ovat."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Virhe",
-    "connectionError": "Yhteyttä kauppaan ei ole saatavilla. Yritä myöhemmin uudelleen.",
-    "purchaseErrorTitle": "Ostovirhe",
-    "defaultError": "Jokin meni pieleen.",
-    "successTitle": "Onnistui",
-    "restoreSuccess": "Ostokset palautettu onnistuneesti.",
-    "infoTitle": "Tietoa",
-    "noPurchases": "Aktiivisia ostoksia ei löytynyt.",
-    "restoreErrorTitle": "Palautusvirhe"
-   },
-   "no_ads": {
-    "title": "Poista mainokset pysyvästi"
-   },
-   "pro": {
-    "title": "PRO-versio pysyvästi"
-   },
-   "features": {
-    "no_ads": "Ei mainoksia",
-    "themes": "Premium-teemat",
-    "icons": "Vaihtoehtoiset kuvakkeet",
-    "advanced": "Edistyneet ominaisuudet",
-    "no_ads_desc": "Poistaa kaikki mainokset sovelluksesta pysyvästi. Tue kehittäjää!"
-   },
-   "title": "Tue sovelluksen kehitystä",
-   "subtitle": "Valitse sinulle sopivin vaihtoehto, niin saat uudet ominaisuudet käyttöön ja mainokset pois. Kertamaksu, ei tilauksia.",
-   "buy": "Osta",
-   "restore": "Palauta ostokset",
-   "privacy": "Tietosuojakäytäntö",
-   "terms": "Käyttöehdot"
-  },
   "cancel": "Peruuta",
-  "purchase": {
-   "restoreSuccess": "Ostokset palautettu",
-   "noPurchases": "Ostoksia ei löytynyt",
-   "restoreError": "Virhe ostosten palautuksessa"
-  },
   "delayBanner": {
    "cardWaiting": "Tauolla",
    "ringWaiting": "Odotetaan kuukautisiasi",
@@ -1329,6 +1281,33 @@
     "desc": "Seuraa kaikkea katsomaasi – sarjoja, animea ja elokuvia – julkaisukalenterin, seuraavan jakson muistutusten ja täyden yksityisyyden avulla. Jokainen merkintä pysyy laitteellasi.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Tarjoa minulle kahvit",
+   "header": "Pidätkö Elunasta?",
+   "body": "Eluna on täysin ilmainen — ei mainoksia, ei tilausmaksuja, koskaan. Jos se on ansainnut paikkansa puhelimessasi, voit jättää pienen tipin tukeaksesi sen kehitystä. Se on täysin vapaaehtoista, ja kiitos joka tapauksessa. ☕",
+   "thanks": "Suurkiitos! ☕ Se todella auttaa pitämään Elunan pystyssä.",
+   "failed": "Tippiä ei voitu suorittaa. Yritä uudelleen.",
+   "storeUnavailable": "Sovelluksen sisäiset ostot eivät ole juuri nyt käytettävissä tällä laitteella.",
+   "paymentPending": "Maksua käsitellään — kiitos! Tippisi menee läpi automaattisesti."
+  },
+  "medicalSources": {
+   "title": "Lääketieteelliset lähteet",
+   "sources": "Lähteet",
+   "countLabel_one": "{{count}} viite",
+   "countLabel_other": "{{count}} viitettä",
+   "intro": "Jokainen Elunan terveysselite, vaiheiden kuvaus ja kierron laskelma perustuu alla lueteltuihin kliinisiin hoitosuosituksiin ja vertaisarvioituun tutkimukseen. Avaa alkuperäinen julkaisu napauttamalla mitä tahansa kohtaa.",
+   "disclaimer": "Eluna ei ole lääkinnällinen laite eikä anna diagnoosia. Keskustele oireistasi terveydenhuollon ammattilaisen kanssa.",
+   "sectionGuidelines": "Kliiniset hoitosuositukset",
+   "sectionResearch": "Tutkimukset ja katsaukset",
+   "forecastNote": "Kuuden päivän hedelmällinen ikkuna, ovulaatioarvio ja noin 14 päivän keltarauhasvaihe noudattavat ASRM:n komitean ohjeistusta ja ACOG:n potilasohjeistusta; vaiheiden rajat noudattavat vakiintuneita kliinisen fysiologian lähteitä. Ennusteet ovat tilastollisia arvioita – eivät diagnoosi eivätkä ehkäisymenetelmä.",
+   "phasesNote": "Vaiheiden kuvaukset noudattavat vakiintuneita kliinisen fysiologian lähteitä; hedelmällinen ikkuna noudattaa ASRM:n ja ACOG:n ohjeistusta, ja kuukautisia edeltävät oireet noudattavat ACOG:n kliinistä ohjeistusta.",
+   "explanationNote": "Tässä kuvattu hormonaalinen fysiologia ja oirekuvat noudattavat vertaisarvioituja kliinisiä katsauksia.",
+   "footer_one": "Elunan terveystiedot viittaavat {{count}} lääketieteelliseen lähteeseen",
+   "footer_other": "Elunan terveystiedot viittaavat {{count}} lääketieteelliseen lähteeseen",
+   "conceptionNote": "Päiväkohtainen hedelmöittymistodennäköisyys noudattaa Wilcox et al. (NEJM 1995) -tutkimusta sekä ASRM:n/ACOG:n hedelmällisyystietoisuuden ohjeistusta. Se on arvio kirjaamistasi kierroista – ei ehkäisymenetelmä.",
+   "phaseTipsNote": "Vaiheiden fysiologia ja tässä kuvatut vaikutukset noudattavat vertaisarvioituja kliinisiä lähteitä. Yleisiä hyvinvointivinkkejä, ei lääketieteellistä hoitoa.",
+   "cycleStatsNote": "Kierron pituuden normit ja se, mikä lasketaan normaaliksi vaihteluksi, noudattavat ACOG:n ohjeistusta ja vertaisarvioitua tutkimusta."
   }
  },
  "kb": {

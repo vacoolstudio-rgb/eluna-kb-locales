@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "激素与调节",
      "cycle_basics": "周期基础",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "疼痛警示",
      "fertility_help": "备孕支持",
      "lifestyle_selfhelp": "生活方式与自我护理",
-     "medical_advice": "When to see a doctor",
      "general": "通用",
      "pms": "经前综合征",
      "fertility": "生育力",
@@ -673,11 +671,6 @@
    "title": "设置",
    "time": "时间",
    "chooseTime": "选择时间",
-   "pro": {
-    "activate": "开通 PRO",
-    "removeAds": "去除广告",
-    "restore": "恢复购买"
-   },
    "sections": {
     "privacy": "安全与隐私",
     "cycle": "模式与导出",
@@ -708,7 +701,6 @@
     "exportBackup": "导出备份",
     "importBackup": "导入备份",
     "cloudSync": "云同步",
-    "adPrivacy": "广告隐私",
     "ourApps": "我们的其他应用"
    },
    "footer": "所有数据均已加密，并仅存储在此设备上",
@@ -845,9 +837,12 @@
    "anomalyLong": "过长（>35 天）",
    "anomalyIrregular": "不规律",
    "attention": "注意",
-   "excludedCycles": "${stats.excludedCount} 个周期因指标异常，已从平均长度计算中排除。",
    "anomalyWarning": "警告：超出典型范围（已计入分析）",
-   "anomalySevere": "异常：超过允许标准（已从分析中排除）"
+   "anomalySevere": "异常：超过允许标准（已从分析中排除）",
+   "sourcesTitle": "医学来源",
+   "sourcesIntro": "本报告中使用的参考范围和周期标准基于以下临床来源。",
+   "excludedCycles_one": "由于数值异常，有 {{count}} 个周期被排除在平均长度计算之外。",
+   "excludedCycles_other": "由于数值异常，有 {{count}} 个周期被排除在平均长度计算之外。"
   },
   "analytics": {
    "pulseTitle": "正在评估状态...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "你喜欢 Eluna 吗？",
-   "subtitle": "你的支持能帮助我们把应用做得更好。",
-   "no": "不太喜欢",
-   "yes": "很喜欢！",
    "later": "稍后再说",
-   "feedback_title": "很抱歉！",
-   "feedback_msg": "欢迎联系支持团队，帮助我们继续改进。",
    "title_new": "帮助我们做得更好",
    "description_new": "Eluna 每天都在不断优化，只为成为你更贴心的周期助手。欢迎为我们评分——这对我们意义重大！",
    "best_hint_new": "5 星好评是对我们最大的鼓励 💛",
@@ -1171,44 +1160,7 @@
    "retry": "重试",
    "errorOldFormat": "此备份由旧版本的 Eluna 创建，已无法打开。请在仍保存有你数据的设备上重新导出一份。"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "错误",
-    "connectionError": "无法连接到商店，请稍后再试。",
-    "purchaseErrorTitle": "购买错误",
-    "defaultError": "出了点问题。",
-    "successTitle": "成功",
-    "restoreSuccess": "购买已成功恢复。",
-    "infoTitle": "提示",
-    "noPurchases": "未找到有效购买记录。",
-    "restoreErrorTitle": "恢复错误"
-   },
-   "no_ads": {
-    "title": "永久去除广告"
-   },
-   "pro": {
-    "title": "永久 PRO 版"
-   },
-   "features": {
-    "no_ads": "无广告",
-    "themes": "高级主题",
-    "icons": "替代图标",
-    "advanced": "高级功能",
-    "no_ads_desc": "永久移除应用内所有广告。感谢支持开发者！"
-   },
-   "title": "支持应用开发",
-   "subtitle": "选择最适合你的方案，解锁更多功能并去除广告。一次性付费，无需订阅。",
-   "buy": "购买",
-   "restore": "恢复购买",
-   "privacy": "隐私政策",
-   "terms": "服务条款"
-  },
   "cancel": "取消",
-  "purchase": {
-   "restoreSuccess": "购买已恢复",
-   "noPurchases": "未找到购买记录",
-   "restoreError": "恢复购买时出错"
-  },
   "delayBanner": {
    "cardWaiting": "暂停中",
    "ringWaiting": "等待你的月经",
@@ -1329,6 +1281,33 @@
     "desc": "追踪你观看的一切内容——剧集、动漫和电影——配备上映日历、新剧集提醒和全面隐私保护。所有记录都只保存在你的设备上。",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "请我喝杯咖啡",
+   "header": "喜欢 Eluna 吗？",
+   "body": "Eluna 完全免费——永远没有广告，也没有订阅。如果它在你的手机里占有一席之地，你可以留下一点小费来支持它的开发。这完全是自愿的，无论如何都要谢谢你。☕",
+   "thanks": "非常感谢！☕ 这真的能帮助 Eluna 继续运行下去。",
+   "failed": "小费未能完成，请重试。",
+   "storeUnavailable": "此设备目前无法进行应用内购买。",
+   "paymentPending": "付款正在处理中——谢谢你！你的小费将会自动完成。"
+  },
+  "medicalSources": {
+   "title": "医学来源",
+   "sources": "来源",
+   "countLabel_one": "{{count}} 条参考文献",
+   "countLabel_other": "{{count}} 条参考文献",
+   "intro": "Eluna 中的每一项健康说明、阶段描述和周期计算均基于以下列出的临床指南和经同行评审的研究。点击任意条目即可打开原始出版物。",
+   "disclaimer": "Eluna 不是医疗器械，也不提供诊断。请与医疗专业人员讨论您的症状。",
+   "sectionGuidelines": "临床指南",
+   "sectionResearch": "研究与综述",
+   "forecastNote": "六天的易孕期、排卵估算和约 14 天的黄体期遵循 ASRM 委员会指南和 ACOG 患者指南；阶段边界遵循标准临床生理学参考文献。预测为统计估算，既非诊断，也非避孕方法。",
+   "phasesNote": "阶段描述遵循标准临床生理学参考文献；易孕期遵循 ASRM 和 ACOG 指南，经前症状遵循 ACOG 临床指南。",
+   "explanationNote": "此处描述的激素生理学和症状模式遵循经同行评审的临床综述。",
+   "footer_one": "Eluna 中的健康信息引用了 {{count}} 条医学来源",
+   "footer_other": "Eluna 中的健康信息引用了 {{count}} 条医学来源",
+   "conceptionNote": "特定日期的受孕概率遵循 Wilcox et al. (NEJM 1995) 以及 ASRM/ACOG 的生育意识指南。这是根据您记录的周期得出的估算，并非避孕方法。",
+   "phaseTipsNote": "此处描述的阶段生理学和相关影响遵循经同行评审的临床参考文献。这些是一般性的健康建议，而非医学治疗。",
+   "cycleStatsNote": "周期长度标准以及何为正常波动遵循 ACOG 指南和经同行评审的研究。"
   }
  },
  "kb": {

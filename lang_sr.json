@@ -675,11 +675,6 @@
    "title": "Podešavanja",
    "time": "Vreme",
    "chooseTime": "Izaberi vreme",
-   "pro": {
-    "activate": "Aktiviraj PRO",
-    "removeAds": "Ukloni oglase",
-    "restore": "Obnovi kupovine"
-   },
    "sections": {
     "privacy": "SIGURNOST I PRIVATNOST",
     "cycle": "MODOVI I IZVOZ",
@@ -710,7 +705,6 @@
     "exportBackup": "Izvoz rezervne kopije",
     "importBackup": "Uvoz rezervne kopije",
     "cloudSync": "Sinhronizacija u oblaku",
-    "adPrivacy": "Privatnost reklama",
     "ourApps": "Naše ostale aplikacije"
    },
    "footer": "Svi podaci su šifrovani i čuvaju se samo na ovom uređaju",
@@ -925,9 +919,12 @@
    "anomalyLong": "Predug (>35 dana)",
    "anomalyIrregular": "Nepravilan",
    "attention": "Pažnja",
-   "excludedCycles": "${stats.excludedCount} ciklus(a) je isključeno iz izračunavanja prosečne dužine zbog anomalnih vrednosti.",
    "anomalyWarning": "Upozorenje: izlazi iz uobičajenog opsega (uzeto u obzir u analizi)",
-   "anomalySevere": "Anomalija: prekoračuje dozvoljene norme (isključeno iz analitike)"
+   "anomalySevere": "Anomalija: prekoračuje dozvoljene norme (isključeno iz analitike)",
+   "sourcesTitle": "Медицински извори",
+   "sourcesIntro": "Референтни распони и норме циклуса коришћени у овом извештају заснивају се на следећим клиничким изворима.",
+   "excludedCycles_one": "{{count}} циклус је искључен из израчунавања просечне дужине јер су његове вредности биле аномалне.",
+   "excludedCycles_other": "{{count}} циклуса је искључено из израчунавања просечне дужине јер су њихове вредности биле аномалне."
   },
   "analytics": {
    "pulseTitle": "Merenje pulsa...",
@@ -1161,44 +1158,7 @@
    "chip_ads": "Previše reklama",
    "chip_other": "Ostalo"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Greška",
-    "connectionError": "Povezivanje sa prodavnicom nije dostupno. Pokušajte ponovo kasnije.",
-    "purchaseErrorTitle": "Greška pri kupovini",
-    "defaultError": "Nešto je pošlo po zlu.",
-    "successTitle": "Uspeh",
-    "restoreSuccess": "Kupovine uspešno obnovljene.",
-    "infoTitle": "Informacija",
-    "noPurchases": "Nema pronađenih aktivnih kupovina.",
-    "restoreErrorTitle": "Greška pri obnavljanju"
-   },
-   "no_ads": {
-    "title": "Uklonite reklame zauvek"
-   },
-   "pro": {
-    "title": "PRO verzija zauvek"
-   },
-   "features": {
-    "no_ads": "Bez reklama",
-    "themes": "Premium teme",
-    "icons": "Alternativne ikone",
-    "advanced": "Napredne funkcije",
-    "no_ads_desc": "Uklanja sve reklame iz aplikacije zauvek. Podržite programera!"
-   },
-   "title": "Podržite razvoj aplikacije",
-   "subtitle": "Izaberite najbolju opciju za otključavanje novih funkcija i uklanjanje reklama. Jednokratno plaćanje, bez pretplate.",
-   "buy": "Kupi",
-   "restore": "Obnovi kupovine",
-   "privacy": "Politika privatnosti",
-   "terms": "Uslovi korišćenja"
-  },
   "cancel": "Otkaži",
-  "purchase": {
-   "restoreSuccess": "Kupovine obnovljene",
-   "noPurchases": "Nema pronađenih kupovina",
-   "restoreError": "Greška pri obnavljanju kupovina"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Klinički dokazi",
@@ -1321,6 +1281,33 @@
     "desc": "Pratite sve što gledate — serije, anime i filmove — uz kalendar premijera, podsetnike za sledeću epizodu i potpunu privatnost. Svaki unos ostaje na vašem uređaju.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Частите ме кафом",
+   "header": "Свиђа ли вам се Eluna?",
+   "body": "Eluna је потпуно бесплатна — без реклама и претплате, заувек. Ако је заслужила место на вашем телефону, можете оставити малу напојницу да подржите њен развој. То је потпуно необавезно и хвала вам у сваком случају. ☕",
+   "thanks": "Много вам хвала! ☕ То заиста помаже да Eluna настави даље.",
+   "failed": "Напојницу није било могуће завршити. Покушајте поново.",
+   "storeUnavailable": "Куповине унутар апликације тренутно нису доступне на овом уређају.",
+   "paymentPending": "Плаћање се обрађује — хвала вам! Ваша напојница ће проћи аутоматски."
+  },
+  "medicalSources": {
+   "title": "Медицински извори",
+   "sources": "Извори",
+   "countLabel_one": "{{count}} референца",
+   "countLabel_other": "{{count}} референци",
+   "intro": "Свако објашњење о здрављу, опис фазе и израчунавање циклуса у апликацији Eluna заснива се на клиничким смерницама и рецензираним истраживањима наведеним у наставку. Додирните било који унос да бисте отворили изворну публикацију.",
+   "disclaimer": "Eluna није медицински уређај и не пружа дијагнозу. Разговарајте о својим симптомима са здравственим радником.",
+   "sectionGuidelines": "Клиничке смернице",
+   "sectionResearch": "Истраживања и прегледи",
+   "forecastNote": "Шестодневни плодни прозор, процена овулације и лутеална фаза од приближно 14 дана прате смернице одбора ASRM и смернице за пацијенте ACOG; границе фаза прате стандардне клиничке физиолошке изворе. Предвиђања су статистичке процене — нису дијагноза ни контрацептивна метода.",
+   "phasesNote": "Описи фаза прате стандардне клиничке физиолошке изворе; плодни прозор прати смернице ASRM и ACOG, а предменструални симптоми прате клиничке смернице ACOG.",
+   "explanationNote": "Хормонска физиологија и обрасци симптома описани овде прате рецензиране клиничке прегледе.",
+   "footer_one": "Здравствене информације у апликацији Eluna наводе {{count}} медицински извор",
+   "footer_other": "Здравствене информације у апликацији Eluna наводе {{count}} медицинских извора",
+   "conceptionNote": "Вероватноћа зачећа специфична за дан прати Wilcox et al. (NEJM 1995) и смернице ASRM/ACOG о освешћивању плодности. То је процена на основу ваших забележених циклуса — није контрацептивна метода.",
+   "phaseTipsNote": "Физиологија фаза и овде описани ефекти прате рецензиране клиничке изворе. Општи савети за добробит, а не медицинско лечење.",
+   "cycleStatsNote": "Норме дужине циклуса и оно што се сматра нормалном варијацијом прате смернице ACOG и рецензирана истраживања."
   }
  },
  "kb": {

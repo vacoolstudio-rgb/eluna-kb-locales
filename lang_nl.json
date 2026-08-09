@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormonen & regulatie",
      "cycle_basics": "Basis van de cyclus",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Pijnsignalen",
      "fertility_help": "Hulp bij vruchtbaarheid",
      "lifestyle_selfhelp": "Leefstijl & zelfzorg",
-     "medical_advice": "When to see a doctor",
      "general": "Algemeen",
      "pms": "PMS",
      "fertility": "Vruchtbaarheid",
@@ -673,11 +671,6 @@
    "title": "Instellingen",
    "time": "Tijd",
    "chooseTime": "Kies een tijd",
-   "pro": {
-    "activate": "PRO activeren",
-    "removeAds": "Advertenties verwijderen",
-    "restore": "Aankopen herstellen"
-   },
    "sections": {
     "privacy": "BEVEILIGING & PRIVACY",
     "cycle": "MODI & EXPORTEREN",
@@ -708,7 +701,6 @@
     "exportBackup": "Back-up exporteren",
     "importBackup": "Back-up importeren",
     "cloudSync": "Cloudsynchronisatie",
-    "adPrivacy": "Advertentieprivacy",
     "ourApps": "Onze andere apps"
    },
    "footer": "Alle gegevens zijn versleuteld en worden alleen op dit apparaat opgeslagen",
@@ -845,9 +837,12 @@
    "anomalyLong": "Te lang (>35 dagen)",
    "anomalyIrregular": "Onregelmatig",
    "attention": "Let op",
-   "excludedCycles": "${stats.excludedCount} cyclus(sen) uitgesloten van de berekening van de gemiddelde duur wegens afwijkende waarden.",
    "anomalyWarning": "Waarschuwing: valt buiten het typische bereik (meegenomen in de analyse)",
-   "anomalySevere": "Afwijking: overschrijdt de toegestane normen (uitgesloten van de analyse)"
+   "anomalySevere": "Afwijking: overschrijdt de toegestane normen (uitgesloten van de analyse)",
+   "sourcesTitle": "Medische bronnen",
+   "sourcesIntro": "De referentiebereiken en cyclusnormen die in dit rapport worden gebruikt, zijn gebaseerd op de volgende klinische bronnen.",
+   "excludedCycles_one": "{{count}} cyclus is uitgesloten van de berekening van de gemiddelde lengte omdat de waarden afwijkend waren.",
+   "excludedCycles_other": "{{count}} cycli zijn uitgesloten van de berekening van de gemiddelde lengte omdat de waarden afwijkend waren."
   },
   "analytics": {
    "pulseTitle": "Welzijn wordt berekend...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Vind je Eluna fijn?",
-   "subtitle": "Met jouw steun kunnen we de app blijven verbeteren.",
-   "no": "Niet echt",
-   "yes": "Ik ben er dol op!",
    "later": "Misschien later",
-   "feedback_title": "Wat jammer!",
-   "feedback_msg": "Stuur ons gerust een bericht via support, zodat we kunnen verbeteren.",
    "title_new": "Help ons verbeteren",
    "description_new": "Elke dag maken we Eluna beter, zodat het jouw perfecte gids wordt. Beoordeel de app — dat betekent enorm veel voor ons!",
    "best_hint_new": "5 sterren is voor ons de mooiste beloning 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Opnieuw proberen",
    "errorOldFormat": "Deze back-up is gemaakt met een oudere versie van Eluna en kan niet meer worden geopend. Exporteer een nieuwe vanaf het apparaat waarop je gegevens nog staan."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Fout",
-    "connectionError": "Geen verbinding met de store. Probeer het later opnieuw.",
-    "purchaseErrorTitle": "Aankoopfout",
-    "defaultError": "Er is iets misgegaan.",
-    "successTitle": "Gelukt",
-    "restoreSuccess": "Aankopen succesvol hersteld.",
-    "infoTitle": "Info",
-    "noPurchases": "Geen actieve aankopen gevonden.",
-    "restoreErrorTitle": "Herstelfout"
-   },
-   "no_ads": {
-    "title": "Advertenties voorgoed verwijderen"
-   },
-   "pro": {
-    "title": "PRO-versie voor altijd"
-   },
-   "features": {
-    "no_ads": "Geen advertenties",
-    "themes": "Premium thema's",
-    "icons": "Alternatieve pictogrammen",
-    "advanced": "Geavanceerde functies",
-    "no_ads_desc": "Verwijdert alle advertenties voorgoed uit de app. Steun de ontwikkelaar!"
-   },
-   "title": "Steun de ontwikkeling van de app",
-   "subtitle": "Kies de beste optie om nieuwe functies te ontgrendelen en advertenties te verwijderen. Eenmalige betaling, geen abonnementen.",
-   "buy": "Kopen",
-   "restore": "Aankopen herstellen",
-   "privacy": "Privacybeleid",
-   "terms": "Servicevoorwaarden"
-  },
   "cancel": "Annuleren",
-  "purchase": {
-   "restoreSuccess": "Aankopen hersteld",
-   "noPurchases": "Geen aankopen gevonden",
-   "restoreError": "Fout bij het herstellen van aankopen"
-  },
   "delayBanner": {
    "cardWaiting": "In de wacht",
    "ringWaiting": "Wachten op je menstruatie",
@@ -1329,6 +1281,33 @@
     "desc": "Houd alles bij wat je kijkt — series, anime en films — met een releasekalender, herinneringen voor de volgende aflevering en volledige privacy. Alles blijft op je apparaat.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Trakteer me op een koffie",
+   "header": "Bevalt Eluna je?",
+   "body": "Eluna is volledig gratis — geen advertenties, geen abonnement, nooit. Als het een plekje op je telefoon heeft verdiend, kun je een kleine fooi geven om de ontwikkeling te steunen. Het is helemaal optioneel, en hoe dan ook bedankt. ☕",
+   "thanks": "Heel erg bedankt! ☕ Het helpt echt om Eluna draaiende te houden.",
+   "failed": "De fooi kon niet worden voltooid. Probeer het opnieuw.",
+   "storeUnavailable": "In-app-aankopen zijn momenteel niet beschikbaar op dit apparaat.",
+   "paymentPending": "De betaling wordt verwerkt — bedankt! Je fooi wordt automatisch voltooid."
+  },
+  "medicalSources": {
+   "title": "Medische bronnen",
+   "sources": "Bronnen",
+   "countLabel_one": "{{count}} referentie",
+   "countLabel_other": "{{count}} referenties",
+   "intro": "Elke gezondheidsuitleg, fasebeschrijving en cyclusberekening in Eluna is gebaseerd op de klinische richtlijnen en peer-reviewed onderzoeken die hieronder worden vermeld. Tik op een item om de originele publicatie te openen.",
+   "disclaimer": "Eluna is geen medisch hulpmiddel en stelt geen diagnose. Bespreek je symptomen met een zorgprofessional.",
+   "sectionGuidelines": "Klinische richtlijnen",
+   "sectionResearch": "Onderzoek en reviews",
+   "forecastNote": "Het vruchtbare venster van zes dagen, de ovulatieschatting en de luteale fase van ongeveer 14 dagen volgen de richtlijnen van het ASRM-comité en de patiëntrichtlijnen van ACOG; de fasegrenzen volgen standaard klinische fysiologiereferenties. Voorspellingen zijn statistische schattingen, geen diagnose en geen anticonceptiemethode.",
+   "phasesNote": "Fasebeschrijvingen volgen standaard klinische fysiologiereferenties; het vruchtbare venster volgt de richtlijnen van ASRM en ACOG, en premenstruele symptomen volgen de klinische richtlijnen van ACOG.",
+   "explanationNote": "De hormonale fysiologie en de hier beschreven symptoompatronen volgen peer-reviewed klinische reviews.",
+   "footer_one": "Gezondheidsinformatie in Eluna citeert {{count}} medische bron",
+   "footer_other": "Gezondheidsinformatie in Eluna citeert {{count}} medische bronnen",
+   "conceptionNote": "De dagspecifieke conceptiekans volgt Wilcox et al. (NEJM 1995) en de richtlijnen voor vruchtbaarheidsbewustzijn van ASRM/ACOG. Het is een schatting op basis van je vastgelegde cycli, geen anticonceptiemethode.",
+   "phaseTipsNote": "De fasefysiologie en de hier beschreven effecten volgen peer-reviewed klinische referenties. Algemene welzijnstips, geen medische behandeling.",
+   "cycleStatsNote": "Normen voor cycluslengte en wat als normale variatie geldt, volgen de richtlijnen van ACOG en peer-reviewed onderzoek."
   }
  },
  "kb": {

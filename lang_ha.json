@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormones da daidaituwa",
      "cycle_basics": "Asalin zagayowar al'ada",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Gargaɗin ciwo",
      "fertility_help": "Taimako kan haihuwa",
      "lifestyle_selfhelp": "Salon rayuwa da kula da kai",
-     "medical_advice": "When to see a doctor",
      "general": "Gabaɗaya",
      "pms": "PMS",
      "fertility": "Haihuwa",
@@ -673,11 +671,6 @@
    "title": "Saituna",
    "time": "Lokaci",
    "chooseTime": "Zaɓi lokaci",
-   "pro": {
-    "activate": "Kunna PRO",
-    "removeAds": "Cire tallace-tallace",
-    "restore": "Mayar da sayayya"
-   },
    "sections": {
     "privacy": "TSARO DA SIRRI",
     "cycle": "HANYOYI DA FITAR DA BAYANAI",
@@ -708,7 +701,6 @@
     "exportBackup": "Fitar da madadin bayanai",
     "importBackup": "Shigo da madadin bayanai",
     "cloudSync": "Daidaita Girgije",
-    "adPrivacy": "Sirrin talla",
     "ourApps": "Sauran manhajojinmu"
    },
    "footer": "An ɓoye duk bayanai kuma ana adana su ne kawai a wannan na'urar",
@@ -845,9 +837,12 @@
    "anomalyLong": "Ya yi tsawo sosai (>35 kwanaki)",
    "anomalyIrregular": "Ba daidai ba",
    "attention": "Kula",
-   "excludedCycles": "An cire zagayowa ${stats.excludedCount} daga lissafin matsakaicin tsawo saboda ƙididdiga marasa daidaituwa.",
    "anomalyWarning": "Gargaɗi: ya wuce iyakar da aka saba (an haɗa a cikin bincike)",
-   "anomalySevere": "Rashin daidaituwa: ya wuce ƙa'idodin da aka yarda (an cire daga bincike)"
+   "anomalySevere": "Rashin daidaituwa: ya wuce ƙa'idodin da aka yarda (an cire daga bincike)",
+   "sourcesTitle": "Tushen Likita",
+   "sourcesIntro": "Iyakokin nassoshi da ma'aunin zagayowar da aka yi amfani da su a cikin wannan rahoto sun dogara ne kan tushen asibiti masu zuwa.",
+   "excludedCycles_one": "An cire zagayowar {{count}} daga lissafin matsakaicin tsayi saboda ƙimominsa sun kasance da ba a saba ba.",
+   "excludedCycles_other": "An cire zagayowar {{count}} daga lissafin matsakaicin tsayi saboda ƙimominsu sun kasance da ba a saba ba."
   },
   "analytics": {
    "pulseTitle": "Ana auna yanayin jikinki...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Kina son Eluna?",
-   "subtitle": "Goyon bayanki na taimaka mana mu inganta manhajar.",
-   "no": "Ba sosai ba",
-   "yes": "Ina matuƙar so!",
    "later": "Wataƙila daga baya",
-   "feedback_title": "Yi haƙuri!",
-   "feedback_msg": "Da fatan ki rubuta wa sashen tallafinmu domin mu inganta.",
    "title_new": "Taimaka mana mu inganta",
    "description_new": "Kowace rana muna inganta Eluna domin ta zama cikakkiyar jagorarki. Don Allah ki ba manhajar ƙima — hakan yana da matuƙar muhimmanci a gare mu!",
    "best_hint_new": "Taurari 5 ne babbar kyautarmu 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Sake gwadawa",
    "errorOldFormat": "An yi wannan ajiya da wani tsohon sigar Eluna kuma ba za a iya ƙara buɗe ta ba. Fitar da sabuwa daga na'urar da har yanzu ke da bayananki."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Kuskure",
-    "connectionError": "Ba a samu haɗin shago ba. A sake gwadawa daga baya.",
-    "purchaseErrorTitle": "Kuskuren saye",
-    "defaultError": "Wani abu ya faru ba daidai ba.",
-    "successTitle": "An yi nasara",
-    "restoreSuccess": "An dawo da sayayyun abubuwa cikin nasara.",
-    "infoTitle": "Bayani",
-    "noPurchases": "Ba a sami sayayya mai aiki ba.",
-    "restoreErrorTitle": "Kuskuren dawo da sayayya"
-   },
-   "no_ads": {
-    "title": "Cire tallace-tallace har abada"
-   },
-   "pro": {
-    "title": "Sigar PRO har abada"
-   },
-   "features": {
-    "no_ads": "Babu tallace-tallace",
-    "themes": "Jigogi na musamman",
-    "icons": "Madadin alamomi",
-    "advanced": "Siffofi na ci gaba",
-    "no_ads_desc": "Yana cire duk tallace-tallace daga manhajar har abada. Ki tallafa wa mai haɓakawa!"
-   },
-   "title": "Tallafa wa ci gaban manhajar",
-   "subtitle": "Zaɓi mafi kyawun hanya don buɗe sabbin fasaloli da cire tallace-tallace. Biyan kuɗi sau ɗaya kacal, ba tare da biyan kuɗi na wata-wata ba.",
-   "buy": "Saya",
-   "restore": "Dawo da sayayya",
-   "privacy": "Manufar Sirri",
-   "terms": "Sharuɗɗan Sabis"
-  },
   "cancel": "Soke",
-  "purchase": {
-   "restoreSuccess": "An dawo da sayayya",
-   "noPurchases": "Ba a sami sayayya ba",
-   "restoreError": "Kuskure wajen dawo da sayayya"
-  },
   "delayBanner": {
    "cardWaiting": "A jira",
    "ringWaiting": "Ana jiran al'adarki",
@@ -1329,6 +1281,33 @@
     "desc": "Bi duk abin da kake kallo — jerin fina-finai, anime, da fina-finai — tare da kalandar fitowa, tunatarwar shirin na gaba, da cikakken sirri. Kowane shiga yana kasancewa a na'urarka.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Sayo mini kofi",
+   "header": "Kana jin daɗin Eluna?",
+   "body": "Eluna kyauta ce gaba ɗaya — babu talla, babu biyan kuɗi na wata-wata, har abada. Idan ta cancanci wuri a wayarka, za ka iya bar ƙaramar kyauta don tallafa wa ci gabanta. Zaɓi ne gaba ɗaya, kuma na gode ko ta yaya. ☕",
+   "thanks": "Na gode ƙwarai! ☕ Wannan yana taimakawa sosai wajen ci gaba da Eluna.",
+   "failed": "Ba a iya kammala kyautar ba. Da fatan za a sake gwadawa.",
+   "storeUnavailable": "Sayayya cikin manhaja ba ta samuwa a wannan na'urar a yanzu.",
+   "paymentPending": "Ana sarrafa biyan kuɗi — na gode! Kyautarka za ta wuce ta atomatik."
+  },
+  "medicalSources": {
+   "title": "Tushen Likita",
+   "sources": "Tushe",
+   "countLabel_one": "nassoshi {{count}}",
+   "countLabel_other": "nassoshi {{count}}",
+   "intro": "Kowane bayanin lafiya, kwatancin lokaci da lissafin zagayowar a cikin Eluna ya dogara ne kan ka'idojin asibiti da bincike da masana suka sake dubawa da aka jera a ƙasa. Danna kowane shigarwa don buɗe ainihin littafin.",
+   "disclaimer": "Eluna ba na'urar likita ba ce kuma ba ta bayar da ganewar asali. Tattauna alamominki da ƙwararren likita.",
+   "sectionGuidelines": "Ka'idojin asibiti",
+   "sectionResearch": "Bincike da bita",
+   "forecastNote": "Kwanaki shida na haihuwa, ƙididdigar fitar ƙwai da lokacin luteal na kusan kwanaki 14 suna bin jagorancin kwamitin ASRM da jagorancin marasa lafiya na ACOG; iyakokin lokuta suna bin daidaitattun nassoshin ilimin halittar jikin asibiti. Hasashe ƙididdiga ne na ƙimomi — ba ganewar asali ba kuma ba hanyar hana daukar ciki ba.",
+   "phasesNote": "Kwatancin lokuta suna bin daidaitattun nassoshin ilimin halittar jikin asibiti; lokacin haihuwa yana bin jagorancin ASRM da ACOG, kuma alamomin kafin al'ada suna bin jagorancin asibiti na ACOG.",
+   "explanationNote": "Ilimin halittar hormone da tsarin alamomin da aka bayyana a nan suna bin bitar asibiti da masana suka sake dubawa.",
+   "footer_one": "Bayanan lafiya a cikin Eluna suna ambaton tushen likita {{count}}",
+   "footer_other": "Bayanan lafiya a cikin Eluna suna ambaton tushen likita {{count}}",
+   "conceptionNote": "Yiwuwar daukar ciki ta takamaiman rana tana bin Wilcox et al. (NEJM 1995) da jagorancin sanin haihuwa na ASRM/ACOG. Ƙididdiga ce daga zagayowar da kika rubuta — ba hanyar hana daukar ciki ba.",
+   "phaseTipsNote": "Ilimin halittar lokaci da tasirin da aka bayyana a nan suna bin nassoshin asibiti da masana suka sake dubawa. Shawarwarin lafiya na gaba ɗaya ne, ba maganin likita ba.",
+   "cycleStatsNote": "Ma'aunin tsayin zagayowar da abin da ake ƙidaya a matsayin bambancin al'ada suna bin jagorancin ACOG da bincike da masana suka sake dubawa."
   }
  },
  "kb": {

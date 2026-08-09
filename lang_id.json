@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormon & Regulasi",
      "cycle_basics": "Dasar-Dasar Siklus",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Waspadai Nyeri",
      "fertility_help": "Bantuan Kesuburan",
      "lifestyle_selfhelp": "Gaya Hidup & Perawatan Diri",
-     "medical_advice": "When to see a doctor",
      "general": "Umum",
      "pms": "PMS",
      "fertility": "Kesuburan",
@@ -673,11 +671,6 @@
    "title": "Pengaturan",
    "time": "Waktu",
    "chooseTime": "Pilih waktu",
-   "pro": {
-    "activate": "Aktifkan PRO",
-    "removeAds": "Hapus Iklan",
-    "restore": "Pulihkan pembelian"
-   },
    "sections": {
     "privacy": "KEAMANAN & PRIVASI",
     "cycle": "MODE & EKSPOR",
@@ -708,7 +701,6 @@
     "exportBackup": "Ekspor Cadangan",
     "importBackup": "Impor Cadangan",
     "cloudSync": "Sinkronisasi Cloud",
-    "adPrivacy": "Privasi iklan",
     "ourApps": "Aplikasi kami lainnya"
    },
    "footer": "Semua data dienkripsi dan hanya disimpan di perangkat ini",
@@ -845,9 +837,12 @@
    "anomalyLong": "Terlalu panjang (>35 hari)",
    "anomalyIrregular": "Tidak teratur",
    "attention": "Perhatian",
-   "excludedCycles": "${stats.excludedCount} siklus dikecualikan dari perhitungan panjang rata-rata karena indikator yang tidak normal.",
    "anomalyWarning": "Peringatan: berada di luar rentang tipikal (diperhitungkan dalam analisis)",
-   "anomalySevere": "Anomali: melebihi batas yang diizinkan (dikecualikan dari analitik)"
+   "anomalySevere": "Anomali: melebihi batas yang diizinkan (dikecualikan dari analitik)",
+   "sourcesTitle": "Sumber Medis",
+   "sourcesIntro": "Rentang referensi dan norma siklus yang digunakan dalam laporan ini didasarkan pada sumber klinis berikut.",
+   "excludedCycles_one": "{{count}} siklus dikecualikan dari perhitungan panjang rata-rata karena nilainya anomali.",
+   "excludedCycles_other": "{{count}} siklus dikecualikan dari perhitungan panjang rata-rata karena nilainya anomali."
   },
   "analytics": {
    "pulseTitle": "Mengukur kondisi tubuh...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Apakah Anda menyukai Eluna?",
-   "subtitle": "Dukungan Anda membantu kami meningkatkan aplikasi.",
-   "no": "Tidak terlalu",
-   "yes": "Suka sekali!",
    "later": "Mungkin nanti",
-   "feedback_title": "Kami turut menyesal!",
-   "feedback_msg": "Silakan hubungi tim bantuan kami agar kami bisa memperbaikinya.",
    "title_new": "Bantu kami menjadi lebih baik",
    "description_new": "Setiap hari kami mengembangkan Eluna agar menjadi pendamping terbaik Anda. Mohon beri penilaian untuk aplikasi ini — artinya sangat besar bagi kami!",
    "best_hint_new": "5 bintang adalah penghargaan terbaik untuk kami 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Coba lagi",
    "errorOldFormat": "Cadangan ini dibuat oleh versi Eluna yang lebih lama dan tidak dapat dibuka lagi. Ekspor cadangan baru dari perangkat yang masih menyimpan data Anda."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Kesalahan",
-    "connectionError": "Koneksi ke toko tidak tersedia. Coba lagi nanti.",
-    "purchaseErrorTitle": "Kesalahan Pembelian",
-    "defaultError": "Terjadi kesalahan.",
-    "successTitle": "Berhasil",
-    "restoreSuccess": "Pembelian berhasil dipulihkan.",
-    "infoTitle": "Info",
-    "noPurchases": "Tidak ada pembelian aktif yang ditemukan.",
-    "restoreErrorTitle": "Kesalahan Pemulihan"
-   },
-   "no_ads": {
-    "title": "Hapus Iklan Selamanya"
-   },
-   "pro": {
-    "title": "Versi PRO Selamanya"
-   },
-   "features": {
-    "no_ads": "Tanpa Iklan",
-    "themes": "Tema Premium",
-    "icons": "Ikon Alternatif",
-    "advanced": "Fitur Lanjutan",
-    "no_ads_desc": "Menghapus semua iklan dari aplikasi selamanya. Dukung pengembang!"
-   },
-   "title": "Dukung Pengembangan Aplikasi",
-   "subtitle": "Pilih opsi terbaik untuk membuka fitur baru dan menghapus iklan. Pembayaran sekali, tanpa langganan.",
-   "buy": "Beli",
-   "restore": "Pulihkan Pembelian",
-   "privacy": "Kebijakan Privasi",
-   "terms": "Ketentuan Layanan"
-  },
   "cancel": "Batal",
-  "purchase": {
-   "restoreSuccess": "Pembelian dipulihkan",
-   "noPurchases": "Tidak ada pembelian ditemukan",
-   "restoreError": "Kesalahan saat memulihkan pembelian"
-  },
   "delayBanner": {
    "cardWaiting": "Ditunda",
    "ringWaiting": "Menunggu menstruasi Anda",
@@ -1329,6 +1281,33 @@
     "desc": "Lacak semua tontonanmu — serial, anime, dan film — dengan kalender rilis, pengingat episode berikutnya, dan privasi penuh. Setiap entri tetap tersimpan di perangkatmu.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Belikan saya kopi",
+   "header": "Menikmati Eluna?",
+   "body": "Eluna sepenuhnya gratis — tanpa iklan, tanpa langganan, selamanya. Jika ia layak mendapat tempat di ponsel Anda, Anda bisa memberi sedikit tip untuk mendukung pengembangannya. Ini sepenuhnya opsional, dan terima kasih bagaimanapun juga. ☕",
+   "thanks": "Terima kasih banyak! ☕ Ini sungguh membantu Eluna terus berjalan.",
+   "failed": "Tip tidak dapat diselesaikan. Silakan coba lagi.",
+   "storeUnavailable": "Pembelian dalam aplikasi tidak tersedia di perangkat ini saat ini.",
+   "paymentPending": "Pembayaran sedang diproses — terima kasih! Tip Anda akan diselesaikan secara otomatis."
+  },
+  "medicalSources": {
+   "title": "Sumber Medis",
+   "sources": "Sumber",
+   "countLabel_one": "{{count}} referensi",
+   "countLabel_other": "{{count}} referensi",
+   "intro": "Setiap penjelasan kesehatan, deskripsi fase, dan perhitungan siklus di Eluna didasarkan pada pedoman klinis dan penelitian yang ditinjau sejawat yang tercantum di bawah ini. Ketuk entri mana pun untuk membuka publikasi aslinya.",
+   "disclaimer": "Eluna bukan alat medis dan tidak memberikan diagnosis. Diskusikan gejala Anda dengan tenaga kesehatan profesional.",
+   "sectionGuidelines": "Pedoman klinis",
+   "sectionResearch": "Penelitian & tinjauan",
+   "forecastNote": "Masa subur enam hari, perkiraan ovulasi, dan fase luteal sekitar 14 hari mengikuti panduan komite ASRM dan panduan pasien ACOG; batas fase mengikuti referensi fisiologi klinis standar. Prediksi merupakan perkiraan statistik — bukan diagnosis dan bukan metode kontrasepsi.",
+   "phasesNote": "Deskripsi fase mengikuti referensi fisiologi klinis standar; masa subur mengikuti panduan ASRM dan ACOG, dan gejala pramenstruasi mengikuti panduan klinis ACOG.",
+   "explanationNote": "Fisiologi hormonal dan pola gejala yang dijelaskan di sini mengikuti tinjauan klinis yang ditinjau sejawat.",
+   "footer_one": "Informasi kesehatan di Eluna mengutip {{count}} sumber medis",
+   "footer_other": "Informasi kesehatan di Eluna mengutip {{count}} sumber medis",
+   "conceptionNote": "Probabilitas pembuahan untuk hari tertentu mengikuti Wilcox et al. (NEJM 1995) dan panduan kesadaran kesuburan ASRM/ACOG. Ini adalah perkiraan dari siklus yang Anda catat — bukan metode kontrasepsi.",
+   "phaseTipsNote": "Fisiologi fase dan efek yang dijelaskan di sini mengikuti referensi klinis yang ditinjau sejawat. Saran kesejahteraan umum, bukan pengobatan medis.",
+   "cycleStatsNote": "Norma panjang siklus dan apa yang dianggap sebagai variasi normal mengikuti panduan ACOG dan penelitian yang ditinjau sejawat."
   }
  },
  "kb": {

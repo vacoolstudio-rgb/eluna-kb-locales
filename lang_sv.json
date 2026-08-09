@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormoner och reglering",
      "cycle_basics": "Grunderna i menscykeln",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Varningssignaler vid smärta",
      "fertility_help": "Stöd vid fertilitet",
      "lifestyle_selfhelp": "Livsstil och egenvård",
-     "medical_advice": "When to see a doctor",
      "general": "Allmänt",
      "pms": "PMS",
      "fertility": "Fertilitet",
@@ -673,11 +671,6 @@
    "title": "Inställningar",
    "time": "Tid",
    "chooseTime": "Välj tid",
-   "pro": {
-    "activate": "Aktivera PRO",
-    "removeAds": "Ta bort annonser",
-    "restore": "Återställ köp"
-   },
    "sections": {
     "privacy": "SÄKERHET OCH INTEGRITET",
     "cycle": "LÄGEN OCH EXPORT",
@@ -708,7 +701,6 @@
     "exportBackup": "Exportera säkerhetskopia",
     "importBackup": "Importera säkerhetskopia",
     "cloudSync": "Molnsynkronisering",
-    "adPrivacy": "Annonssekretess",
     "ourApps": "Våra andra appar"
    },
    "footer": "All data är krypterad och lagras endast på den här enheten",
@@ -845,9 +837,12 @@
    "anomalyLong": "För lång (>35 dagar)",
    "anomalyIrregular": "Oregelbunden",
    "attention": "Observera",
-   "excludedCycles": "${stats.excludedCount} cykel/cykler har uteslutits från beräkningarna av genomsnittlig längd på grund av avvikande värden.",
    "anomalyWarning": "Varning: ligger utanför det typiska intervallet (medräknat i analysen)",
-   "anomalySevere": "Avvikelse: överstiger tillåtna gränser (uteslutet från analysen)"
+   "anomalySevere": "Avvikelse: överstiger tillåtna gränser (uteslutet från analysen)",
+   "sourcesTitle": "Medicinska källor",
+   "sourcesIntro": "Referensintervallen och cykelnormerna som används i denna rapport bygger på följande kliniska källor.",
+   "excludedCycles_one": "{{count}} cykel uteslöts från beräkningen av genomsnittlig längd eftersom dess värden var avvikande.",
+   "excludedCycles_other": "{{count}} cykler uteslöts från beräkningen av genomsnittlig längd eftersom deras värden var avvikande."
   },
   "analytics": {
    "pulseTitle": "Mäter välmåendet...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Tycker du om Eluna?",
-   "subtitle": "Ditt stöd hjälper oss att förbättra appen.",
-   "no": "Inte riktigt",
-   "yes": "Älskar den!",
    "later": "Kanske senare",
-   "feedback_title": "Vad tråkigt!",
-   "feedback_msg": "Skriv gärna till vår support så att vi kan bli bättre.",
    "title_new": "Hjälp oss bli bättre",
    "description_new": "Varje dag utvecklar vi Eluna för att göra appen till din perfekta guide. Betygsätt gärna appen — det betyder otroligt mycket för oss!",
    "best_hint_new": "5 stjärnor är vår finaste belöning 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Försök igen",
    "errorOldFormat": "Den här säkerhetskopian skapades av en äldre version av Eluna och kan inte längre öppnas. Exportera en ny från enheten som fortfarande har dina data."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Fel",
-    "connectionError": "Ingen anslutning till butiken. Försök igen senare.",
-    "purchaseErrorTitle": "Köpfel",
-    "defaultError": "Något gick fel.",
-    "successTitle": "Klart",
-    "restoreSuccess": "Köp återställda.",
-    "infoTitle": "Info",
-    "noPurchases": "Inga aktiva köp hittades.",
-    "restoreErrorTitle": "Fel vid återställning"
-   },
-   "no_ads": {
-    "title": "Ta bort annonser för alltid"
-   },
-   "pro": {
-    "title": "PRO-version för alltid"
-   },
-   "features": {
-    "no_ads": "Inga annonser",
-    "themes": "Premiumteman",
-    "icons": "Alternativa ikoner",
-    "advanced": "Avancerade funktioner",
-    "no_ads_desc": "Tar bort alla annonser från appen för alltid. Stötta utvecklaren!"
-   },
-   "title": "Stöd apputvecklingen",
-   "subtitle": "Välj det bästa alternativet för att låsa upp nya funktioner och ta bort annonser. Engångsbetalning, inga prenumerationer.",
-   "buy": "Köp",
-   "restore": "Återställ köp",
-   "privacy": "Integritetspolicy",
-   "terms": "Användarvillkor"
-  },
   "cancel": "Avbryt",
-  "purchase": {
-   "restoreSuccess": "Köp återställda",
-   "noPurchases": "Inga köp hittades",
-   "restoreError": "Fel vid återställning av köp"
-  },
   "delayBanner": {
    "cardWaiting": "Pausad",
    "ringWaiting": "Väntar på din menstruation",
@@ -1329,6 +1281,33 @@
     "desc": "Håll koll på allt du ser – serier, anime och filmer – med releasekalender, påminnelser om nästa avsnitt och full integritet. Allt du sparar stannar på din enhet.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Bjud mig på en kaffe",
+   "header": "Gillar du Eluna?",
+   "body": "Eluna är helt gratis — inga annonser, ingen prenumeration, någonsin. Om appen har förtjänat en plats i din telefon kan du lämna en liten dricks för att stödja utvecklingen. Det är helt frivilligt, och tack ändå. ☕",
+   "thanks": "Tack så mycket! ☕ Det hjälper verkligen till att hålla Eluna igång.",
+   "failed": "Det gick inte att slutföra dricksen. Försök igen.",
+   "storeUnavailable": "Köp i appen är inte tillgängliga på den här enheten just nu.",
+   "paymentPending": "Betalningen behandlas — tack! Din dricks går igenom automatiskt."
+  },
+  "medicalSources": {
+   "title": "Medicinska källor",
+   "sources": "Källor",
+   "countLabel_one": "{{count}} referens",
+   "countLabel_other": "{{count}} referenser",
+   "intro": "Varje hälsoförklaring, fasbeskrivning och cykelberäkning i Eluna bygger på de kliniska riktlinjer och den referentgranskade forskning som anges nedan. Tryck på valfri post för att öppna originalpublikationen.",
+   "disclaimer": "Eluna är inte en medicinteknisk produkt och ger ingen diagnos. Diskutera dina symtom med sjukvårdspersonal.",
+   "sectionGuidelines": "Kliniska riktlinjer",
+   "sectionResearch": "Forskning och översikter",
+   "forecastNote": "Det sex dagar långa fertila fönstret, ägglossningsuppskattningen och den cirka 14 dagar långa lutealfasen följer ASRM:s kommittévägledning och ACOG:s patientvägledning; fasgränserna följer standardreferenser för klinisk fysiologi. Prognoser är statistiska uppskattningar, inte en diagnos och inte en preventivmetod.",
+   "phasesNote": "Fasbeskrivningarna följer standardreferenser för klinisk fysiologi; det fertila fönstret följer vägledning från ASRM och ACOG, och premenstruella symtom följer ACOG:s kliniska vägledning.",
+   "explanationNote": "Den hormonella fysiologin och de symtommönster som beskrivs här följer referentgranskade kliniska översikter.",
+   "footer_one": "Hälsoinformationen i Eluna hänvisar till {{count}} medicinsk källa",
+   "footer_other": "Hälsoinformationen i Eluna hänvisar till {{count}} medicinska källor",
+   "conceptionNote": "Den dagspecifika sannolikheten för befruktning följer Wilcox et al. (NEJM 1995) och ASRM/ACOG:s vägledning om fertilitetsmedvetenhet. Det är en uppskattning baserad på dina registrerade cykler, inte en preventivmetod.",
+   "phaseTipsNote": "Fasfysiologin och de effekter som beskrivs här följer referentgranskade kliniska referenser. Allmänna välmåenderåd, inte medicinsk behandling.",
+   "cycleStatsNote": "Normer för cykellängd och vad som räknas som normal variation följer ACOG:s vägledning och referentgranskad forskning."
   }
  },
  "kb": {

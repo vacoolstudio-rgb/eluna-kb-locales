@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormoni și reglare",
      "cycle_basics": "Bazele ciclului",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Semnale de alarmă legate de durere",
      "fertility_help": "Ajutor pentru fertilitate",
      "lifestyle_selfhelp": "Stil de viață și îngrijire personală",
-     "medical_advice": "When to see a doctor",
      "general": "General",
      "pms": "SPM",
      "fertility": "Fertilitate",
@@ -673,11 +671,6 @@
    "title": "Setări",
    "time": "Ora",
    "chooseTime": "Alege ora",
-   "pro": {
-    "activate": "Activează PRO",
-    "removeAds": "Elimină reclamele",
-    "restore": "Restaurează achizițiile"
-   },
    "sections": {
     "privacy": "SECURITATE ȘI CONFIDENȚIALITATE",
     "cycle": "MODURI ȘI EXPORT",
@@ -708,7 +701,6 @@
     "exportBackup": "Exportă copia de rezervă",
     "importBackup": "Importă copia de rezervă",
     "cloudSync": "Sincronizare în cloud",
-    "adPrivacy": "Confidențialitatea reclamelor",
     "ourApps": "Celelalte aplicații ale noastre"
    },
    "footer": "Toate datele sunt criptate și stocate doar pe acest dispozitiv",
@@ -845,9 +837,12 @@
    "anomalyLong": "Prea lung (>35 de zile)",
    "anomalyIrregular": "Neregulat",
    "attention": "Atenție",
-   "excludedCycles": "${stats.excludedCount} ciclu(ri) excluse din calculul duratei medii din cauza valorilor anormale.",
    "anomalyWarning": "Avertisment: se află în afara intervalului tipic (luat în considerare în analiză)",
-   "anomalySevere": "Anomalie: depășește limitele admise (exclus din analiză)"
+   "anomalySevere": "Anomalie: depășește limitele admise (exclus din analiză)",
+   "sourcesTitle": "Surse medicale",
+   "sourcesIntro": "Intervalele de referință și normele ciclului utilizate în acest raport se bazează pe următoarele surse clinice.",
+   "excludedCycles_one": "{{count}} ciclu a fost exclus din calculul lungimii medii deoarece valorile sale au fost anormale.",
+   "excludedCycles_other": "{{count}} cicluri au fost excluse din calculul lungimii medii deoarece valorile lor au fost anormale."
   },
   "analytics": {
    "pulseTitle": "Se calculează indicele de stare...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Îți place Eluna?",
-   "subtitle": "Sprijinul tău ne ajută să îmbunătățim aplicația.",
-   "no": "Nu prea",
-   "yes": "O ador!",
    "later": "Poate mai târziu",
-   "feedback_title": "Ne pare rău!",
-   "feedback_msg": "Te rugăm să ne scrii echipei de asistență ca să putem îmbunătăți experiența.",
    "title_new": "Ajută-ne să ne îmbunătățim",
    "description_new": "În fiecare zi dezvoltăm Eluna ca să devină ghidul tău ideal. Te rugăm să evaluezi aplicația — pentru noi înseamnă enorm!",
    "best_hint_new": "5 stele este cea mai frumoasă recompensă pentru noi 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Încearcă din nou",
    "errorOldFormat": "Această copie de rezervă a fost creată de o versiune mai veche a Eluna și nu mai poate fi deschisă. Exportă una nouă de pe dispozitivul care încă îți conține datele."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Eroare",
-    "connectionError": "Conexiunea la magazin nu este disponibilă. Încearcă din nou mai târziu.",
-    "purchaseErrorTitle": "Eroare la achiziție",
-    "defaultError": "Ceva nu a mers bine.",
-    "successTitle": "Succes",
-    "restoreSuccess": "Achizițiile au fost restaurate cu succes.",
-    "infoTitle": "Informații",
-    "noPurchases": "Nu au fost găsite achiziții active.",
-    "restoreErrorTitle": "Eroare la restaurare"
-   },
-   "no_ads": {
-    "title": "Elimină reclamele pentru totdeauna"
-   },
-   "pro": {
-    "title": "Versiunea PRO pe viață"
-   },
-   "features": {
-    "no_ads": "Fără reclame",
-    "themes": "Teme premium",
-    "icons": "Pictograme alternative",
-    "advanced": "Funcții avansate",
-    "no_ads_desc": "Elimină pentru totdeauna toate reclamele din aplicație. Susține dezvoltatorul!"
-   },
-   "title": "Susține dezvoltarea aplicației",
-   "subtitle": "Alege cea mai bună opțiune pentru a debloca funcții noi și a elimina reclamele. Plată unică, fără abonamente.",
-   "buy": "Cumpără",
-   "restore": "Restaurează achizițiile",
-   "privacy": "Politica de confidențialitate",
-   "terms": "Termeni și condiții"
-  },
   "cancel": "Anulează",
-  "purchase": {
-   "restoreSuccess": "Achiziții restaurate",
-   "noPurchases": "Nu au fost găsite achiziții",
-   "restoreError": "Eroare la restaurarea achizițiilor"
-  },
   "delayBanner": {
    "cardWaiting": "În așteptare",
    "ringWaiting": "Se așteaptă menstruația ta",
@@ -1329,6 +1281,33 @@
     "desc": "Ține evidența a tot ce urmărești — seriale, anime și filme — cu un calendar al lansărilor, mementouri pentru episodul următor și confidențialitate deplină. Fiecare titlu rămâne pe dispozitivul tău.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Fă-mi cinste cu o cafea",
+   "header": "Îți place Eluna?",
+   "body": "Eluna este complet gratuită — fără reclame, fără abonament, niciodată. Dacă și-a câștigat un loc pe telefonul tău, poți lăsa un mic bacșiș pentru a sprijini dezvoltarea ei. Este complet opțional și oricum îți mulțumim. ☕",
+   "thanks": "Mulțumim mult! ☕ Chiar ajută ca Eluna să meargă mai departe.",
+   "failed": "Bacșișul nu a putut fi finalizat. Încearcă din nou.",
+   "storeUnavailable": "Achizițiile din aplicație nu sunt disponibile pe acest dispozitiv momentan.",
+   "paymentPending": "Plata este în curs de procesare — mulțumim! Bacșișul tău va fi finalizat automat."
+  },
+  "medicalSources": {
+   "title": "Surse medicale",
+   "sources": "Surse",
+   "countLabel_one": "{{count}} referință",
+   "countLabel_other": "{{count}} referințe",
+   "intro": "Fiecare explicație de sănătate, descriere a fazei și calcul al ciclului din Eluna se bazează pe ghidurile clinice și cercetările evaluate inter pares enumerate mai jos. Atingeți orice intrare pentru a deschide publicația originală.",
+   "disclaimer": "Eluna nu este un dispozitiv medical și nu oferă un diagnostic. Discutați simptomele cu un profesionist din domeniul sănătății.",
+   "sectionGuidelines": "Ghiduri clinice",
+   "sectionResearch": "Cercetări și analize",
+   "forecastNote": "Fereastra fertilă de șase zile, estimarea ovulației și faza luteală de aproximativ 14 zile urmează îndrumările comitetului ASRM și îndrumările pentru pacienți ale ACOG; limitele fazelor urmează referințe standard de fiziologie clinică. Previziunile sunt estimări statistice — nu un diagnostic și nu o metodă contraceptivă.",
+   "phasesNote": "Descrierile fazelor urmează referințe standard de fiziologie clinică; fereastra fertilă urmează îndrumările ASRM și ACOG, iar simptomele premenstruale urmează îndrumările clinice ale ACOG.",
+   "explanationNote": "Fiziologia hormonală și tiparele de simptome descrise aici urmează analize clinice evaluate inter pares.",
+   "footer_one": "Informațiile de sănătate din Eluna citează {{count}} sursă medicală",
+   "footer_other": "Informațiile de sănătate din Eluna citează {{count}} surse medicale",
+   "conceptionNote": "Probabilitatea de concepție specifică zilei urmează Wilcox et al. (NEJM 1995) și îndrumările ASRM/ACOG privind conștientizarea fertilității. Este o estimare din ciclurile înregistrate — nu o metodă contraceptivă.",
+   "phaseTipsNote": "Fiziologia fazelor și efectele descrise aici urmează referințe clinice evaluate inter pares. Sugestii generale de bunăstare, nu tratament medical.",
+   "cycleStatsNote": "Normele privind lungimea ciclului și ceea ce este considerat variație normală urmează îndrumările ACOG și cercetările evaluate inter pares."
   }
  },
  "kb": {

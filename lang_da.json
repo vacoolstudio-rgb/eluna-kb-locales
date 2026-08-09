@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormoner og regulering",
      "cycle_basics": "Grundlæggende om cyklussen",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Smerteadvarsler",
      "fertility_help": "Hjælp til fertilitet",
      "lifestyle_selfhelp": "Livsstil og egenomsorg",
-     "medical_advice": "When to see a doctor",
      "general": "Generelt",
      "pms": "PMS",
      "fertility": "Fertilitet",
@@ -673,11 +671,6 @@
    "title": "Indstillinger",
    "time": "Tid",
    "chooseTime": "Vælg tidspunkt",
-   "pro": {
-    "activate": "Aktivér PRO",
-    "removeAds": "Fjern reklamer",
-    "restore": "Gendan køb"
-   },
    "sections": {
     "privacy": "SIKKERHED OG PRIVATLIV",
     "cycle": "TILSTANDE OG EKSPORT",
@@ -708,7 +701,6 @@
     "exportBackup": "Eksportér sikkerhedskopi",
     "importBackup": "Importér sikkerhedskopi",
     "cloudSync": "Cloud-synkronisering",
-    "adPrivacy": "Annonceprivatliv",
     "ourApps": "Vores andre apps"
    },
    "footer": "Alle data er krypteret og gemmes kun på denne enhed",
@@ -845,9 +837,12 @@
    "anomalyLong": "For lang (>35 dage)",
    "anomalyIrregular": "Uregelmæssig",
    "attention": "Bemærk",
-   "excludedCycles": "${stats.excludedCount} cyklus(ser) er udelukket fra beregningen af den gennemsnitlige længde på grund af unormale værdier.",
    "anomalyWarning": "Advarsel: uden for det typiske interval (medtaget i analysen)",
-   "anomalySevere": "Anomali: overstiger de tilladte grænser (udelukket fra analysen)"
+   "anomalySevere": "Anomali: overstiger de tilladte grænser (udelukket fra analysen)",
+   "sourcesTitle": "Medicinske kilder",
+   "sourcesIntro": "Referenceintervallerne og cyklusnormerne, der anvendes i denne rapport, er baseret på følgende kliniske kilder.",
+   "excludedCycles_one": "{{count}} cyklus blev udelukket fra beregningen af den gennemsnitlige længde, fordi dens værdier var afvigende.",
+   "excludedCycles_other": "{{count}} cyklusser blev udelukket fra beregningen af den gennemsnitlige længde, fordi deres værdier var afvigende."
   },
   "analytics": {
    "pulseTitle": "Måler status...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Kan du lide Eluna?",
-   "subtitle": "Din støtte hjælper os med at gøre appen endnu bedre.",
-   "no": "Ikke rigtigt",
-   "yes": "Elsker den!",
    "later": "Måske senere",
-   "feedback_title": "Det er vi kede af!",
-   "feedback_msg": "Skriv gerne til vores support, så vi kan forbedre oplevelsen.",
    "title_new": "Hjælp os med at blive bedre",
    "description_new": "Vi udvikler Eluna hver dag for at gøre appen til din perfekte guide. Giv os gerne en vurdering — det betyder alverden for os!",
    "best_hint_new": "5 stjerner er den største ros, vi kan få 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Prøv igen",
    "errorOldFormat": "Denne sikkerhedskopi blev lavet af en ældre version af Eluna og kan ikke længere åbnes. Eksportér en ny fra den enhed, der stadig har dine data."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Fejl",
-    "connectionError": "Forbindelse til butikken er ikke tilgængelig. Prøv igen senere.",
-    "purchaseErrorTitle": "Købsfejl",
-    "defaultError": "Noget gik galt.",
-    "successTitle": "Udført",
-    "restoreSuccess": "Køb blev gendannet.",
-    "infoTitle": "Info",
-    "noPurchases": "Ingen aktive køb fundet.",
-    "restoreErrorTitle": "Fejl ved gendannelse"
-   },
-   "no_ads": {
-    "title": "Fjern reklamer for altid"
-   },
-   "pro": {
-    "title": "PRO-version for altid"
-   },
-   "features": {
-    "no_ads": "Ingen reklamer",
-    "themes": "Premium-temaer",
-    "icons": "Alternative ikoner",
-    "advanced": "Avancerede funktioner",
-    "no_ads_desc": "Fjerner alle reklamer fra appen for altid. Støt udvikleren!"
-   },
-   "title": "Støt appens udvikling",
-   "subtitle": "Vælg den bedste løsning for at låse op for nye funktioner og fjerne reklamer. Engangsbetaling, ingen abonnementer.",
-   "buy": "Køb",
-   "restore": "Gendan køb",
-   "privacy": "Privatlivspolitik",
-   "terms": "Brugsvilkår"
-  },
   "cancel": "Annuller",
-  "purchase": {
-   "restoreSuccess": "Køb gendannet",
-   "noPurchases": "Ingen køb fundet",
-   "restoreError": "Fejl ved gendannelse af køb"
-  },
   "delayBanner": {
    "cardWaiting": "På pause",
    "ringWaiting": "Venter på din menstruation",
@@ -1329,6 +1281,33 @@
     "desc": "Hold styr på alt, du ser — serier, anime og film — med en udgivelseskalender, påmindelser om næste afsnit og fuld privatlivsbeskyttelse. Alt bliver på din enhed.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Giv mig en kop kaffe",
+   "header": "Nyder du Eluna?",
+   "body": "Eluna er helt gratis — ingen reklamer, intet abonnement, nogensinde. Hvis den har fortjent en plads på din telefon, kan du give lidt drikkepenge for at støtte udviklingen. Det er helt frivilligt, og tak uanset hvad. ☕",
+   "thanks": "Mange tak! ☕ Det hjælper virkelig med at holde Eluna i gang.",
+   "failed": "Drikkepengene kunne ikke gennemføres. Prøv igen.",
+   "storeUnavailable": "Køb i appen er ikke tilgængelige på denne enhed lige nu.",
+   "paymentPending": "Betalingen behandles — tak! Dine drikkepenge går automatisk igennem."
+  },
+  "medicalSources": {
+   "title": "Medicinske kilder",
+   "sources": "Kilder",
+   "countLabel_one": "{{count}} reference",
+   "countLabel_other": "{{count}} referencer",
+   "intro": "Enhver sundhedsforklaring, fasebeskrivelse og cyklusberegning i Eluna er baseret på de kliniske retningslinjer og den fagfællebedømte forskning, der er anført nedenfor. Tryk på en post for at åbne den oprindelige publikation.",
+   "disclaimer": "Eluna er ikke medicinsk udstyr og stiller ikke en diagnose. Drøft dine symptomer med en sundhedsprofessionel.",
+   "sectionGuidelines": "Kliniske retningslinjer",
+   "sectionResearch": "Forskning og oversigter",
+   "forecastNote": "Det seks dage lange frugtbare vindue, ægløsningsestimatet og den cirka 14 dage lange lutealfase følger ASRM-udvalgets vejledning og ACOG's patientvejledning; fasegrænserne følger standardreferencer for klinisk fysiologi. Forudsigelser er statistiske estimater, ikke en diagnose og ikke en præventionsmetode.",
+   "phasesNote": "Fasebeskrivelserne følger standardreferencer for klinisk fysiologi; det frugtbare vindue følger vejledning fra ASRM og ACOG, og præmenstruelle symptomer følger ACOG's kliniske vejledning.",
+   "explanationNote": "Den hormonelle fysiologi og de symptommønstre, der beskrives her, følger fagfællebedømte kliniske oversigter.",
+   "footer_one": "Sundhedsoplysningerne i Eluna citerer {{count}} medicinsk kilde",
+   "footer_other": "Sundhedsoplysningerne i Eluna citerer {{count}} medicinske kilder",
+   "conceptionNote": "Den dagsspecifikke sandsynlighed for undfangelse følger Wilcox et al. (NEJM 1995) og ASRM/ACOG's vejledning om frugtbarhedsbevidsthed. Det er et estimat baseret på de cyklusser, du har registreret, ikke en præventionsmetode.",
+   "phaseTipsNote": "Fasefysiologien og de effekter, der beskrives her, følger fagfællebedømte kliniske referencer. Generelle råd om velvære, ikke medicinsk behandling.",
+   "cycleStatsNote": "Normer for cykluslængde, og hvad der tæller som normal variation, følger ACOG's vejledning og fagfællebedømt forskning."
   }
  },
  "kb": {

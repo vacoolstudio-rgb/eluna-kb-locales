@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormon & Pengawalan",
      "cycle_basics": "Asas Kitaran",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Amaran Kesakitan",
      "fertility_help": "Bantuan Kesuburan",
      "lifestyle_selfhelp": "Gaya Hidup & Penjagaan Diri",
-     "medical_advice": "When to see a doctor",
      "general": "Umum",
      "pms": "PMS",
      "fertility": "Kesuburan",
@@ -673,11 +671,6 @@
    "title": "Tetapan",
    "time": "Masa",
    "chooseTime": "Pilih masa",
-   "pro": {
-    "activate": "Aktifkan PRO",
-    "removeAds": "Buang Iklan",
-    "restore": "Pulihkan pembelian"
-   },
    "sections": {
     "privacy": "KESELAMATAN & PRIVASI",
     "cycle": "MOD & EKSPORT",
@@ -708,7 +701,6 @@
     "exportBackup": "Eksport Sandaran",
     "importBackup": "Import Sandaran",
     "cloudSync": "Penyegerakan Awan",
-    "adPrivacy": "Privasi iklan",
     "ourApps": "Aplikasi kami yang lain"
    },
    "footer": "Semua data disulitkan dan disimpan hanya pada peranti ini",
@@ -845,9 +837,12 @@
    "anomalyLong": "Terlalu panjang (>35 hari)",
    "anomalyIrregular": "Tidak teratur",
    "attention": "Perhatian",
-   "excludedCycles": "${stats.excludedCount} kitaran dikecualikan daripada pengiraan purata panjang kerana bacaan yang tidak normal.",
    "anomalyWarning": "Amaran: melebihi julat biasa (diambil kira dalam analisis)",
-   "anomalySevere": "Anomali: melebihi norma yang dibenarkan (dikecualikan daripada analitik)"
+   "anomalySevere": "Anomali: melebihi norma yang dibenarkan (dikecualikan daripada analitik)",
+   "sourcesTitle": "Sumber Perubatan",
+   "sourcesIntro": "Julat rujukan dan norma kitaran yang digunakan dalam laporan ini berdasarkan sumber klinikal berikut.",
+   "excludedCycles_one": "{{count}} kitaran dikecualikan daripada pengiraan panjang purata kerana nilainya tidak normal.",
+   "excludedCycles_other": "{{count}} kitaran dikecualikan daripada pengiraan panjang purata kerana nilainya tidak normal."
   },
   "analytics": {
    "pulseTitle": "Mengukur status kesihatan...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Adakah anda suka Eluna?",
-   "subtitle": "Sokongan anda membantu kami menambah baik aplikasi ini.",
-   "no": "Tidak begitu",
-   "yes": "Sangat suka!",
    "later": "Mungkin nanti",
-   "feedback_title": "Kami minta maaf!",
-   "feedback_msg": "Sila hubungi sokongan kami supaya kami dapat menambah baik.",
    "title_new": "Bantu kami menambah baik",
    "description_new": "Setiap hari kami menambah baik Eluna agar menjadi panduan terbaik untuk anda. Sila nilaikan aplikasi ini — sokongan anda amat bermakna buat kami!",
    "best_hint_new": "5 bintang ialah penghargaan tertinggi buat kami 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Cuba lagi",
    "errorOldFormat": "Sandaran ini dibuat oleh versi Eluna yang lebih lama dan tidak lagi boleh dibuka. Eksport sandaran baharu daripada peranti yang masih menyimpan data anda."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Ralat",
-    "connectionError": "Sambungan ke stor tidak tersedia. Cuba lagi kemudian.",
-    "purchaseErrorTitle": "Ralat Pembelian",
-    "defaultError": "Sesuatu telah berlaku.",
-    "successTitle": "Berjaya",
-    "restoreSuccess": "Pembelian berjaya dipulihkan.",
-    "infoTitle": "Maklumat",
-    "noPurchases": "Tiada pembelian aktif ditemui.",
-    "restoreErrorTitle": "Ralat Pemulihan"
-   },
-   "no_ads": {
-    "title": "Buang Iklan Selamanya"
-   },
-   "pro": {
-    "title": "Versi PRO Selamanya"
-   },
-   "features": {
-    "no_ads": "Tiada Iklan",
-    "themes": "Tema Premium",
-    "icons": "Ikon Alternatif",
-    "advanced": "Ciri Lanjutan",
-    "no_ads_desc": "Buang semua iklan daripada aplikasi ini untuk selamanya. Sokong pembangun!"
-   },
-   "title": "Sokong Pembangunan Aplikasi",
-   "subtitle": "Pilih pilihan terbaik untuk membuka ciri baharu dan membuang iklan. Bayaran sekali sahaja, tiada langganan.",
-   "buy": "Beli",
-   "restore": "Pulihkan Pembelian",
-   "privacy": "Dasar Privasi",
-   "terms": "Terma Perkhidmatan"
-  },
   "cancel": "Batal",
-  "purchase": {
-   "restoreSuccess": "Pembelian dipulihkan",
-   "noPurchases": "Tiada pembelian ditemui",
-   "restoreError": "Ralat semasa memulihkan pembelian"
-  },
   "delayBanner": {
    "cardWaiting": "Ditangguhkan",
    "ringWaiting": "Menunggu haid anda",
@@ -1329,6 +1281,33 @@
     "desc": "Jejaki semua yang anda tonton — siri, anime dan filem — dengan kalendar tayangan, peringatan episod seterusnya dan privasi penuh. Setiap entri kekal pada peranti anda.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Belanja saya kopi",
+   "header": "Suka menggunakan Eluna?",
+   "body": "Eluna adalah percuma sepenuhnya — tiada iklan, tiada langganan, selamanya. Jika ia layak mendapat tempat pada telefon anda, anda boleh memberikan sedikit tip untuk menyokong pembangunannya. Ia sepenuhnya pilihan, dan terima kasih walau apa pun. ☕",
+   "thanks": "Terima kasih banyak! ☕ Ia benar-benar membantu memastikan Eluna terus berjalan.",
+   "failed": "Tip tidak dapat diselesaikan. Sila cuba lagi.",
+   "storeUnavailable": "Pembelian dalam apl tidak tersedia pada peranti ini buat masa ini.",
+   "paymentPending": "Pembayaran sedang diproses — terima kasih! Tip anda akan diselesaikan secara automatik."
+  },
+  "medicalSources": {
+   "title": "Sumber Perubatan",
+   "sources": "Sumber",
+   "countLabel_one": "{{count}} rujukan",
+   "countLabel_other": "{{count}} rujukan",
+   "intro": "Setiap penjelasan kesihatan, huraian fasa dan pengiraan kitaran dalam Eluna berdasarkan garis panduan klinikal dan penyelidikan yang disemak rakan sebaya yang disenaraikan di bawah. Ketik mana-mana entri untuk membuka penerbitan asal.",
+   "disclaimer": "Eluna bukan peranti perubatan dan tidak memberikan diagnosis. Bincangkan gejala anda dengan profesional penjagaan kesihatan.",
+   "sectionGuidelines": "Garis panduan klinikal",
+   "sectionResearch": "Penyelidikan & ulasan",
+   "forecastNote": "Tempoh subur enam hari, anggaran ovulasi dan fasa luteal ~14 hari mengikut panduan jawatankuasa ASRM dan panduan pesakit ACOG; sempadan fasa mengikut rujukan fisiologi klinikal piawai. Ramalan ialah anggaran statistik — bukan diagnosis dan bukan kaedah pencegahan kehamilan.",
+   "phasesNote": "Huraian fasa mengikut rujukan fisiologi klinikal piawai; tempoh subur mengikut panduan ASRM dan ACOG, dan gejala pramenstruasi mengikut panduan klinikal ACOG.",
+   "explanationNote": "Fisiologi hormon dan corak gejala yang dihuraikan di sini mengikut ulasan klinikal yang disemak rakan sebaya.",
+   "footer_one": "Maklumat kesihatan dalam Eluna memetik {{count}} sumber perubatan",
+   "footer_other": "Maklumat kesihatan dalam Eluna memetik {{count}} sumber perubatan",
+   "conceptionNote": "Kebarangkalian pembuahan khusus harian mengikut Wilcox et al. (NEJM 1995) dan panduan kesedaran kesuburan ASRM/ACOG. Ia merupakan anggaran daripada kitaran yang anda catatkan — bukan kaedah pencegahan kehamilan.",
+   "phaseTipsNote": "Fisiologi fasa dan kesan yang dihuraikan di sini mengikut rujukan klinikal yang disemak rakan sebaya. Cadangan kesihatan umum, bukan rawatan perubatan.",
+   "cycleStatsNote": "Norma panjang kitaran dan apa yang dikira sebagai variasi normal mengikut panduan ACOG dan penyelidikan yang disemak rakan sebaya."
   }
  },
  "kb": {

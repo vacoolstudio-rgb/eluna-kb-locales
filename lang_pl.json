@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormony i regulacja",
      "cycle_basics": "Podstawy cyklu",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Sygnały bólowe",
      "fertility_help": "Wsparcie płodności",
      "lifestyle_selfhelp": "Styl życia i self-care",
-     "medical_advice": "When to see a doctor",
      "general": "Ogólne",
      "pms": "PMS",
      "fertility": "Płodność",
@@ -673,11 +671,6 @@
    "title": "Ustawienia",
    "time": "Czas",
    "chooseTime": "Wybierz godzinę",
-   "pro": {
-    "activate": "Aktywuj PRO",
-    "removeAds": "Usuń reklamy",
-    "restore": "Przywróć zakupy"
-   },
    "sections": {
     "privacy": "BEZPIECZEŃSTWO I PRYWATNOŚĆ",
     "cycle": "TRYBY I EKSPORT",
@@ -708,7 +701,6 @@
     "exportBackup": "Eksportuj kopię zapasową",
     "importBackup": "Importuj kopię zapasową",
     "cloudSync": "Synchronizacja w chmurze",
-    "adPrivacy": "Prywatność reklam",
     "ourApps": "Nasze pozostałe aplikacje"
    },
    "footer": "Wszystkie dane są szyfrowane i przechowywane wyłącznie na tym urządzeniu",
@@ -845,9 +837,12 @@
    "anomalyLong": "Za długi (>35 dni)",
    "anomalyIrregular": "Nieregularny",
    "attention": "Uwaga",
-   "excludedCycles": "${stats.excludedCount} cykl(i) wykluczono z obliczeń średniej długości z powodu nietypowych wartości.",
    "anomalyWarning": "Ostrzeżenie: wykracza poza typowy zakres (uwzględniono w analizie)",
-   "anomalySevere": "Anomalia: przekracza dopuszczalne normy (wykluczono z analizy)"
+   "anomalySevere": "Anomalia: przekracza dopuszczalne normy (wykluczono z analizy)",
+   "sourcesTitle": "Źródła medyczne",
+   "sourcesIntro": "Zakresy referencyjne i normy cyklu użyte w tym raporcie opierają się na następujących źródłach klinicznych.",
+   "excludedCycles_one": "{{count}} cykl został wykluczony z obliczenia średniej długości, ponieważ jego wartości były nieprawidłowe.",
+   "excludedCycles_other": "{{count}} cykli zostało wykluczonych z obliczenia średniej długości, ponieważ ich wartości były nieprawidłowe."
   },
   "analytics": {
    "pulseTitle": "Analizowanie samopoczucia...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Czy podoba Ci się Eluna?",
-   "subtitle": "Twoje wsparcie pomaga nam ulepszać aplikację.",
-   "no": "Niekoniecznie",
-   "yes": "Uwielbiam!",
    "later": "Może później",
-   "feedback_title": "Przykro nam!",
-   "feedback_msg": "Napisz do naszego wsparcia, abyśmy mogły to ulepszyć.",
    "title_new": "Pomóż nam się rozwijać",
    "description_new": "Każdego dnia rozwijamy Elunę, aby była Twoim idealnym przewodnikiem. Oceń aplikację — to dla nas naprawdę wiele znaczy!",
    "best_hint_new": "5 gwiazdek to dla nas największe wyróżnienie 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Spróbuj ponownie",
    "errorOldFormat": "Ta kopia zapasowa została utworzona przez starszą wersję Eluny i nie można jej już otworzyć. Wyeksportuj nową z urządzenia, na którym nadal znajdują się Twoje dane."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Błąd",
-    "connectionError": "Połączenie ze sklepem jest niedostępne. Spróbuj ponownie później.",
-    "purchaseErrorTitle": "Błąd zakupu",
-    "defaultError": "Coś poszło nie tak.",
-    "successTitle": "Sukces",
-    "restoreSuccess": "Zakupy zostały pomyślnie przywrócone.",
-    "infoTitle": "Informacja",
-    "noPurchases": "Nie znaleziono aktywnych zakupów.",
-    "restoreErrorTitle": "Błąd przywracania"
-   },
-   "no_ads": {
-    "title": "Usuń reklamy na zawsze"
-   },
-   "pro": {
-    "title": "Wersja PRO na zawsze"
-   },
-   "features": {
-    "no_ads": "Bez reklam",
-    "themes": "Motywy premium",
-    "icons": "Alternatywne ikony",
-    "advanced": "Zaawansowane funkcje",
-    "no_ads_desc": "Usuwa wszystkie reklamy z aplikacji na zawsze. Wesprzyj twórcę!"
-   },
-   "title": "Wesprzyj rozwój aplikacji",
-   "subtitle": "Wybierz najlepszą opcję, aby odblokować nowe funkcje i usunąć reklamy. Jednorazowa płatność, bez subskrypcji.",
-   "buy": "Kup",
-   "restore": "Przywróć zakupy",
-   "privacy": "Polityka prywatności",
-   "terms": "Warunki korzystania"
-  },
   "cancel": "Anuluj",
-  "purchase": {
-   "restoreSuccess": "Zakupy przywrócone",
-   "noPurchases": "Nie znaleziono zakupów",
-   "restoreError": "Błąd przywracania zakupów"
-  },
   "delayBanner": {
    "cardWaiting": "Wstrzymano",
    "ringWaiting": "Oczekiwanie na miesiączkę",
@@ -1329,6 +1281,33 @@
     "desc": "Śledź wszystko, co oglądasz — seriale, anime i filmy — dzięki kalendarzowi premier, przypomnieniom o kolejnych odcinkach i pełnej prywatności. Każdy wpis pozostaje na Twoim urządzeniu.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Postaw mi kawę",
+   "header": "Podoba Ci się Eluna?",
+   "body": "Eluna jest całkowicie darmowa — bez reklam i subskrypcji, na zawsze. Jeśli zasłużyła na miejsce w Twoim telefonie, możesz zostawić drobny napiwek, aby wesprzeć jej rozwój. To całkowicie opcjonalne i tak czy inaczej dziękujemy. ☕",
+   "thanks": "Dziękujemy bardzo! ☕ To naprawdę pomaga utrzymać Elunę przy życiu.",
+   "failed": "Nie udało się zrealizować napiwku. Spróbuj ponownie.",
+   "storeUnavailable": "Zakupy w aplikacji nie są teraz dostępne na tym urządzeniu.",
+   "paymentPending": "Płatność jest przetwarzana — dziękujemy! Twój napiwek zostanie zrealizowany automatycznie."
+  },
+  "medicalSources": {
+   "title": "Źródła medyczne",
+   "sources": "Źródła",
+   "countLabel_one": "{{count}} źródło",
+   "countLabel_other": "{{count}} źródeł",
+   "intro": "Każde wyjaśnienie dotyczące zdrowia, opis fazy i obliczenie cyklu w Eluna opiera się na wytycznych klinicznych i recenzowanych badaniach wymienionych poniżej. Dotknij dowolnej pozycji, aby otworzyć oryginalną publikację.",
+   "disclaimer": "Eluna nie jest wyrobem medycznym i nie stawia diagnozy. Omów swoje objawy z pracownikiem służby zdrowia.",
+   "sectionGuidelines": "Wytyczne kliniczne",
+   "sectionResearch": "Badania i przeglądy",
+   "forecastNote": "Sześciodniowe okno płodności, szacunkowa data owulacji i faza lutealna trwająca około 14 dni są zgodne z wytycznymi komitetu ASRM oraz wytycznymi dla pacjentów ACOG; granice faz są zgodne ze standardowymi źródłami fizjologii klinicznej. Prognozy są szacunkami statystycznymi, a nie diagnozą ani metodą antykoncepcji.",
+   "phasesNote": "Opisy faz są zgodne ze standardowymi źródłami fizjologii klinicznej; okno płodności jest zgodne z wytycznymi ASRM i ACOG, a objawy przedmiesiączkowe z wytycznymi klinicznymi ACOG.",
+   "explanationNote": "Fizjologia hormonalna i wzorce objawów opisane tutaj są zgodne z recenzowanymi przeglądami klinicznymi.",
+   "footer_one": "Informacje zdrowotne w Eluna powołują się na {{count}} źródło medyczne",
+   "footer_other": "Informacje zdrowotne w Eluna powołują się na {{count}} źródeł medycznych",
+   "conceptionNote": "Prawdopodobieństwo poczęcia dla konkretnego dnia jest zgodne z Wilcox et al. (NEJM 1995) oraz wytycznymi ASRM/ACOG dotyczącymi świadomości płodności. Jest to szacunek na podstawie zarejestrowanych cykli, a nie metoda antykoncepcji.",
+   "phaseTipsNote": "Fizjologia faz i opisane tutaj efekty są zgodne z recenzowanymi źródłami klinicznymi. To ogólne wskazówki dotyczące dobrego samopoczucia, a nie leczenie medyczne.",
+   "cycleStatsNote": "Normy długości cyklu i to, co uznaje się za prawidłową zmienność, są zgodne z wytycznymi ACOG i recenzowanymi badaniami."
   }
  },
  "kb": {

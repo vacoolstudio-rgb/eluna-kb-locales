@@ -675,11 +675,6 @@
    "title": "Paramètres",
    "time": "Heure",
    "chooseTime": "Choisir l'heure",
-   "pro": {
-    "activate": "Activer PRO",
-    "removeAds": "Supprimer les publicités",
-    "restore": "Restaurer les achats"
-   },
    "sections": {
     "privacy": "SÉCURITÉ & CONFIDENTIALITÉ",
     "cycle": "MODES & EXPORTATION",
@@ -710,7 +705,6 @@
     "exportBackup": "Exporter la sauvegarde",
     "importBackup": "Importer la sauvegarde",
     "cloudSync": "Synchronisation infonuagique",
-    "adPrivacy": "Confidentialité des publicités",
     "ourApps": "Nos autres applications"
    },
    "footer": "Toutes les données sont cryptées et stockées uniquement sur cet appareil",
@@ -925,9 +919,12 @@
    "anomalyLong": "Trop long (>35 jours)",
    "anomalyIrregular": "Irrégulier",
    "attention": "Attention",
-   "excludedCycles": "${stats.excludedCount} cycle(s) exclu(s) du calcul de la durée moyenne en raison de valeurs anormales.",
    "anomalyWarning": "Avertissement : hors de la plage habituelle (pris en compte dans l'analyse)",
-   "anomalySevere": "Anomalie : dépasse les normes admissibles (exclu de l'analyse)"
+   "anomalySevere": "Anomalie : dépasse les normes admissibles (exclu de l'analyse)",
+   "sourcesTitle": "Sources médicales",
+   "sourcesIntro": "Les intervalles de référence et les normes de cycle utilisés dans ce rapport reposent sur les sources cliniques suivantes.",
+   "excludedCycles_one": "{{count}} cycle a été exclu du calcul de la durée moyenne parce que ses valeurs étaient anormales.",
+   "excludedCycles_other": "{{count}} cycles ont été exclus du calcul de la durée moyenne parce que leurs valeurs étaient anormales."
   },
   "analytics": {
    "pulseTitle": "Mesure du pouls...",
@@ -1161,44 +1158,7 @@
    "chip_ads": "Trop de publicités",
    "chip_other": "Autre"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Erreur",
-    "connectionError": "Connexion au magasin indisponible. Réessayez plus tard.",
-    "purchaseErrorTitle": "Erreur d'achat",
-    "defaultError": "Quelque chose s'est mal passé.",
-    "successTitle": "Succès",
-    "restoreSuccess": "Achats restaurés avec succès.",
-    "infoTitle": "Info",
-    "noPurchases": "Aucun achat actif trouvé.",
-    "restoreErrorTitle": "Erreur de restauration"
-   },
-   "no_ads": {
-    "title": "Supprimer les publicités pour toujours"
-   },
-   "pro": {
-    "title": "Version PRO pour toujours"
-   },
-   "features": {
-    "no_ads": "Pas de publicités",
-    "themes": "Thèmes Premium",
-    "icons": "Icônes alternatives",
-    "advanced": "Fonctionnalités avancées",
-    "no_ads_desc": "Supprime toutes les publicités de l'application pour toujours. Soutenez le développeur!"
-   },
-   "title": "Soutenir le développement de l'application",
-   "subtitle": "Choisissez la meilleure option pour débloquer de nouvelles fonctionnalités et supprimer les publicités. Paiement unique, pas d'abonnements.",
-   "buy": "Acheter",
-   "restore": "Restaurer les achats",
-   "privacy": "Politique de confidentialité",
-   "terms": "Conditions d'utilisation"
-  },
   "cancel": "Annuler",
-  "purchase": {
-   "restoreSuccess": "Achats restaurés",
-   "noPurchases": "Aucun achat trouvé",
-   "restoreError": "Erreur lors de la restauration des achats"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Preuves cliniques",
@@ -1321,6 +1281,33 @@
     "desc": "Suivez tout ce que vous regardez — séries, animes et films — avec un calendrier des sorties, des rappels pour le prochain épisode et une confidentialité totale. Chaque entrée reste sur votre appareil.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Paie-moi un café",
+   "header": "Tu aimes Eluna ?",
+   "body": "Eluna est entièrement gratuite — pas de publicités, pas d'abonnement, jamais. Si elle a gagné sa place sur ton téléphone, tu peux laisser un petit pourboire pour soutenir son développement. C'est totalement optionnel, et merci dans tous les cas. ☕",
+   "thanks": "Merci beaucoup ! ☕ Ça aide vraiment à garder Eluna en vie.",
+   "failed": "Le pourboire n'a pas pu être complété. Essaie de nouveau.",
+   "storeUnavailable": "Les achats intégrés ne sont pas disponibles sur cet appareil pour l'instant.",
+   "paymentPending": "Le paiement est en traitement — merci ! Ton pourboire va passer automatiquement."
+  },
+  "medicalSources": {
+   "title": "Sources médicales",
+   "sources": "Sources",
+   "countLabel_one": "{{count}} référence",
+   "countLabel_other": "{{count}} références",
+   "intro": "Chaque explication de santé, description de phase et calcul de cycle dans Eluna repose sur les lignes directrices cliniques et les recherches évaluées par les pairs énumérées ci-dessous. Touchez une entrée pour ouvrir la publication originale.",
+   "disclaimer": "Eluna n'est pas un dispositif médical et ne pose pas de diagnostic. Discutez de vos symptômes avec un professionnel de la santé.",
+   "sectionGuidelines": "Lignes directrices cliniques",
+   "sectionResearch": "Recherche et revues",
+   "forecastNote": "La fenêtre fertile de six jours, l'estimation de l'ovulation et la phase lutéale d'environ 14 jours suivent les recommandations du comité de l'ASRM et les directives aux patientes de l'ACOG; les limites des phases suivent des références standard de physiologie clinique. Les prédictions sont des estimations statistiques — ni un diagnostic ni une méthode contraceptive.",
+   "phasesNote": "Les descriptions des phases suivent des références standard de physiologie clinique; la fenêtre fertile suit les directives de l'ASRM et de l'ACOG, et les symptômes prémenstruels suivent les directives cliniques de l'ACOG.",
+   "explanationNote": "La physiologie hormonale et les schémas de symptômes décrits ici suivent des revues cliniques évaluées par les pairs.",
+   "footer_one": "Les renseignements sur la santé dans Eluna citent {{count}} source médicale",
+   "footer_other": "Les renseignements sur la santé dans Eluna citent {{count}} sources médicales",
+   "conceptionNote": "La probabilité de conception propre à chaque jour suit Wilcox et al. (NEJM 1995) et les directives de sensibilisation à la fertilité de l'ASRM/ACOG. Il s'agit d'une estimation fondée sur les cycles que vous avez enregistrés — pas d'une méthode contraceptive.",
+   "phaseTipsNote": "La physiologie des phases et les effets décrits ici suivent des références cliniques évaluées par les pairs. Ce sont des suggestions générales de bien-être, pas un traitement médical.",
+   "cycleStatsNote": "Les normes de durée du cycle et ce qui constitue une variation normale suivent les directives de l'ACOG et des recherches évaluées par les pairs."
   }
  },
  "kb": {

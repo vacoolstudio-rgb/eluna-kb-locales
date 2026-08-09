@@ -675,11 +675,6 @@
    "title": "Instellings",
    "time": "Tyd",
    "chooseTime": "Kies tyd",
-   "pro": {
-    "activate": "Aktiveer PRO",
-    "removeAds": "Verwyder Advertensies",
-    "restore": "Herstel aankope"
-   },
    "sections": {
     "privacy": "VEILIGHEID & PRIVASIE",
     "cycle": "MODES & UITVOER",
@@ -710,7 +705,6 @@
     "exportBackup": "Voer Rugsteun uit",
     "importBackup": "Voer Rugsteun in",
     "cloudSync": "Wolksinkronisasie",
-    "adPrivacy": "Advertensieprivaatheid",
     "ourApps": "Ons ander programme"
    },
    "footer": "Alle data is geïnkripteer en slegs op hierdie toestel gestoor",
@@ -925,9 +919,12 @@
    "anomalyLong": "Te lank (>35 dae)",
    "anomalyIrregular": "Onreëlmatig",
    "attention": "Aandag",
-   "excludedCycles": "${stats.excludedCount} siklus(se) is uit die berekening van gemiddelde lengte uitgesluit weens abnormale waardes.",
    "anomalyWarning": "Waarskuwing: buite die tipiese reeks (in ontleding ingesluit)",
-   "anomalySevere": "Afwyking: oorskry toelaatbare norme (uit ontleding uitgesluit)"
+   "anomalySevere": "Afwyking: oorskry toelaatbare norme (uit ontleding uitgesluit)",
+   "sourcesTitle": "Mediese bronne",
+   "sourcesIntro": "Die verwysingsreekse en siklusnorme wat in hierdie verslag gebruik word, is gebaseer op die volgende kliniese bronne.",
+   "excludedCycles_one": "{{count}} siklus is uit die gemiddelde-lengteberekening uitgesluit omdat die waardes daarvan afwykend was.",
+   "excludedCycles_other": "{{count}} siklusse is uit die gemiddelde-lengteberekening uitgesluit omdat hul waardes afwykend was."
   },
   "analytics": {
    "pulseTitle": "Meet pols...",
@@ -1161,44 +1158,7 @@
    "chip_ads": "Te veel advertensies",
    "chip_other": "Ander"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Fout",
-    "connectionError": "Winkelverbinding onbeskikbaar. Probeer later weer.",
-    "purchaseErrorTitle": "Aankoop Fout",
-    "defaultError": "Iets het verkeerd gegaan.",
-    "successTitle": "Sukses",
-    "restoreSuccess": "Aankope suksesvol herstel.",
-    "infoTitle": "Inligting",
-    "noPurchases": "Geen aktiewe aankope gevind nie.",
-    "restoreErrorTitle": "Herstel Fout"
-   },
-   "no_ads": {
-    "title": "Verwyder Advertensies Vir Ewig"
-   },
-   "pro": {
-    "title": "PRO Weergawe Vir Ewig"
-   },
-   "features": {
-    "no_ads": "Geen Advertensies",
-    "themes": "Premium Temas",
-    "icons": "Alternatiewe Ikone",
-    "advanced": "Gevorderde Kenmerke",
-    "no_ads_desc": "Verwyder alle advertensies van die toepassing vir ewig. Ondersteun die ontwikkelaar!"
-   },
-   "title": "Ondersteun App Ontwikkeling",
-   "subtitle": "Kies die beste opsie om nuwe kenmerke te ontsluit en advertensies te verwyder. Eenmalige betaling, geen intekeninge.",
-   "buy": "Koop",
-   "restore": "Herstel Aankope",
-   "privacy": "Privaatheidsbeleid",
-   "terms": "Gebruiksvoorwaardes"
-  },
   "cancel": "Kanselleer",
-  "purchase": {
-   "restoreSuccess": "Aankope herstel",
-   "noPurchases": "Geen aankope gevind nie",
-   "restoreError": "Fout met herstel van aankope"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Kliniese Bewyse",
@@ -1321,6 +1281,33 @@
     "desc": "Hou alles wat jy kyk by — reekse, anime en flieks — met 'n vrystellingskalender, herinnerings vir die volgende episode, en volledige privaatheid. Elke inskrywing bly op jou toestel.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Koop vir my 'n koffie",
+   "header": "Geniet jy Eluna?",
+   "body": "Eluna is heeltemal gratis — geen advertensies, geen intekening, ooit nie. As dit 'n plek op jou foon verdien het, kan jy 'n klein fooitjie los om die ontwikkeling te ondersteun. Dit is heeltemal opsioneel, en in elk geval dankie. ☕",
+   "thanks": "Baie dankie! ☕ Dit help regtig om Eluna aan die gang te hou.",
+   "failed": "Die fooitjie kon nie voltooi word nie. Probeer asseblief weer.",
+   "storeUnavailable": "In-app-aankope is nie tans op hierdie toestel beskikbaar nie.",
+   "paymentPending": "Betaling word verwerk — dankie! Jou fooitjie sal outomaties deurgaan."
+  },
+  "medicalSources": {
+   "title": "Mediese bronne",
+   "sources": "Bronne",
+   "countLabel_one": "{{count}} verwysing",
+   "countLabel_other": "{{count}} verwysings",
+   "intro": "Elke gesondheidsverduideliking, fasebeskrywing en siklusberekening in Eluna is gebaseer op die kliniese riglyne en eweknie-geëvalueerde navorsing wat hieronder gelys word. Tik op enige inskrywing om die oorspronklike publikasie oop te maak.",
+   "disclaimer": "Eluna is nie 'n mediese toestel nie en verskaf nie 'n diagnose nie. Bespreek jou simptome met 'n gesondheidsorgpraktisyn.",
+   "sectionGuidelines": "Kliniese riglyne",
+   "sectionResearch": "Navorsing en oorsigte",
+   "forecastNote": "Die ses-dae vrugbare venster, die ovulasieskatting en die ~14-dae luteale fase volg ASRM-komiteeriglyne en ACOG-pasiëntriglyne; fasegrense volg standaard kliniese fisiologieverwysings. Voorspellings is statistiese skattings — nie 'n diagnose nie en nie 'n voorbehoedmiddel nie.",
+   "phasesNote": "Fasebeskrywings volg standaard kliniese fisiologieverwysings; die vrugbare venster volg ASRM- en ACOG-riglyne, en premenstruele simptome volg ACOG se kliniese riglyne.",
+   "explanationNote": "Die hormonale fisiologie en die simptoompatrone wat hier beskryf word, volg eweknie-geëvalueerde kliniese oorsigte.",
+   "footer_one": "Gesondheidsinligting in Eluna verwys na {{count}} mediese bron",
+   "footer_other": "Gesondheidsinligting in Eluna verwys na {{count}} mediese bronne",
+   "conceptionNote": "Die dagspesifieke bevrugtingswaarskynlikheid volg Wilcox et al. (NEJM 1995) en ASRM/ACOG se vrugbaarheidsbewustheidsriglyne. Dit is 'n skatting uit jou aangetekende siklusse — nie 'n voorbehoedmiddel nie.",
+   "phaseTipsNote": "Die fasefisiologie en die uitwerkings wat hier beskryf word, volg eweknie-geëvalueerde kliniese verwysings. Algemene welstandsvoorstelle, nie mediese behandeling nie.",
+   "cycleStatsNote": "Sikluslengtenorme en wat as normale variasie tel, volg ACOG-riglyne en eweknie-geëvalueerde navorsing."
   }
  },
  "kb": {

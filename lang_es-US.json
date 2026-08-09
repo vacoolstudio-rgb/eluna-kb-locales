@@ -675,11 +675,6 @@
    "title": "Configuraciones",
    "time": "Hora",
    "chooseTime": "Elegir hora",
-   "pro": {
-    "activate": "Activar PRO",
-    "removeAds": "Eliminar Anuncios",
-    "restore": "Restaurar compras"
-   },
    "sections": {
     "privacy": "SEGURIDAD Y PRIVACIDAD",
     "cycle": "MODOS Y EXPORTACIÓN",
@@ -710,7 +705,6 @@
     "exportBackup": "Exportar Respaldo",
     "importBackup": "Importar Respaldo",
     "cloudSync": "Sincronización en la nube",
-    "adPrivacy": "Privacidad de anuncios",
     "ourApps": "Nuestras otras apps"
    },
    "footer": "Todos los datos están encriptados y almacenados solo en este dispositivo",
@@ -925,9 +919,12 @@
    "anomalyLong": "Demasiado largo (>35 días)",
    "anomalyIrregular": "Irregular",
    "attention": "Atención",
-   "excludedCycles": "${stats.excludedCount} ciclo(s) excluido(s) del cálculo de la duración promedio debido a valores anómalos.",
    "anomalyWarning": "Advertencia: fuera del rango típico (considerado en el análisis)",
-   "anomalySevere": "Anomalía: supera los límites permitidos (excluido del análisis)"
+   "anomalySevere": "Anomalía: supera los límites permitidos (excluido del análisis)",
+   "sourcesTitle": "Fuentes médicas",
+   "sourcesIntro": "Los rangos de referencia y las normas del ciclo utilizados en este informe se basan en las siguientes fuentes clínicas.",
+   "excludedCycles_one": "Se excluyó {{count}} ciclo del cálculo de la duración promedio porque sus valores eran anómalos.",
+   "excludedCycles_other": "Se excluyeron {{count}} ciclos del cálculo de la duración promedio porque sus valores eran anómalos."
   },
   "analytics": {
    "pulseTitle": "Midiendo pulso...",
@@ -1161,44 +1158,7 @@
    "chip_ads": "Demasiados anuncios",
    "chip_other": "Otro"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Error",
-    "connectionError": "Conexión a la tienda no disponible. Intenta de nuevo más tarde.",
-    "purchaseErrorTitle": "Error de Compra",
-    "defaultError": "Algo salió mal.",
-    "successTitle": "Éxito",
-    "restoreSuccess": "Compras restauradas con éxito.",
-    "infoTitle": "Información",
-    "noPurchases": "No se encontraron compras activas.",
-    "restoreErrorTitle": "Error al Restaurar"
-   },
-   "no_ads": {
-    "title": "Eliminar Anuncios para Siempre"
-   },
-   "pro": {
-    "title": "Versión PRO para Siempre"
-   },
-   "features": {
-    "no_ads": "Sin Anuncios",
-    "themes": "Temas Premium",
-    "icons": "Iconos Alternativos",
-    "advanced": "Funciones Avanzadas",
-    "no_ads_desc": "Elimina todos los anuncios de la aplicación para siempre. ¡Apoya al desarrollador!"
-   },
-   "title": "Apoya el Desarrollo de la App",
-   "subtitle": "Elige la mejor opción para desbloquear nuevas funciones y eliminar anuncios. Pago único, sin suscripciones.",
-   "buy": "Comprar",
-   "restore": "Restaurar Compras",
-   "privacy": "Política de Privacidad",
-   "terms": "Términos de Uso"
-  },
   "cancel": "Cancelar",
-  "purchase": {
-   "restoreSuccess": "Compras restauradas",
-   "noPurchases": "No se encontraron compras",
-   "restoreError": "Error al restaurar compras"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Evidencia Clínica",
@@ -1321,6 +1281,33 @@
     "desc": "Lleva el control de todo lo que ves — series, anime y películas — con un calendario de estrenos, recordatorios del próximo episodio y privacidad total. Cada entrada permanece en tu dispositivo.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Invítame un café",
+   "header": "¿Disfrutas Eluna?",
+   "body": "Eluna es completamente gratis: sin anuncios, sin suscripción, nunca. Si se ganó un lugar en tu teléfono, puedes dejar una pequeña propina para apoyar su desarrollo. Es totalmente opcional y, de cualquier forma, gracias. ☕",
+   "thanks": "¡Muchas gracias! ☕ De verdad ayuda a mantener Eluna en marcha.",
+   "failed": "No se pudo completar la propina. Inténtalo de nuevo.",
+   "storeUnavailable": "Las compras dentro de la app no están disponibles en este dispositivo por ahora.",
+   "paymentPending": "El pago se está procesando: ¡gracias! Tu propina se completará automáticamente."
+  },
+  "medicalSources": {
+   "title": "Fuentes médicas",
+   "sources": "Fuentes",
+   "countLabel_one": "{{count}} referencia",
+   "countLabel_other": "{{count}} referencias",
+   "intro": "Cada explicación de salud, descripción de fase y cálculo del ciclo en Eluna se basa en las guías clínicas y la investigación revisada por pares que se enumeran a continuación. Toca cualquier entrada para abrir la publicación original.",
+   "disclaimer": "Eluna no es un dispositivo médico y no proporciona un diagnóstico. Habla sobre tus síntomas con un profesional de la salud.",
+   "sectionGuidelines": "Guías clínicas",
+   "sectionResearch": "Investigación y revisiones",
+   "forecastNote": "La ventana fértil de seis días, la estimación de la ovulación y la fase lútea de ~14 días siguen las recomendaciones del comité de ASRM y las guías para pacientes de ACOG; los límites de las fases siguen referencias estándar de fisiología clínica. Las predicciones son estimaciones estadísticas, no un diagnóstico ni un método anticonceptivo.",
+   "phasesNote": "Las descripciones de las fases siguen referencias estándar de fisiología clínica; la ventana fértil sigue las guías de ASRM y ACOG, y los síntomas premenstruales siguen las guías clínicas de ACOG.",
+   "explanationNote": "La fisiología hormonal y los patrones de síntomas descritos aquí siguen revisiones clínicas revisadas por pares.",
+   "footer_one": "La información de salud en Eluna cita {{count}} fuente médica",
+   "footer_other": "La información de salud en Eluna cita {{count}} fuentes médicas",
+   "conceptionNote": "La probabilidad de concepción específica por día sigue a Wilcox et al. (NEJM 1995) y las guías de conocimiento de la fertilidad de ASRM/ACOG. Es una estimación basada en los ciclos que has registrado, no un método anticonceptivo.",
+   "phaseTipsNote": "La fisiología de las fases y los efectos descritos aquí siguen referencias clínicas revisadas por pares. Son sugerencias generales de bienestar, no un tratamiento médico.",
+   "cycleStatsNote": "Las normas de duración del ciclo y lo que se considera una variación normal siguen las guías de ACOG y la investigación revisada por pares."
   }
  },
  "kb": {

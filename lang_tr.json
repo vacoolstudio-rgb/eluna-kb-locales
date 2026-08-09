@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormonlar ve Düzenleme",
      "cycle_basics": "Döngü Temelleri",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Ağrı Uyarıları",
      "fertility_help": "Doğurganlık Desteği",
      "lifestyle_selfhelp": "Yaşam Tarzı ve Öz Bakım",
-     "medical_advice": "When to see a doctor",
      "general": "Genel",
      "pms": "PMS",
      "fertility": "Doğurganlık",
@@ -673,11 +671,6 @@
    "title": "Ayarlar",
    "time": "Saat",
    "chooseTime": "Saat seç",
-   "pro": {
-    "activate": "PRO'yu Etkinleştir",
-    "removeAds": "Reklamları Kaldır",
-    "restore": "Satın alımları geri yükle"
-   },
    "sections": {
     "privacy": "GÜVENLİK VE GİZLİLİK",
     "cycle": "MODLAR VE DIŞA AKTARMA",
@@ -708,7 +701,6 @@
     "exportBackup": "Yedeği dışa aktar",
     "importBackup": "Yedeği içe aktar",
     "cloudSync": "Bulut Senkronizasyonu",
-    "adPrivacy": "Reklam gizliliği",
     "ourApps": "Diğer uygulamalarımız"
    },
    "footer": "Tüm veriler şifrelenir ve yalnızca bu cihazda saklanır",
@@ -845,9 +837,12 @@
    "anomalyLong": "Çok uzun (>35 gün)",
    "anomalyIrregular": "Düzensiz",
    "attention": "Dikkat",
-   "excludedCycles": "${stats.excludedCount} döngü, anormal değerler nedeniyle ortalama uzunluk hesaplamalarından hariç tutuldu.",
    "anomalyWarning": "Uyarı: tipik aralığın dışında (analize dahil edildi)",
-   "anomalySevere": "Anomali: kabul edilebilir sınırları aşıyor (analizden hariç tutuldu)"
+   "anomalySevere": "Anomali: kabul edilebilir sınırları aşıyor (analizden hariç tutuldu)",
+   "sourcesTitle": "Tıbbi Kaynaklar",
+   "sourcesIntro": "Bu raporda kullanılan referans aralıkları ve döngü normları aşağıdaki klinik kaynaklara dayanmaktadır.",
+   "excludedCycles_one": "Değerleri anormal olduğu için {{count}} döngü ortalama uzunluk hesaplamasından çıkarıldı.",
+   "excludedCycles_other": "Değerleri anormal olduğu için {{count}} döngü ortalama uzunluk hesaplamasından çıkarıldı."
   },
   "analytics": {
    "pulseTitle": "Durum analizi yapılıyor...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Eluna'yı beğeniyor musun?",
-   "subtitle": "Desteğin, uygulamayı geliştirmemize yardımcı oluyor.",
-   "no": "Pek değil",
-   "yes": "Bayıldım!",
    "later": "Belki sonra",
-   "feedback_title": "Üzgünüz!",
-   "feedback_msg": "Geliştirebilmemiz için lütfen destek ekibimize yazın.",
    "title_new": "Gelişmemize yardımcı olun",
    "description_new": "Eluna'yı sizin için kusursuz bir rehber haline getirmek için her gün gelişiyoruz. Lütfen uygulamayı değerlendirin — desteğiniz bizim için çok değerli!",
    "best_hint_new": "5 yıldız bizim için en güzel ödül 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Tekrar dene",
    "errorOldFormat": "Bu yedek, Eluna'nın eski bir sürümü tarafından oluşturulmuş ve artık açılamıyor. Verileriniz hâlâ duran cihazdan yeni bir yedek dışa aktarın."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Hata",
-    "connectionError": "Mağaza bağlantısı kullanılamıyor. Daha sonra tekrar dene.",
-    "purchaseErrorTitle": "Satın Alma Hatası",
-    "defaultError": "Bir şeyler ters gitti.",
-    "successTitle": "Başarılı",
-    "restoreSuccess": "Satın alımlar başarıyla geri yüklendi.",
-    "infoTitle": "Bilgi",
-    "noPurchases": "Aktif satın alma bulunamadı.",
-    "restoreErrorTitle": "Geri Yükleme Hatası"
-   },
-   "no_ads": {
-    "title": "Reklamları Sonsuza Kadar Kaldır"
-   },
-   "pro": {
-    "title": "PRO Sürüm Sonsuza Kadar"
-   },
-   "features": {
-    "no_ads": "Reklamsız",
-    "themes": "Premium Temalar",
-    "icons": "Alternatif Simgeler",
-    "advanced": "Gelişmiş Özellikler",
-    "no_ads_desc": "Uygulamadaki tüm reklamları kalıcı olarak kaldırır. Geliştiriciyi destekle!"
-   },
-   "title": "Uygulama geliştirmeyi destekleyin",
-   "subtitle": "Yeni özelliklerin kilidini açmak ve reklamları kaldırmak için size en uygun seçeneği belirleyin. Tek seferlik ödeme, abonelik yok.",
-   "buy": "Satın al",
-   "restore": "Satın Alımları Geri Yükle",
-   "privacy": "Gizlilik Politikası",
-   "terms": "Kullanım Koşulları"
-  },
   "cancel": "İptal",
-  "purchase": {
-   "restoreSuccess": "Satın alımlar geri yüklendi",
-   "noPurchases": "Satın alma bulunamadı",
-   "restoreError": "Satın alımlar geri yüklenirken hata oluştu"
-  },
   "delayBanner": {
    "cardWaiting": "Beklemede",
    "ringWaiting": "Adetiniz bekleniyor",
@@ -1329,6 +1281,33 @@
     "desc": "İzlediğin her şeyi takip et — diziler, animeler ve filmler — yayın takvimi, sonraki bölüm hatırlatıcıları ve tam gizlilik ile. Her kayıt cihazında kalır.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Bana bir kahve ısmarla",
+   "header": "Eluna'dan keyif alıyor musun?",
+   "body": "Eluna tamamen ücretsiz — reklam yok, abonelik yok, asla. Telefonunda bir yer edindiyse, gelişimini desteklemek için küçük bir bahşiş bırakabilirsin. Tamamen isteğe bağlı ve her hâlükârda teşekkürler. ☕",
+   "thanks": "Çok teşekkürler! ☕ Bu, Eluna'nın devam etmesine gerçekten yardımcı oluyor.",
+   "failed": "Bahşiş tamamlanamadı. Lütfen tekrar dene.",
+   "storeUnavailable": "Uygulama içi satın alımlar şu anda bu cihazda kullanılamıyor.",
+   "paymentPending": "Ödeme işleniyor — teşekkürler! Bahşişin otomatik olarak tamamlanacak."
+  },
+  "medicalSources": {
+   "title": "Tıbbi Kaynaklar",
+   "sources": "Kaynaklar",
+   "countLabel_one": "{{count}} kaynak",
+   "countLabel_other": "{{count}} kaynak",
+   "intro": "Eluna'daki her sağlık açıklaması, evre tanımı ve döngü hesaplaması aşağıda listelenen klinik kılavuzlara ve hakemli araştırmalara dayanmaktadır. Orijinal yayını açmak için herhangi bir girişe dokunun.",
+   "disclaimer": "Eluna bir tıbbi cihaz değildir ve tanı koymaz. Belirtilerinizi bir sağlık uzmanıyla görüşün.",
+   "sectionGuidelines": "Klinik kılavuzlar",
+   "sectionResearch": "Araştırmalar ve derlemeler",
+   "forecastNote": "Altı günlük doğurgan pencere, yumurtlama tahmini ve yaklaşık 14 günlük luteal evre ASRM komite rehberliğini ve ACOG hasta rehberliğini takip eder; evre sınırları standart klinik fizyoloji referanslarını takip eder. Tahminler istatistiksel öngörülerdir; bir tanı veya doğum kontrol yöntemi değildir.",
+   "phasesNote": "Evre tanımları standart klinik fizyoloji referanslarını takip eder; doğurgan pencere ASRM ve ACOG rehberliğini, adet öncesi belirtiler ise ACOG klinik rehberliğini takip eder.",
+   "explanationNote": "Burada tanımlanan hormonal fizyoloji ve belirti örüntüleri hakemli klinik derlemeleri takip eder.",
+   "footer_one": "Eluna'daki sağlık bilgileri {{count}} tıbbi kaynağa atıfta bulunur",
+   "footer_other": "Eluna'daki sağlık bilgileri {{count}} tıbbi kaynağa atıfta bulunur",
+   "conceptionNote": "Güne özgü gebe kalma olasılığı Wilcox et al. (NEJM 1995) ile ASRM/ACOG doğurganlık farkındalığı rehberliğini takip eder. Kaydettiğiniz döngülere dayalı bir tahmindir; bir doğum kontrol yöntemi değildir.",
+   "phaseTipsNote": "Burada tanımlanan evre fizyolojisi ve etkileri hakemli klinik referansları takip eder. Tıbbi tedavi değil, genel iyilik hali önerileridir.",
+   "cycleStatsNote": "Döngü uzunluğu normları ve normal varyasyon sayılan aralık ACOG rehberliğini ve hakemli araştırmaları takip eder."
   }
  },
  "kb": {

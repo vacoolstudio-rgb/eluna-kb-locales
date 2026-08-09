@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "호르몬과 조절",
      "cycle_basics": "주기 기초",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "통증 경고 신호",
      "fertility_help": "가임력 도움말",
      "lifestyle_selfhelp": "생활습관과 셀프케어",
-     "medical_advice": "When to see a doctor",
      "general": "일반",
      "pms": "PMS",
      "fertility": "가임력",
@@ -673,11 +671,6 @@
    "title": "설정",
    "time": "시간",
    "chooseTime": "시간 선택",
-   "pro": {
-    "activate": "PRO 활성화",
-    "removeAds": "광고 제거",
-    "restore": "구매 복원"
-   },
    "sections": {
     "privacy": "보안 및 개인정보",
     "cycle": "모드 및 내보내기",
@@ -708,7 +701,6 @@
     "exportBackup": "백업 내보내기",
     "importBackup": "백업 가져오기",
     "cloudSync": "클라우드 동기화",
-    "adPrivacy": "광고 개인정보",
     "ourApps": "다른 앱 보기"
    },
    "footer": "모든 데이터는 암호화되어 이 기기에만 저장됩니다",
@@ -845,9 +837,12 @@
    "anomalyLong": "너무 김(>35일)",
    "anomalyIrregular": "불규칙",
    "attention": "주의",
-   "excludedCycles": "비정상적인 수치로 인해 ${stats.excludedCount}개 주기가 평균 길이 계산에서 제외되었습니다.",
    "anomalyWarning": "경고: 일반적인 범위를 벗어남 (분석에 반영됨)",
-   "anomalySevere": "이상: 허용 기준을 초과함 (분석에서 제외됨)"
+   "anomalySevere": "이상: 허용 기준을 초과함 (분석에서 제외됨)",
+   "sourcesTitle": "의학적 출처",
+   "sourcesIntro": "이 보고서에 사용된 참고 범위와 주기 기준은 다음 임상 출처를 기반으로 합니다.",
+   "excludedCycles_one": "값이 비정상적이어서 {{count}}개의 주기가 평균 길이 계산에서 제외되었습니다.",
+   "excludedCycles_other": "값이 비정상적이어서 {{count}}개의 주기가 평균 길이 계산에서 제외되었습니다."
   },
   "analytics": {
    "pulseTitle": "웰니스 지수 측정 중...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Eluna가 마음에 드시나요?",
-   "subtitle": "여러분의 응원이 앱을 더 좋게 만드는 데 큰 힘이 돼요.",
-   "no": "그다지요",
-   "yes": "정말 좋아요!",
    "later": "나중에 할게요",
-   "feedback_title": "죄송해요!",
-   "feedback_msg": "더 나은 앱을 만들 수 있도록 고객지원으로 의견을 보내주세요.",
    "title_new": "더 나은 Eluna를 함께 만들어주세요",
    "description_new": "Eluna는 매일 더 나은 가이드가 되기 위해 발전하고 있어요. 앱을 평가해 주시면 정말 큰 힘이 돼요!",
    "best_hint_new": "별 5개는 저희에게 가장 큰 응원이에요 💛",
@@ -1171,44 +1160,7 @@
    "retry": "다시 시도",
    "errorOldFormat": "이 백업은 이전 버전의 Eluna에서 만들어져 더 이상 열 수 없습니다. 데이터가 아직 남아 있는 기기에서 새 백업을 내보내세요."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "오류",
-    "connectionError": "스토어에 연결할 수 없습니다. 나중에 다시 시도해 주세요.",
-    "purchaseErrorTitle": "구매 오류",
-    "defaultError": "문제가 발생했어요.",
-    "successTitle": "성공",
-    "restoreSuccess": "구매가 성공적으로 복원되었습니다.",
-    "infoTitle": "안내",
-    "noPurchases": "활성 구매 내역을 찾을 수 없습니다.",
-    "restoreErrorTitle": "복원 오류"
-   },
-   "no_ads": {
-    "title": "광고 영구 제거"
-   },
-   "pro": {
-    "title": "PRO 버전 평생 이용"
-   },
-   "features": {
-    "no_ads": "광고 없음",
-    "themes": "프리미엄 테마",
-    "icons": "대체 아이콘",
-    "advanced": "고급 기능",
-    "no_ads_desc": "앱의 모든 광고를 영구적으로 제거합니다. 개발자를 응원해 주세요!"
-   },
-   "title": "앱 개발 후원하기",
-   "subtitle": "새 기능을 잠금 해제하고 광고를 제거할 수 있는 가장 적합한 옵션을 선택하세요. 구독 없이 1회 결제입니다.",
-   "buy": "구매하기",
-   "restore": "구매 복원",
-   "privacy": "개인정보 처리방침",
-   "terms": "이용약관"
-  },
   "cancel": "취소",
-  "purchase": {
-   "restoreSuccess": "구매가 복원되었습니다",
-   "noPurchases": "구매 내역을 찾을 수 없습니다",
-   "restoreError": "구매 복원 중 오류가 발생했습니다"
-  },
   "delayBanner": {
    "cardWaiting": "대기 중",
    "ringWaiting": "월경을 기다리는 중",
@@ -1329,6 +1281,33 @@
     "desc": "드라마, 애니메이션, 영화까지 보는 모든 콘텐츠를 관리하세요. 공개 캘린더와 다음 화 알림, 그리고 완벽한 개인정보 보호까지. 모든 기록은 기기에만 저장됩니다.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "커피 한 잔 사주기",
+   "header": "Eluna가 마음에 드시나요?",
+   "body": "Eluna는 완전히 무료입니다 — 광고도, 구독도 전혀 없습니다. 이 앱이 여러분의 휴대폰에 자리할 만하다고 느끼셨다면, 개발을 응원하는 마음으로 작은 후원을 남기실 수 있습니다. 전적으로 선택 사항이며, 어느 쪽이든 감사드립니다. ☕",
+   "thanks": "정말 감사합니다! ☕ Eluna를 계속 이어가는 데 큰 힘이 됩니다.",
+   "failed": "후원을 완료하지 못했습니다. 다시 시도해 주세요.",
+   "storeUnavailable": "지금은 이 기기에서 인앱 구매를 사용할 수 없습니다.",
+   "paymentPending": "결제가 처리 중입니다 — 감사합니다! 후원은 자동으로 완료됩니다."
+  },
+  "medicalSources": {
+   "title": "의학적 출처",
+   "sources": "출처",
+   "countLabel_one": "참고문헌 {{count}}건",
+   "countLabel_other": "참고문헌 {{count}}건",
+   "intro": "Eluna의 모든 건강 설명, 주기 단계 설명 및 주기 계산은 아래에 나열된 임상 가이드라인과 동료 심사를 거친 연구를 기반으로 합니다. 항목을 탭하면 원본 간행물이 열립니다.",
+   "disclaimer": "Eluna는 의료 기기가 아니며 진단을 제공하지 않습니다. 증상에 대해서는 의료 전문가와 상담하십시오.",
+   "sectionGuidelines": "임상 가이드라인",
+   "sectionResearch": "연구 및 리뷰",
+   "forecastNote": "6일간의 가임기, 배란 추정치 및 약 14일의 황체기는 ASRM 위원회 지침과 ACOG 환자 지침을 따릅니다. 단계 경계는 표준 임상 생리학 참고문헌을 따릅니다. 예측은 통계적 추정치이며, 진단이나 피임 방법이 아닙니다.",
+   "phasesNote": "단계 설명은 표준 임상 생리학 참고문헌을 따르며, 가임기는 ASRM 및 ACOG 지침을, 월경전 증상은 ACOG 임상 지침을 따릅니다.",
+   "explanationNote": "여기에 설명된 호르몬 생리학과 증상 패턴은 동료 심사를 거친 임상 리뷰를 따릅니다.",
+   "footer_one": "Eluna의 건강 정보는 {{count}}개의 의학적 출처를 인용합니다",
+   "footer_other": "Eluna의 건강 정보는 {{count}}개의 의학적 출처를 인용합니다",
+   "conceptionNote": "날짜별 수정 확률은 Wilcox et al. (NEJM 1995) 및 ASRM/ACOG 가임 인식 지침을 따릅니다. 이는 기록된 주기를 바탕으로 한 추정치이며 피임 방법이 아닙니다.",
+   "phaseTipsNote": "여기에 설명된 단계 생리학과 효과는 동료 심사를 거친 임상 참고문헌을 따릅니다. 의학적 치료가 아닌 일반적인 웰빙 제안입니다.",
+   "cycleStatsNote": "주기 길이 기준과 정상 변동에 해당하는 범위는 ACOG 지침과 동료 심사를 거친 연구를 따릅니다."
   }
  },
  "kb": {

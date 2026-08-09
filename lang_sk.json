@@ -675,11 +675,6 @@
    "title": "Nastavenia",
    "time": "Čas",
    "chooseTime": "Vybrať čas",
-   "pro": {
-    "activate": "Aktivovať PRO",
-    "removeAds": "Odstrániť reklamy",
-    "restore": "Obnoviť nákupy"
-   },
    "sections": {
     "privacy": "BEZPEČNOSŤ A SÚKROMIE",
     "cycle": "REŽIMY A EXPORT",
@@ -710,7 +705,6 @@
     "exportBackup": "Exportovať zálohu",
     "importBackup": "Importovať zálohu",
     "cloudSync": "Synchronizácia s cloudom",
-    "adPrivacy": "Súkromie reklám",
     "ourApps": "Naše ďalšie aplikácie"
    },
    "footer": "Všetky údaje sú šifrované a uložené iba na tomto zariadení",
@@ -925,9 +919,12 @@
    "anomalyLong": "Príliš dlhý (>35 dní)",
    "anomalyIrregular": "Nepravidelný",
    "attention": "Upozornenie",
-   "excludedCycles": "${stats.excludedCount} cyklov je vylúčených z výpočtov priemernej dĺžky pre anomálne hodnoty.",
    "anomalyWarning": "Upozornenie: presahuje typický rozsah (zohľadnené v analýze)",
-   "anomalySevere": "Anomália: prekračuje prípustné normy (vylúčené z analýzy)"
+   "anomalySevere": "Anomália: prekračuje prípustné normy (vylúčené z analýzy)",
+   "sourcesTitle": "Lekárske zdroje",
+   "sourcesIntro": "Referenčné rozsahy a normy cyklu použité v tejto správe vychádzajú z nasledujúcich klinických zdrojov.",
+   "excludedCycles_one": "{{count}} cyklus bol vylúčený z výpočtu priemernej dĺžky, pretože jeho hodnoty boli anomálne.",
+   "excludedCycles_other": "{{count}} cyklov bolo vylúčených z výpočtu priemernej dĺžky, pretože ich hodnoty boli anomálne."
   },
   "analytics": {
    "pulseTitle": "Meranie pulzu...",
@@ -1161,44 +1158,7 @@
    "chip_ads": "Príliš veľa reklám",
    "chip_other": "Iné"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Chyba",
-    "connectionError": "Pripojenie k obchodu nie je dostupné. Skúste to znova neskôr.",
-    "purchaseErrorTitle": "Chyba nákupu",
-    "defaultError": "Niečo sa pokazilo.",
-    "successTitle": "Úspech",
-    "restoreSuccess": "Nákupy boli úspešne obnovené.",
-    "infoTitle": "Informácie",
-    "noPurchases": "Neboli nájdené žiadne aktívne nákupy.",
-    "restoreErrorTitle": "Chyba obnovenia"
-   },
-   "no_ads": {
-    "title": "Odstrániť reklamy navždy"
-   },
-   "pro": {
-    "title": "PRO verzia navždy"
-   },
-   "features": {
-    "no_ads": "Bez reklám",
-    "themes": "Prémiové témy",
-    "icons": "Alternatívne ikony",
-    "advanced": "Pokročilé funkcie",
-    "no_ads_desc": "Odstráni všetky reklamy z aplikácie navždy. Podporte vývojára!"
-   },
-   "title": "Podporte vývoj aplikácie",
-   "subtitle": "Vyberte si najlepšiu možnosť na odomknutie nových funkcií a odstránenie reklám. Jednorazová platba, žiadne predplatné.",
-   "buy": "Kúpiť",
-   "restore": "Obnoviť nákupy",
-   "privacy": "Zásady ochrany osobných údajov",
-   "terms": "Podmienky používania"
-  },
   "cancel": "Zrušiť",
-  "purchase": {
-   "restoreSuccess": "Nákupy obnovené",
-   "noPurchases": "Neboli nájdené žiadne nákupy",
-   "restoreError": "Chyba pri obnovení nákupov"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Klinické dôkazy",
@@ -1321,6 +1281,33 @@
     "desc": "Sledujte všetko, čo pozeráte — seriály, anime aj filmy — s kalendárom premiér, pripomienkami na ďalšiu epizódu a plným súkromím. Každý záznam zostáva vo vašom zariadení.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Kúp mi kávu",
+   "header": "Páči sa ti Eluna?",
+   "body": "Eluna je úplne zadarmo — žiadne reklamy, žiadne predplatné, nikdy. Ak si zaslúžila miesto v tvojom telefóne, môžeš nechať malé prepitné na podporu jej vývoja. Je to úplne dobrovoľné a tak či onak ďakujeme. ☕",
+   "thanks": "Ďakujeme pekne! ☕ Naozaj to pomáha udržať Elunu v chode.",
+   "failed": "Prepitné sa nepodarilo dokončiť. Skús to znova.",
+   "storeUnavailable": "Nákupy v aplikácii nie sú na tomto zariadení práve teraz dostupné.",
+   "paymentPending": "Platba sa spracúva — ďakujeme! Tvoje prepitné prejde automaticky."
+  },
+  "medicalSources": {
+   "title": "Lekárske zdroje",
+   "sources": "Zdroje",
+   "countLabel_one": "{{count}} referencia",
+   "countLabel_other": "{{count}} referencií",
+   "intro": "Každé vysvetlenie zdravia, opis fázy a výpočet cyklu v aplikácii Eluna vychádza z klinických usmernení a recenzovaného výskumu uvedeného nižšie. Ťuknutím na ktorúkoľvek položku otvoríte pôvodnú publikáciu.",
+   "disclaimer": "Eluna nie je zdravotnícka pomôcka a neposkytuje diagnózu. Svoje príznaky konzultujte so zdravotníckym odborníkom.",
+   "sectionGuidelines": "Klinické usmernenia",
+   "sectionResearch": "Výskum a prehľady",
+   "forecastNote": "Šesťdňové plodné okno, odhad ovulácie a približne 14-dňová luteálna fáza sa riadia usmernením výboru ASRM a pacientskym usmernením ACOG; hranice fáz vychádzajú zo štandardných klinických fyziologických zdrojov. Predpovede sú štatistické odhady — nie sú diagnózou ani antikoncepčnou metódou.",
+   "phasesNote": "Opisy fáz vychádzajú zo štandardných klinických fyziologických zdrojov; plodné okno sa riadi usmerneniami ASRM a ACOG a predmenštruačné príznaky sa riadia klinickým usmernením ACOG.",
+   "explanationNote": "Hormonálna fyziológia a vzorce príznakov opísané tu vychádzajú z recenzovaných klinických prehľadov.",
+   "footer_one": "Zdravotné informácie v aplikácii Eluna citujú {{count}} lekársky zdroj",
+   "footer_other": "Zdravotné informácie v aplikácii Eluna citujú {{count}} lekárskych zdrojov",
+   "conceptionNote": "Pravdepodobnosť počatia špecifická pre daný deň vychádza z Wilcox et al. (NEJM 1995) a usmernení ASRM/ACOG o uvedomovaní si plodnosti. Ide o odhad z vašich zaznamenaných cyklov — nie o antikoncepčnú metódu.",
+   "phaseTipsNote": "Fyziológia fázy a účinky opísané tu vychádzajú z recenzovaných klinických zdrojov. Ide o všeobecné odporúčania pre pohodu, nie o lekársku liečbu.",
+   "cycleStatsNote": "Normy dĺžky cyklu a to, čo sa považuje za normálnu variabilitu, vychádzajú z usmernení ACOG a recenzovaného výskumu."
   }
  },
  "kb": {

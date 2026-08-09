@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Ormoni e regolazione",
      "cycle_basics": "Nozioni base sul ciclo",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Segnali di dolore",
      "fertility_help": "Supporto alla fertilità",
      "lifestyle_selfhelp": "Stile di vita e cura di sé",
-     "medical_advice": "When to see a doctor",
      "general": "Generale",
      "pms": "PMS",
      "fertility": "Fertilità",
@@ -673,11 +671,6 @@
    "title": "Impostazioni",
    "time": "Ora",
    "chooseTime": "Scegli l’ora",
-   "pro": {
-    "activate": "Attiva PRO",
-    "removeAds": "Rimuovi annunci",
-    "restore": "Ripristina acquisti"
-   },
    "sections": {
     "privacy": "SICUREZZA E PRIVACY",
     "cycle": "MODALITÀ ED ESPORTAZIONE",
@@ -708,7 +701,6 @@
     "exportBackup": "Esporta backup",
     "importBackup": "Importa backup",
     "cloudSync": "Sincronizzazione cloud",
-    "adPrivacy": "Privacy pubblicità",
     "ourApps": "Le nostre altre app"
    },
    "footer": "Tutti i dati sono crittografati e salvati solo su questo dispositivo",
@@ -845,9 +837,12 @@
    "anomalyLong": "Troppo lungo (>35 giorni)",
    "anomalyIrregular": "Irregolare",
    "attention": "Attenzione",
-   "excludedCycles": "${stats.excludedCount} ciclo/i esclusi dal calcolo della durata media a causa di valori anomali.",
    "anomalyWarning": "Avviso: fuori dall'intervallo tipico (considerato nell'analisi)",
-   "anomalySevere": "Anomalia: supera i limiti consentiti (escluso dall'analisi)"
+   "anomalySevere": "Anomalia: supera i limiti consentiti (escluso dall'analisi)",
+   "sourcesTitle": "Fonti mediche",
+   "sourcesIntro": "Gli intervalli di riferimento e le norme del ciclo utilizzati in questo report si basano sulle seguenti fonti cliniche.",
+   "excludedCycles_one": "{{count}} ciclo è stato escluso dal calcolo della durata media perché i suoi valori erano anomali.",
+   "excludedCycles_other": "{{count}} cicli sono stati esclusi dal calcolo della durata media perché i loro valori erano anomali."
   },
   "analytics": {
    "pulseTitle": "Calcolo dell’indice in corso...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Ti piace Eluna?",
-   "subtitle": "Il tuo supporto ci aiuta a migliorare l'app.",
-   "no": "Non molto",
-   "yes": "La adoro!",
    "later": "Magari più tardi",
-   "feedback_title": "Ci dispiace!",
-   "feedback_msg": "Scrivi al nostro supporto così potremo migliorare.",
    "title_new": "Aiutaci a migliorare",
    "description_new": "Ogni giorno facciamo evolvere Eluna per renderla la tua guida ideale. Lascia una valutazione dell'app: per noi significa tantissimo!",
    "best_hint_new": "5 stelle sono la nostra ricompensa più grande 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Riprova",
    "errorOldFormat": "Questo backup è stato creato con una versione precedente di Eluna e non può più essere aperto. Esportane uno nuovo dal dispositivo che contiene ancora i tuoi dati."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Errore",
-    "connectionError": "Connessione allo store non disponibile. Riprova più tardi.",
-    "purchaseErrorTitle": "Errore di acquisto",
-    "defaultError": "Qualcosa è andato storto.",
-    "successTitle": "Operazione riuscita",
-    "restoreSuccess": "Acquisti ripristinati con successo.",
-    "infoTitle": "Info",
-    "noPurchases": "Nessun acquisto attivo trovato.",
-    "restoreErrorTitle": "Errore di ripristino"
-   },
-   "no_ads": {
-    "title": "Rimuovi la pubblicità per sempre"
-   },
-   "pro": {
-    "title": "Versione PRO per sempre"
-   },
-   "features": {
-    "no_ads": "Niente pubblicità",
-    "themes": "Temi premium",
-    "icons": "Icone alternative",
-    "advanced": "Funzionalità avanzate",
-    "no_ads_desc": "Rimuove per sempre tutta la pubblicità dall'app. Supporta lo sviluppatore!"
-   },
-   "title": "Supporta lo sviluppo dell'app",
-   "subtitle": "Scegli l'opzione migliore per sbloccare nuove funzionalità e rimuovere la pubblicità. Pagamento una tantum, senza abbonamenti.",
-   "buy": "Acquista",
-   "restore": "Ripristina acquisti",
-   "privacy": "Informativa sulla privacy",
-   "terms": "Termini di servizio"
-  },
   "cancel": "Annulla",
-  "purchase": {
-   "restoreSuccess": "Acquisti ripristinati",
-   "noPurchases": "Nessun acquisto trovato",
-   "restoreError": "Errore durante il ripristino degli acquisti"
-  },
   "delayBanner": {
    "cardWaiting": "In sospeso",
    "ringWaiting": "In attesa delle tue mestruazioni",
@@ -1329,6 +1281,33 @@
     "desc": "Tieni traccia di tutto ciò che guardi — serie, anime e film — con un calendario delle uscite, promemoria per il prossimo episodio e piena privacy. Ogni elemento resta sul tuo dispositivo.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Offrimi un caffè",
+   "header": "Ti piace Eluna?",
+   "body": "Eluna è completamente gratuita — niente pubblicità, nessun abbonamento, mai. Se si è guadagnata un posto sul tuo telefono, puoi lasciare una piccola mancia per sostenerne lo sviluppo. È del tutto facoltativo e grazie comunque. ☕",
+   "thanks": "Grazie di cuore! ☕ Aiuti davvero a mandare avanti Eluna.",
+   "failed": "Non è stato possibile completare la mancia. Riprova.",
+   "storeUnavailable": "Gli acquisti in-app non sono disponibili su questo dispositivo al momento.",
+   "paymentPending": "Il pagamento è in corso — grazie! La tua mancia verrà completata automaticamente."
+  },
+  "medicalSources": {
+   "title": "Fonti mediche",
+   "sources": "Fonti",
+   "countLabel_one": "{{count}} riferimento",
+   "countLabel_other": "{{count}} riferimenti",
+   "intro": "Ogni spiegazione sulla salute, descrizione delle fasi e calcolo del ciclo in Eluna si basa sulle linee guida cliniche e sulla ricerca sottoposta a revisione paritaria elencate di seguito. Tocca una voce per aprire la pubblicazione originale.",
+   "disclaimer": "Eluna non è un dispositivo medico e non fornisce diagnosi. Discuti dei tuoi sintomi con un professionista sanitario.",
+   "sectionGuidelines": "Linee guida cliniche",
+   "sectionResearch": "Ricerca e revisioni",
+   "forecastNote": "La finestra fertile di sei giorni, la stima dell'ovulazione e la fase luteale di circa 14 giorni seguono le indicazioni del comitato ASRM e le indicazioni per i pazienti dell'ACOG; i confini delle fasi seguono i riferimenti standard di fisiologia clinica. Le previsioni sono stime statistiche, non una diagnosi né un metodo contraccettivo.",
+   "phasesNote": "Le descrizioni delle fasi seguono i riferimenti standard di fisiologia clinica; la finestra fertile segue le indicazioni di ASRM e ACOG e i sintomi premestruali seguono le indicazioni cliniche dell'ACOG.",
+   "explanationNote": "La fisiologia ormonale e i modelli sintomatici qui descritti seguono revisioni cliniche sottoposte a revisione paritaria.",
+   "footer_one": "Le informazioni sulla salute in Eluna citano {{count}} fonte medica",
+   "footer_other": "Le informazioni sulla salute in Eluna citano {{count}} fonti mediche",
+   "conceptionNote": "La probabilità di concepimento specifica per giorno segue Wilcox et al. (NEJM 1995) e le indicazioni sulla consapevolezza della fertilità di ASRM/ACOG. È una stima basata sui cicli che hai registrato, non un metodo contraccettivo.",
+   "phaseTipsNote": "La fisiologia delle fasi e gli effetti qui descritti seguono riferimenti clinici sottoposti a revisione paritaria. Suggerimenti generali per il benessere, non trattamento medico.",
+   "cycleStatsNote": "Le norme sulla durata del ciclo e ciò che è considerato una variazione normale seguono le indicazioni dell'ACOG e la ricerca sottoposta a revisione paritaria."
   }
  },
  "kb": {

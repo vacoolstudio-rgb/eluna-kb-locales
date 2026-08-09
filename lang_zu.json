@@ -675,11 +675,6 @@
    "title": "Izilungiselelo",
    "time": "Isikhathi",
    "chooseTime": "Khetha isikhathi",
-   "pro": {
-    "activate": "Sebenzisa i-PRO",
-    "removeAds": "Susa Izikhangiso",
-    "restore": "Buyisela ukuthenga"
-   },
    "sections": {
     "privacy": "UKUPHEPHA & UKUHLONIPHA",
     "cycle": "IZIMODI & UKUTHUMELA",
@@ -710,7 +705,6 @@
     "exportBackup": "Thumela Isipele",
     "importBackup": "Ngenisa Isipele",
     "cloudSync": "Ukuvumelanisa Kwefu",
-    "adPrivacy": "Ubumfihlo bezikhangiso",
     "ourApps": "Ezinye izinhlelo zethu"
    },
    "footer": "Yonke idatha iyafihlwa futhi igcinwa kuphela kudivayisi le",
@@ -925,9 +919,12 @@
    "anomalyLong": "Kude kakhulu (>35 izinsuku)",
    "anomalyIrregular": "Okungajwayelekile",
    "attention": "Qaphela",
-   "excludedCycles": "Imijikelezo engu-${stats.excludedCount} ikhishiwe ekubalweni kobude obumaphakathi ngenxa yezinombolo ezingajwayelekile.",
    "anomalyWarning": "Isexwayiso: iphuma ebangeni elivamile (kubalwe ekuhlaziyeni)",
-   "anomalySevere": "Ukungajwayeleki: kudlula amazinga avunyelwe (kukhishwe ekuhlaziyeni)"
+   "anomalySevere": "Ukungajwayeleki: kudlula amazinga avunyelwe (kukhishwe ekuhlaziyeni)",
+   "sourcesTitle": "Imithombo yezokwelapha",
+   "sourcesIntro": "Amabanga ezinkomba namazinga omjikelezo asetshenziswe kulo mbiko asekelwe kule mithombo yezokwelapha elandelayo.",
+   "excludedCycles_one": "Umjikelezo ongu-{{count}} ususiwe ekubalweni kobude obumaphakathi ngoba amagugu awo ayengajwayelekile.",
+   "excludedCycles_other": "Imijikelezo engu-{{count}} isusiwe ekubalweni kobude obumaphakathi ngoba amagugu ayo ayengajwayelekile."
   },
   "analytics": {
    "pulseTitle": "Kulinganisa isifuba...",
@@ -1161,44 +1158,7 @@
    "chip_ads": "Izikhangiso eziningi kakhulu",
    "chip_other": "Okunye"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Iphutha",
-    "connectionError": "Uxhumano lwesitolo alutholakali. Zama futhi kamuva.",
-    "purchaseErrorTitle": "Iphutha Lokuthenga",
-    "defaultError": "Kukhona okungahambi kahle.",
-    "successTitle": "Impumelelo",
-    "restoreSuccess": "Ukuthenga kubuyiselwe ngempumelelo.",
-    "infoTitle": "Ulwazi",
-    "noPurchases": "Ayikho ukuthenga okusebenzayo okutholakele.",
-    "restoreErrorTitle": "Iphutha Lokubuyisela"
-   },
-   "no_ads": {
-    "title": "Susa Izikhangiso Unomphela"
-   },
-   "pro": {
-    "title": "Inguqulo ye-PRO Unomphela"
-   },
-   "features": {
-    "no_ads": "Azikho Izikhangiso",
-    "themes": "Izindikimba Ezisezingeni Eliphezulu",
-    "icons": "Izithonjana Ezingezinye",
-    "advanced": "Izici Ezithuthukisiwe",
-    "no_ads_desc": "Isusa zonke izikhangiso kuhlelo lokusebenza unomphela. Sekela umthuthukisi!"
-   },
-   "title": "Sekela Ukuthuthukiswa Kohlelo Lokusebenza",
-   "subtitle": "Khetha inketho engcono kakhulu yokuvula izici ezintsha nokususa izikhangiso. Inkokhelo eyodwa, akukho okubhaliselwe.",
-   "buy": "Thenga",
-   "restore": "Buyisela Ukuthenga",
-   "privacy": "Inqubomgomo Yobumfihlo",
-   "terms": "Imigomo Yokusebenzisa"
-  },
   "cancel": "Khansela",
-  "purchase": {
-   "restoreSuccess": "Ukuthenga kubuyiselwe",
-   "noPurchases": "Ayikho ukuthenga okutholakele",
-   "restoreError": "Iphutha ekubuyiseleni ukuthenga"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Ubufakazi Bezokwelapha",
@@ -1321,6 +1281,33 @@
     "desc": "Landelela konke okubukayo — uchungechunge, i-anime, namamuvi — ngekhalenda yokukhishwa, izikhumbuzi zesiqephu esilandelayo, nobumfihlo obugcwele. Yonke into oyifakayo ihlala kudivayisi yakho.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Ngithengele ikhofi",
+   "header": "Uyakujabulela yini i-Eluna?",
+   "body": "I-Eluna imahhala ngokuphelele — azikho izikhangiso, akukho ukubhalisa, naphakade. Uma ithole indawo efonini yakho, ungashiya ithiphu encane ukuze usekele ukuthuthukiswa kwayo. Kungokuzikhethela ngokuphelele, futhi siyabonga noma kunjani. ☕",
+   "thanks": "Ngiyabonga kakhulu! ☕ Kusiza ngempela ukugcina i-Eluna iqhubeka.",
+   "failed": "Ithiphu ayikwazanga ukuqedwa. Sicela uzame futhi.",
+   "storeUnavailable": "Ukuthenga ngaphakathi kohlelo lokusebenza akutholakali kule divayisi njengamanje.",
+   "paymentPending": "Inkokhelo iyacutshungulwa — siyabonga! Ithiphu yakho izophela ngokuzenzakalelayo."
+  },
+  "medicalSources": {
+   "title": "Imithombo yezokwelapha",
+   "sources": "Imithombo",
+   "countLabel_one": "inkomba engu-{{count}}",
+   "countLabel_other": "izinkomba ezingu-{{count}}",
+   "intro": "Yonke incazelo yezempilo, incazelo yesigaba, nokubalwa komjikelezo ku-Eluna kusekelwe ezinkombeni zomtholampilo nocwaningo oluhlolwe ontanga olubalwe ngezansi. Thepha noma yikuphi okufakiwe ukuze uvule umbhalo wokuqala.",
+   "disclaimer": "I-Eluna akulona ithuluzi lezokwelapha futhi ayinikezi ukuxilongwa. Xoxa ngezimpawu zakho nochwepheshe wezempilo.",
+   "sectionGuidelines": "Iziqondiso zomtholampilo",
+   "sectionResearch": "Ucwaningo nezibuyekezo",
+   "forecastNote": "Iwindi lokukhulelwa lezinsuku eziyisithupha, isilinganiso sokukhishwa keqanda, nesigaba se-luteal esingu-~14 wezinsuku kulandela isiqondiso sekomiti le-ASRM nesiqondiso seziguli se-ACOG; imingcele yezigaba ilandela izinkomba ezijwayelekile ze-physiology yomtholampilo. Iziqagelo yizilinganiso zezibalo — akukhona ukuxilongwa futhi akukhona indlela yokuvimbela ukukhulelwa.",
+   "phasesNote": "Izincazelo zezigaba zilandela izinkomba ezijwayelekile ze-physiology yomtholampilo; iwindi lokukhulelwa lilandela isiqondiso se-ASRM ne-ACOG, kanti izimpawu zangaphambi kokuya esikhathini zilandela isiqondiso somtholampilo se-ACOG.",
+   "explanationNote": "I-physiology yamahomoni namaphethini ezimpawu achazwe lapha alandela izibuyekezo zomtholampilo ezihlolwe ontanga.",
+   "footer_one": "Ulwazi lwezempilo ku-Eluna lucaphuna umthombo wezokwelapha ongu-{{count}}",
+   "footer_other": "Ulwazi lwezempilo ku-Eluna lucaphuna imithombo yezokwelapha engu-{{count}}",
+   "conceptionNote": "Amathuba okukhulelwa asuku oluthile alandela u-Wilcox et al. (NEJM 1995) nesiqondiso sokuqwashisa ngokukhulelwa se-ASRM/ACOG. Kuyisilinganiso esisuselwa emijikelezweni oyirekhodile — akukhona indlela yokuvimbela ukukhulelwa.",
+   "phaseTipsNote": "I-physiology yezigaba nemiphumela echazwe lapha ilandela izinkomba zomtholampilo ezihlolwe ontanga. Iziphakamiso jikelele zenhlalakahle, hhayi ukwelashwa kwezokwelapha.",
+   "cycleStatsNote": "Amazinga obude bomjikelezo nokuthi yini ebalwa njengokuhluka okujwayelekile kulandela isiqondiso se-ACOG nocwaningo oluhlolwe ontanga."
   }
  },
  "kb": {

@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Homoni na Udhibiti",
      "cycle_basics": "Misingi ya Mzunguko",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Tahadhari ya Maumivu",
      "fertility_help": "Msaada wa Uzazi",
      "lifestyle_selfhelp": "Mtindo wa Maisha na Kujitunza",
-     "medical_advice": "When to see a doctor",
      "general": "Jumla",
      "pms": "PMS",
      "fertility": "Uzazi",
@@ -673,11 +671,6 @@
    "title": "Mipangilio",
    "time": "Muda",
    "chooseTime": "Chagua muda",
-   "pro": {
-    "activate": "Washa PRO",
-    "removeAds": "Ondoa Matangazo",
-    "restore": "Rejesha ununuzi"
-   },
    "sections": {
     "privacy": "USALAMA NA FARAGHA",
     "cycle": "HALI NA USAFIRISHAJI WA DATA",
@@ -708,7 +701,6 @@
     "exportBackup": "Hamisha nakala rudufu",
     "importBackup": "Ingiza nakala rudufu",
     "cloudSync": "Ulandanishaji wa Wingu",
-    "adPrivacy": "Faragha ya matangazo",
     "ourApps": "Programu zetu nyingine"
    },
    "footer": "Data zote zimesimbwa na kuhifadhiwa kwenye kifaa hiki pekee",
@@ -845,9 +837,12 @@
    "anomalyLong": "Mrefu sana (>35 days)",
    "anomalyIrregular": "Usio wa kawaida",
    "attention": "Angalizo",
-   "excludedCycles": "${stats.excludedCount} mzunguko/mizunguko imetengwa kutoka kwa hesabu za urefu wa wastani kutokana na viashiria visivyo vya kawaida.",
    "anomalyWarning": "Onyo: iko nje ya kiwango cha kawaida (imezingatiwa katika uchambuzi)",
-   "anomalySevere": "Kasoro: inazidi mipaka inayoruhusiwa (imetengwa kutoka kwa uchambuzi)"
+   "anomalySevere": "Kasoro: inazidi mipaka inayoruhusiwa (imetengwa kutoka kwa uchambuzi)",
+   "sourcesTitle": "Vyanzo vya Kitiba",
+   "sourcesIntro": "Vipimo vya marejeo na viwango vya mzunguko vilivyotumika katika ripoti hii vinatokana na vyanzo vya kitabibu vifuatavyo.",
+   "excludedCycles_one": "Mzunguko {{count}} uliondolewa kutoka kwa hesabu ya urefu wa wastani kwa sababu thamani zake zilikuwa zisizo za kawaida.",
+   "excludedCycles_other": "Mizunguko {{count}} iliondolewa kutoka kwa hesabu ya urefu wa wastani kwa sababu thamani zake zilikuwa zisizo za kawaida."
   },
   "analytics": {
    "pulseTitle": "Tunapima hali yako...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Unaipenda Eluna?",
-   "subtitle": "Msaada wako hutusaidia kuboresha programu.",
-   "no": "Si sana",
-   "yes": "Naipenda sana!",
    "later": "Labda baadaye",
-   "feedback_title": "Pole sana!",
-   "feedback_msg": "Tafadhali andikia timu yetu ya usaidizi ili tuweze kuboresha.",
    "title_new": "Tusaidie kuboresha",
    "description_new": "Kila siku tunaiboresha Eluna ili iwe mwongozo wako bora. Tafadhali kadiria programu тАФ hilo lina maana kubwa sana kwetu!",
    "best_hint_new": "Nyota 5 ndiyo zawadi yetu kubwa zaidi ЁЯТЫ",
@@ -1171,44 +1160,7 @@
    "retry": "Jaribu tena",
    "errorOldFormat": "Nakala hii ya akiba ilitengenezwa na toleo la zamani la Eluna na haiwezi tena kufunguliwa. Hamisha nakala mpya kutoka kwa kifaa ambacho bado kina data yako."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Hitilafu",
-    "connectionError": "Muunganisho wa duka haupatikani. Jaribu tena baadaye.",
-    "purchaseErrorTitle": "Hitilafu ya Ununuzi",
-    "defaultError": "Kuna tatizo limetokea.",
-    "successTitle": "Imefanikiwa",
-    "restoreSuccess": "Manunuzi yamerejeshwa kwa mafanikio.",
-    "infoTitle": "Taarifa",
-    "noPurchases": "Hakuna manunuzi hai yaliyopatikana.",
-    "restoreErrorTitle": "Hitilafu ya Urejeshaji"
-   },
-   "no_ads": {
-    "title": "Ondoa Matangazo Milele"
-   },
-   "pro": {
-    "title": "Toleo la PRO Milele"
-   },
-   "features": {
-    "no_ads": "Hakuna Matangazo",
-    "themes": "Mandhari za Premium",
-    "icons": "Aikoni Mbadala",
-    "advanced": "Vipengele vya Kina",
-    "no_ads_desc": "Huondoa matangazo yote kwenye programu milele. Muunge mkono mtengenezaji!"
-   },
-   "title": "Saidia maendeleo ya programu",
-   "subtitle": "Chagua chaguo bora zaidi ili kufungua vipengele vipya na kuondoa matangazo. Malipo ya mara moja, hakuna usajili.",
-   "buy": "Nunua",
-   "restore": "Rejesha Manunuzi",
-   "privacy": "Sera ya Faragha",
-   "terms": "Masharti ya Huduma"
-  },
   "cancel": "Ghairi",
-  "purchase": {
-   "restoreSuccess": "Manunuzi yamerejeshwa",
-   "noPurchases": "Hakuna manunuzi yaliyopatikana",
-   "restoreError": "Hitilafu ya kurejesha manunuzi"
-  },
   "kbLoading": {
    "loading": "Inapakia hifadhi ya maarifa…",
    "errorTitle": "Imeshindwa kupakia hifadhi ya maarifa",
@@ -1292,7 +1244,8 @@
    "activeSearch": {
     "title": "Hedhi yako imechelewa",
     "desc": "Siku chache upande wowote ni kawaida, na msongo wa mawazo, kusafiri au ugonjwa vyote vinaweza kubadilisha mzunguko. Je, umeanza kutoka damu?",
-    "btnYes": "Ndiyo, rekodi hedhi yangu"
+    "btnYes": "Ndiyo, rekodi hedhi yangu",
+    "btnNo": "Bado"
    },
    "clinicalDelay": {
     "title": "Hedhi yako imechelewa sana",
@@ -1315,6 +1268,46 @@
     "desc": "Fuatilia kila kitu unachotazama — mfululizo, anime, na filamu — kwa kalenda ya matoleo, vikumbusho vya kipindi kinachofuata, na faragha kamili. Kila kiingizo hubaki kwenye kifaa chako.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Ninunulie kahawa",
+   "header": "Unafurahia Eluna?",
+   "body": "Eluna ni bila malipo kabisa — hakuna matangazo, hakuna usajili, kamwe. Ikiwa imestahili nafasi kwenye simu yako, unaweza kuacha kidokezo kidogo kusaidia uendelezaji wake. Ni hiari kabisa, na asante vyovyote vile. ☕",
+   "thanks": "Asante sana! ☕ Kwa kweli inasaidia kuiendeleza Eluna.",
+   "failed": "Kidokezo hakikuweza kukamilika. Tafadhali jaribu tena.",
+   "storeUnavailable": "Manunuzi ndani ya programu hayapatikani kwenye kifaa hiki kwa sasa.",
+   "paymentPending": "Malipo yanachakatwa — asante! Kidokezo chako kitakamilika kiotomatiki."
+  },
+  "medicalSources": {
+   "title": "Vyanzo vya Kitiba",
+   "sources": "Vyanzo",
+   "countLabel_one": "rejea {{count}}",
+   "countLabel_other": "rejea {{count}}",
+   "intro": "Kila ufafanuzi wa afya, maelezo ya awamu na hesabu ya mzunguko katika Eluna yanatokana na miongozo ya kitabibu na tafiti zilizopitiwa na wataalamu wenzao zilizoorodheshwa hapa chini. Gusa kipengele chochote ili kufungua chapisho asilia.",
+   "disclaimer": "Eluna si kifaa cha kitiba na haitoi utambuzi wa ugonjwa. Jadili dalili zako na mtaalamu wa afya.",
+   "sectionGuidelines": "Miongozo ya kitabibu",
+   "sectionResearch": "Tafiti na mapitio",
+   "forecastNote": "Kipindi cha rutuba cha siku sita, makadirio ya kupevuka kwa yai na awamu ya luteal ya takribani siku 14 vinafuata mwongozo wa kamati ya ASRM na mwongozo wa wagonjwa wa ACOG; mipaka ya awamu inafuata marejeo ya kawaida ya fiziolojia ya kitabibu. Utabiri ni makadirio ya kitakwimu — si utambuzi wala si njia ya uzazi wa mpango.",
+   "phasesNote": "Maelezo ya awamu yanafuata marejeo ya kawaida ya fiziolojia ya kitabibu; kipindi cha rutuba kinafuata mwongozo wa ASRM na ACOG, na dalili za kabla ya hedhi zinafuata mwongozo wa kitabibu wa ACOG.",
+   "explanationNote": "Fiziolojia ya homoni na mifumo ya dalili iliyoelezwa hapa inafuata mapitio ya kitabibu yaliyopitiwa na wataalamu wenzao.",
+   "footer_one": "Taarifa za afya katika Eluna zinataja chanzo {{count}} cha kitiba",
+   "footer_other": "Taarifa za afya katika Eluna zinataja vyanzo {{count}} vya kitiba",
+   "conceptionNote": "Uwezekano wa kutunga mimba kulingana na siku unafuata Wilcox et al. (NEJM 1995) na mwongozo wa ufahamu wa rutuba wa ASRM/ACOG. Ni makadirio kutoka kwa mizunguko uliyoirekodi — si njia ya uzazi wa mpango.",
+   "phaseTipsNote": "Fiziolojia ya awamu na athari zilizoelezwa hapa zinafuata marejeo ya kitabibu yaliyopitiwa na wataalamu wenzao. Ni mapendekezo ya ustawi wa jumla, si matibabu ya kitiba.",
+   "cycleStatsNote": "Viwango vya kawaida vya urefu wa mzunguko na kile kinachohesabika kama mabadiliko ya kawaida vinafuata mwongozo wa ACOG na tafiti zilizopitiwa na wataalamu wenzao."
+  },
+  "about": {
+   "title": "Kuhusu Programu",
+   "description": "Eluna ni kifuatiliaji cha mzunguko wa hedhi kinachozingatia faragha na kinachofanya kazi bila mtandao kwanza, chenye injini ya uchambuzi yenye akili. Data yako yote imesimbwa kwa njia fiche na kuhifadhiwa kwa usalama katika kifaa hiki pekee.",
+   "licensesTitle": "Leseni za Chanzo Huria",
+   "licensesDesc": "Tunatumia programu na vipengele vifuatavyo vya chanzo huria:",
+   "version": "Toleo {{version}}",
+   "license_drizzle": "Drizzle ORM (Apache License 2.0)",
+   "license_react_native": "React Native (MIT License)",
+   "license_vector_icons": "@expo/vector-icons (MIT / SIL OFL 1.1)",
+   "license_zustand": "Zustand (MIT License)",
+   "license_expo": "Expo (MIT License)",
+   "license_react_navigation": "React Navigation (MIT License)"
   }
  },
  "kb": {

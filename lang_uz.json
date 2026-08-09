@@ -675,11 +675,6 @@
    "title": "Sozlamalar",
    "time": "Vaqt",
    "chooseTime": "Vaqtni tanlang",
-   "pro": {
-    "activate": "PRO-ni faollashtirish",
-    "removeAds": "Reklamalarni olib tashlash",
-    "restore": "Xaridlarni tiklash"
-   },
    "sections": {
     "privacy": "XAVFSIZLIK VA MAXFIYLIK",
     "cycle": "REJIMLAR VA EKSPORT",
@@ -710,7 +705,6 @@
     "exportBackup": "Zaxira nusxasini eksport qilish",
     "importBackup": "Zaxira nusxasini import qilish",
     "cloudSync": "Bulutli sinxronlash",
-    "adPrivacy": "Reklama maxfiyligi",
     "ourApps": "Boshqa ilovalarimiz"
    },
    "footer": "Barcha ma'lumotlar shifrlangan va faqat ushbu qurilmada saqlanadi",
@@ -925,9 +919,12 @@
    "anomalyLong": "Juda uzun (>35 kun)",
    "anomalyIrregular": "Noto'g'ri",
    "attention": "Diqqat",
-   "excludedCycles": "${stats.excludedCount} ta sikl anomal ko'rsatkichlar tufayli o'rtacha uzunlik hisob-kitobidan chiqarib tashlangan.",
    "anomalyWarning": "Ogohlantirish: odatiy diapazondan tashqarida (tahlilda hisobga olingan)",
-   "anomalySevere": "Anomaliya: ruxsat etilgan me'yorlardan oshib ketadi (tahlildan chiqarilgan)"
+   "anomalySevere": "Anomaliya: ruxsat etilgan me'yorlardan oshib ketadi (tahlildan chiqarilgan)",
+   "sourcesTitle": "Tibbiy manbalar",
+   "sourcesIntro": "Ushbu hisobotda ishlatilgan me'yoriy diapazonlar va tsikl normalari quyidagi klinik manbalarga asoslanadi.",
+   "excludedCycles_one": "{{count}} tsikl qiymatlari anomal bo'lgani uchun o'rtacha uzunlik hisobidan chiqarib tashlandi.",
+   "excludedCycles_other": "{{count}} ta tsikl qiymatlari anomal bo'lgani uchun o'rtacha uzunlik hisobidan chiqarib tashlandi."
   },
   "analytics": {
    "pulseTitle": "Puls o'lchanmoqda...",
@@ -1161,44 +1158,7 @@
    "chip_ads": "Juda ko'p reklamalar",
    "chip_other": "Boshqa"
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Xato",
-    "connectionError": "Do'kon bilan ulanish mavjud emas. Keyinroq qayta urinib ko'ring.",
-    "purchaseErrorTitle": "Xarid Xatosi",
-    "defaultError": "Nimadir noto'g'ri ketdi.",
-    "successTitle": "Muvaffaqiyat",
-    "restoreSuccess": "Xaridlar muvaffaqiyatli tiklandi.",
-    "infoTitle": "Ma'lumot",
-    "noPurchases": "Faol xaridlar topilmadi.",
-    "restoreErrorTitle": "Tiklash Xatosi"
-   },
-   "no_ads": {
-    "title": "Reklamalarni Abadiy O'chirish"
-   },
-   "pro": {
-    "title": "PRO Versiya Abadiy"
-   },
-   "features": {
-    "no_ads": "Reklamasiz",
-    "themes": "Premium Mavzular",
-    "icons": "Muqobil Belgilar",
-    "advanced": "Ilg'or Funksiyalar",
-    "no_ads_desc": "Ilovadan barcha reklamalarni abadiy olib tashlaydi. Dasturchini qo'llab-quvvatlang!"
-   },
-   "title": "Ilova Rivojlanishini Qo'llab-quvvatlang",
-   "subtitle": "Yangi funksiyalarni ochish va reklamalarni olib tashlash uchun eng yaxshi variantni tanlang. Bir martalik to'lov, obunalar yo'q.",
-   "buy": "Sotib olish",
-   "restore": "Xaridlarni Tiklash",
-   "privacy": "Maxfiylik Siyosati",
-   "terms": "Foydalanish Shartlari"
-  },
   "cancel": "Bekor qilish",
-  "purchase": {
-   "restoreSuccess": "Xaridlar tiklandi",
-   "noPurchases": "Xaridlar topilmadi",
-   "restoreError": "Xaridlarni tiklashda xato"
-  },
   "knowledge": {
    "misc": {
     "clinicalEvidence": "Klinik Dalillar",
@@ -1321,6 +1281,33 @@
     "desc": "Ko'radigan hamma narsangizni — seriallar, anime va filmlarni — chiqish taqvimi, keyingi epizod eslatmalari va to'liq maxfiylik bilan kuzatib boring. Har bir yozuv qurilmangizda saqlanadi.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Menga bir qahva ulashing",
+   "header": "Eluna yoqyaptimi?",
+   "body": "Eluna butunlay bepul — reklama yo'q, obuna yo'q, hech qachon. Agar u telefoningizdan joy olgan bo'lsa, uning rivojlanishini qo'llab-quvvatlash uchun kichik in'om qoldirishingiz mumkin. Bu butunlay ixtiyoriy, va har holda rahmat. ☕",
+   "thanks": "Katta rahmat! ☕ Bu Elunani ishlab turishiga chindan ham yordam beradi.",
+   "failed": "In'omni yakunlab bo'lmadi. Iltimos, qayta urinib ko'ring.",
+   "storeUnavailable": "Hozircha bu qurilmada ilova ichidagi xaridlar mavjud emas.",
+   "paymentPending": "To'lov amalga oshirilmoqda — rahmat! In'omingiz avtomatik tarzda o'tadi."
+  },
+  "medicalSources": {
+   "title": "Tibbiy manbalar",
+   "sources": "Manbalar",
+   "countLabel_one": "{{count}} manba",
+   "countLabel_other": "{{count}} ta manba",
+   "intro": "Eluna'dagi har bir sog'liq tushuntirishi, faza tavsifi va tsikl hisob-kitobi quyida keltirilgan klinik ko'rsatmalar va taqriz qilingan tadqiqotlarga asoslanadi. Asl nashrni ochish uchun istalgan yozuvni bosing.",
+   "disclaimer": "Eluna tibbiy qurilma emas va tashxis qo'ymaydi. Alomatlaringizni sog'liqni saqlash mutaxassisi bilan muhokama qiling.",
+   "sectionGuidelines": "Klinik ko'rsatmalar",
+   "sectionResearch": "Tadqiqotlar va taqrizlar",
+   "forecastNote": "Olti kunlik hosildorlik oynasi, ovulyatsiya bahosi va ~14 kunlik luteal faza ASRM qo'mitasi ko'rsatmalari va ACOG bemor ko'rsatmalariga amal qiladi; faza chegaralari standart klinik fiziologiya manbalariga asoslanadi. Bashoratlar statistik baholardir — tashxis emas va kontratseptiv usul emas.",
+   "phasesNote": "Faza tavsiflari standart klinik fiziologiya manbalariga amal qiladi; hosildorlik oynasi ASRM va ACOG ko'rsatmalariga, hayz oldi alomatlari esa ACOG klinik ko'rsatmalariga asoslanadi.",
+   "explanationNote": "Bu yerda tasvirlangan gormonal fiziologiya va alomat naqshlari taqriz qilingan klinik sharhlarga asoslanadi.",
+   "footer_one": "Eluna'dagi sog'liq ma'lumotlari {{count}} tibbiy manbaga tayanadi",
+   "footer_other": "Eluna'dagi sog'liq ma'lumotlari {{count}} ta tibbiy manbaga tayanadi",
+   "conceptionNote": "Kunga xos homiladorlik ehtimoli Wilcox et al. (NEJM 1995) va ASRM/ACOG hosildorlikni bilish ko'rsatmalariga amal qiladi. Bu qayd etilgan tsikllaringizdan olingan baho — kontratseptiv usul emas.",
+   "phaseTipsNote": "Faza fiziologiyasi va bu yerda tasvirlangan ta'sirlar taqriz qilingan klinik manbalarga amal qiladi. Umumiy salomatlik bo'yicha tavsiyalar, tibbiy davolash emas.",
+   "cycleStatsNote": "Tsikl uzunligi me'yorlari va nima normal o'zgarish hisoblanishi ACOG ko'rsatmalari va taqriz qilingan tadqiqotlarga amal qiladi."
   }
  },
  "kb": {

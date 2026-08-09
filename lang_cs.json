@@ -572,11 +572,9 @@
     "categories": {
      "hormones_regulation": "Hormony a regulace",
      "cycle_basics": "Základy cyklu",
-     "symptoms_feelings": "Symptoms & Feelings",
      "pain_warning": "Varovné signály bolesti",
      "fertility_help": "Podpora plodnosti",
      "lifestyle_selfhelp": "Životní styl a péče o sebe",
-     "medical_advice": "When to see a doctor",
      "general": "Obecné",
      "pms": "PMS",
      "fertility": "Plodnost",
@@ -673,11 +671,6 @@
    "title": "Nastavení",
    "time": "Čas",
    "chooseTime": "Vyberte čas",
-   "pro": {
-    "activate": "Aktivovat PRO",
-    "removeAds": "Odstranit reklamy",
-    "restore": "Obnovit nákupy"
-   },
    "sections": {
     "privacy": "ZABEZPEČENÍ A SOUKROMÍ",
     "cycle": "REŽIMY A EXPORT",
@@ -708,7 +701,6 @@
     "exportBackup": "Exportovat zálohu",
     "importBackup": "Importovat zálohu",
     "cloudSync": "Cloudová synchronizace",
-    "adPrivacy": "Soukromí reklam",
     "ourApps": "Naše další aplikace"
    },
    "footer": "Všechna data jsou šifrovaná a uložená pouze v tomto zařízení",
@@ -845,9 +837,12 @@
    "anomalyLong": "Příliš dlouhý (>35 dní)",
    "anomalyIrregular": "Nepravidelný",
    "attention": "Pozor",
-   "excludedCycles": "${stats.excludedCount} cyklů bylo vyloučeno z výpočtu průměrné délky kvůli anomálním hodnotám.",
    "anomalyWarning": "Upozornění: mimo typický rozsah (zohledněno v analýze)",
-   "anomalySevere": "Anomálie: překračuje přípustné meze (vyloučeno z analýzy)"
+   "anomalySevere": "Anomálie: překračuje přípustné meze (vyloučeno z analýzy)",
+   "sourcesTitle": "Lékařské zdroje",
+   "sourcesIntro": "Referenční rozsahy a normy cyklu použité v této zprávě vycházejí z následujících klinických zdrojů.",
+   "excludedCycles_one": "{{count}} cyklus byl z výpočtu průměrné délky vyloučen, protože jeho hodnoty byly anomální.",
+   "excludedCycles_other": "{{count}} cyklů bylo z výpočtu průměrné délky vyloučeno, protože jejich hodnoty byly anomální."
   },
   "analytics": {
    "pulseTitle": "Vyhodnocujeme váš stav...",
@@ -1076,13 +1071,7 @@
    }
   },
   "rating": {
-   "title": "Líbí se vám Eluna?",
-   "subtitle": "Vaše podpora nám pomáhá aplikaci zlepšovat.",
-   "no": "Ani ne",
-   "yes": "Miluju ji!",
    "later": "Možná později",
-   "feedback_title": "To nás mrzí!",
-   "feedback_msg": "Napište prosím na naši podporu, ať se můžeme zlepšit.",
    "title_new": "Pomozte nám se zlepšovat",
    "description_new": "Elunu každý den vylepšujeme, aby byla vaším dokonalým průvodcem. Ohodnoťte prosím aplikaci — moc to pro nás znamená!",
    "best_hint_new": "5 hvězdiček je pro nás ta nejkrásnější odměna 💛",
@@ -1171,44 +1160,7 @@
    "retry": "Zkusit znovu",
    "errorOldFormat": "Tato záloha byla vytvořena starší verzí aplikace Eluna a už ji nelze otevřít. Vytvořte novou zálohu ze zařízení, které stále obsahuje vaše data."
   },
-  "paywall": {
-   "alerts": {
-    "errorTitle": "Chyba",
-    "connectionError": "Připojení k obchodu není dostupné. Zkuste to prosím později.",
-    "purchaseErrorTitle": "Chyba nákupu",
-    "defaultError": "Něco se pokazilo.",
-    "successTitle": "Úspěch",
-    "restoreSuccess": "Nákupy byly úspěšně obnoveny.",
-    "infoTitle": "Informace",
-    "noPurchases": "Nebyly nalezeny žádné aktivní nákupy.",
-    "restoreErrorTitle": "Chyba obnovení"
-   },
-   "no_ads": {
-    "title": "Odstranit reklamy navždy"
-   },
-   "pro": {
-    "title": "PRO verze navždy"
-   },
-   "features": {
-    "no_ads": "Bez reklam",
-    "themes": "Prémiová témata",
-    "icons": "Alternativní ikony",
-    "advanced": "Pokročilé funkce",
-    "no_ads_desc": "Natrvalo odstraní všechny reklamy z aplikace. Podpořte vývojáře!"
-   },
-   "title": "Podpořte vývoj aplikace",
-   "subtitle": "Vyberte si nejlepší možnost, odemkněte nové funkce a odstraňte reklamy. Jednorázová platba, bez předplatného.",
-   "buy": "Koupit",
-   "restore": "Obnovit nákupy",
-   "privacy": "Zásady ochrany osobních údajů",
-   "terms": "Podmínky služby"
-  },
   "cancel": "Zrušit",
-  "purchase": {
-   "restoreSuccess": "Nákupy obnoveny",
-   "noPurchases": "Nebyly nalezeny žádné nákupy",
-   "restoreError": "Chyba při obnovování nákupů"
-  },
   "delayBanner": {
    "cardWaiting": "Pozastaveno",
    "ringWaiting": "Čeká se na vaši menstruaci",
@@ -1329,6 +1281,33 @@
     "desc": "Sledujte vše, co se díváte — seriály, anime i filmy — s kalendářem premiér, připomínkami dalších epizod a plným soukromím. Každý záznam zůstává jen ve vašem zařízení.",
     "name": "Eluna Screen: TV Show Tracker"
    }
+  },
+  "tips": {
+   "title": "Kupte mi kávu",
+   "header": "Baví vás Eluna?",
+   "body": "Eluna je zcela zdarma — žádné reklamy, žádné předplatné, nikdy. Pokud si získala místo ve vašem telefonu, můžete nechat malé spropitné na podporu jejího vývoje. Je to zcela dobrovolné a tak jako tak děkujeme. ☕",
+   "thanks": "Moc vám děkujeme! ☕ Opravdu to pomáhá, aby Eluna fungovala dál.",
+   "failed": "Spropitné se nepodařilo dokončit. Zkuste to prosím znovu.",
+   "storeUnavailable": "Nákupy v aplikaci nejsou na tomto zařízení momentálně dostupné.",
+   "paymentPending": "Platba se zpracovává — děkujeme! Vaše spropitné proběhne automaticky."
+  },
+  "medicalSources": {
+   "title": "Lékařské zdroje",
+   "sources": "Zdroje",
+   "countLabel_one": "{{count}} odkaz",
+   "countLabel_other": "{{count}} odkazů",
+   "intro": "Každé zdravotní vysvětlení, popis fáze a výpočet cyklu v Eluně vychází z klinických doporučení a recenzovaného výzkumu uvedených níže. Klepnutím na kteroukoli položku otevřete původní publikaci.",
+   "disclaimer": "Eluna není zdravotnický prostředek a neposkytuje diagnózu. O svých příznacích se poraďte se zdravotnickým odborníkem.",
+   "sectionGuidelines": "Klinická doporučení",
+   "sectionResearch": "Výzkum a přehledy",
+   "forecastNote": "Šestidenní plodné okno, odhad ovulace a přibližně 14denní luteální fáze vycházejí z doporučení výboru ASRM a pacientských pokynů ACOG; hranice fází vycházejí ze standardních klinických fyziologických zdrojů. Předpovědi jsou statistické odhady — nejsou diagnózou ani antikoncepční metodou.",
+   "phasesNote": "Popisy fází vycházejí ze standardních klinických fyziologických zdrojů; plodné okno vychází z doporučení ASRM a ACOG a premenstruační příznaky vycházejí z klinických pokynů ACOG.",
+   "explanationNote": "Hormonální fyziologie a zde popsané vzorce příznaků vycházejí z recenzovaných klinických přehledů.",
+   "footer_one": "Zdravotní informace v Eluně citují {{count}} lékařský zdroj",
+   "footer_other": "Zdravotní informace v Eluně citují {{count}} lékařských zdrojů",
+   "conceptionNote": "Pravděpodobnost početí pro konkrétní den vychází z Wilcox et al. (NEJM 1995) a pokynů ASRM/ACOG pro sledování plodnosti. Jde o odhad z vámi zaznamenaných cyklů — nikoli o antikoncepční metodu.",
+   "phaseTipsNote": "Fyziologie fází a zde popsané účinky vycházejí z recenzovaných klinických zdrojů. Obecné návrhy pro pohodu, nikoli lékařská léčba.",
+   "cycleStatsNote": "Normy délky cyklu a to, co se považuje za normální kolísání, vycházejí z pokynů ACOG a recenzovaného výzkumu."
   }
  },
  "kb": {
