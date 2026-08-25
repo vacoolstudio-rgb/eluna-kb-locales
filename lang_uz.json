@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Bizdan yana",
-   "get": "App Store'da ochish",
+   "get": "O'rnatish",
    "screen": {
     "desc": "Ko'radigan hamma narsangizni — seriallar, anime va filmlarni — chiqish taqvimi, keyingi epizod eslatmalari va to'liq maxfiylik bilan kuzatib boring. Har bir yozuv qurilmangizda saqlanadi.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Hozircha faqat iPhone uchun",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Video, audio va fotolarni telefonning o‘zida aylantiring va siqing: fayl hajmini aniq belgilangan darajaga tushiring, qirqing, kadrlang, kliplarni birlashtiring va videodan ovozni ajratib oling. Bitta navbatda yuzlab fayl va to‘liq maxfiylik — hech narsa hech qayerga yuklanmaydi."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Barcha obunalar bir joyda: keyingisi qachon yangilanadi, oyiga va yiliga qancha turadi, sinov muddati qachon tugaydi. Pul yechilishidan oldin eslatma va to‘liq maxfiylik — bank bilan bog‘lanish yo‘q, hammasi qurilmangizda qoladi."
    }
   },
   "tips": {

@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Továbbiak tőlünk",
-   "get": "Megnyitás az App Store-ban",
+   "get": "Telepítés",
    "screen": {
     "desc": "Kövess nyomon mindent, amit nézel — sorozatokat, animéket és filmeket — megjelenési naptárral, emlékeztetőkkel a következő epizódokról és teljes adatvédelemmel. Minden bejegyzés a készülékeden marad.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Egyelőre csak iPhone-ra",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Alakíts át és tömöríts videót, hangot és fotót magán a telefonon: találd el a pontos fájlméretet, vágj, vágj körbe, fűzz össze klipeket, és emeld ki a hangot egy videóból. Több száz fájl egyetlen sorban és teljes adatvédelem – semmi nem töltődik fel sehová."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Minden előfizetés egy helyen: mi újul meg legközelebb, mennyibe kerül havonta és évente, és mikor jár le a próbaidőszak. Emlékeztető, mielőtt levonják, és teljes adatvédelem – semmilyen bankkapcsolat, minden a készülékeden marad."
    }
   },
   "tips": {

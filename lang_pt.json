@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Mais de nós",
-   "get": "Abrir na App Store",
+   "get": "Instalar",
    "screen": {
     "desc": "Acompanhe tudo o que você assiste — séries, animes e filmes — com calendário de lançamentos, lembretes do próximo episódio e privacidade total. Cada item permanece no seu dispositivo.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Por enquanto, apenas no iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Converta e comprima vídeo, áudio e fotos no próprio telemóvel: acerte num tamanho de ficheiro exato, corte, recorte, junte clipes e extraia o som de um vídeo. Centenas de ficheiros numa só fila e privacidade total — nada é enviado para lado nenhum."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Todas as subscrições num só sítio: qual se renova a seguir, quanto custa por mês e por ano e quando termina um período experimental. Lembretes antes de ser cobrado e privacidade total — sem ligações bancárias, tudo fica no seu dispositivo."
    }
   },
   "tips": {

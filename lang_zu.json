@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Okunye okuvela kithi",
-   "get": "Vula ku-App Store",
+   "get": "Faka",
    "screen": {
     "desc": "Landelela konke okubukayo — uchungechunge, i-anime, namamuvi — ngekhalenda yokukhishwa, izikhumbuzi zesiqephu esilandelayo, nobumfihlo obugcwele. Yonke into oyifakayo ihlala kudivayisi yakho.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "I-iPhone kuphela okwamanje",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Guqula futhi ucindezele ividiyo, umsindo nezithombe kufoni ngokwayo: finyelela usayizi wefayela oqondile, nquma, sika, hlanganisa amaqoqwana futhi ukhiphe umsindo evidiyweni. Amakhulu amafayela emugqeni owodwa nobumfihlo obugcwele — akukho okulayishwa noma kuphi."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Konke okubhaliselwe endaweni eyodwa: yikuphi okuvuselelwa okulandelayo, kubiza malini ngenyanga nangonyaka, nokuthi ukuzama kwamahhala kuphela nini. Izikhumbuzi ngaphambi kokuba ukhokhiswe kanye nobumfihlo obugcwele — akukho ukuxhumana namabhange, konke kuhlala kudivayisi yakho."
    }
   },
   "tips": {

@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Mai multe de la noi",
-   "get": "Deschide în App Store",
+   "get": "Instalează",
    "screen": {
     "desc": "Ține evidența a tot ce urmărești — seriale, anime și filme — cu un calendar al lansărilor, mementouri pentru episodul următor și confidențialitate deplină. Fiecare titlu rămâne pe dispozitivul tău.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Deocamdată doar pe iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Convertește și comprimă videoclipuri, sunet și fotografii chiar pe telefon: nimerește o dimensiune exactă a fișierului, taie, decupează, lipește clipuri și extrage sunetul dintr-un videoclip. Sute de fișiere într-o singură coadă și confidențialitate deplină — nimic nu se încarcă nicăieri."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Toate abonamentele într-un singur loc: care se reînnoiește următorul, cât costă pe lună și pe an și când se termină o perioadă de probă. Memento-uri înainte să fii taxat și confidențialitate deplină — fără conexiuni bancare, totul rămâne pe dispozitivul tău."
    }
   },
   "tips": {

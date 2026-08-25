@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Více od nás",
-   "get": "Otevřít v App Store",
+   "get": "Instalovat",
    "screen": {
     "desc": "Sledujte vše, co se díváte — seriály, anime i filmy — s kalendářem premiér, připomínkami dalších epizod a plným soukromím. Každý záznam zůstává jen ve vašem zařízení.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Zatím jen pro iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Převádějte a zmenšujte videa, zvuk i fotky přímo v telefonu: trefte přesnou velikost souboru, ořízněte, sestřihněte, spojte klipy a vytáhněte z videa zvuk. Stovky souborů v jedné frontě a plné soukromí — nic se nikam nenahrává."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Všechna předplatná na jednom místě: co se obnoví příště, kolik stojí měsíčně i ročně a kdy končí zkušební období. Upozornění dřív, než vám strhnou peníze, a plné soukromí — žádné bankovní propojení, vše zůstává v telefonu."
    }
   },
   "tips": {

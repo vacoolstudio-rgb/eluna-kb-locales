@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Més coses nostres",
-   "get": "Obre a l'App Store",
+   "get": "Instal·la",
    "screen": {
     "desc": "Fes el seguiment de tot el que mires — sèries, anime i pel·lícules — amb un calendari d'estrenes, recordatoris del pròxim episodi i privadesa total. Cada entrada es queda al teu dispositiu.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "De moment només per a iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Converteix i comprimeix vídeo, àudio i fotos al mateix telèfon: encerta una mida de fitxer exacta, retalla, enquadra, uneix clips i extreu el so d’un vídeo. Centenars de fitxers en una sola cua i privadesa total: no es puja res enlloc."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Totes les subscripcions en un lloc: quina es renova després, què costa al mes i a l’any, i quan s’acaba una prova gratuïta. Avisos abans que et cobrin i privadesa total: cap connexió bancària, tot es queda al teu dispositiu."
    }
   },
   "tips": {

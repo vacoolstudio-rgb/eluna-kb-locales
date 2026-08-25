@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Bizden daha fazlası",
-   "get": "App Store'da aç",
+   "get": "Yükle",
    "screen": {
     "desc": "İzlediğin her şeyi takip et — diziler, animeler ve filmler — yayın takvimi, sonraki bölüm hatırlatıcıları ve tam gizlilik ile. Her kayıt cihazında kalır.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Şimdilik sadece iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Videoyu, sesi ve fotoğrafları telefonun kendisinde dönüştürün ve küçültün: tam istediğiniz dosya boyutunu tutturun, kırpın, kesin, klipleri birleştirin ve videodan sesi ayırın. Tek kuyrukta yüzlerce dosya ve tam gizlilik — hiçbir şey hiçbir yere yüklenmez."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Bütün abonelikler tek yerde: sırada hangisi yenileniyor, ayda ve yılda ne kadara mal oluyor ve ücretsiz deneme ne zaman bitiyor. Hesabınızdan çekilmeden önce hatırlatma ve tam gizlilik — banka bağlantısı yok, her şey cihazınızda kalıyor."
    }
   },
   "tips": {

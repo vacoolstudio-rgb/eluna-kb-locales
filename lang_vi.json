@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Thêm từ chúng tôi",
-   "get": "Mở trong App Store",
+   "get": "Cài đặt",
    "screen": {
     "desc": "Theo dõi mọi thứ bạn xem — phim bộ, anime và phim lẻ — với lịch phát hành, nhắc nhở tập tiếp theo và bảo mật tuyệt đối. Mọi mục đều được lưu ngay trên thiết bị của bạn.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Hiện chỉ có trên iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Chuyển đổi và nén video, âm thanh và ảnh ngay trên máy: đạt đúng dung lượng tệp mong muốn, cắt, cắt khung, ghép các đoạn và tách âm thanh khỏi video. Hàng trăm tệp trong một hàng đợi và quyền riêng tư tuyệt đối — không có gì được tải lên đâu cả."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Mọi đăng ký ở một nơi: cái nào gia hạn tiếp theo, tốn bao nhiêu mỗi tháng và mỗi năm, và khi nào hết dùng thử miễn phí. Nhắc trước khi bị trừ tiền và quyền riêng tư tuyệt đối — không kết nối ngân hàng, mọi thứ nằm trên máy của bạn."
    }
   },
   "tips": {

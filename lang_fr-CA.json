@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Découvrez nos autres apps",
-   "get": "Ouvrir dans l'App Store",
+   "get": "Installer",
    "screen": {
     "desc": "Suivez tout ce que vous regardez — séries, animes et films — avec un calendrier des sorties, des rappels pour le prochain épisode et une confidentialité totale. Chaque entrée reste sur votre appareil.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "iPhone seulement pour l’instant",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Convertissez et compressez vidéos, audio et photos sur le téléphone lui-même : visez une taille de fichier exacte, coupez, recadrez, assemblez des clips et extrayez le son d’une vidéo. Des centaines de fichiers dans une seule file et confidentialité totale — rien n’est envoyé nulle part."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Tous vos abonnements au même endroit : lequel se renouvelle ensuite, ce qu’il coûte par mois et par an, et quand une période d’essai se termine. Des rappels avant d’être débité et une confidentialité totale — aucune connexion bancaire, tout reste sur votre appareil."
    }
   },
   "tips": {

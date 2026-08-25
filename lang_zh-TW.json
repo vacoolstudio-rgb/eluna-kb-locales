@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "更多精選應用",
-   "get": "在 App Store 開啟",
+   "get": "安裝",
    "screen": {
     "desc": "追蹤你觀看的一切內容——影集、動畫與電影——搭配上映行事曆、下一集提醒，並全面保護隱私。所有紀錄都只留在你的裝置上。",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "目前僅支援 iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "直接在手機上轉換與壓縮影片、音訊和相片：精準控制檔案大小，修剪、裁切、串接片段，還能把影片裡的聲音單獨抽出來。數百個檔案排成一個佇列，全程隱私保護——不會上傳到任何地方。"
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "所有訂閱集中在一處：下一個何時續訂、每月與每年花多少、免費試用何時結束。扣款前提醒，全程隱私保護——不連接銀行，一切只留在你的裝置上。"
    }
   },
   "tips": {

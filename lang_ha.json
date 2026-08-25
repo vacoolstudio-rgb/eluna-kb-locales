@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Ƙari daga gare mu",
-   "get": "Buɗe a App Store",
+   "get": "Shigar",
    "screen": {
     "desc": "Bi duk abin da kake kallo — jerin fina-finai, anime, da fina-finai — tare da kalandar fitowa, tunatarwar shirin na gaba, da cikakken sirri. Kowane shiga yana kasancewa a na'urarka.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "iPhone kaɗai a yanzu",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Juya ka kuma matse bidiyo, sauti da hotuna a kan wayar kanta: ka kai daidai girman fayil, ka yanke, ka datse, ka haɗa gutsuttsura kuma ka fitar da sauti daga bidiyo. Ɗaruruwan fayiloli a jere ɗaya da cikakken sirri — ba a ɗora kome ko’ina."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Duk biyan kuɗinka a wuri ɗaya: wanne zai sabunta na gaba, nawa yake ci a wata da shekara, da lokacin da gwajin kyauta zai ƙare. Tunatarwa kafin a cire kuɗi da cikakken sirri — babu haɗi da banki, komai yana zama a wayarka."
    }
   },
   "tips": {

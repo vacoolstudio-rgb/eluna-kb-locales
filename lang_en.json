@@ -1320,7 +1320,16 @@
     "name": "Eluna Screen: TV Show Tracker",
     "desc": "Track everything you watch — series, anime, and movies — with a release calendar, next-episode reminders, and full privacy. Every entry stays on your device."
    },
-   "get": "Open in App Store"
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Convert and compress video, audio and photos right on your phone: hit an exact file size, trim, crop, merge clips and pull the sound out of a video. Hundreds of files in one queue and full privacy — nothing is uploaded anywhere."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Every subscription in one place: what renews next, what it costs a month and a year, and when a free trial ends. Reminders before you are charged, and full privacy — no bank connections, everything stays on your device."
+   },
+   "get": "Install",
+   "iosOnly": "iPhone only for now"
   }
  },
  "kb": {

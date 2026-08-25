@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Više od nas",
-   "get": "Otvori u App Store",
+   "get": "Instaliraj",
    "screen": {
     "desc": "Pratite sve što gledate — serije, anime i filmove — uz kalendar izlazaka, podsjetnike na sljedeću epizodu i potpunu privatnost. Svaki unos ostaje na vašem uređaju.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Za sada samo za iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Pretvarajte i smanjujte video, zvuk i fotografije na samom telefonu: pogodite točnu veličinu datoteke, skratite, izrežite, spojite isječke i izvucite zvuk iz videa. Stotine datoteka u jednom redu i potpuna privatnost — ništa se nikamo ne prenosi."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Sve pretplate na jednom mjestu: što se sljedeće obnavlja, koliko stoji mjesečno i godišnje te kad istječe besplatno probno razdoblje. Podsjetnici prije naplate i potpuna privatnost — bez povezivanja s bankama, sve ostaje na vašem uređaju."
    }
   },
   "tips": {

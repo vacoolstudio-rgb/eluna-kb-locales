@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "更多精彩应用",
-   "get": "在 App Store 中打开",
+   "get": "安装",
    "screen": {
     "desc": "追踪你观看的一切内容——剧集、动漫和电影——配备上映日历、新剧集提醒和全面隐私保护。所有记录都只保存在你的设备上。",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "目前仅支持 iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "在手机上直接转换和压缩视频、音频与照片：精准控制文件大小，剪辑、裁剪、拼接片段，还能把视频里的声音单独提取出来。数百个文件排成一个队列，全程隐私保护——不会上传到任何地方。"
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "所有订阅集中在一处：下一个什么时候续费、每月和每年花多少、免费试用什么时候结束。扣费前提醒，全程隐私保护——不连接银行，一切只留在你的设备上。"
    }
   },
   "tips": {

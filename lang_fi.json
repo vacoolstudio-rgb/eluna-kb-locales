@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Lisää meiltä",
-   "get": "Avaa App Storessa",
+   "get": "Asenna",
    "screen": {
     "desc": "Seuraa kaikkea katsomaasi – sarjoja, animea ja elokuvia – julkaisukalenterin, seuraavan jakson muistutusten ja täyden yksityisyyden avulla. Jokainen merkintä pysyy laitteellasi.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Toistaiseksi vain iPhonelle",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Muunna ja pakkaa videot, äänet ja kuvat suoraan puhelimessa: osu tarkkaan tiedostokokoon, leikkaa, rajaa, yhdistä klipit ja irrota ääni videosta. Satoja tiedostoja yhdessä jonossa ja täysi yksityisyys — mitään ei ladata minnekään."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Kaikki tilaukset yhdessä paikassa: mikä uusiutuu seuraavaksi, paljonko se maksaa kuussa ja vuodessa ja milloin ilmainen kokeilu päättyy. Muistutukset ennen veloitusta ja täysi yksityisyys — ei pankkiyhteyksiä, kaikki pysyy laitteellasi."
    }
   },
   "tips": {

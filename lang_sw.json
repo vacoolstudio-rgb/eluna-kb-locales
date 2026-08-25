@@ -1263,10 +1263,19 @@
   },
   "ourApps": {
    "title": "Zaidi kutoka kwetu",
-   "get": "Fungua katika App Store",
+   "get": "Sakinisha",
    "screen": {
     "desc": "Fuatilia kila kitu unachotazama — mfululizo, anime, na filamu — kwa kalenda ya matoleo, vikumbusho vya kipindi kinachofuata, na faragha kamili. Kila kiingizo hubaki kwenye kifaa chako.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "iPhone pekee kwa sasa",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Badilisha na ubane video, sauti na picha kwenye simu yenyewe: fikia ukubwa kamili wa faili, punguza, kata, unganisha klipu na utoe sauti kutoka kwenye video. Mamia ya faili katika foleni moja na faragha kamili — hakuna kinachopakiwa popote."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Michango yote mahali pamoja: ipi inahuishwa baadaye, inagharimu kiasi gani kwa mwezi na kwa mwaka, na majaribio ya bure yanaisha lini. Vikumbusho kabla hujakatwa pesa na faragha kamili — hakuna muunganisho wa benki, kila kitu kinabaki kwenye kifaa chako."
    }
   },
   "tips": {

@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Meer van ons",
-   "get": "Maak oop in App Store",
+   "get": "Installeer",
    "screen": {
     "desc": "Hou alles wat jy kyk by — reekse, anime en flieks — met 'n vrystellingskalender, herinnerings vir die volgende episode, en volledige privaatheid. Elke inskrywing bly op jou toestel.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Vir eers net iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Skakel video, oudio en foto’s om en verklein hulle op die foon self: tref ’n presiese lêergrootte, snoei, sny, voeg grepe saam en haal die klank uit ’n video. Honderde lêers in een tou en volle privaatheid — niks word enige plek opgelaai nie."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Elke intekening op een plek: wat volgende hernu, wat dit per maand en per jaar kos, en wanneer ’n gratis proeftydperk eindig. Herinnerings voordat jy gehef word, en volle privaatheid — geen bankverbindings nie, alles bly op jou toestel."
    }
   },
   "tips": {

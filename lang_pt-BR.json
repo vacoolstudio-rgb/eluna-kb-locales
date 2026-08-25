@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Mais da gente",
-   "get": "Abrir na App Store",
+   "get": "Instalar",
    "screen": {
     "desc": "Acompanhe tudo o que você assiste — séries, animes e filmes — com calendário de lançamentos, lembretes do próximo episódio e privacidade total. Cada item fica só no seu dispositivo.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Por enquanto, só iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Converta e comprima vídeo, áudio e fotos no próprio celular: acerte um tamanho de arquivo exato, corte, recorte, junte clipes e extraia o som de um vídeo. Centenas de arquivos em uma única fila e privacidade total — nada é enviado para lugar nenhum."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Todas as assinaturas em um só lugar: qual renova em seguida, quanto custa por mês e por ano e quando o teste grátis termina. Lembretes antes de a cobrança acontecer e privacidade total — sem conexões bancárias, tudo fica no seu aparelho."
    }
   },
   "tips": {

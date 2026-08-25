@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Higit pa mula sa amin",
-   "get": "Buksan sa App Store",
+   "get": "I-install",
    "screen": {
     "desc": "Subaybayan ang lahat ng pinapanood mo — serye, anime, at pelikula — gamit ang release calendar, mga paalala sa susunod na episode, at ganap na privacy. Nananatili sa iyong device ang bawat entry.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "iPhone lang sa ngayon",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "I-convert at paliitin ang video, audio, at mga larawan sa mismong telepono: abutin ang eksaktong laki ng file, i-trim, i-crop, pagdugtungin ang mga clip, at kunin ang tunog mula sa video. Daan-daang file sa iisang pila at ganap na privacy — walang ina-upload kahit saan."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Lahat ng subscription sa isang lugar: alin ang susunod na mag-renew, magkano bawat buwan at bawat taon, at kailan matatapos ang libreng subok. May paalala bago ka singilin at ganap na privacy — walang koneksyon sa bangko, nasa device mo lang ang lahat."
    }
   },
   "tips": {

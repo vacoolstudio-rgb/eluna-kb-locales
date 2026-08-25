@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Mer från oss",
-   "get": "Öppna i App Store",
+   "get": "Installera",
    "screen": {
     "desc": "Håll koll på allt du ser – serier, anime och filmer – med releasekalender, påminnelser om nästa avsnitt och full integritet. Allt du sparar stannar på din enhet.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Endast iPhone för tillfället",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Konvertera och komprimera video, ljud och foton i själva telefonen: träffa en exakt filstorlek, trimma, beskär, foga ihop klipp och plocka ut ljudet ur en video. Hundratals filer i en och samma kö och full integritet — ingenting laddas upp någonstans."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Alla prenumerationer på ett ställe: vad som förnyas härnäst, vad det kostar i månaden och om året och när en gratis provperiod tar slut. Påminnelser innan du dras pengar, och full integritet — inga bankkopplingar, allt stannar på din enhet."
    }
   },
   "tips": {

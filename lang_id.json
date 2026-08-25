@@ -1276,10 +1276,19 @@
   },
   "ourApps": {
    "title": "Lainnya dari kami",
-   "get": "Buka di App Store",
+   "get": "Pasang",
    "screen": {
     "desc": "Lacak semua tontonanmu — serial, anime, dan film — dengan kalender rilis, pengingat episode berikutnya, dan privasi penuh. Setiap entri tetap tersimpan di perangkatmu.",
     "name": "Eluna Screen: TV Show Tracker"
+   },
+   "iosOnly": "Untuk sementara hanya iPhone",
+   "media": {
+    "name": "Eluna Media: Video, Audio & Photo Converter",
+    "desc": "Konversi dan perkecil video, audio, dan foto langsung di ponsel: capai ukuran berkas yang persis, potong, pangkas, gabungkan klip, dan ambil suara dari video. Ratusan berkas dalam satu antrean dan privasi penuh — tidak ada yang diunggah ke mana pun."
+   },
+   "subs": {
+    "name": "Eluna Subs: Subscription Tracker",
+    "desc": "Semua langganan di satu tempat: mana yang diperpanjang berikutnya, berapa biayanya per bulan dan per tahun, dan kapan masa coba gratis berakhir. Pengingat sebelum ditagih dan privasi penuh — tanpa koneksi bank, semua tersimpan di perangkat Anda."
    }
   },
   "tips": {
