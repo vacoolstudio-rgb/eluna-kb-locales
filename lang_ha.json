@@ -490,22 +490,24 @@
         "gatheringDesc": "Muna buƙatar wasu ƙarin zagaye kaɗan don gina cikakken bayanin kididdigarki."
       },
       "whatChanged": {
-        "title": "Sauye-sauyen zagayowar al'ada",
+        "title": "Canje-canjen zagayowa",
         "days": "kwanaki",
-        "subtitle": "Abin da ya canza a wannan zagayowar",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Abin da ya sauya a wannan zagayowar",
+        "timesLogged_one": "sau an yi rikodi",
+        "timesLogged_other": "sau an yi rikodi",
+        "anomalyTitle": "An gano bambanci",
+        "anomalyDetected": "Bambanci",
         "baseline": {
-          "average": "Historical average"
+          "average": "Matsakaicin baya"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Tsawon zagayowa",
+        "periodLength": "Tsawon jinin al’ada",
         "needsReview": "Yana buƙatar dubawa"
       },
       "cycleCore": {
         "title": "Takaitaccen zagayowarki",
-        "subtitle": "Takaitattun ƙididdiga na zagayowarki {{count}} na ƙarshe.",
+        "subtitle_one": "Takaitaccen ƙididdiga na sake zagayowar ka ta ƙarshe.",
+        "subtitle_other": "Takaitaccen ƙididdiga na sake zagayowar {{count}} na ƙarshe.",
         "median": "Zagayowar da aka saba",
         "mean": "Matsakaicin baya",
         "menses": "Jinin al'ada na yau da kullum",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Bayanan da ba su saba ba",
-        "desc": "Nazari ya dogara ne da zagayowar {{used}} daga cikin {{total}}. An cire zagayowar {{excluded}} daga hasashe saboda ba su saba ba.",
+        "desc_one": "Bincike ya dogara da {{used}} daga cikin {{total}} sake zagayowa. An cire sake zagayowa ɗaya daga hasashe saboda ba ta saba ba.",
+        "desc_other": "Bincike ya dogara da {{used}} daga cikin {{total}} sake zagayowa. An cire sake zagayowa {{excluded}} daga hasashe saboda ba su saba ba.",
         "fixBtn": "Duba kuma gyara"
       },
       "explanation": {

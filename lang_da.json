@@ -490,22 +490,24 @@
         "gatheringDesc": "Vi har brug for et par cyklusser mere for at opbygge din fulde statistiske profil."
       },
       "whatChanged": {
-        "title": "Ændringer i cyklus",
+        "title": "Ændringer i cyklussen",
         "days": "dage",
-        "subtitle": "Det ændrede sig i denne cyklus",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Hvad der ændrede sig i denne cyklus",
+        "timesLogged_one": "gang registreret",
+        "timesLogged_other": "gange registreret",
+        "anomalyTitle": "Afvigelse fundet",
+        "anomalyDetected": "Afvigelse",
         "baseline": {
-          "average": "Historical average"
+          "average": "Historisk gennemsnit"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "Skal gennemgås"
+        "cycleLength": "Cykluslængde",
+        "periodLength": "Menstruationens længde",
+        "needsReview": "Bør gennemses"
       },
       "cycleCore": {
         "title": "Cyklusoverblik",
-        "subtitle": "Oversigtsstatistik for dine seneste {{count}} cyklus(ser).",
+        "subtitle_one": "Opsummerende statistik for din seneste cyklus.",
+        "subtitle_other": "Opsummerende statistik for dine seneste {{count}} cyklusser.",
         "median": "Typisk cyklus",
         "mean": "Historisk gennemsnit",
         "menses": "Normal blødning",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Unormale data",
-        "desc": "Analysen er baseret på {{used}} ud af {{total}} cyklusser. {{excluded}} cyklus(ser) blev udelukket fra forudsigelserne som afvigende.",
+        "desc_one": "Analysen bygger på {{used}} af {{total}} cyklusser. Én cyklus blev udeladt af forudsigelserne som afvigende.",
+        "desc_other": "Analysen bygger på {{used}} af {{total}} cyklusser. {{excluded}} cyklusser blev udeladt af forudsigelserne som afvigende.",
         "fixBtn": "Gennemgå og ret"
       },
       "explanation": {

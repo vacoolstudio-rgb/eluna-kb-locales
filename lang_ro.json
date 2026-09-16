@@ -493,19 +493,23 @@
         "title": "Schimbări ale ciclului",
         "days": "zile",
         "subtitle": "Ce s-a schimbat în acest ciclu",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "dată înregistrat",
+        "timesLogged_few": "ori înregistrat",
+        "timesLogged_other": "de ori înregistrat",
+        "anomalyTitle": "Anomalie detectată",
+        "anomalyDetected": "Abatere",
         "baseline": {
-          "average": "Historical average"
+          "average": "Media istorică"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Durata ciclului",
+        "periodLength": "Durata menstruației",
         "needsReview": "Necesită verificare"
       },
       "cycleCore": {
         "title": "Profilul ciclului",
-        "subtitle": "Statistici rezumate pentru ultimele tale {{count}} ciclu(uri).",
+        "subtitle_one": "Statistici sumare pentru ultimul ciclu.",
+        "subtitle_few": "Statistici sumare pentru ultimele {{count}} cicluri.",
+        "subtitle_other": "Statistici sumare pentru ultimele {{count}} de cicluri.",
         "median": "Ciclu tipic",
         "mean": "Media istorică",
         "menses": "Sângerare obișnuită",
@@ -660,7 +664,9 @@
       },
       "anomaly": {
         "title": "Date anormale",
-        "desc": "Analiza se bazează pe {{used}} din {{total}} cicluri. {{excluded}} ciclu(uri) au fost excluse din predicții ca anomalii.",
+        "desc_one": "Analiza se bazează pe {{used}} din {{total}} cicluri. Un ciclu a fost exclus din previziuni ca fiind atipic.",
+        "desc_few": "Analiza se bazează pe {{used}} din {{total}} cicluri. {{excluded}} cicluri au fost excluse din previziuni ca fiind atipice.",
+        "desc_other": "Analiza se bazează pe {{used}} din {{total}} cicluri. {{excluded}} de cicluri au fost excluse din previziuni ca fiind atipice.",
         "fixBtn": "Verifică și corectează"
       },
       "explanation": {

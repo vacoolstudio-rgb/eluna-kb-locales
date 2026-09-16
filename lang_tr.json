@@ -490,22 +490,24 @@
         "gatheringDesc": "Tam istatistiksel profilini oluşturmak için birkaç döngü daha gerekiyor."
       },
       "whatChanged": {
-        "title": "Döngü değişimleri",
+        "title": "Döngüdeki değişimler",
         "days": "gün",
-        "subtitle": "Bu döngüde neler değişti",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Bu döngüde ne değişti",
+        "timesLogged_one": "kez kaydedildi",
+        "timesLogged_other": "kez kaydedildi",
+        "anomalyTitle": "Olağan dışı durum",
+        "anomalyDetected": "Sapma",
         "baseline": {
-          "average": "Historical average"
+          "average": "Geçmiş ortalama"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Döngü uzunluğu",
+        "periodLength": "Regl süresi",
         "needsReview": "Gözden geçirilmeli"
       },
       "cycleCore": {
         "title": "Döngü Özeti",
-        "subtitle": "Son {{count}} döngünüzün özet istatistikleri.",
+        "subtitle_one": "Son döngün için özet istatistikler.",
+        "subtitle_other": "Son {{count}} döngün için özet istatistikler.",
         "median": "Tipik döngü",
         "mean": "Geçmiş ortalama",
         "menses": "Normal kanama",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Anormal Veri",
-        "desc": "Analizler {{total}} döngünün {{used}} tanesine dayanır. {{excluded}} döngü anormal olduğu için tahminlerden çıkarıldı.",
+        "desc_one": "Analiz {{total}} döngünün {{used}} tanesine dayanıyor. Bir döngü olağan dışı olduğu için tahminlerden çıkarıldı.",
+        "desc_other": "Analiz {{total}} döngünün {{used}} tanesine dayanıyor. {{excluded}} döngü olağan dışı olduğu için tahminlerden çıkarıldı.",
         "fixBtn": "İncele ve Düzelt"
       },
       "explanation": {

@@ -493,19 +493,21 @@
         "title": "سائیکل میں تبدیلیاں",
         "days": "دن",
         "subtitle": "اس سائیکل میں کیا بدلا",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "بار درج",
+        "timesLogged_other": "بار درج",
+        "anomalyTitle": "غیر معمولی بات ملی",
+        "anomalyDetected": "فرق",
         "baseline": {
-          "average": "Historical average"
+          "average": "پچھلا اوسط"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "جائزہ درکار"
+        "cycleLength": "سائیکل کی لمبائی",
+        "periodLength": "ماہواری کا دورانیہ",
+        "needsReview": "جانچ درکار"
       },
       "cycleCore": {
         "title": "سائیکل خلاصہ",
-        "subtitle": "آپ کے آخری {{count}} سائیکل(ز) کے خلاصہ اعداد و شمار۔",
+        "subtitle_one": "آپ کے آخری سائیکل کا خلاصہ۔",
+        "subtitle_other": "آپ کے آخری {{count}} سائیکلوں کا خلاصہ۔",
         "median": "عام سائیکل",
         "mean": "سابقہ اوسط",
         "menses": "معمول کا خون آنا",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "غیر معمولی ڈیٹا",
-        "desc": "تجزیات {{total}} میں سے {{used}} سائیکلز پر مبنی ہیں۔ {{excluded}} سائیکل غیر معمولی ہونے کی وجہ سے پیش گوئیوں سے خارج کیے گئے۔",
+        "desc_one": "تجزیہ {{total}} میں سے {{used}} سائیکلوں پر مبنی ہے۔ ایک سائیکل غیر معمولی ہونے کی وجہ سے پیش گوئی سے خارج کیا گیا۔",
+        "desc_other": "تجزیہ {{total}} میں سے {{used}} سائیکلوں پر مبنی ہے۔ {{excluded}} سائیکل غیر معمولی ہونے کی وجہ سے پیش گوئی سے خارج کیے گئے۔",
         "fixBtn": "جائزہ لیں اور درست کریں"
       },
       "explanation": {

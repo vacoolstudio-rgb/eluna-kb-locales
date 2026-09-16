@@ -488,7 +488,10 @@
         "title": "Premiki v ciklu",
         "days": "dni",
         "subtitle": "Kaj se je spremenilo v tem ciklu",
-        "timesLogged": "zabeleženo krat",
+        "timesLogged_one": "krat zabeleženo",
+        "timesLogged_two": "krat zabeleženo",
+        "timesLogged_few": "krat zabeleženo",
+        "timesLogged_other": "krat zabeleženo",
         "anomalyTitle": "Zaznana nepravilnost",
         "anomalyDetected": "Odstopanje",
         "needsReview": "Potrebuje pregled",
@@ -500,7 +503,10 @@
       },
       "cycleCore": {
         "title": "Potni list cikla",
-        "subtitle": "Zbirna statistika za vaše zadnje {{count}} cikle.",
+        "subtitle_one": "Povzetek statistike za zadnji cikel.",
+        "subtitle_two": "Povzetek statistike za zadnja {{count}} cikla.",
+        "subtitle_few": "Povzetek statistike za zadnje {{count}} cikle.",
+        "subtitle_other": "Povzetek statistike za zadnjih {{count}} ciklov.",
         "insufficientData": "Še ni dovolj podatkov",
         "insufficientDataTitle": "Zbiranje podatkov",
         "insufficientDataDescription": "Zanesljivost pomeni, da imate več zgodovinskih zapisov ciklov za določitev vaše povprečne klinične izhodiščne vrednosti.",
@@ -663,7 +669,10 @@
       },
       "anomaly": {
         "title": "Neobičajni podatki",
-        "desc": "Analitika temelji na {{used}} od {{total}} ciklov. {{excluded}} cikel/ciklov je bilo kot neobičajnih izključenih iz napovedi.",
+        "desc_one": "Analitika temelji na {{used}} od {{total}} ciklov. En cikel je bil izločen iz napovedi kot nenavaden.",
+        "desc_two": "Analitika temelji na {{used}} od {{total}} ciklov. {{excluded}} cikla sta bila izločena iz napovedi kot nenavadna.",
+        "desc_few": "Analitika temelji na {{used}} od {{total}} ciklov. {{excluded}} cikli so bili izločeni iz napovedi kot nenavadni.",
+        "desc_other": "Analitika temelji na {{used}} od {{total}} ciklov. {{excluded}} ciklov je bilo izločenih iz napovedi kot nenavadnih.",
         "fixBtn": "Preglej in popravi"
       }
     },

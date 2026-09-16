@@ -492,7 +492,8 @@
         "title": "Canvis en el cicle",
         "days": "dies",
         "subtitle": "Què ha canviat en aquest cicle",
-        "timesLogged": "vegades registrat",
+        "timesLogged_one": "vegada registrat",
+        "timesLogged_other": "vegades registrat",
         "anomalyTitle": "Anomalia detectada",
         "anomalyDetected": "Desviació",
         "baseline": {
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Passaport del cicle",
-        "subtitle": "Estadístiques resumides del teu últim {{count}} cicle(s).",
+        "subtitle_one": "Estadístiques resumides del teu últim cicle.",
+        "subtitle_other": "Estadístiques resumides dels teus últims {{count}} cicles.",
         "insufficientDataTitle": "Recollint dades",
         "insufficientDataDescription": "La confiança implica tenir més registres històrics de cicles per establir la teva línia de base clínica mitjana.",
         "median": "Cicle típic",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Dades Anòmales",
-        "desc": "Les anàlisis es basen en {{used}} de {{total}} cicles. {{excluded}} cicle(s) van ser exclosos de les prediccions com a anòmals.",
+        "desc_one": "L'anàlisi es basa en {{used}} de {{total}} cicles. Un cicle s'ha exclòs de les previsions per atípic.",
+        "desc_other": "L'anàlisi es basa en {{used}} de {{total}} cicles. {{excluded}} cicles s'han exclòs de les previsions per atípics.",
         "fixBtn": "Revisar i Corregir"
       }
     },

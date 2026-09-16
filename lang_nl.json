@@ -490,22 +490,24 @@
         "gatheringDesc": "We hebben nog een paar cycli nodig om je volledige statistische profiel op te bouwen."
       },
       "whatChanged": {
-        "title": "Veranderingen in je cyclus",
+        "title": "Verschuivingen in je cyclus",
         "days": "dagen",
-        "subtitle": "Wat veranderde er in deze cyclus",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Wat er in deze cyclus veranderde",
+        "timesLogged_one": "keer genoteerd",
+        "timesLogged_other": "keer genoteerd",
+        "anomalyTitle": "Afwijking gevonden",
+        "anomalyDetected": "Afwijking",
         "baseline": {
-          "average": "Historical average"
+          "average": "Historisch gemiddelde"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Cycluslengte",
+        "periodLength": "Duur menstruatie",
         "needsReview": "Controle nodig"
       },
       "cycleCore": {
         "title": "Cyclusoverzicht",
-        "subtitle": "Samenvattende statistieken voor je laatste {{count}} cyclus/cycli.",
+        "subtitle_one": "Samenvattende statistieken voor je laatste cyclus.",
+        "subtitle_other": "Samenvattende statistieken voor je laatste {{count}} cycli.",
         "median": "Typische cyclus",
         "mean": "Historisch gemiddelde",
         "menses": "Normale bloeding",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Afwijkende gegevens",
-        "desc": "Analyses zijn gebaseerd op {{used}} van de {{total}} cycli. {{excluded}} cyclus/cycli zijn als afwijkend uitgesloten van voorspellingen.",
+        "desc_one": "De analyse is gebaseerd op {{used}} van {{total}} cycli. Eén cyclus is als afwijkend uit de voorspellingen gelaten.",
+        "desc_other": "De analyse is gebaseerd op {{used}} van {{total}} cycli. {{excluded}} cycli zijn als afwijkend uit de voorspellingen gelaten.",
         "fixBtn": "Controleren en aanpassen"
       },
       "explanation": {

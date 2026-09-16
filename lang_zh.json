@@ -490,22 +490,22 @@
         "gatheringDesc": "我们还需要再收集几个周期，才能建立完整的统计画像。"
       },
       "whatChanged": {
-        "title": "周期变化",
+        "title": "周期的变化",
         "days": "天",
-        "subtitle": "本周期有哪些变化",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "这个周期有什么变化",
+        "timesLogged_other": "次记录",
+        "anomalyTitle": "发现异常",
+        "anomalyDetected": "偏差",
         "baseline": {
-          "average": "Historical average"
+          "average": "历史平均"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "需要复核"
+        "cycleLength": "周期长度",
+        "periodLength": "经期长度",
+        "needsReview": "需要检查"
       },
       "cycleCore": {
         "title": "周期概览",
-        "subtitle": "你最近 {{count}} 个周期的统计摘要。",
+        "subtitle_other": "最近 {{count}} 个周期的统计摘要。",
         "median": "典型周期",
         "mean": "历史平均值",
         "menses": "经期时长",
@@ -660,7 +660,7 @@
       },
       "anomaly": {
         "title": "异常数据",
-        "desc": "分析基于 {{total}} 个周期中的 {{used}} 个。{{excluded}} 个周期因异常已从预测中排除。",
+        "desc_other": "分析基于 {{total}} 个周期中的 {{used}} 个。{{excluded}} 个周期因异常被排除在预测之外。",
         "fixBtn": "查看并修复"
       },
       "explanation": {

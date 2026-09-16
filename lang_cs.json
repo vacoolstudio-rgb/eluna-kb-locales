@@ -493,19 +493,25 @@
         "title": "Změny cyklu",
         "days": "dní",
         "subtitle": "Co se v tomto cyklu změnilo",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "krát zaznamenáno",
+        "timesLogged_few": "krát zaznamenáno",
+        "timesLogged_many": "krát zaznamenáno",
+        "timesLogged_other": "krát zaznamenáno",
+        "anomalyTitle": "Zjištěna odchylka",
+        "anomalyDetected": "Odchylka",
         "baseline": {
-          "average": "Historical average"
+          "average": "Dosavadní průměr"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Délka cyklu",
+        "periodLength": "Délka menstruace",
         "needsReview": "Vyžaduje kontrolu"
       },
       "cycleCore": {
         "title": "Přehled cyklu",
-        "subtitle": "Souhrnné statistiky za vašich posledních {{count}} cyklů.",
+        "subtitle_one": "Souhrnné statistiky za poslední cyklus.",
+        "subtitle_few": "Souhrnné statistiky za poslední {{count}} cykly.",
+        "subtitle_many": "Souhrnné statistiky za posledních {{count}} cyklu.",
+        "subtitle_other": "Souhrnné statistiky za posledních {{count}} cyklů.",
         "median": "Typický cyklus",
         "mean": "Historický průměr",
         "menses": "Běžné krvácení",
@@ -660,7 +666,10 @@
       },
       "anomaly": {
         "title": "Neobvyklá data",
-        "desc": "Analýza vychází z {{used}} z {{total}} cyklů. {{excluded}} cyklů bylo z předpovědí vyloučeno jako neobvyklé.",
+        "desc_one": "Analýza vychází z {{used}} z {{total}} cyklů. Jeden cyklus byl z předpovědí vyřazen jako neobvyklý.",
+        "desc_few": "Analýza vychází z {{used}} z {{total}} cyklů. {{excluded}} cykly byly z předpovědí vyřazeny jako neobvyklé.",
+        "desc_many": "Analýza vychází z {{used}} z {{total}} cyklů. {{excluded}} cyklu bylo z předpovědí vyřazeno jako neobvyklé.",
+        "desc_other": "Analýza vychází z {{used}} z {{total}} cyklů. {{excluded}} cyklů bylo z předpovědí vyřazeno jako neobvyklých.",
         "fixBtn": "Zkontrolovat a opravit"
       },
       "explanation": {

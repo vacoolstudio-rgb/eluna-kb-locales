@@ -492,7 +492,8 @@
         "title": "Cambios en el Ciclo",
         "days": "días",
         "subtitle": "Qué cambió en este ciclo",
-        "timesLogged": "veces registrado",
+        "timesLogged_one": "vez registrado",
+        "timesLogged_other": "veces registrado",
         "anomalyTitle": "Anomalía Detectada",
         "anomalyDetected": "Desviación",
         "baseline": {
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Pasaporte del Ciclo",
-        "subtitle": "Estadísticas resumidas de tu(s) último(s) {{count}} ciclo(s).",
+        "subtitle_one": "Estadísticas resumidas de tu último ciclo.",
+        "subtitle_other": "Estadísticas resumidas de tus últimos {{count}} ciclos.",
         "insufficientDataTitle": "Reuniendo Datos",
         "insufficientDataDescription": "La confianza implica tener más registros históricos de ciclos para establecer tu línea base clínica promedio.",
         "median": "Ciclo típico",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Datos Anómalos",
-        "desc": "Los análisis se basan en {{used}} de {{total}} ciclos. {{excluded}} ciclo(s) fueron excluidos de las predicciones como anómalos.",
+        "desc_one": "El análisis se basa en {{used}} de {{total}} ciclos. Un ciclo se excluyó de las previsiones por ser atípico.",
+        "desc_other": "El análisis se basa en {{used}} de {{total}} ciclos. {{excluded}} ciclos se excluyeron de las previsiones por ser atípicos.",
         "fixBtn": "Revisar y Corregir"
       }
     },

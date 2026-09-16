@@ -470,7 +470,7 @@
         "anovulatory": "Posibleng anovulatory pattern. Ipagpatuloy ang pag-track ng LH strips.",
         "normal": "Pasok sa healthy range ang iyong data. Magandang araw ito para unahin ang sarili mo!"
       },
-      "title": "Mga Insight",
+      "title": "Mga Pananaw",
       "hero": {
         "onTrackTitle": "Ayon sa Takbo",
         "onTrackDesc": "Tumutugma ang kasalukuyan mong cycle sa mga dati mong pattern.",
@@ -490,22 +490,24 @@
         "gatheringDesc": "Kailangan pa namin ng ilang cycle para mabuo ang iyong kumpletong statistical profile."
       },
       "whatChanged": {
-        "title": "Mga pagbabago sa cycle",
+        "title": "Mga pagbabago sa siklo",
         "days": "araw",
-        "subtitle": "Ano ang nagbago sa cycle na ito",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Ano ang nagbago sa siklong ito",
+        "timesLogged_one": "beses na naitala",
+        "timesLogged_other": "beses na naitala",
+        "anomalyTitle": "May natukoy na anomalya",
+        "anomalyDetected": "Pagkakaiba",
         "baseline": {
-          "average": "Historical average"
+          "average": "Dating average"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Haba ng siklo",
+        "periodLength": "Haba ng regla",
         "needsReview": "Kailangang suriin"
       },
       "cycleCore": {
         "title": "Buod ng Cycle",
-        "subtitle": "Buod ng mga istatistika para sa huli mong {{count}} cycle(s).",
+        "subtitle_one": "Buod ng mga istatistika para sa huli mong siklo.",
+        "subtitle_other": "Buod ng mga istatistika para sa huli mong {{count}} siklo.",
         "median": "Karaniwang cycle",
         "mean": "Makasaysayang average",
         "menses": "Karaniwang pagdurugo",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Hindi Karaniwang Data",
-        "desc": "Nakabatay ang analytics sa {{used}} sa kabuuang {{total}} cycle. {{excluded}} cycle(s) ang hindi isinama sa predictions dahil itinuring na anomaly.",
+        "desc_one": "Nakabatay ang pagsusuri sa {{used}} sa {{total}} siklo. Isang siklo ang hindi isinama sa hula dahil hindi pangkaraniwan.",
+        "desc_other": "Nakabatay ang pagsusuri sa {{used}} sa {{total}} siklo. {{excluded}} siklo ang hindi isinama sa hula dahil hindi pangkaraniwan.",
         "fixBtn": "Suriin at Ayusin"
       },
       "explanation": {
@@ -966,7 +969,7 @@
     "tabs": {
       "today": "Ngayon",
       "calendar": "Kalendaryo",
-      "insights": "Insights",
+      "insights": "Pananaw",
       "settings": "Mga Setting"
     },
     "knowledge": {

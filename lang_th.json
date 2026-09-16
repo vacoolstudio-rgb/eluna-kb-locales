@@ -492,20 +492,20 @@
       "whatChanged": {
         "title": "การเปลี่ยนแปลงของรอบเดือน",
         "days": "วัน",
-        "subtitle": "สิ่งที่เปลี่ยนไปในรอบนี้",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "รอบนี้มีอะไรเปลี่ยนไปบ้าง",
+        "timesLogged_other": "ครั้งที่บันทึก",
+        "anomalyTitle": "พบความผิดปกติ",
+        "anomalyDetected": "ส่วนต่าง",
         "baseline": {
-          "average": "Historical average"
+          "average": "ค่าเฉลี่ยที่ผ่านมา"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "ต้องตรวจสอบ"
+        "cycleLength": "ความยาวรอบเดือน",
+        "periodLength": "จำนวนวันมีประจำเดือน",
+        "needsReview": "ควรตรวจสอบ"
       },
       "cycleCore": {
         "title": "ภาพรวมรอบเดือน",
-        "subtitle": "สถิติสรุปของ {{count}} รอบเดือนล่าสุดของคุณ",
+        "subtitle_other": "สรุปสถิติของ {{count}} รอบล่าสุด",
         "median": "รอบเดือนโดยทั่วไป",
         "mean": "ค่าเฉลี่ยย้อนหลัง",
         "menses": "ระยะมีประจำเดือนปกติ",
@@ -660,7 +660,7 @@
       },
       "anomaly": {
         "title": "ข้อมูลผิดปกติ",
-        "desc": "การวิเคราะห์อ้างอิงจาก {{used}} จากทั้งหมด {{total}} รอบ โดยมี {{excluded}} รอบที่ถูกตัดออกจากการคาดการณ์เนื่องจากเป็นข้อมูลผิดปกติ",
+        "desc_other": "การวิเคราะห์อ้างอิงจาก {{used}} จาก {{total}} รอบ โดย {{excluded}} รอบถูกตัดออกจากการคาดการณ์เพราะผิดปกติ",
         "fixBtn": "ตรวจสอบและแก้ไข"
       },
       "explanation": {

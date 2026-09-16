@@ -492,7 +492,8 @@
         "title": "Cycle shifts",
         "days": "days",
         "subtitle": "What changed in this cycle",
-        "timesLogged": "times logged",
+        "timesLogged_one": "time logged",
+        "timesLogged_other": "times logged",
         "anomalyTitle": "Anomaly Detected",
         "anomalyDetected": "Deviation",
         "needsReview": "Needs review",
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Cycle Passport",
-        "subtitle": "Summary statistics for your last {{count}} cycle(s).",
+        "subtitle_one": "Summary statistics for your last cycle.",
+        "subtitle_other": "Summary statistics for your last {{count}} cycles.",
         "insufficientData": "Not enough data yet",
         "insufficientDataTitle": "Gathering Data",
         "insufficientDataDescription": "Confidence implies having more historical cycle logs to establish your average clinical baseline.",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Anomalous Data",
-        "desc": "Analytics are based on {{used}} out of {{total}} cycles. {{excluded}} cycle(s) were excluded from predictions as anomalous.",
+        "desc_one": "Analytics are based on {{used}} out of {{total}} cycles. One cycle was excluded from predictions as anomalous.",
+        "desc_other": "Analytics are based on {{used}} out of {{total}} cycles. {{excluded}} cycles were excluded from predictions as anomalous.",
         "fixBtn": "Review and Fix"
       }
     },

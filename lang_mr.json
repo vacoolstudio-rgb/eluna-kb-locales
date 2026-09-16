@@ -490,22 +490,24 @@
         "gatheringDesc": "तुमची संपूर्ण सांख्यिकीय प्रोफाइल तयार करण्यासाठी आम्हाला अजून काही सायकल्सची गरज आहे."
       },
       "whatChanged": {
-        "title": "सायकलमधील बदल",
+        "title": "चक्रातील बदल",
         "days": "दिवस",
-        "subtitle": "या सायकलमध्ये काय बदलले",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "या चक्रात काय बदलले",
+        "timesLogged_one": "वेळा नोंदवले",
+        "timesLogged_other": "वेळा नोंदवले",
+        "anomalyTitle": "असामान्यता आढळली",
+        "anomalyDetected": "विचलन",
         "baseline": {
-          "average": "Historical average"
+          "average": "पूर्वीची सरासरी"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "पुनरावलोकन आवश्यक"
+        "cycleLength": "चक्राची लांबी",
+        "periodLength": "पाळीचा कालावधी",
+        "needsReview": "तपासणी आवश्यक"
       },
       "cycleCore": {
         "title": "सायकल प्रोफाइल",
-        "subtitle": "तुमच्या मागील {{count}} सायकलची संक्षिप्त आकडेवारी.",
+        "subtitle_one": "तुमच्या शेवटच्या चक्राचा सारांश.",
+        "subtitle_other": "तुमच्या शेवटच्या {{count}} चक्रांचा सारांश.",
         "median": "नेहमीची सायकल",
         "mean": "मागील सरासरी",
         "menses": "सामान्य पाळी",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "असामान्य डेटा",
-        "desc": "विश्लेषण {{total}} पैकी {{used}} सायकलींवर आधारित आहे. {{excluded}} सायकल असामान्य असल्यामुळे अंदाजातून वगळल्या गेल्या.",
+        "desc_one": "विश्लेषण {{total}} पैकी {{used}} चक्रांवर आधारित आहे. एक चक्र असामान्य असल्याने अंदाजातून वगळले.",
+        "desc_other": "विश्लेषण {{total}} पैकी {{used}} चक्रांवर आधारित आहे. {{excluded}} चक्रे असामान्य असल्याने अंदाजातून वगळली.",
         "fixBtn": "पुनरावलोकन करा आणि दुरुस्त करा"
       },
       "explanation": {

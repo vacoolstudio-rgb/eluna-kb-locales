@@ -469,7 +469,7 @@
       "day22_24": "Início do PMS. Possível sensibilidade nos seios, inchaço e leve irritabilidade.",
       "day25_26": "O fundo emocional está instável. Quedas hormonais podem causar ansiedade ou tristeza.",
       "day27_28": "Modo de espera. O corpo se prepara para um novo ciclo. Reduza os treinos e garanta um sono de qualidade.",
-      "title": "Insights",
+      "title": "Análises",
       "hero": {
         "onTrackTitle": "No Caminho",
         "onTrackDesc": "Seu ciclo atual está correspondendo aos padrões históricos.",
@@ -492,7 +492,8 @@
         "title": "Mudanças no Ciclo",
         "days": "dias",
         "subtitle": "O que mudou neste ciclo",
-        "timesLogged": "vezes registrado",
+        "timesLogged_one": "vez registrado",
+        "timesLogged_other": "vezes registrado",
         "anomalyTitle": "Anomalia Detectada",
         "anomalyDetected": "Desvio",
         "baseline": {
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Passaporte do Ciclo",
-        "subtitle": "Estatísticas resumidas para seu(s) último(s) {{count}} ciclo(s).",
+        "subtitle_one": "Estatísticas resumidas do seu último ciclo.",
+        "subtitle_other": "Estatísticas resumidas dos seus últimos {{count}} ciclos.",
         "insufficientDataTitle": "Coletando Dados",
         "insufficientDataDescription": "Confiança implica ter mais registros históricos de ciclos para estabelecer sua linha de base clínica média.",
         "median": "Ciclo típico",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Dados Anômalos",
-        "desc": "As análises são baseadas em {{used}} de {{total}} ciclos. {{excluded}} ciclo(s) foram excluídos das previsões como anômalos.",
+        "desc_one": "A análise se baseia em {{used}} de {{total}} ciclos. Um ciclo foi excluído das previsões por ser atípico.",
+        "desc_other": "A análise se baseia em {{used}} de {{total}} ciclos. {{excluded}} ciclos foram excluídos das previsões por serem atípicos.",
         "fixBtn": "Revisar e Corrigir"
       }
     },
@@ -1048,7 +1051,7 @@
     "tabs": {
       "today": "Hoje",
       "calendar": "Calendário",
-      "insights": "Insights",
+      "insights": "Análises",
       "settings": "Configurações"
     },
     "support": {

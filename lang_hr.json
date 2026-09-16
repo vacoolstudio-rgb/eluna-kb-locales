@@ -492,7 +492,9 @@
         "title": "Pomaci ciklusa",
         "days": "dana",
         "subtitle": "Što se promijenilo u ovom ciklusu",
-        "timesLogged": "puta zabilježeno",
+        "timesLogged_one": "put zabilježeno",
+        "timesLogged_few": "puta zabilježeno",
+        "timesLogged_other": "puta zabilježeno",
         "anomalyTitle": "Otkrivena anomalija",
         "anomalyDetected": "Odstupanje",
         "baseline": {
@@ -504,7 +506,9 @@
       },
       "cycleCore": {
         "title": "Putovnica ciklusa",
-        "subtitle": "Sažetak statistike za vaš zadnji {{count}} ciklus(a).",
+        "subtitle_one": "Sažeta statistika za posljednji ciklus.",
+        "subtitle_few": "Sažeta statistika za posljednja {{count}} ciklusa.",
+        "subtitle_other": "Sažeta statistika za posljednjih {{count}} ciklusa.",
         "insufficientDataTitle": "Prikupljanje podataka",
         "insufficientDataDescription": "Pouzdanost podrazumijeva više povijesnih zapisa ciklusa za uspostavljanje vašeg prosječnog kliničkog temelja.",
         "median": "Tipičan ciklus",
@@ -667,7 +671,9 @@
       },
       "anomaly": {
         "title": "Anomalni podaci",
-        "desc": "Analitika se temelji na {{used}} od {{total}} ciklusa. {{excluded}} ciklus(a) isključeno je iz predviđanja kao anomalno.",
+        "desc_one": "Analitika se temelji na {{used}} od {{total}} ciklusa. Jedan ciklus isključen je iz predviđanja kao neuobičajen.",
+        "desc_few": "Analitika se temelji na {{used}} od {{total}} ciklusa. {{excluded}} ciklusa isključena su iz predviđanja kao neuobičajena.",
+        "desc_other": "Analitika se temelji na {{used}} od {{total}} ciklusa. {{excluded}} ciklusa isključeno je iz predviđanja kao neuobičajeno.",
         "fixBtn": "Pregledaj i ispravi"
       }
     },

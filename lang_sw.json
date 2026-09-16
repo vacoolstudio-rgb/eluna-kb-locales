@@ -492,20 +492,22 @@
       "whatChanged": {
         "title": "Mabadiliko ya mzunguko",
         "days": "siku",
-        "subtitle": "Kilichobadilika katika mzunguko huu",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Nini kilibadilika katika mzunguko huu",
+        "timesLogged_one": "mara imerekodiwa",
+        "timesLogged_other": "mara imerekodiwa",
+        "anomalyTitle": "Hitilafu imegunduliwa",
+        "anomalyDetected": "Tofauti",
         "baseline": {
-          "average": "Historical average"
+          "average": "Wastani wa awali"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "Inahitaji kupitiwa"
+        "cycleLength": "Urefu wa mzunguko",
+        "periodLength": "Muda wa hedhi",
+        "needsReview": "Inahitaji kukaguliwa"
       },
       "cycleCore": {
         "title": "Muhtasari wa Mzunguko",
-        "subtitle": "Takwimu za muhtasari za mizunguko yako {{count}} ya mwisho.",
+        "subtitle_one": "Takwimu za muhtasari za mzunguko wako wa mwisho.",
+        "subtitle_other": "Takwimu za muhtasari za mizunguko yako {{count}} ya mwisho.",
         "median": "Mzunguko wa kawaida",
         "mean": "Wastani wa kihistoria",
         "menses": "Kutokwa damu kwa kawaida",
@@ -663,7 +665,8 @@
       },
       "anomaly": {
         "title": "Data Isiyo ya Kawaida",
-        "desc": "Uchambuzi unategemea mizunguko {{used}} kati ya {{total}}. Mzunguko {{excluded}} umeondolewa kwenye utabiri kwa kuwa si wa kawaida.",
+        "desc_one": "Uchambuzi unategemea mizunguko {{used}} kati ya {{total}}. Mzunguko mmoja umeondolewa kwenye utabiri kwa kuwa si wa kawaida.",
+        "desc_other": "Uchambuzi unategemea mizunguko {{used}} kati ya {{total}}. Mizunguko {{excluded}} imeondolewa kwenye utabiri kwa kuwa si ya kawaida.",
         "fixBtn": "Kagua na Urekebishe"
       }
     },

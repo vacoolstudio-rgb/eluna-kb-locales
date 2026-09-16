@@ -6400,7 +6400,8 @@
         "title": "የክብ ልዩነቶች",
         "days": "ቀናት",
         "subtitle": "በዚህ ክብ ውስጥ የተለወጠው",
-        "timesLogged": "ጊዜዎች ተመዝግቧል",
+        "timesLogged_one": "ጊዜ ተመዝግቧል",
+        "timesLogged_other": "ጊዜ ተመዝግቧል",
         "anomalyTitle": "ልዩነት ተገኝቷል",
         "anomalyDetected": "ልዩነት",
         "baseline": {
@@ -6412,7 +6413,8 @@
       },
       "cycleCore": {
         "title": "የክብ ፓስፖርት",
-        "subtitle": "የመጨረሻዎቹ ክብ(ኦች) የገመገመ ስኬት ማጠቃለያ።",
+        "subtitle_one": "ስለ መጨረሻው ዑደትዎ የተጠቃለለ ስታቲስቲክስ።",
+        "subtitle_other": "ስለ መጨረሻዎቹ {{count}} ዑደቶችዎ የተጠቃለለ ስታቲስቲክስ።",
         "insufficientDataTitle": "መረጃ ማሰባሰብ",
         "insufficientDataDescription": "እምነት ማለት የታሪክ ክብ መዝገቦች በማስተዋል የአማላጅ ክብ መስመር ማሰልጠን ነው።",
         "median": "መደበኛ ክብ",
@@ -6575,7 +6577,8 @@
       },
       "anomaly": {
         "title": "የተለየ ውሂብ",
-        "desc": "ትንታኔዎች በ{{used}} ከ{{total}} ሳይክሎች ላይ የተመሠረቱ ናቸው። {{excluded}} ሳይክሎች እንደ ተለየ ተለው።",
+        "desc_one": "ትንታኔው ከ{{total}} ዑደቶች {{used}}ን መሠረት ያደረገ ነው። አንድ ዑደት ያልተለመደ በመሆኑ ከትንበያዎቹ ተገልሏል።",
+        "desc_other": "ትንታኔው ከ{{total}} ዑደቶች {{used}}ን መሠረት ያደረገ ነው። {{excluded}} ዑደቶች ያልተለመዱ በመሆናቸው ከትንበያዎቹ ተገልለዋል።",
         "fixBtn": "እይና አስተካክል"
       }
     },

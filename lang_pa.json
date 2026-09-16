@@ -490,22 +490,24 @@
         "gatheringDesc": "ਤੁਹਾਡੀ ਪੂਰੀ ਅੰਕੜਾ-ਆਧਾਰਿਤ ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਉਣ ਲਈ ਸਾਨੂੰ ਹੋਰ ਕੁਝ ਚੱਕਰਾਂ ਦੀ ਲੋੜ ਹੈ।"
       },
       "whatChanged": {
-        "title": "ਸਾਈਕਲ ਵਿੱਚ ਬਦਲਾਅ",
+        "title": "ਚੱਕਰ ਵਿੱਚ ਤਬਦੀਲੀਆਂ",
         "days": "ਦਿਨ",
         "subtitle": "ਇਸ ਚੱਕਰ ਵਿੱਚ ਕੀ ਬਦਲਿਆ",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "ਵਾਰ ਦਰਜ",
+        "timesLogged_other": "ਵਾਰ ਦਰਜ",
+        "anomalyTitle": "ਅਸਧਾਰਨਤਾ ਮਿਲੀ",
+        "anomalyDetected": "ਫ਼ਰਕ",
         "baseline": {
-          "average": "Historical average"
+          "average": "ਪਿਛਲਾ ਔਸਤ"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "ਸਮੀਖਿਆ ਦੀ ਲੋੜ"
+        "cycleLength": "ਚੱਕਰ ਦੀ ਲੰਬਾਈ",
+        "periodLength": "ਮਾਹਵਾਰੀ ਦੀ ਮਿਆਦ",
+        "needsReview": "ਜਾਂਚ ਲੋੜੀਂਦੀ"
       },
       "cycleCore": {
         "title": "ਸਾਈਕਲ ਝਲਕ",
-        "subtitle": "ਤੁਹਾਡੇ ਪਿਛਲੇ {{count}} ਸਾਈਕਲ(ਾਂ) ਦੇ ਸੰਖੇਪ ਅੰਕੜੇ।",
+        "subtitle_one": "ਤੁਹਾਡੇ ਪਿਛਲੇ ਚੱਕਰ ਦਾ ਸਾਰ।",
+        "subtitle_other": "ਤੁਹਾਡੇ ਪਿਛਲੇ {{count}} ਚੱਕਰਾਂ ਦਾ ਸਾਰ।",
         "median": "ਆਮ ਸਾਈਕਲ",
         "mean": "ਪਿਛਲਾ ਔਸਤ",
         "menses": "ਆਮ ਬਲੀਡਿੰਗ",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "ਅਸਧਾਰਣ ਡਾਟਾ",
-        "desc": "ਵਿਸ਼ਲੇਸ਼ਣ {{total}} ਵਿੱਚੋਂ {{used}} ਚੱਕਰਾਂ 'ਤੇ ਆਧਾਰਿਤ ਹੈ। {{excluded}} ਚੱਕਰ ਅਸਧਾਰਣ ਹੋਣ ਕਾਰਨ ਅਨੁਮਾਨਾਂ ਤੋਂ ਬਾਹਰ ਰੱਖੇ ਗਏ।",
+        "desc_one": "ਵਿਸ਼ਲੇਸ਼ਣ {{total}} ਵਿੱਚੋਂ {{used}} ਚੱਕਰਾਂ ਉੱਤੇ ਆਧਾਰਿਤ ਹੈ। ਇੱਕ ਚੱਕਰ ਅਸਧਾਰਨ ਹੋਣ ਕਰਕੇ ਭਵਿੱਖਬਾਣੀ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ ਗਿਆ।",
+        "desc_other": "ਵਿਸ਼ਲੇਸ਼ਣ {{total}} ਵਿੱਚੋਂ {{used}} ਚੱਕਰਾਂ ਉੱਤੇ ਆਧਾਰਿਤ ਹੈ। {{excluded}} ਚੱਕਰ ਅਸਧਾਰਨ ਹੋਣ ਕਰਕੇ ਭਵਿੱਖਬਾਣੀ ਤੋਂ ਬਾਹਰ ਰੱਖੇ ਗਏ।",
         "fixBtn": "ਸਮੀਖਿਆ ਕਰੋ ਅਤੇ ਠੀਕ ਕਰੋ"
       },
       "explanation": {

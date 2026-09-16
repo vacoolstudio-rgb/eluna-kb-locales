@@ -490,22 +490,22 @@
         "gatheringDesc": "Chúng tôi cần thêm một vài chu kỳ nữa để xây dựng hồ sơ thống kê đầy đủ cho bạn."
       },
       "whatChanged": {
-        "title": "Thay đổi chu kỳ",
+        "title": "Thay đổi của chu kỳ",
         "days": "ngày",
-        "subtitle": "Những thay đổi trong chu kỳ này",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Điều gì đã thay đổi trong chu kỳ này",
+        "timesLogged_other": "lần ghi nhận",
+        "anomalyTitle": "Phát hiện bất thường",
+        "anomalyDetected": "Chênh lệch",
         "baseline": {
-          "average": "Historical average"
+          "average": "Trung bình trước đây"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Độ dài chu kỳ",
+        "periodLength": "Số ngày hành kinh",
         "needsReview": "Cần xem lại"
       },
       "cycleCore": {
         "title": "Hồ sơ chu kỳ",
-        "subtitle": "Thống kê tổng quan cho {{count}} chu kỳ gần nhất của bạn.",
+        "subtitle_other": "Thống kê tóm tắt cho {{count}} chu kỳ gần nhất.",
         "median": "Chu kỳ điển hình",
         "mean": "Trung bình trước đây",
         "menses": "Kỳ kinh thông thường",
@@ -660,7 +660,7 @@
       },
       "anomaly": {
         "title": "Dữ liệu bất thường",
-        "desc": "Phân tích được xây dựng từ {{used}} trên tổng số {{total}} chu kỳ. {{excluded}} chu kỳ đã bị loại khỏi dự đoán vì bất thường.",
+        "desc_other": "Phân tích dựa trên {{used}} trong {{total}} chu kỳ. {{excluded}} chu kỳ bị loại khỏi dự đoán vì bất thường.",
         "fixBtn": "Xem lại và chỉnh sửa"
       },
       "explanation": {

@@ -490,22 +490,24 @@
         "gatheringDesc": "మీ పూర్తి గణాంక ప్రొఫైల్ రూపొందించడానికి మాకు ఇంకొన్ని సైకిళ్లు అవసరం."
       },
       "whatChanged": {
-        "title": "సైకిల్ మార్పులు",
+        "title": "చక్రంలో మార్పులు",
         "days": "రోజులు",
-        "subtitle": "ఈ సైకిల్‌లో ఏమి మారింది",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "ఈ చక్రంలో ఏమి మారింది",
+        "timesLogged_one": "సారి నమోదైంది",
+        "timesLogged_other": "సార్లు నమోదైంది",
+        "anomalyTitle": "అసాధారణత గుర్తించబడింది",
+        "anomalyDetected": "వ్యత్యాసం",
         "baseline": {
-          "average": "Historical average"
+          "average": "గత సగటు"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "చక్రం నిడివి",
+        "periodLength": "రుతుస్రావ నిడివి",
         "needsReview": "సమీక్ష అవసరం"
       },
       "cycleCore": {
         "title": "సైకిల్ సారాంశం",
-        "subtitle": "మీ గత {{count}} సైకిల్(లు)కు సంబంధించిన సారాంశ గణాంకాలు.",
+        "subtitle_one": "మీ చివరి చక్రం సారాంశ గణాంకాలు.",
+        "subtitle_other": "మీ చివరి {{count}} చక్రాల సారాంశ గణాంకాలు.",
         "median": "సాధారణ సైకిల్",
         "mean": "గత సగటు",
         "menses": "సాధారణ రక్తస్రావం",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "అసాధారణ డేటా",
-        "desc": "విశ్లేషణ {{total}} సైకిళ్లలో {{used}} పై ఆధారపడి ఉంది. {{excluded}} సైకిల్(లు) అసాధారణంగా ఉండటంతో అంచనాల నుంచి మినహాయించబడ్డాయి.",
+        "desc_one": "విశ్లేషణ {{total}}లో {{used}} చక్రాల ఆధారంగా ఉంది. ఒక చక్రం అసాధారణంగా ఉన్నందున అంచనాల నుంచి మినహాయించబడింది.",
+        "desc_other": "విశ్లేషణ {{total}}లో {{used}} చక్రాల ఆధారంగా ఉంది. {{excluded}} చక్రాలు అసాధారణంగా ఉన్నందున అంచనాల నుంచి మినహాయించబడ్డాయి.",
         "fixBtn": "సమీక్షించి సరిచేయండి"
       },
       "explanation": {

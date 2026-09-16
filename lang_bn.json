@@ -490,22 +490,24 @@
         "gatheringDesc": "আপনার পূর্ণ পরিসংখ্যানভিত্তিক প্রোফাইল তৈরি করতে আমাদের আরও কয়েকটি সাইকেল দরকার।"
       },
       "whatChanged": {
-        "title": "সাইকেলের পরিবর্তন",
+        "title": "চক্রের পরিবর্তন",
         "days": "দিন",
-        "subtitle": "এই সাইকেলে কী পরিবর্তন হয়েছে",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "এই চক্রে কী বদলাল",
+        "timesLogged_one": "বার নথিভুক্ত",
+        "timesLogged_other": "বার নথিভুক্ত",
+        "anomalyTitle": "অস্বাভাবিকতা ধরা পড়েছে",
+        "anomalyDetected": "বিচ্যুতি",
         "baseline": {
-          "average": "Historical average"
+          "average": "আগের গড়"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "পর্যালোচনা প্রয়োজন"
+        "cycleLength": "চক্রের দৈর্ঘ্য",
+        "periodLength": "ঋতুস্রাবের স্থায়িত্ব",
+        "needsReview": "যাচাই দরকার"
       },
       "cycleCore": {
         "title": "সাইকেল সারাংশ",
-        "subtitle": "আপনার শেষ {{count}}টি সাইকেলের সারসংক্ষেপ পরিসংখ্যান।",
+        "subtitle_one": "আপনার শেষ চক্রের সারসংক্ষেপ।",
+        "subtitle_other": "আপনার শেষ {{count}}টি চক্রের সারসংক্ষেপ।",
         "median": "সাধারণ সাইকেল",
         "mean": "আগের গড়",
         "menses": "স্বাভাবিক রক্তস্রাব",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "অস্বাভাবিক ডেটা",
-        "desc": "{{total}}টির মধ্যে {{used}}টি সাইকেলের ভিত্তিতে অ্যানালিটিক্স তৈরি করা হয়েছে। {{excluded}}টি সাইকেল অস্বাভাবিক হওয়ায় পূর্বাভাস থেকে বাদ দেওয়া হয়েছে।",
+        "desc_one": "বিশ্লেষণ {{total}}টির মধ্যে {{used}}টি চক্রের ভিত্তিতে। একটি চক্র অস্বাভাবিক হওয়ায় পূর্বাভাস থেকে বাদ পড়েছে।",
+        "desc_other": "বিশ্লেষণ {{total}}টির মধ্যে {{used}}টি চক্রের ভিত্তিতে। {{excluded}}টি চক্র অস্বাভাবিক হওয়ায় পূর্বাভাস থেকে বাদ পড়েছে।",
         "fixBtn": "পর্যালোচনা ও সংশোধন করুন"
       },
       "explanation": {

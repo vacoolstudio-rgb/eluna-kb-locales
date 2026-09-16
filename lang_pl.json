@@ -493,19 +493,25 @@
         "title": "Zmiany w cyklu",
         "days": "dni",
         "subtitle": "Co zmieniło się w tym cyklu",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "raz odnotowano",
+        "timesLogged_few": "razy odnotowano",
+        "timesLogged_many": "razy odnotowano",
+        "timesLogged_other": "razy odnotowano",
+        "anomalyTitle": "Wykryto anomalię",
+        "anomalyDetected": "Odchylenie",
         "baseline": {
-          "average": "Historical average"
+          "average": "Średnia historyczna"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Długość cyklu",
+        "periodLength": "Długość miesiączki",
         "needsReview": "Wymaga sprawdzenia"
       },
       "cycleCore": {
         "title": "Profil cyklu",
-        "subtitle": "Podsumowanie statystyk z ostatnich {{count}} cykli.",
+        "subtitle_one": "Podsumowanie statystyk z ostatniego cyklu.",
+        "subtitle_few": "Podsumowanie statystyk z ostatnich {{count}} cykli.",
+        "subtitle_many": "Podsumowanie statystyk z ostatnich {{count}} cykli.",
+        "subtitle_other": "Podsumowanie statystyk z ostatnich {{count}} cyklu.",
         "median": "Typowy cykl",
         "mean": "Średnia historyczna",
         "menses": "Typowe krwawienie",
@@ -660,7 +666,10 @@
       },
       "anomaly": {
         "title": "Nietypowe dane",
-        "desc": "Analizy opierają się na {{used}} z {{total}} cykli. {{excluded}} cykl(i) wykluczono z prognoz jako anomalne.",
+        "desc_one": "Analiza opiera się na {{used}} z {{total}} cykli. Jeden cykl wykluczono z prognoz jako nietypowy.",
+        "desc_few": "Analiza opiera się na {{used}} z {{total}} cykli. {{excluded}} cykle wykluczono z prognoz jako nietypowe.",
+        "desc_many": "Analiza opiera się na {{used}} z {{total}} cykli. {{excluded}} cykli wykluczono z prognoz jako nietypowe.",
+        "desc_other": "Analiza opiera się na {{used}} z {{total}} cykli. {{excluded}} cyklu wykluczono z prognoz jako nietypowe.",
         "fixBtn": "Sprawdź i popraw"
       },
       "explanation": {

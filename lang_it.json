@@ -490,22 +490,24 @@
         "gatheringDesc": "Ci servono ancora alcuni cicli per creare il tuo profilo statistico completo."
       },
       "whatChanged": {
-        "title": "Variazioni del ciclo",
+        "title": "Cambiamenti del ciclo",
         "days": "giorni",
         "subtitle": "Cosa è cambiato in questo ciclo",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "volta registrato",
+        "timesLogged_other": "volte registrato",
+        "anomalyTitle": "Anomalia rilevata",
+        "anomalyDetected": "Scostamento",
         "baseline": {
-          "average": "Historical average"
+          "average": "Media storica"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "Da verificare"
+        "cycleLength": "Durata del ciclo",
+        "periodLength": "Durata delle mestruazioni",
+        "needsReview": "Da rivedere"
       },
       "cycleCore": {
         "title": "Profilo del ciclo",
-        "subtitle": "Statistiche riassuntive degli ultimi {{count}} cicli.",
+        "subtitle_one": "Statistiche riassuntive dell'ultimo ciclo.",
+        "subtitle_other": "Statistiche riassuntive degli ultimi {{count}} cicli.",
         "median": "Ciclo tipico",
         "mean": "Media storica",
         "menses": "Flusso normale",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Dati anomali",
-        "desc": "L'analisi si basa su {{used}} cicli su {{total}}. {{excluded}} ciclo/i sono stati esclusi dalle previsioni perché anomali.",
+        "desc_one": "L'analisi si basa su {{used}} cicli su {{total}}. Un ciclo è stato escluso dalle previsioni perché anomalo.",
+        "desc_other": "L'analisi si basa su {{used}} cicli su {{total}}. {{excluded}} cicli sono stati esclusi dalle previsioni perché anomali.",
         "fixBtn": "Controlla e correggi"
       },
       "explanation": {

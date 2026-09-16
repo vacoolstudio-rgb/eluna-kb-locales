@@ -492,20 +492,22 @@
       "whatChanged": {
         "title": "चक्र में बदलाव",
         "days": "दिन",
-        "subtitle": "इस साइकिल में क्या बदला",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "इस चक्र में क्या बदला",
+        "timesLogged_one": "बार दर्ज",
+        "timesLogged_other": "बार दर्ज",
+        "anomalyTitle": "असामान्यता मिली",
+        "anomalyDetected": "विचलन",
         "baseline": {
-          "average": "Historical average"
+          "average": "पिछला औसत"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "समीक्षा की आवश्यकता"
+        "cycleLength": "चक्र की लंबाई",
+        "periodLength": "माहवारी की अवधि",
+        "needsReview": "जाँच ज़रूरी"
       },
       "cycleCore": {
         "title": "साइकिल प्रोफ़ाइल",
-        "subtitle": "आपके पिछले {{count}} चक्रों का सारांश।",
+        "subtitle_one": "आपके पिछले चक्र का सारांश।",
+        "subtitle_other": "आपके पिछले {{count}} चक्रों का सारांश।",
         "median": "सामान्य चक्र",
         "mean": "पिछला औसत",
         "menses": "सामान्य ब्लीडिंग",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "असामान्य डेटा",
-        "desc": "विश्लेषण {{total}} में से {{used}} साइकिल पर आधारित है। {{excluded}} साइकिल को असामान्य होने के कारण पूर्वानुमानों से बाहर रखा गया।",
+        "desc_one": "विश्लेषण {{total}} में से {{used}} चक्रों पर आधारित है। एक चक्र असामान्य होने के कारण पूर्वानुमान से हटाया गया।",
+        "desc_other": "विश्लेषण {{total}} में से {{used}} चक्रों पर आधारित है। {{excluded}} चक्र असामान्य होने के कारण पूर्वानुमान से हटाए गए।",
         "fixBtn": "जांचें और सुधारें"
       },
       "explanation": {

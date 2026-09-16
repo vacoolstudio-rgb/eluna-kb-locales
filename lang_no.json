@@ -492,20 +492,22 @@
       "whatChanged": {
         "title": "Endringer i syklusen",
         "days": "dager",
-        "subtitle": "Hva som endret seg i denne syklusen",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Hva som endret seg denne syklusen",
+        "timesLogged_one": "gang registrert",
+        "timesLogged_other": "ganger registrert",
+        "anomalyTitle": "Avvik oppdaget",
+        "anomalyDetected": "Avvik",
         "baseline": {
-          "average": "Historical average"
+          "average": "Historisk gjennomsnitt"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "Må gjennomgås"
+        "cycleLength": "Sykluslengde",
+        "periodLength": "Menstruasjonens lengde",
+        "needsReview": "Må ses over"
       },
       "cycleCore": {
         "title": "Syklusoversikt",
-        "subtitle": "Sammendragsstatistikk for de siste {{count}} syklusene dine.",
+        "subtitle_one": "Oppsummerende statistikk for din siste syklus.",
+        "subtitle_other": "Oppsummerende statistikk for dine siste {{count}} sykluser.",
         "median": "Typisk syklus",
         "mean": "Historisk gjennomsnitt",
         "menses": "Vanlig blødning",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Avvikende data",
-        "desc": "Analysen er basert på {{used}} av {{total}} sykluser. {{excluded}} syklus(er) ble ekskludert fra prognosene som avvikende.",
+        "desc_one": "Analysen bygger på {{used}} av {{total}} sykluser. Én syklus ble utelatt fra prognosene som avvikende.",
+        "desc_other": "Analysen bygger på {{used}} av {{total}} sykluser. {{excluded}} sykluser ble utelatt fra prognosene som avvikende.",
         "fixBtn": "Se gjennom og rett opp"
       },
       "explanation": {

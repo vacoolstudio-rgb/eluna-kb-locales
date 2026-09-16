@@ -493,19 +493,21 @@
         "title": "Циклдегі өзгерістер",
         "days": "күн",
         "subtitle": "Осы циклде не өзгерді",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "рет белгіленді",
+        "timesLogged_other": "рет белгіленді",
+        "anomalyTitle": "Ауытқу байқалды",
+        "anomalyDetected": "Ауытқу",
         "baseline": {
-          "average": "Historical average"
+          "average": "Бұрынғы орташа"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Цикл ұзақтығы",
+        "periodLength": "Етеккір ұзақтығы",
         "needsReview": "Тексеру қажет"
       },
       "cycleCore": {
         "title": "Цикл паспорты",
-        "subtitle": "Соңғы {{count}} цикл бойынша қысқаша статистика.",
+        "subtitle_one": "Соңғы цикл бойынша жиынтық статистика.",
+        "subtitle_other": "Соңғы {{count}} цикл бойынша жиынтық статистика.",
         "median": "Әдеттегі цикл",
         "mean": "Тарихи орташа мән",
         "menses": "Қалыпты етеккір",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Қалыптан тыс деректер",
-        "desc": "Талдау {{total}} циклдің {{used}}-іне негізделген. {{excluded}} цикл болжамнан ауытқу ретінде шығарылды.",
+        "desc_one": "Талдау {{total}} циклдің {{used}} санына негізделген. Бір цикл әдеттен тыс болғандықтан болжамнан шығарылды.",
+        "desc_other": "Талдау {{total}} циклдің {{used}} санына негізделген. {{excluded}} цикл әдеттен тыс болғандықтан болжамнан шығарылды.",
         "fixBtn": "Қарап шығу және түзету"
       },
       "explanation": {

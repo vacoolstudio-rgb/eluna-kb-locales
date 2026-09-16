@@ -493,19 +493,19 @@
         "title": "Perubahan kitaran",
         "days": "hari",
         "subtitle": "Apa yang berubah dalam kitaran ini",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_other": "kali dicatat",
+        "anomalyTitle": "Anomali dikesan",
+        "anomalyDetected": "Sisihan",
         "baseline": {
-          "average": "Historical average"
+          "average": "Purata lepas"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Panjang kitaran",
+        "periodLength": "Tempoh haid",
         "needsReview": "Perlu disemak"
       },
       "cycleCore": {
         "title": "Ringkasan Kitaran",
-        "subtitle": "Statistik ringkas untuk {{count}} kitaran terakhir anda.",
+        "subtitle_other": "Ringkasan statistik untuk {{count}} kitaran terakhir.",
         "median": "Kitaran biasa",
         "mean": "Purata sejarah",
         "menses": "Pendarahan biasa",
@@ -660,7 +660,7 @@
       },
       "anomaly": {
         "title": "Data Tidak Normal",
-        "desc": "Analitik berdasarkan {{used}} daripada {{total}} kitaran. {{excluded}} kitaran dikecualikan daripada ramalan kerana dianggap anomali.",
+        "desc_other": "Analisis berdasarkan {{used}} daripada {{total}} kitaran. {{excluded}} kitaran dikecualikan daripada ramalan kerana luar biasa.",
         "fixBtn": "Semak dan Betulkan"
       },
       "explanation": {

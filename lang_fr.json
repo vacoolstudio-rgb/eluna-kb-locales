@@ -493,19 +493,21 @@
         "title": "Évolutions du cycle",
         "days": "jours",
         "subtitle": "Ce qui a changé dans ce cycle",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "fois enregistré",
+        "timesLogged_other": "fois enregistré",
+        "anomalyTitle": "Anomalie détectée",
+        "anomalyDetected": "Écart",
         "baseline": {
-          "average": "Historical average"
+          "average": "Moyenne historique"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Durée du cycle",
+        "periodLength": "Durée des règles",
         "needsReview": "À vérifier"
       },
       "cycleCore": {
         "title": "Profil du cycle",
-        "subtitle": "Statistiques récapitulatives de vos {{count}} dernier(s) cycle(s).",
+        "subtitle_one": "Statistiques récapitulatives de votre dernier cycle.",
+        "subtitle_other": "Statistiques récapitulatives de vos {{count}} derniers cycles.",
         "median": "Cycle habituel",
         "mean": "Moyenne historique",
         "menses": "Saignement habituel",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Données atypiques",
-        "desc": "L’analyse repose sur {{used}} cycles sur {{total}}. {{excluded}} cycle(s) ont été exclus des prédictions car considérés comme atypiques.",
+        "desc_one": "L'analyse porte sur {{used}} cycles sur {{total}}. Un cycle a été exclu des prévisions car atypique.",
+        "desc_other": "L'analyse porte sur {{used}} cycles sur {{total}}. {{excluded}} cycles ont été exclus des prévisions car atypiques.",
         "fixBtn": "Vérifier et corriger"
       },
       "explanation": {

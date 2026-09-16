@@ -492,20 +492,22 @@
       "whatChanged": {
         "title": "Förändringar i cykeln",
         "days": "dagar",
-        "subtitle": "Det här förändrades i den här cykeln",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Vad som ändrades den här cykeln",
+        "timesLogged_one": "gång loggad",
+        "timesLogged_other": "gånger loggad",
+        "anomalyTitle": "Avvikelse upptäckt",
+        "anomalyDetected": "Avvikelse",
         "baseline": {
-          "average": "Historical average"
+          "average": "Historiskt genomsnitt"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "Behöver granskas"
+        "cycleLength": "Cykellängd",
+        "periodLength": "Menstruationens längd",
+        "needsReview": "Behöver ses över"
       },
       "cycleCore": {
         "title": "Cykelöversikt",
-        "subtitle": "Sammanfattande statistik för dina senaste {{count}} cykel/cykler.",
+        "subtitle_one": "Sammanfattande statistik för din senaste cykel.",
+        "subtitle_other": "Sammanfattande statistik för dina senaste {{count}} cykler.",
         "median": "Typisk cykel",
         "mean": "Historiskt medelvärde",
         "menses": "Normal blödning",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Avvikande data",
-        "desc": "Analysen baseras på {{used}} av {{total}} cykler. {{excluded}} cykel/cykler exkluderades från prognoserna som avvikande.",
+        "desc_one": "Analysen bygger på {{used}} av {{total}} cykler. En cykel uteslöts från prognoserna som avvikande.",
+        "desc_other": "Analysen bygger på {{used}} av {{total}} cykler. {{excluded}} cykler uteslöts från prognoserna som avvikande.",
         "fixBtn": "Granska och korrigera"
       },
       "explanation": {

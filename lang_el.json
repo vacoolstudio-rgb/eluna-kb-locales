@@ -490,22 +490,24 @@
         "gatheringDesc": "Χρειαζόμαστε λίγους ακόμη κύκλους για να δημιουργήσουμε το πλήρες στατιστικό σου προφίλ."
       },
       "whatChanged": {
-        "title": "Μεταβολές κύκλου",
+        "title": "Μεταβολές του κύκλου",
         "days": "ημέρες",
         "subtitle": "Τι άλλαξε σε αυτόν τον κύκλο",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "φορά καταγράφηκε",
+        "timesLogged_other": "φορές καταγράφηκε",
+        "anomalyTitle": "Εντοπίστηκε ανωμαλία",
+        "anomalyDetected": "Απόκλιση",
         "baseline": {
-          "average": "Historical average"
+          "average": "Ιστορικός μέσος όρος"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Διάρκεια κύκλου",
+        "periodLength": "Διάρκεια περιόδου",
         "needsReview": "Χρειάζεται έλεγχο"
       },
       "cycleCore": {
         "title": "Σύνοψη κύκλου",
-        "subtitle": "Συνοπτικά στατιστικά για τους τελευταίους {{count}} κύκλους σου.",
+        "subtitle_one": "Συνοπτικά στατιστικά για τον τελευταίο σου κύκλο.",
+        "subtitle_other": "Συνοπτικά στατιστικά για τους τελευταίους {{count}} κύκλους σου.",
         "median": "Τυπικός κύκλος",
         "mean": "Ιστορικός μέσος όρος",
         "menses": "Συνήθης περίοδος",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Ασυνήθιστα δεδομένα",
-        "desc": "Η ανάλυση βασίζεται σε {{used}} από τους {{total}} κύκλους. {{excluded}} κύκλος(-οι) εξαιρέθηκαν από τις προβλέψεις ως ασυνήθιστοι.",
+        "desc_one": "Η ανάλυση βασίζεται σε {{used}} από {{total}} κύκλους. Ένας κύκλος εξαιρέθηκε από τις προβλέψεις ως ασυνήθιστος.",
+        "desc_other": "Η ανάλυση βασίζεται σε {{used}} από {{total}} κύκλους. {{excluded}} κύκλοι εξαιρέθηκαν από τις προβλέψεις ως ασυνήθιστοι.",
         "fixBtn": "Έλεγχος και διόρθωση"
       },
       "explanation": {

@@ -493,19 +493,21 @@
         "title": "Ciklusváltozások",
         "days": "nap",
         "subtitle": "Mi változott ebben a ciklusban",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "alkalommal rögzítve",
+        "timesLogged_other": "alkalommal rögzítve",
+        "anomalyTitle": "Rendellenesség észlelve",
+        "anomalyDetected": "Eltérés",
         "baseline": {
-          "average": "Historical average"
+          "average": "Korábbi átlag"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "Ellenőrzendő"
+        "cycleLength": "Ciklushossz",
+        "periodLength": "Menstruáció hossza",
+        "needsReview": "Ellenőrzés szükséges"
       },
       "cycleCore": {
         "title": "Ciklusprofil",
-        "subtitle": "Összefoglaló statisztikák az elmúlt {{count}} ciklusodról.",
+        "subtitle_one": "Összefoglaló statisztika az utolsó ciklusodról.",
+        "subtitle_other": "Összefoglaló statisztika az utolsó {{count}} ciklusodról.",
         "median": "Jellemző ciklus",
         "mean": "Korábbi átlag",
         "menses": "Szokásos vérzés",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Rendellenes adatok",
-        "desc": "Az elemzés {{used}} cikluson alapul a(z) {{total}} közül. {{excluded}} ciklus ki lett zárva az előrejelzésekből rendellenesség miatt.",
+        "desc_one": "Az elemzés {{total}} ciklusból {{used}} cikluson alapul. Egy ciklust szokatlanként kihagytunk az előrejelzésekből.",
+        "desc_other": "Az elemzés {{total}} ciklusból {{used}} cikluson alapul. {{excluded}} ciklust szokatlanként kihagytunk az előrejelzésekből.",
         "fixBtn": "Átnézés és javítás"
       },
       "explanation": {

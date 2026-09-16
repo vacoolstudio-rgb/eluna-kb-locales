@@ -492,7 +492,8 @@
         "title": "Changements de cycle",
         "days": "jours",
         "subtitle": "Ce qui a changé dans ce cycle",
-        "timesLogged": "fois enregistré",
+        "timesLogged_one": "fois enregistré",
+        "timesLogged_other": "fois enregistré",
         "anomalyTitle": "Anomalie détectée",
         "anomalyDetected": "Déviation",
         "baseline": {
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Passeport du cycle",
-        "subtitle": "Statistiques résumées pour vos {{count}} dernier(s) cycle(s).",
+        "subtitle_one": "Statistiques récapitulatives de votre dernier cycle.",
+        "subtitle_other": "Statistiques récapitulatives de vos {{count}} derniers cycles.",
         "insufficientDataTitle": "Collecte de données",
         "insufficientDataDescription": "La confiance implique d'avoir plus de journaux de cycles historiques pour établir votre base clinique moyenne.",
         "median": "Cycle typique",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Données Anormales",
-        "desc": "Les analyses sont basées sur {{used}} sur {{total}} cycles. {{excluded}} cycle(s) ont été exclus des prédictions comme anormaux.",
+        "desc_one": "L'analyse porte sur {{used}} cycles sur {{total}}. Un cycle a été exclu des prévisions car atypique.",
+        "desc_other": "L'analyse porte sur {{used}} cycles sur {{total}}. {{excluded}} cycles ont été exclus des prévisions car atypiques.",
         "fixBtn": "Réviser et Corriger"
       }
     },

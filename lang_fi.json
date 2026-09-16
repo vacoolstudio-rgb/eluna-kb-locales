@@ -492,20 +492,22 @@
       "whatChanged": {
         "title": "Muutokset kierrossa",
         "days": "päivää",
-        "subtitle": "Mikä tässä kierrossa muuttui",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Mikä muuttui tässä kierrossa",
+        "timesLogged_one": "kerta kirjattu",
+        "timesLogged_other": "kertaa kirjattu",
+        "anomalyTitle": "Poikkeama havaittu",
+        "anomalyDetected": "Poikkeama",
         "baseline": {
-          "average": "Historical average"
+          "average": "Aiempi keskiarvo"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Kierron pituus",
+        "periodLength": "Kuukautisten kesto",
         "needsReview": "Vaatii tarkistusta"
       },
       "cycleCore": {
         "title": "Kiertoyhteenveto",
-        "subtitle": "Yhteenvetotilastot viimeisistä {{count}} kierrostasi.",
+        "subtitle_one": "Yhteenveto viimeisimmästä kierrosta.",
+        "subtitle_other": "Yhteenveto {{count}} viimeisimmästä kierrosta.",
         "median": "Tyypillinen kierto",
         "mean": "Historiallinen keskiarvo",
         "menses": "Tavallinen vuoto",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Poikkeavat tiedot",
-        "desc": "Analytiikka perustuu {{used}} kiertoon yhteensä {{total}} kierrosta. {{excluded}} kierto(a) on suljettu pois ennusteista poikkeamina.",
+        "desc_one": "Analyysi perustuu {{used}} kiertoon {{total}} kierrosta. Yksi kierto jätettiin ennusteista pois poikkeavana.",
+        "desc_other": "Analyysi perustuu {{used}} kiertoon {{total}} kierrosta. {{excluded}} kiertoa jätettiin ennusteista pois poikkeavina.",
         "fixBtn": "Tarkista ja korjaa"
       },
       "explanation": {

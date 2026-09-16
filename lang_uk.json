@@ -493,19 +493,25 @@
         "title": "Зміни циклу",
         "days": "днів",
         "subtitle": "Що змінилося в цьому циклі",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "раз відмічено",
+        "timesLogged_few": "рази відмічено",
+        "timesLogged_many": "разів відмічено",
+        "timesLogged_other": "разу відмічено",
+        "anomalyTitle": "Виявлено аномалію",
+        "anomalyDetected": "Відхилення",
         "baseline": {
-          "average": "Historical average"
+          "average": "Історичне середнє"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Тривалість циклу",
+        "periodLength": "Тривалість місячних",
         "needsReview": "Потребує перевірки"
       },
       "cycleCore": {
         "title": "Паспорт циклу",
-        "subtitle": "Підсумкова статистика за ваші останні {{count}} циклів.",
+        "subtitle_one": "Підсумкова статистика за останній цикл.",
+        "subtitle_few": "Підсумкова статистика за останні {{count}} цикли.",
+        "subtitle_many": "Підсумкова статистика за останні {{count}} циклів.",
+        "subtitle_other": "Підсумкова статистика за останні {{count}} циклу.",
         "median": "Типовий цикл",
         "mean": "Історичне середнє",
         "menses": "Звична менструація",
@@ -660,7 +666,10 @@
       },
       "anomaly": {
         "title": "Аномальні дані",
-        "desc": "Аналітика базується на {{used}} із {{total}} циклів. {{excluded}} цикл(ів) було виключено з прогнозів як аномальні.",
+        "desc_one": "Аналітика побудована на {{used}} з {{total}} циклів. Один цикл виключено з прогнозів як аномальний.",
+        "desc_few": "Аналітика побудована на {{used}} з {{total}} циклів. {{excluded}} цикли виключено з прогнозів як аномальні.",
+        "desc_many": "Аналітика побудована на {{used}} з {{total}} циклів. {{excluded}} циклів виключено з прогнозів як аномальні.",
+        "desc_other": "Аналітика побудована на {{used}} з {{total}} циклів. {{excluded}} циклу виключено з прогнозів як аномальні.",
         "fixBtn": "Переглянути й виправити"
       },
       "explanation": {

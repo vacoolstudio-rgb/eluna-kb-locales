@@ -492,7 +492,8 @@
         "title": "Sikl o'zgarishlari",
         "days": "kun",
         "subtitle": "Ushbu siklda nima o'zgardi",
-        "timesLogged": "marta qayd etilgan",
+        "timesLogged_one": "marta qayd etildi",
+        "timesLogged_other": "marta qayd etildi",
         "anomalyTitle": "Anomaliya aniqlangan",
         "anomalyDetected": "Chetga chiqish",
         "baseline": {
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Sikl Pasporti",
-        "subtitle": "Oxirgi {{count}} siklingiz uchun umumiy statistika.",
+        "subtitle_one": "Soʻnggi tsikl boʻyicha umumiy statistika.",
+        "subtitle_other": "Soʻnggi {{count}} tsikl boʻyicha umumiy statistika.",
         "insufficientDataTitle": "Ma'lumot yig'ilmoqda",
         "insufficientDataDescription": "Ishonch sizning o'rtacha klinik asosiy chizig'ingizni belgilash uchun ko'proq tarixiy sikl qaydlariga ega bo'lishni anglatadi.",
         "median": "Odatdagi sikl",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Anomal ma'lumotlar",
-        "desc": "Tahlillar {{total}} sikldan {{used}} asosida amalga oshiriladi. {{excluded}} sikl(lar) anomal sifatida prognozlardan chiqarib tashlandi.",
+        "desc_one": "Tahlil {{total}} tsikldan {{used}} tasiga asoslangan. Bitta tsikl gʻayrioddiy deb bashoratlardan chiqarildi.",
+        "desc_other": "Tahlil {{total}} tsikldan {{used}} tasiga asoslangan. {{excluded}} tsikl gʻayrioddiy deb bashoratlardan chiqarildi.",
         "fixBtn": "Ko'rib chiqish va tuzatish"
       }
     },

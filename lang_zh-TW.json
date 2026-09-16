@@ -490,22 +490,22 @@
         "gatheringDesc": "我們還需要再收集幾個週期，才能建立完整的統計輪廓。"
       },
       "whatChanged": {
-        "title": "週期變化",
+        "title": "週期的變化",
         "days": "天",
-        "subtitle": "這個週期有哪些變化",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "這個週期有什麼變化",
+        "timesLogged_other": "次紀錄",
+        "anomalyTitle": "發現異常",
+        "anomalyDetected": "偏差",
         "baseline": {
-          "average": "Historical average"
+          "average": "歷史平均"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "需要複查"
+        "cycleLength": "週期長度",
+        "periodLength": "經期長度",
+        "needsReview": "需要檢查"
       },
       "cycleCore": {
         "title": "週期概覽",
-        "subtitle": "妳最近 {{count}} 個週期的統計摘要。",
+        "subtitle_other": "最近 {{count}} 個週期的統計摘要。",
         "median": "典型週期",
         "mean": "歷史平均值",
         "menses": "一般經期出血",
@@ -660,7 +660,7 @@
       },
       "anomaly": {
         "title": "異常資料",
-        "desc": "分析是根據 {{total}} 個週期中的 {{used}} 個進行。{{excluded}} 個週期因異常而未納入預測。",
+        "desc_other": "分析基於 {{total}} 個週期中的 {{used}} 個。{{excluded}} 個週期因異常被排除在預測之外。",
         "fixBtn": "檢查並修正"
       },
       "explanation": {

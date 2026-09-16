@@ -490,22 +490,24 @@
         "gatheringDesc": "Wir brauchen noch ein paar Zyklen, um dein vollständiges statistisches Profil zu erstellen."
       },
       "whatChanged": {
-        "title": "Zyklusveränderungen",
+        "title": "Veränderungen im Zyklus",
         "days": "Tage",
-        "subtitle": "Was sich in diesem Zyklus verändert hat",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "Was sich in diesem Zyklus geändert hat",
+        "timesLogged_one": "Mal erfasst",
+        "timesLogged_other": "Mal erfasst",
+        "anomalyTitle": "Auffälligkeit erkannt",
+        "anomalyDetected": "Abweichung",
         "baseline": {
-          "average": "Historical average"
+          "average": "Bisheriger Durchschnitt"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "Muss geprüft werden"
+        "cycleLength": "Zykluslänge",
+        "periodLength": "Periodendauer",
+        "needsReview": "Prüfung nötig"
       },
       "cycleCore": {
         "title": "Zyklusprofil",
-        "subtitle": "Zusammenfassende Statistiken für deine letzten {{count}} Zyklen.",
+        "subtitle_one": "Zusammenfassende Statistiken für deinen letzten Zyklus.",
+        "subtitle_other": "Zusammenfassende Statistiken für deine letzten {{count}} Zyklen.",
         "median": "Typischer Zyklus",
         "mean": "Historischer Durchschnitt",
         "menses": "Normale Blutung",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Auffällige Daten",
-        "desc": "Die Analyse basiert auf {{used}} von {{total}} Zyklen. {{excluded}} Zyklus/Zyklen wurden wegen Auffälligkeiten von den Vorhersagen ausgeschlossen.",
+        "desc_one": "Die Auswertung beruht auf {{used}} von {{total}} Zyklen. Ein Zyklus wurde als ungewöhnlich aus den Prognosen ausgeschlossen.",
+        "desc_other": "Die Auswertung beruht auf {{used}} von {{total}} Zyklen. {{excluded}} Zyklen wurden als ungewöhnlich aus den Prognosen ausgeschlossen.",
         "fixBtn": "Prüfen und korrigieren"
       },
       "explanation": {

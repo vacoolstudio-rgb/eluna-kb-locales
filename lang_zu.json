@@ -492,7 +492,8 @@
         "title": "Ukushintsha Komjikelezo",
         "days": "izinsuku",
         "subtitle": "Okushintshile kulo mjikelezo",
-        "timesLogged": "izikhathi ezibhalwe",
+        "timesLogged_one": "isikhathi kubhaliwe",
+        "timesLogged_other": "izikhathi kubhaliwe",
         "anomalyTitle": "Ukuphambuka Okutholakele",
         "anomalyDetected": "Ukuphambuka",
         "baseline": {
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Iphasipoti Lomjikelezo",
-        "subtitle": "Izibalo ezihlanganisiwe zomjikelezo wakho wokugcina {{count}}.",
+        "subtitle_one": "Izibalo ezifingqiwe zomjikelezo wakho wokugcina.",
+        "subtitle_other": "Izibalo ezifingqiwe zemijikelezo yakho engu-{{count}} yokugcina.",
         "insufficientDataTitle": "Ukuqoqa Idatha",
         "insufficientDataDescription": "Ukuzethemba kusho ukuthi unemininingwane eminingi yomlando womjikelezo ukuze usungule isisekelo sakho sezokwelapha esijwayelekile.",
         "median": "Umjikelezo ojwayelekile",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Idatha Engajwayelekile",
-        "desc": "Izibalo zisekelwe ku-{{used}} kwe-{{total}} imijikelezo. {{excluded}} umjikelezo(i) ukhishwe ezibikezelweni njengokungajwayelekile.",
+        "desc_one": "Ukuhlaziya kusekelwe emijikelezweni engu-{{used}} kwengu-{{total}}. Umjikelezo owodwa ukhishiwe ezibikezelweni njengongajwayelekile.",
+        "desc_other": "Ukuhlaziya kusekelwe emijikelezweni engu-{{used}} kwengu-{{total}}. Imijikelezo engu-{{excluded}} ikhishiwe ezibikezelweni njengengajwayelekile.",
         "fixBtn": "Bheka futhi Lungisa"
       }
     },

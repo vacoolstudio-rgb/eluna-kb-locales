@@ -492,20 +492,20 @@
       "whatChanged": {
         "title": "周期の変化",
         "days": "日",
-        "subtitle": "今回の周期で変化したこと",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "subtitle": "この周期で変わったこと",
+        "timesLogged_other": "回記録",
+        "anomalyTitle": "異常を検出",
+        "anomalyDetected": "ずれ",
         "baseline": {
-          "average": "Historical average"
+          "average": "これまでの平均"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
-        "needsReview": "確認が必要"
+        "cycleLength": "周期の長さ",
+        "periodLength": "生理の長さ",
+        "needsReview": "要確認"
       },
       "cycleCore": {
         "title": "周期プロフィール",
-        "subtitle": "直近{{count}}回の周期のサマリー統計です。",
+        "subtitle_other": "直近 {{count}} 周期の統計まとめ。",
         "median": "通常の周期",
         "mean": "過去の平均",
         "menses": "通常の出血",
@@ -660,7 +660,7 @@
       },
       "anomaly": {
         "title": "異常なデータ",
-        "desc": "分析は{{total}}周期中{{used}}周期をもとにしています。{{excluded}}周期は異常データとして予測から除外されました。",
+        "desc_other": "分析は {{total}} 周期のうち {{used}} 周期に基づいています。{{excluded}} 周期は異常値として予測から除外されました。",
         "fixBtn": "確認して修正"
       },
       "explanation": {

@@ -493,19 +493,19 @@
         "title": "Perubahan siklus",
         "days": "hari",
         "subtitle": "Apa yang berubah di siklus ini",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_other": "kali dicatat",
+        "anomalyTitle": "Anomali terdeteksi",
+        "anomalyDetected": "Selisih",
         "baseline": {
-          "average": "Historical average"
+          "average": "Rata-rata sebelumnya"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Panjang siklus",
+        "periodLength": "Lama menstruasi",
         "needsReview": "Perlu ditinjau"
       },
       "cycleCore": {
         "title": "Ringkasan Siklus",
-        "subtitle": "Statistik ringkas untuk {{count}} siklus terakhirmu.",
+        "subtitle_other": "Ringkasan statistik untuk {{count}} siklus terakhir.",
         "median": "Siklus tipikal",
         "mean": "Rata-rata historis",
         "menses": "Perdarahan normal",
@@ -660,7 +660,7 @@
       },
       "anomaly": {
         "title": "Data Tidak Biasa",
-        "desc": "Analitik didasarkan pada {{used}} dari {{total}} siklus. {{excluded}} siklus dikecualikan dari prediksi karena dianggap anomali.",
+        "desc_other": "Analisis didasarkan pada {{used}} dari {{total}} siklus. {{excluded}} siklus dikecualikan dari prakiraan karena tidak biasa.",
         "fixBtn": "Tinjau dan Perbaiki"
       },
       "explanation": {

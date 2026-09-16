@@ -492,7 +492,8 @@
         "title": "Siklusverskuiwings",
         "days": "dae",
         "subtitle": "Wat het verander in hierdie siklus",
-        "timesLogged": "keer aangeteken",
+        "timesLogged_one": "keer aangeteken",
+        "timesLogged_other": "keer aangeteken",
         "anomalyTitle": "Anomalie Opgespoor",
         "anomalyDetected": "Afwyking",
         "baseline": {
@@ -504,7 +505,8 @@
       },
       "cycleCore": {
         "title": "Siklus Paspoort",
-        "subtitle": "Opsommingstatistieke vir jou laaste {{count}} siklus(se).",
+        "subtitle_one": "Opsommende statistiek vir jou laaste siklus.",
+        "subtitle_other": "Opsommende statistiek vir jou laaste {{count}} siklusse.",
         "insufficientDataTitle": "Versamel Data",
         "insufficientDataDescription": "Vertroue impliseer dat daar meer historiese sikluslogs is om jou gemiddelde kliniese basislyn te vestig.",
         "median": "Tipiese siklus",
@@ -667,7 +669,8 @@
       },
       "anomaly": {
         "title": "Abnormale Data",
-        "desc": "Analise is gebaseer op {{used}} uit {{total}} siklusse. {{excluded}} siklus(se) is uitgesluit van voorspellings as abnormaal.",
+        "desc_one": "Die ontleding berus op {{used}} van {{total}} siklusse. Een siklus is as afwykend uit die voorspellings gelaat.",
+        "desc_other": "Die ontleding berus op {{used}} van {{total}} siklusse. {{excluded}} siklusse is as afwykend uit die voorspellings gelaat.",
         "fixBtn": "Hersien en Herstel"
       }
     },

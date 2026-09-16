@@ -493,19 +493,21 @@
         "title": "Cambios del ciclo",
         "days": "días",
         "subtitle": "Qué cambió en este ciclo",
-        "timesLogged": "times logged",
-        "anomalyTitle": "Anomaly Detected",
-        "anomalyDetected": "Deviation",
+        "timesLogged_one": "vez registrado",
+        "timesLogged_other": "veces registrado",
+        "anomalyTitle": "Anomalía detectada",
+        "anomalyDetected": "Desviación",
         "baseline": {
-          "average": "Historical average"
+          "average": "Media histórica"
         },
-        "cycleLength": "Cycle length",
-        "periodLength": "Period length",
+        "cycleLength": "Duración del ciclo",
+        "periodLength": "Duración de la regla",
         "needsReview": "Requiere revisión"
       },
       "cycleCore": {
         "title": "Resumen del ciclo",
-        "subtitle": "Estadísticas resumidas de tus últimos {{count}} ciclo(s).",
+        "subtitle_one": "Estadísticas resumidas de tu último ciclo.",
+        "subtitle_other": "Estadísticas resumidas de tus últimos {{count}} ciclos.",
         "median": "Ciclo habitual",
         "mean": "Promedio histórico",
         "menses": "Sangrado habitual",
@@ -660,7 +662,8 @@
       },
       "anomaly": {
         "title": "Datos anómalos",
-        "desc": "El análisis se basa en {{used}} de {{total}} ciclos. {{excluded}} ciclo(s) se excluyeron de las predicciones por ser anómalos.",
+        "desc_one": "El análisis se basa en {{used}} de {{total}} ciclos. Un ciclo se excluyó de las previsiones por ser atípico.",
+        "desc_other": "El análisis se basa en {{used}} de {{total}} ciclos. {{excluded}} ciclos se excluyeron de las previsiones por ser atípicos.",
         "fixBtn": "Revisar y corregir"
       },
       "explanation": {

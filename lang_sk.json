@@ -492,7 +492,10 @@
         "title": "Posuny cyklu",
         "days": "dni",
         "subtitle": "Čo sa zmenilo v tomto cykle",
-        "timesLogged": "krát zaznamenané",
+        "timesLogged_one": "krát zaznamenané",
+        "timesLogged_few": "krát zaznamenané",
+        "timesLogged_many": "krát zaznamenané",
+        "timesLogged_other": "krát zaznamenané",
         "anomalyTitle": "Zistená anomália",
         "anomalyDetected": "Odchýlka",
         "baseline": {
@@ -504,7 +507,10 @@
       },
       "cycleCore": {
         "title": "Cyklický pas",
-        "subtitle": "Sumárne štatistiky pre váš posledný {{count}} cyklus(y).",
+        "subtitle_one": "Súhrnné štatistiky za posledný cyklus.",
+        "subtitle_few": "Súhrnné štatistiky za posledné {{count}} cykly.",
+        "subtitle_many": "Súhrnné štatistiky za posledných {{count}} cyklu.",
+        "subtitle_other": "Súhrnné štatistiky za posledných {{count}} cyklov.",
         "insufficientDataTitle": "Zbieranie údajov",
         "insufficientDataDescription": "Dôvera znamená mať viac historických záznamov cyklov na stanovenie vášho priemerného klinického základu.",
         "median": "Typický cyklus",
@@ -667,7 +673,10 @@
       },
       "anomaly": {
         "title": "Anomálne údaje",
-        "desc": "Analýzy sú založené na {{used}} z {{total}} cyklov. {{excluded}} cyklus(y) boli vylúčené z predpovedí ako anomálne.",
+        "desc_one": "Analýza vychádza z {{used}} z {{total}} cyklov. Jeden cyklus bol z predpovedí vyradený ako neobvyklý.",
+        "desc_few": "Analýza vychádza z {{used}} z {{total}} cyklov. {{excluded}} cykly boli z predpovedí vyradené ako neobvyklé.",
+        "desc_many": "Analýza vychádza z {{used}} z {{total}} cyklov. {{excluded}} cyklu bolo z predpovedí vyradených ako neobvyklé.",
+        "desc_other": "Analýza vychádza z {{used}} z {{total}} cyklov. {{excluded}} cyklov bolo z predpovedí vyradených ako neobvyklých.",
         "fixBtn": "Preskúmať a opraviť"
       }
     },
