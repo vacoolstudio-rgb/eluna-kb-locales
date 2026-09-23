@@ -27,7 +27,8 @@
       "step3": {
         "title": "Koliko dugo traje vaša\nmenstruacija?",
         "days": "dana",
-        "nextBtn": "Dalje"
+        "nextBtn": "Dalje",
+        "saveFailed": "Datum nije bilo moguće spremiti. Pokušaj ponovno — ako i dalje ne ide, obično pomaže ponovno pokretanje aplikacije."
       },
       "step4": {
         "title": "Koliko traje vaš\nciklus?",
@@ -328,7 +329,9 @@
       "holdToPin": "Drži simptom za pričvršćivanje",
       "create": "Kreiraj vlastiti",
       "notesTab": "Bilješke",
-      "notesPlaceholder": "Opiši svoje simptome ili misli (do 1000 znakova)..."
+      "notesPlaceholder": "Opiši svoje simptome ili misli (do 1000 znakova)...",
+      "noteSaveFailed": "Bilješku nije bilo moguće spremiti. Posljednja spremljena verzija je tu — pokušaj je napisati ponovno.",
+      "symptomSaveFailed": "Ovaj dodir nije spremljen i poništen je. Provjeri slobodan prostor na uređaju i pokušaj ponovno."
     },
     "symptoms": {
       "categories": {
@@ -675,6 +678,23 @@
         "desc_few": "Analitika se temelji na {{used}} od {{total}} ciklusa. {{excluded}} ciklusa isključena su iz predviđanja kao neuobičajena.",
         "desc_other": "Analitika se temelji na {{used}} od {{total}} ciklusa. {{excluded}} ciklusa isključeno je iz predviđanja kao neuobičajeno.",
         "fixBtn": "Pregledaj i ispravi"
+      },
+      "bbtChart": {
+        "coverline": "Pokrivna crta",
+        "dayAxis": "Dan ciklusa",
+        "empty": "Izmjeri temperaturu nekoliko jutara i ovdje će se pojaviti krivulja.",
+        "flagged": "označeno kao nepouzdano",
+        "noShiftYet": "U ovom ciklusu još nije potvrđen temperaturni skok. Potrebno je šest osnovnih dana i tri viša.",
+        "shiftFound": "Temperaturni skok potvrđen od {{day}}. dana — tri očitanja iznad pokrivne crte.",
+        "tapHint": "Dodirni točku da vidiš njezin datum i temperaturu.",
+        "title": "Bazalna temperatura"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Od najstarijeg do najnovijeg",
+        "readout": "Ciklus od {{date}} · {{days}} dana",
+        "summary": "Tvoji nedavni ciklusi u odnosu na tvoj medijan od {{median}} dana (raspršenost ±{{sd}}).",
+        "tapHint": "Dodirni stupac da vidiš kad je taj ciklus počeo. Stupci s obrubom neobično su daleko od tvog medijana.",
+        "title": "Duljina ciklusa"
       }
     },
     "settings": {
@@ -711,7 +731,9 @@
         "exportBackup": "Izvoz sigurnosne kopije",
         "importBackup": "Uvoz sigurnosne kopije",
         "cloudSync": "Sinkronizacija u oblaku",
-        "ourApps": "Naše ostale aplikacije"
+        "ourApps": "Naše ostale aplikacije",
+        "health": "Apple Zdravlje",
+        "widget": "Widget na početnom zaslonu"
       },
       "footer": "Svi podaci su šifrirani i pohranjeni samo na ovom uređaju",
       "resetTitle": "Resetiraj sve podatke",
@@ -930,7 +952,8 @@
       "sourcesTitle": "Medicinski izvori",
       "sourcesIntro": "Referentni rasponi i norme ciklusa korišteni u ovom izvješću temelje se na sljedećim kliničkim izvorima.",
       "excludedCycles_one": "{{count}} ciklus isključen je iz izračuna prosječne duljine jer su njegove vrijednosti bile anomalne.",
-      "excludedCycles_other": "{{count}} ciklusa isključeno je iz izračuna prosječne duljine jer su njihove vrijednosti bile anomalne."
+      "excludedCycles_other": "{{count}} ciklusa isključeno je iz izračuna prosječne duljine jer su njihove vrijednosti bile anomalne.",
+      "excludedCycles_few": "{{count}} ciklusa isključena su iz izračuna prosječne duljine jer su im vrijednosti bile neuobičajene."
     },
     "analytics": {
       "pulseTitle": "Mjerenje pulsa...",
@@ -1278,7 +1301,12 @@
       "disableNote": "Isključivanje sinkronizacije nikada ne briše ništa s ovog telefona.",
       "startOver": "Izgubili ste lozinku i kod za oporavak?",
       "startOverTitle": "Izbrisati ovu sigurnosnu kopiju i početi ispočetka?",
-      "startOverBody": "Ova se sigurnosna kopija ne može otvoriti bez svoje lozinke ili koda za oporavak — ni vi, ni mi. Njezinim brisanjem trajno se uništava sve unutar nje i to se ne može poništiti. Podaci koji su već na ovom telefonu ostaju netaknuti."
+      "startOverBody": "Ova se sigurnosna kopija ne može otvoriti bez svoje lozinke ili koda za oporavak — ni vi, ni mi. Njezinim brisanjem trajno se uništava sve unutar nje i to se ne može poništiti. Podaci koji su već na ovom telefonu ostaju netaknuti.",
+      "offline": "Nema veze. Tvoji su podaci sigurni na ovom telefonu — sinkronizirat će se kad se vratiš na mrežu.",
+      "restoreIncompleteBody_one": "Tvoja se povijest vratila, osim {{count}} zapisa koji sigurnosna kopija nije mogla predati — bio je oštećen. Sve ostalo je vraćeno.",
+      "restoreIncompleteBody_few": "Tvoja se povijest vratila, osim {{count}} zapisa koje sigurnosna kopija nije mogla predati — bili su oštećeni. Sve ostalo je vraćeno.",
+      "restoreIncompleteBody_other": "Tvoja se povijest vratila, osim {{count}} zapisa koje sigurnosna kopija nije mogla predati — bili su oštećeni. Sve ostalo je vraćeno.",
+      "restoreIncompleteTitle": "Neke zapise nije bilo moguće vratiti"
     },
     "ourApps": {
       "title": "Više od nas",
@@ -1303,6 +1331,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Otvorite gotovo svaku knjigu — EPUB, FB2, MOBI, PDF, DjVu, DOC i stripove, više od 20 formata na jednoj polici. Čitanje naglas, isticanja i bilješke koje možete izvesti, sinkronizacija bez računa i potpuna privatnost — bez oglasa i pratitelja, vaša knjižnica ostaje samo na vašem uređaju."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Vidite koliko je ostalo do sljedećeg servisa, a ne koliko je stajao: ulje, filtri, kočiona tekućina i zupčasti remen, svaki sa svojom kilometražom i datumom. Trideset šest dijelova s uobičajenim intervalima već je unutra. Bez računa i bez poslužitelja — povijest vozila ostaje samo na vašem uređaju."
       }
     },
     "tips": {
@@ -1330,7 +1362,83 @@
       "footer_other": "Zdravstvene informacije u aplikaciji Eluna navode {{count}} medicinskih izvora",
       "conceptionNote": "Vjerojatnost začeća specifična za dan slijedi Wilcox et al. (NEJM 1995) te smjernice ASRM-a/ACOG-a o osvještavanju plodnosti. To je procjena na temelju vaših zabilježenih ciklusa — nije kontracepcijska metoda.",
       "phaseTipsNote": "Fiziologija faza i ovdje opisani učinci slijede recenzirane kliničke izvore. Opći savjeti za dobrobit, a ne medicinsko liječenje.",
-      "cycleStatsNote": "Norme duljine ciklusa i ono što se smatra normalnom varijacijom slijede smjernice ACOG-a i recenzirana istraživanja."
+      "cycleStatsNote": "Norme duljine ciklusa i ono što se smatra normalnom varijacijom slijede smjernice ACOG-a i recenzirana istraživanja.",
+      "bbtNote": "Pokrivna crta i pravilo triju dana slijede smjernice StatPearlsa i Mayo Clinica o bazalnoj tjelesnoj temperaturi. Porast temperature potvrđuje ovulaciju nakon što se dogodila; ne predviđa je.",
+      "copyLink": "Kopiraj poveznicu",
+      "linkFailedTitle": "Ovu poveznicu nije bilo moguće otvoriti",
+      "countLabel_few": "{{count}} izvora",
+      "footer_few": "Zdravstvene informacije u Eluni navode {{count}} medicinska izvora"
+    },
+    "a11y": {
+      "addCustom": "Dodaj svoje",
+      "addMedication": "Dodaj podsjetnik za lijek",
+      "attachImage": "Priloži sliku",
+      "cancelEditing": "Odustani od uređivanja",
+      "clearSearch": "Očisti pretragu",
+      "close": "Zatvori",
+      "closeLog": "Zatvori dnevnik",
+      "deleteDigit": "Obriši zadnju znamenku",
+      "deleteReminder": "Obriši ovaj podsjetnik",
+      "doneLogging": "Gotovo",
+      "editLogForDay": "Uredi zapise za ovaj dan",
+      "editPeriodDays": "Uredi dane menstruacije",
+      "goBack": "Natrag",
+      "hidePassword": "Sakrij lozinku",
+      "nextMonth": "Sljedeći mjesec",
+      "nextMonthShort": "Sljedeći mjesec",
+      "openSettings": "Otvori postavke",
+      "phaseLegend": "O fazama ciklusa",
+      "pickIcon": "Odaberi ovu ikonu",
+      "previousMonth": "Prethodni mjesec",
+      "previousMonthShort": "Prethodni mjesec",
+      "rateStars": "Ocjena {{count}} od 5",
+      "removeAttachment": "Ukloni priloženu sliku",
+      "saveEditing": "Spremi promjene",
+      "showPassword": "Prikaži lozinku",
+      "symptomCategory": "Prikaži ovu kategoriju",
+      "toggleReminder": "Uključi ili isključi ovaj podsjetnik"
+    },
+    "errorBoundary": {
+      "action": "Ponovno pokreni aplikaciju za nastavak.",
+      "dataSafe": "Tvoji su zapisi sigurni — zakazao je samo zaslon.",
+      "hideDetails": "Sakrij pojedinosti",
+      "restart": "Ponovno pokreni",
+      "showDetails": "Pojedinosti",
+      "title": "Nešto je pošlo po zlu"
+    },
+    "health": {
+      "autoDesc": "Sinkroniziraj u pozadini kad otvoriš aplikaciju i ubrzo nakon što nešto zabilježiš. Ista pravila kao gumbi iznad: dani se samo dodaju, a u Zdravlju se zamjenjuje samo ono što je Eluna sama zapisala.",
+      "autoTitle": "Održavaj Zdravlje ažurnim",
+      "body": "Donesi dane menstruacije i jutarnje temperature iz Zdravlja ili objavi one koje bilježiš ovdje kako bi ih vidjele druge aplikacije kojima vjeruješ. Nigdje drugdje ništa ne odlazi i ništa se ne događa samo — samo kad pritisneš gumb ispod.",
+      "exportBtn": "Spremi u Zdravlje",
+      "exported": "U Zdravlje je spremljeno {{days}} dana menstruacije i {{temps}} temperatura.",
+      "failed": "Nije uspjelo. Provjeri Postavke → Zdravlje → Pristup podacima i uređaji → Eluna i dopusti kategorije.",
+      "footnote": "Uvoz nikad ne briše dan koji si zabilježila ovdje, a spremanje zamjenjuje samo ono što je Eluna prije zapisala — zapisi drugih aplikacija ostaju netaknuti.",
+      "importBtn": "Uvezi iz Zdravlja",
+      "imported": "Uvezeno je {{days}} dana menstruacije i {{temps}} temperatura.",
+      "lastSynced": "Posljednja sinkronizacija: {{when}}",
+      "nothingNew": "U Zdravlju nije bilo ničega što aplikacija već ne zna.",
+      "removeBtn": "Ukloni Elunine podatke iz Zdravlja",
+      "removed": "Sve što je Eluna zapisala u Zdravlje je uklonjeno. Ono što si sama unijela u Zdravlje ostaje netaknuto.",
+      "title": "Apple Zdravlje"
+    },
+    "widget": {
+      "dayHeadline": "{{day}}. dan",
+      "dueToday": "Menstruacija se očekuje danas",
+      "late_one": "kašnjenje {{count}} dan",
+      "late_few": "kašnjenje {{count}} dana",
+      "late_other": "kašnjenje {{count}} dana",
+      "modes": {
+        "discreet": "Diskretno",
+        "discreetDesc": "Prikazuje samo dan ciklusa — bez faze, bez odbrojavanja, bez ičega što otkriva čemu aplikacija služi.",
+        "full": "Potpuno",
+        "fullDesc": "Prikazuje dan ciklusa i koliko je ostalo do očekivane menstruacije.",
+        "off": "Isključeno",
+        "offDesc": "Ništa se ne objavljuje. Widget koji je već na početnom zaslonu ostaje prazan."
+      },
+      "untilPeriod_one": "{{count}} dan do menstruacije",
+      "untilPeriod_few": "{{count}} dana do menstruacije",
+      "untilPeriod_other": "{{count}} dana do menstruacije"
     }
   },
   "kb": {

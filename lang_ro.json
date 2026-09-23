@@ -23,7 +23,8 @@
       "step3": {
         "title": "Cât durează de obicei\nmenstruația?",
         "days": "zile",
-        "nextBtn": "Continuă"
+        "nextBtn": "Continuă",
+        "saveFailed": "Data nu a putut fi salvată. Încearcă din nou — dacă tot nu merge, de obicei ajută repornirea aplicației."
       },
       "step4": {
         "title": "Cât durează\nciclul tău?",
@@ -324,7 +325,9 @@
       "holdToPin": "Ține apăsat pe un simptom pentru a-l fixa",
       "create": "Creează-l pe al tău",
       "notesTab": "Notițe",
-      "notesPlaceholder": "Descrie-ți simptomele sau gândurile (până la 1000 de caractere)..."
+      "notesPlaceholder": "Descrie-ți simptomele sau gândurile (până la 1000 de caractere)...",
+      "noteSaveFailed": "Notița nu a putut fi salvată. Ultima versiune salvată este încă acolo — încearcă să o scrii din nou.",
+      "symptomSaveFailed": "Apăsarea nu a fost salvată și a fost anulată. Verifică spațiul liber de pe dispozitiv și încearcă din nou."
     },
     "symptoms": {
       "categories": {
@@ -671,6 +674,23 @@
       },
       "explanation": {
         "title": "De ce te simți așa?"
+      },
+      "bbtChart": {
+        "coverline": "Linia de acoperire",
+        "dayAxis": "Ziua ciclului",
+        "empty": "Măsoară-ți temperatura câteva dimineți și curba va apărea aici.",
+        "flagged": "marcată ca nesigură",
+        "noShiftYet": "În acest ciclu nu este încă confirmată o creștere termică. Sunt necesare șase zile de bază și trei mai ridicate.",
+        "shiftFound": "Creștere termică confirmată din ziua {{day}} — trei valori peste linia de acoperire.",
+        "tapHint": "Atinge un punct ca să-i vezi data și temperatura.",
+        "title": "Temperatura bazală"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "De la cele mai vechi la cele mai noi",
+        "readout": "Ciclu început la {{date}} · {{days}} zile",
+        "summary": "Ciclurile tale recente față de propria ta mediană de {{median}} zile (variație ±{{sd}}).",
+        "tapHint": "Atinge o coloană ca să vezi când a început acel ciclu. Coloanele conturate sunt neobișnuit de departe de mediana ta.",
+        "title": "Lungimea ciclului"
       }
     },
     "settings": {
@@ -707,7 +727,9 @@
         "exportBackup": "Exportă copia de rezervă",
         "importBackup": "Importă copia de rezervă",
         "cloudSync": "Sincronizare în cloud",
-        "ourApps": "Celelalte aplicații ale noastre"
+        "ourApps": "Celelalte aplicații ale noastre",
+        "health": "Apple Sănătate",
+        "widget": "Widget pe ecranul principal"
       },
       "footer": "Toate datele sunt criptate și stocate doar pe acest dispozitiv",
       "resetTitle": "Resetează toate datele",
@@ -848,7 +870,8 @@
       "sourcesTitle": "Surse medicale",
       "sourcesIntro": "Intervalele de referință și normele ciclului utilizate în acest raport se bazează pe următoarele surse clinice.",
       "excludedCycles_one": "{{count}} ciclu a fost exclus din calculul lungimii medii deoarece valorile sale au fost anormale.",
-      "excludedCycles_other": "{{count}} cicluri au fost excluse din calculul lungimii medii deoarece valorile lor au fost anormale."
+      "excludedCycles_other": "{{count}} cicluri au fost excluse din calculul lungimii medii deoarece valorile lor au fost anormale.",
+      "excludedCycles_few": "{{count}} cicluri au fost excluse din calculul duratei medii, deoarece valorile lor erau neobișnuite."
     },
     "analytics": {
       "pulseTitle": "Se calculează indicele de stare...",
@@ -1278,7 +1301,12 @@
       "disableNote": "Oprirea sincronizării nu șterge niciodată nimic de pe acest telefon.",
       "startOver": "Ai pierdut parola și codul de recuperare?",
       "startOverTitle": "Ștergi această copie de rezervă și o iei de la capăt?",
-      "startOverBody": "Această copie de rezervă nu poate fi deschisă fără parola sau codul ei de recuperare — nici de tine, nici de noi. Ștergerea ei distruge definitiv tot ce conține și nu poate fi anulată. Datele deja aflate pe acest telefon nu sunt afectate."
+      "startOverBody": "Această copie de rezervă nu poate fi deschisă fără parola sau codul ei de recuperare — nici de tine, nici de noi. Ștergerea ei distruge definitiv tot ce conține și nu poate fi anulată. Datele deja aflate pe acest telefon nu sunt afectate.",
+      "offline": "Fără conexiune. Datele tale sunt în siguranță pe acest telefon — sincronizarea se face când revii online.",
+      "restoreIncompleteBody_one": "Istoricul tău s-a întors, în afară de {{count}} însemnare pe care copia de rezervă nu a putut-o preda — era deteriorată. Tot restul a fost restaurat.",
+      "restoreIncompleteBody_few": "Istoricul tău s-a întors, în afară de {{count}} însemnări pe care copia de rezervă nu le-a putut preda — erau deteriorate. Tot restul a fost restaurat.",
+      "restoreIncompleteBody_other": "Istoricul tău s-a întors, în afară de {{count}} de însemnări pe care copia de rezervă nu le-a putut preda — erau deteriorate. Tot restul a fost restaurat.",
+      "restoreIncompleteTitle": "Unele însemnări nu au putut fi restaurate"
     },
     "ourApps": {
       "title": "Mai multe de la noi",
@@ -1303,6 +1331,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Deschide aproape orice carte — EPUB, FB2, MOBI, PDF, DjVu, DOC și benzi desenate, peste 20 de formate pe un singur raft. Citire cu voce tare, evidențieri și notițe pe care le poți exporta, sincronizare fără cont și confidențialitate deplină — fără reclame și fără urmăritori, biblioteca ta rămâne doar pe dispozitivul tău."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Vezi cât a mai rămas până la următoarea revizie, nu cât a costat: ulei, filtre, lichid de frână și curea de distribuție, fiecare cu kilometrajul și data lui. Treizeci și șase de piese cu intervale obișnuite sunt deja incluse. Fără cont și fără server — istoricul rămâne doar pe dispozitivul tău."
       }
     },
     "tips": {
@@ -1330,7 +1362,83 @@
       "footer_other": "Informațiile de sănătate din Eluna citează {{count}} surse medicale",
       "conceptionNote": "Probabilitatea de concepție specifică zilei urmează Wilcox et al. (NEJM 1995) și îndrumările ASRM/ACOG privind conștientizarea fertilității. Este o estimare din ciclurile înregistrate — nu o metodă contraceptivă.",
       "phaseTipsNote": "Fiziologia fazelor și efectele descrise aici urmează referințe clinice evaluate inter pares. Sugestii generale de bunăstare, nu tratament medical.",
-      "cycleStatsNote": "Normele privind lungimea ciclului și ceea ce este considerat variație normală urmează îndrumările ACOG și cercetările evaluate inter pares."
+      "cycleStatsNote": "Normele privind lungimea ciclului și ceea ce este considerat variație normală urmează îndrumările ACOG și cercetările evaluate inter pares.",
+      "bbtNote": "Linia de acoperire și regula celor trei zile urmează recomandările StatPearls și Mayo Clinic privind temperatura bazală. O creștere a temperaturii confirmă ovulația după ce s-a produs; nu o prezice.",
+      "copyLink": "Copiază linkul",
+      "linkFailedTitle": "Acest link nu a putut fi deschis",
+      "countLabel_few": "{{count}} surse",
+      "footer_few": "Informațiile despre sănătate din Eluna citează {{count}} surse medicale"
+    },
+    "a11y": {
+      "addCustom": "Adaugă-l pe al tău",
+      "addMedication": "Adaugă o reamintire pentru medicament",
+      "attachImage": "Atașează o imagine",
+      "cancelEditing": "Anulează editarea",
+      "clearSearch": "Șterge căutarea",
+      "close": "Închide",
+      "closeLog": "Închide jurnalul",
+      "deleteDigit": "Șterge ultima cifră",
+      "deleteReminder": "Șterge această reamintire",
+      "doneLogging": "Gata",
+      "editLogForDay": "Editează notițele acestei zile",
+      "editPeriodDays": "Editează zilele de menstruație",
+      "goBack": "Înapoi",
+      "hidePassword": "Ascunde parola",
+      "nextMonth": "Luna următoare",
+      "nextMonthShort": "Luna următoare",
+      "openSettings": "Deschide setările",
+      "phaseLegend": "Despre fazele ciclului",
+      "pickIcon": "Alege această pictogramă",
+      "previousMonth": "Luna anterioară",
+      "previousMonthShort": "Luna anterioară",
+      "rateStars": "Evaluare {{count}} din 5",
+      "removeAttachment": "Elimină imaginea atașată",
+      "saveEditing": "Salvează modificările",
+      "showPassword": "Arată parola",
+      "symptomCategory": "Arată această categorie",
+      "toggleReminder": "Pornește sau oprește această reamintire"
+    },
+    "errorBoundary": {
+      "action": "Repornește aplicația pentru a continua.",
+      "dataSafe": "Însemnările tale sunt în siguranță — a cedat doar ecranul.",
+      "hideDetails": "Ascunde detaliile",
+      "restart": "Repornește",
+      "showDetails": "Detalii",
+      "title": "Ceva nu a mers bine"
+    },
+    "health": {
+      "autoDesc": "Sincronizează în fundal când deschizi aplicația și la scurt timp după ce notezi ceva. Aceleași reguli ca butoanele de mai sus: zilele sunt doar adăugate, iar în Sănătate se înlocuiește doar ce a scris Eluna însăși.",
+      "autoTitle": "Ține Sănătate la zi",
+      "body": "Adu zilele de menstruație și temperaturile de dimineață din Sănătate sau publică-le pe cele notate aici, ca să le vadă alte aplicații în care ai încredere. Nimic nu pleacă în altă parte și nimic nu se întâmplă de la sine — doar când apeși un buton de mai jos.",
+      "exportBtn": "Salvează în Sănătate",
+      "exported": "Au fost salvate {{days}} zile de menstruație și {{temps}} temperaturi în Sănătate.",
+      "failed": "Nu a funcționat. Verifică Setări → Sănătate → Acces la date și dispozitive → Eluna și permite categoriile.",
+      "footnote": "Importul nu șterge niciodată o zi notată aici, iar salvarea înlocuiește doar ce a scris Eluna înainte — însemnările altor aplicații rămân neatinse.",
+      "importBtn": "Importă din Sănătate",
+      "imported": "Au fost importate {{days}} zile de menstruație și {{temps}} temperaturi.",
+      "lastSynced": "Ultima sincronizare: {{when}}",
+      "nothingNew": "Sănătate nu avea nimic ce aplicația nu știa deja.",
+      "removeBtn": "Elimină datele Eluna din Sănătate",
+      "removed": "Tot ce a scris Eluna în Sănătate a fost eliminat. Ce ai notat chiar tu în Sănătate rămâne neatins.",
+      "title": "Apple Sănătate"
+    },
+    "widget": {
+      "dayHeadline": "Ziua {{day}}",
+      "dueToday": "Menstruația este așteptată azi",
+      "late_one": "întârziere de {{count}} zi",
+      "late_few": "întârziere de {{count}} zile",
+      "late_other": "întârziere de {{count}} de zile",
+      "modes": {
+        "discreet": "Discret",
+        "discreetDesc": "Arată doar ziua ciclului — fără fază, fără numărătoare inversă, fără nimic care să spună la ce folosește aplicația.",
+        "full": "Complet",
+        "fullDesc": "Arată ziua ciclului și cât mai este până la menstruația așteptată.",
+        "off": "Oprit",
+        "offDesc": "Nu se publică nimic. Un widget deja aflat pe ecranul principal rămâne gol."
+      },
+      "untilPeriod_one": "{{count}} zi până la menstruație",
+      "untilPeriod_few": "{{count}} zile până la menstruație",
+      "untilPeriod_other": "{{count}} de zile până la menstruație"
     }
   },
   "kb": {

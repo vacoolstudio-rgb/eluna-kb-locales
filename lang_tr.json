@@ -23,7 +23,8 @@
       "step3": {
         "title": "Adetin ne kadar\nsürüyor?",
         "days": "gün",
-        "nextBtn": "Devam"
+        "nextBtn": "Devam",
+        "saveFailed": "Tarihin kaydedilemedi. Tekrar dene — sürerse genelde uygulamayı yeniden başlatmak işe yarar."
       },
       "step4": {
         "title": "Döngün kaç\ngün sürüyor?",
@@ -324,7 +325,9 @@
       "holdToPin": "Sabitlemek için belirtiye basılı tut",
       "create": "Kendin oluştur",
       "notesTab": "Notlar",
-      "notesPlaceholder": "Belirtilerini veya düşüncelerini anlat (en fazla 1000 karakter)..."
+      "notesPlaceholder": "Belirtilerini veya düşüncelerini anlat (en fazla 1000 karakter)...",
+      "noteSaveFailed": "Bu not kaydedilemedi. En son kaydedilen sürüm duruyor — metni yeniden yazmayı dene.",
+      "symptomSaveFailed": "Bu dokunuş kaydedilemedi ve geri alındı. Cihazındaki boş alanı kontrol edip tekrar dene."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Neden böyle hissediyorsunuz?"
+      },
+      "bbtChart": {
+        "coverline": "Kapsama çizgisi",
+        "dayAxis": "Döngü günü",
+        "empty": "Birkaç sabah sıcaklığını ölç, eğri burada belirsin.",
+        "flagged": "güvenilmez olarak işaretli",
+        "noShiftYet": "Bu döngüde henüz doğrulanmış bir sıcaklık artışı yok. Altı temel gün ve üç daha yüksek gün gerekiyor.",
+        "shiftFound": "Sıcaklık artışı {{day}}. günden itibaren doğrulandı — kapsama çizgisinin üstünde üç ölçüm.",
+        "tapHint": "Tarihini ve sıcaklığını görmek için bir noktaya dokun.",
+        "title": "Bazal vücut sıcaklığı"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "En eskiden en yeniye",
+        "readout": "{{date}} tarihinde başlayan döngü · {{days}} gün",
+        "summary": "Son döngülerin, kendi {{median}} günlük ortancana göre (değişim ±{{sd}}).",
+        "tapHint": "O döngünün ne zaman başladığını görmek için bir sütuna dokun. Çerçeveli sütunlar ortancandan alışılmadık kadar uzakta.",
+        "title": "Döngü uzunluğu"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Yedeği dışa aktar",
         "importBackup": "Yedeği içe aktar",
         "cloudSync": "Bulut Senkronizasyonu",
-        "ourApps": "Diğer uygulamalarımız"
+        "ourApps": "Diğer uygulamalarımız",
+        "health": "Apple Sağlık",
+        "widget": "Ana ekran widget’ı"
       },
       "footer": "Tüm veriler şifrelenir ve yalnızca bu cihazda saklanır",
       "resetTitle": "Tüm verileri sıfırla",
@@ -1275,7 +1297,11 @@
       "disableNote": "Senkronizasyonu kapatmak bu telefondan asla hiçbir şey silmez.",
       "startOver": "Parolayı ve kurtarma kodunu mu kaybettiniz?",
       "startOverTitle": "Bu yedek silinip yeniden başlansın mı?",
-      "startOverBody": "Bu yedek, parolası veya kurtarma kodu olmadan açılamaz — ne siz ne de biz açabiliriz. Silmek, içindeki her şeyi kalıcı olarak yok eder ve bu geri alınamaz. Bu telefonda halihazırda bulunan verilere dokunulmaz."
+      "startOverBody": "Bu yedek, parolası veya kurtarma kodu olmadan açılamaz — ne siz ne de biz açabiliriz. Silmek, içindeki her şeyi kalıcı olarak yok eder ve bu geri alınamaz. Bu telefonda halihazırda bulunan verilere dokunulmaz.",
+      "offline": "Bağlantı yok. Verilerin bu telefonda güvende — çevrimiçi olunca eşitlenecek.",
+      "restoreIncompleteBody_one": "Geçmişin geri geldi; yedeğin teslim edemediği {{count}} kayıt dışında — o bozuktu. Geri kalan her şey geri yüklendi.",
+      "restoreIncompleteBody_other": "Geçmişin geri geldi; yedeğin teslim edemediği {{count}} kayıt dışında — onlar bozuktu. Geri kalan her şey geri yüklendi.",
+      "restoreIncompleteTitle": "Bazı kayıtlar geri yüklenemedi"
     },
     "ourApps": {
       "title": "Bizden daha fazlası",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Neredeyse her kitabı açın — EPUB, FB2, MOBI, PDF, DjVu, DOC ve çizgi romanlar, tek rafta 20'den fazla format. Sesli okuma, dışa aktarılabilen vurgular ve notlar, hesapsız eşitleme ve tam gizlilik — reklam ve izleyici yok, kitaplığınız yalnızca cihazınızda kalır."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Bir sonraki bakıma ne kadar kaldığını görün, ne kadar tuttuğunu değil: yağ, filtreler, fren hidroliği ve triger kayışı — her biri kendi kilometresi ve tarihiyle. Otuz altı parça, alışılmış aralıklarıyla hazır geliyor. Hesap yok, sunucu yok — geçmiş yalnızca cihazınızda kalır."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Eluna'daki sağlık bilgileri {{count}} tıbbi kaynağa atıfta bulunur",
       "conceptionNote": "Güne özgü gebe kalma olasılığı Wilcox et al. (NEJM 1995) ile ASRM/ACOG doğurganlık farkındalığı rehberliğini takip eder. Kaydettiğiniz döngülere dayalı bir tahmindir; bir doğum kontrol yöntemi değildir.",
       "phaseTipsNote": "Burada tanımlanan evre fizyolojisi ve etkileri hakemli klinik referansları takip eder. Tıbbi tedavi değil, genel iyilik hali önerileridir.",
-      "cycleStatsNote": "Döngü uzunluğu normları ve normal varyasyon sayılan aralık ACOG rehberliğini ve hakemli araştırmaları takip eder."
+      "cycleStatsNote": "Döngü uzunluğu normları ve normal varyasyon sayılan aralık ACOG rehberliğini ve hakemli araştırmaları takip eder.",
+      "bbtNote": "Kapsama çizgisi ve üç gün kuralı, bazal vücut sıcaklığı konusunda StatPearls ve Mayo Clinic rehberliğini izler. Sıcaklık artışı yumurtlamayı gerçekleştikten sonra doğrular; önceden haber vermez.",
+      "copyLink": "Bağlantıyı kopyala",
+      "linkFailedTitle": "Bu bağlantı açılamadı"
+    },
+    "a11y": {
+      "addCustom": "Kendi seçeneğini ekle",
+      "addMedication": "İlaç hatırlatıcısı ekle",
+      "attachImage": "Görsel ekle",
+      "cancelEditing": "Düzenlemeyi iptal et",
+      "clearSearch": "Aramayı temizle",
+      "close": "Kapat",
+      "closeLog": "Günlüğü kapat",
+      "deleteDigit": "Son rakamı sil",
+      "deleteReminder": "Bu hatırlatıcıyı sil",
+      "doneLogging": "Tamam",
+      "editLogForDay": "Bu günün kayıtlarını düzenle",
+      "editPeriodDays": "Regl günlerini düzenle",
+      "goBack": "Geri",
+      "hidePassword": "Parolayı gizle",
+      "nextMonth": "Sonraki ay",
+      "nextMonthShort": "Sonraki ay",
+      "openSettings": "Ayarları aç",
+      "phaseLegend": "Döngü evreleri hakkında",
+      "pickIcon": "Bu simgeyi seç",
+      "previousMonth": "Önceki ay",
+      "previousMonthShort": "Önceki ay",
+      "rateStars": "5 üzerinden {{count}} puan",
+      "removeAttachment": "Eklenen görseli kaldır",
+      "saveEditing": "Değişiklikleri kaydet",
+      "showPassword": "Parolayı göster",
+      "symptomCategory": "Bu kategoriyi göster",
+      "toggleReminder": "Bu hatırlatıcıyı aç ya da kapat"
+    },
+    "errorBoundary": {
+      "action": "Devam etmek için uygulamayı yeniden başlat.",
+      "dataSafe": "Kayıtların güvende — yalnızca ekran hata verdi.",
+      "hideDetails": "Ayrıntıları gizle",
+      "restart": "Yeniden başlat",
+      "showDetails": "Ayrıntılar",
+      "title": "Bir şeyler ters gitti"
+    },
+    "health": {
+      "autoDesc": "Uygulamayı açtığında ve bir şey kaydettikten kısa süre sonra arka planda eşitle. Yukarıdaki düğmelerle aynı kurallar: günler yalnızca eklenir ve Sağlık’ta yalnızca Eluna’nın kendi yazdıkları değiştirilir.",
+      "autoTitle": "Sağlık’ı güncel tut",
+      "body": "Regl günlerini ve uyanınca ölçtüğün sıcaklıkları Sağlık’tan getir ya da burada tuttuklarını yayımla ki güvendiğin diğer uygulamalar da görebilsin. Başka hiçbir yere bir şey gönderilmez ve kendiliğinden hiçbir şey olmaz — yalnızca aşağıdaki bir düğmeye bastığında.",
+      "exportBtn": "Sağlık’a kaydet",
+      "exported": "Sağlık’a {{days}} regl günü ve {{temps}} sıcaklık kaydedildi.",
+      "failed": "Olmadı. Ayarlar → Sağlık → Veri Erişimi ve Aygıtlar → Eluna yolunu kontrol edip kategorilere izin ver.",
+      "footnote": "İçe aktarma burada işaretlediğin bir günü asla silmez; kaydetme ise yalnızca Eluna’nın daha önce yazdığını değiştirir — diğer uygulamaların kayıtlarına dokunulmaz.",
+      "importBtn": "Sağlık’tan içe aktar",
+      "imported": "{{days}} regl günü ve {{temps}} sıcaklık içe aktarıldı.",
+      "lastSynced": "Son eşitleme: {{when}}",
+      "nothingNew": "Sağlık’ta uygulamanın zaten bilmediği bir şey yoktu.",
+      "removeBtn": "Eluna’nın verilerini Sağlık’tan kaldır",
+      "removed": "Eluna’nın Sağlık’a yazdığı her şey kaldırıldı. Sağlık’ta kendi girdiklerine dokunulmadı.",
+      "title": "Apple Sağlık"
+    },
+    "widget": {
+      "dayHeadline": "{{day}}. gün",
+      "dueToday": "Reglin bugün bekleniyor",
+      "late_one": "{{count}} gün gecikme",
+      "late_other": "{{count}} gün gecikme",
+      "modes": {
+        "discreet": "Göze çarpmayan",
+        "discreetDesc": "Yalnızca döngü gününü gösterir — evre yok, geri sayım yok, uygulamanın ne için olduğunu söyleyen hiçbir şey yok.",
+        "full": "Tam",
+        "fullDesc": "Döngü gününü ve beklenen regle ne kadar kaldığını gösterir.",
+        "off": "Kapalı",
+        "offDesc": "Hiçbir şey yayımlanmaz. Ana ekranında duran bir widget boş kalır."
+      },
+      "untilPeriod_one": "Regline {{count}} gün",
+      "untilPeriod_other": "Regline {{count}} gün"
     }
   },
   "kb": {

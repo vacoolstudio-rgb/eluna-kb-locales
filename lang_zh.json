@@ -23,7 +23,8 @@
       "step3": {
         "title": "你的\n经期通常持续多久？",
         "days": "天",
-        "nextBtn": "下一步"
+        "nextBtn": "下一步",
+        "saveFailed": "日期没能保存。请再试一次——如果一直不行，重启 App 通常有帮助。"
       },
       "step4": {
         "title": "你的\n周期通常有多长？",
@@ -324,7 +325,9 @@
       "holdToPin": "长按症状即可置顶",
       "create": "创建自定义项目",
       "notesTab": "备注",
-      "notesPlaceholder": "描述你的症状或想法（最多 1000 个字符）..."
+      "notesPlaceholder": "描述你的症状或想法（最多 1000 个字符）...",
+      "noteSaveFailed": "这条备注没能保存。上次保存的内容还在，可以再写一次。",
+      "symptomSaveFailed": "这次点击没能保存，已撤销。请检查设备存储空间后再试。"
     },
     "symptoms": {
       "categories": {
@@ -665,6 +668,23 @@
       },
       "explanation": {
         "title": "你为什么会有这种感觉？"
+      },
+      "bbtChart": {
+        "coverline": "覆盖线",
+        "dayAxis": "周期第几天",
+        "empty": "连续几个早晨量一下体温，这里就会出现曲线。",
+        "flagged": "已标记为不可靠",
+        "noShiftYet": "本周期尚未确认体温升高。需要六天基础值，再加三天更高的读数。",
+        "shiftFound": "自第 {{day}} 天起确认体温升高——三次读数高于覆盖线。",
+        "tapHint": "点按某个点即可查看日期和体温。",
+        "title": "基础体温"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "由早到近",
+        "readout": "{{date}} 开始的周期 · {{days}} 天",
+        "summary": "你最近的周期，与你自己的中位数 {{median}} 天对比（波动 ±{{sd}}）。",
+        "tapHint": "点按柱形可查看该周期的开始时间。带描边的柱形离你的中位数异常远。",
+        "title": "周期长度"
       }
     },
     "settings": {
@@ -701,7 +721,9 @@
         "exportBackup": "导出备份",
         "importBackup": "导入备份",
         "cloudSync": "云同步",
-        "ourApps": "我们的其他应用"
+        "ourApps": "我们的其他应用",
+        "health": "Apple 健康",
+        "widget": "主屏幕小组件"
       },
       "footer": "所有数据均已加密，并仅存储在此设备上",
       "resetTitle": "重置所有数据",
@@ -1272,7 +1294,10 @@
       "disableNote": "关闭同步绝不会删除这部手机上的任何内容。",
       "startOver": "丢失了密码和恢复码？",
       "startOverTitle": "删除此备份并重新开始？",
-      "startOverBody": "没有密码或恢复码，此备份无法打开——你打不开，我们也打不开。删除它会永久销毁其中的所有内容，且无法撤销。已在这部手机上的数据不受影响。"
+      "startOverBody": "没有密码或恢复码，此备份无法打开——你打不开，我们也打不开。删除它会永久销毁其中的所有内容，且无法撤销。已在这部手机上的数据不受影响。",
+      "offline": "没有网络。你的数据安全地留在这部手机上——恢复联网后会自动同步。",
+      "restoreIncompleteBody_other": "历史记录已恢复，只有 {{count}} 条备份无法交付——它们已损坏。其余内容都已还原。",
+      "restoreIncompleteTitle": "部分记录无法恢复"
     },
     "ourApps": {
       "title": "更多精彩应用",
@@ -1297,6 +1322,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "几乎任何一本书都能打开——EPUB、FB2、MOBI、PDF、DjVu、DOC 以及漫画，20 多种格式同在一个书架。朗读、可导出的高亮与笔记、无需账号的同步，全程隐私保护——没有广告和追踪器，书库只保存在你的设备上。"
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "看的是离下次保养还剩多少，而不是花了多少：机油、滤芯、刹车油、正时皮带，每一项都有自己的里程和日期。三十六个部件已内置常规更换周期。无需账号，没有服务器——车辆记录只留在你的设备上。"
       }
     },
     "tips": {
@@ -1324,7 +1353,77 @@
       "footer_other": "Eluna 中的健康信息引用了 {{count}} 条医学来源",
       "conceptionNote": "特定日期的受孕概率遵循 Wilcox et al. (NEJM 1995) 以及 ASRM/ACOG 的生育意识指南。这是根据您记录的周期得出的估算，并非避孕方法。",
       "phaseTipsNote": "此处描述的阶段生理学和相关影响遵循经同行评审的临床参考文献。这些是一般性的健康建议，而非医学治疗。",
-      "cycleStatsNote": "周期长度标准以及何为正常波动遵循 ACOG 指南和经同行评审的研究。"
+      "cycleStatsNote": "周期长度标准以及何为正常波动遵循 ACOG 指南和经同行评审的研究。",
+      "bbtNote": "覆盖线和三日法则依据 StatPearls 与梅奥诊所关于基础体温的指南。体温升高是在排卵发生之后确认它，而不是预测它。",
+      "copyLink": "拷贝链接",
+      "linkFailedTitle": "无法打开此链接"
+    },
+    "a11y": {
+      "addCustom": "添加自己的",
+      "addMedication": "添加用药提醒",
+      "attachImage": "添加图片",
+      "cancelEditing": "取消编辑",
+      "clearSearch": "清除搜索",
+      "close": "关闭",
+      "closeLog": "关闭记录",
+      "deleteDigit": "删除最后一位",
+      "deleteReminder": "删除此提醒",
+      "doneLogging": "完成",
+      "editLogForDay": "编辑这一天的记录",
+      "editPeriodDays": "编辑经期日期",
+      "goBack": "返回",
+      "hidePassword": "隐藏密码",
+      "nextMonth": "下个月",
+      "nextMonthShort": "下个月",
+      "openSettings": "打开设置",
+      "phaseLegend": "关于周期阶段",
+      "pickIcon": "选择此图标",
+      "previousMonth": "上个月",
+      "previousMonthShort": "上个月",
+      "rateStars": "评分 {{count}} 分（满分 5 分）",
+      "removeAttachment": "移除已添加的图片",
+      "saveEditing": "保存更改",
+      "showPassword": "显示密码",
+      "symptomCategory": "显示此分类",
+      "toggleReminder": "打开或关闭此提醒"
+    },
+    "errorBoundary": {
+      "action": "请重启 App 后继续。",
+      "dataSafe": "你的记录安然无恙，出问题的只是这个界面。",
+      "hideDetails": "隐藏详情",
+      "restart": "重启",
+      "showDetails": "详情",
+      "title": "出了点问题"
+    },
+    "health": {
+      "autoDesc": "在你打开 App 时，以及记录内容后不久，在后台同步。规则与上面的按钮一致：日期只会新增，在“健康”中只替换 Eluna 自己写入的内容。",
+      "autoTitle": "让“健康”保持最新",
+      "body": "从“健康”导入经期日期和晨起体温，或把你在这里记录的内容发布出去，让你信任的其他 App 看到。不会发送到别处，也不会自行发生任何事——只有你点击下面的按钮时才会。",
+      "exportBtn": "保存到“健康”",
+      "exported": "已向“健康”保存 {{days}} 个经期日期和 {{temps}} 条体温。",
+      "failed": "没有成功。请检查“设置 → 健康 → 数据访问与设备 → Eluna”，允许相应类别。",
+      "footnote": "导入永远不会删除你在这里记录的日期；保存只会替换 Eluna 之前写入的内容，其他 App 的记录不受影响。",
+      "importBtn": "从“健康”导入",
+      "imported": "已导入 {{days}} 个经期日期和 {{temps}} 条体温。",
+      "lastSynced": "上次同步：{{when}}",
+      "nothingNew": "“健康”里没有 App 尚不知道的内容。",
+      "removeBtn": "从“健康”移除 Eluna 的数据",
+      "removed": "Eluna 写入“健康”的内容已全部移除。你自己在“健康”里填写的内容不受影响。",
+      "title": "Apple 健康"
+    },
+    "widget": {
+      "dayHeadline": "第 {{day}} 天",
+      "dueToday": "预计今天来月经",
+      "late_other": "推迟 {{count}} 天",
+      "modes": {
+        "discreet": "低调",
+        "discreetDesc": "只显示周期第几天——不显示阶段、不显示倒计时，也不透露 App 的用途。",
+        "full": "完整",
+        "fullDesc": "显示周期第几天，以及距离预计经期还有多久。",
+        "off": "关闭",
+        "offDesc": "不发布任何内容。主屏幕上已有的小组件会变为空白。"
+      },
+      "untilPeriod_other": "距离经期还有 {{count}} 天"
     }
   },
   "kb": {

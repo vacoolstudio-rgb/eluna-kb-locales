@@ -27,7 +27,8 @@
       "step3": {
         "title": "Quant dura la teva\nmenstruació?",
         "days": "dies",
-        "nextBtn": "Següent"
+        "nextBtn": "Següent",
+        "saveFailed": "No s’ha pogut desar la teva data. Torna-ho a provar; si continua fallant, reiniciar l’app sol ajudar."
       },
       "step4": {
         "title": "Quant dura el teu\ncicle?",
@@ -328,7 +329,9 @@
       "holdToPin": "Mantén premut el símptoma per fixar-lo",
       "create": "Crea el teu propi",
       "notesTab": "Notes",
-      "notesPlaceholder": "Descriu els teus símptomes o pensaments (fins a 1000 caràcters)..."
+      "notesPlaceholder": "Descriu els teus símptomes o pensaments (fins a 1000 caràcters)...",
+      "noteSaveFailed": "No s’ha pogut desar aquesta nota. La teva darrera versió desada encara hi és: prova d’escriure-la de nou.",
+      "symptomSaveFailed": "Aquest toc no s’ha pogut desar i s’ha desfet. Comprova l’espai lliure del dispositiu i torna-ho a provar."
     },
     "symptoms": {
       "categories": {
@@ -672,6 +675,23 @@
         "desc_one": "L'anàlisi es basa en {{used}} de {{total}} cicles. Un cicle s'ha exclòs de les previsions per atípic.",
         "desc_other": "L'anàlisi es basa en {{used}} de {{total}} cicles. {{excluded}} cicles s'han exclòs de les previsions per atípics.",
         "fixBtn": "Revisar i Corregir"
+      },
+      "bbtChart": {
+        "coverline": "Línia de cobertura",
+        "dayAxis": "Dia del cicle",
+        "empty": "Pren-te la temperatura uns quants matins i aquí hi apareixerà la corba.",
+        "flagged": "marcada com a poc fiable",
+        "noShiftYet": "Encara no hi ha cap canvi tèrmic confirmat en aquest cicle. Calen sis dies de base i tres de més alts.",
+        "shiftFound": "Canvi tèrmic confirmat a partir del dia {{day}}: tres lectures per sobre de la línia de cobertura.",
+        "tapHint": "Toca un punt per veure’n la data i la temperatura.",
+        "title": "Temperatura basal"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Del més antic al més recent",
+        "readout": "Cicle des del {{date}} · {{days}} dies",
+        "summary": "Els teus cicles recents davant la teva mediana de {{median}} dies (variació ±{{sd}}).",
+        "tapHint": "Toca una columna per veure quan va començar aquell cicle. Les columnes amb contorn queden inusualment lluny de la teva mediana.",
+        "title": "Durada del cicle"
       }
     },
     "settings": {
@@ -708,7 +728,9 @@
         "exportBackup": "Exportar còpia de seguretat",
         "importBackup": "Importar còpia de seguretat",
         "cloudSync": "Sincronització al núvol",
-        "ourApps": "Les nostres altres aplicacions"
+        "ourApps": "Les nostres altres aplicacions",
+        "health": "Apple Salut",
+        "widget": "Widget a la pantalla d’inici"
       },
       "footer": "Totes les dades estan xifrades i emmagatzemades només en aquest dispositiu",
       "resetTitle": "Restablir totes les dades",
@@ -1275,7 +1297,11 @@
       "disableNote": "Desactivar la sincronització no elimina mai res d'aquest telèfon.",
       "startOver": "Has perdut la contrasenya i el codi de recuperació?",
       "startOverTitle": "Vols eliminar aquesta còpia de seguretat i començar de nou?",
-      "startOverBody": "Aquesta còpia de seguretat no es pot obrir sense la seva contrasenya o codi de recuperació: ni tu ni nosaltres. Eliminar-la en destrueix permanentment tot el contingut i no es pot desfer. Les dades que ja hi ha en aquest telèfon no es toquen."
+      "startOverBody": "Aquesta còpia de seguretat no es pot obrir sense la seva contrasenya o codi de recuperació: ni tu ni nosaltres. Eliminar-la en destrueix permanentment tot el contingut i no es pot desfer. Les dades que ja hi ha en aquest telèfon no es toquen.",
+      "offline": "Sense connexió. Les teves dades són segures en aquest telèfon: se sincronitzaran quan tornis a tenir connexió.",
+      "restoreIncompleteBody_one": "El teu historial ha tornat, excepte {{count}} entrada que la còpia de seguretat no ha pogut lliurar: estava malmesa. Tota la resta s’ha restaurat.",
+      "restoreIncompleteBody_other": "El teu historial ha tornat, excepte {{count}} entrades que la còpia de seguretat no ha pogut lliurar: estaven malmeses. Tota la resta s’ha restaurat.",
+      "restoreIncompleteTitle": "Algunes entrades no s’han pogut restaurar"
     },
     "ourApps": {
       "title": "Més coses nostres",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Obre gairebé qualsevol llibre — EPUB, FB2, MOBI, PDF, DjVu, DOC i còmics, més de 20 formats en un sol prestatge. Lectura en veu alta, subratllats i notes que pots exportar, sincronització sense compte i privadesa total — sense anuncis ni rastrejadors, la teva biblioteca es queda només al teu dispositiu."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Vegeu quant queda fins a la propera revisió, no quant va costar: oli, filtres, líquid de frens i corretja de distribució, cadascun amb el seu quilometratge i la seva data. Inclou 36 peces amb intervals habituals. Sense compte ni servidor: l’historial es queda només al vostre dispositiu."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "La informació de salut d'Eluna cita {{count}} fonts mèdiques",
       "conceptionNote": "La probabilitat de concepció específica per dia segueix Wilcox et al. (NEJM 1995) i les orientacions de coneixement de la fertilitat d'ASRM/ACOG. És una estimació a partir dels teus cicles registrats, no un mètode anticonceptiu.",
       "phaseTipsNote": "La fisiologia de les fases i els efectes descrits aquí segueixen referències clíniques revisades per parells. Suggeriments generals de benestar, no un tractament mèdic.",
-      "cycleStatsNote": "Les normes de durada del cicle i el que es considera una variació normal segueixen les orientacions d'ACOG i la recerca revisada per parells."
+      "cycleStatsNote": "Les normes de durada del cicle i el que es considera una variació normal segueixen les orientacions d'ACOG i la recerca revisada per parells.",
+      "bbtNote": "La línia de cobertura i la regla dels tres dies segueixen les guies de StatPearls i la Clínica Mayo sobre la temperatura basal. Una pujada de temperatura confirma l’ovulació un cop ha passat; no la prediu.",
+      "copyLink": "Copia l’enllaç",
+      "linkFailedTitle": "No s’ha pogut obrir aquest enllaç"
+    },
+    "a11y": {
+      "addCustom": "Afegeix-ne un de teu",
+      "addMedication": "Afegeix un recordatori de medicació",
+      "attachImage": "Adjunta una imatge",
+      "cancelEditing": "Cancel·la l’edició",
+      "clearSearch": "Esborra la cerca",
+      "close": "Tanca",
+      "closeLog": "Tanca el registre",
+      "deleteDigit": "Esborra l’últim dígit",
+      "deleteReminder": "Elimina aquest recordatori",
+      "doneLogging": "Fet",
+      "editLogForDay": "Edita les notes d’aquest dia",
+      "editPeriodDays": "Edita els dies de regla",
+      "goBack": "Enrere",
+      "hidePassword": "Amaga la contrasenya",
+      "nextMonth": "Mes següent",
+      "nextMonthShort": "Mes següent",
+      "openSettings": "Obre la configuració",
+      "phaseLegend": "Sobre les fases del cicle",
+      "pickIcon": "Tria aquesta icona",
+      "previousMonth": "Mes anterior",
+      "previousMonthShort": "Mes anterior",
+      "rateStars": "Valoració {{count}} de 5",
+      "removeAttachment": "Treu la imatge adjunta",
+      "saveEditing": "Desa els canvis",
+      "showPassword": "Mostra la contrasenya",
+      "symptomCategory": "Mostra aquesta categoria",
+      "toggleReminder": "Activa o desactiva aquest recordatori"
+    },
+    "errorBoundary": {
+      "action": "Reinicia l’app per continuar.",
+      "dataSafe": "Els teus registres estan segurs: només ha fallat la pantalla.",
+      "hideDetails": "Amaga els detalls",
+      "restart": "Reinicia",
+      "showDetails": "Detalls",
+      "title": "Alguna cosa ha anat malament"
+    },
+    "health": {
+      "autoDesc": "Sincronitza en segon pla quan obris l’app i poc després d’anotar alguna cosa. Les mateixes regles que els botons de dalt: els dies només s’afegeixen i, a Salut, només se substitueix el que ha escrit la mateixa Eluna.",
+      "autoTitle": "Mantén Salut al dia",
+      "body": "Porta els dies de regla i les temperatures en despertar-te des de Salut, o publica les que anotes aquí perquè altres apps de confiança les vegin. No s’envia res enlloc més i no passa res sol: només quan toques un botó de sota.",
+      "exportBtn": "Desa a Salut",
+      "exported": "S’han desat {{days}} dies de regla i {{temps}} temperatures a Salut.",
+      "failed": "No ha funcionat. Comprova Configuració → Salut → Accés a dades i dispositius → Eluna i permet-hi les categories.",
+      "footnote": "Importar mai no esborra un dia que hagis anotat aquí, i desar només substitueix el que Eluna havia escrit abans: les entrades d’altres apps queden intactes.",
+      "importBtn": "Importa des de Salut",
+      "imported": "S’han importat {{days}} dies de regla i {{temps}} temperatures.",
+      "lastSynced": "Darrera sincronització: {{when}}",
+      "nothingNew": "Salut no tenia res que l’app no sabés ja.",
+      "removeBtn": "Treu les dades d’Eluna de Salut",
+      "removed": "S’ha tret tot el que Eluna havia escrit a Salut. El que has anotat tu mateixa a Salut queda intacte.",
+      "title": "Apple Salut"
+    },
+    "widget": {
+      "dayHeadline": "Dia {{day}}",
+      "dueToday": "S’espera la regla avui",
+      "late_one": "{{count}} dia de retard",
+      "late_other": "{{count}} dies de retard",
+      "modes": {
+        "discreet": "Discret",
+        "discreetDesc": "Mostra només el dia del cicle: cap fase, cap compte enrere, res que digui per a què serveix l’app.",
+        "full": "Complet",
+        "fullDesc": "Mostra el dia del cicle i quant falta per a la regla prevista.",
+        "off": "Desactivat",
+        "offDesc": "No es publica res. Un widget que ja tinguis a la pantalla d’inici es quedarà buit."
+      },
+      "untilPeriod_one": "{{count}} dia per a la regla",
+      "untilPeriod_other": "{{count}} dies per a la regla"
     }
   },
   "kb": {

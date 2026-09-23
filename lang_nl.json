@@ -23,7 +23,8 @@
       "step3": {
         "title": "Hoe lang duurt je\nmenstruatie?",
         "days": "dagen",
-        "nextBtn": "Volgende"
+        "nextBtn": "Volgende",
+        "saveFailed": "Je datum kon niet worden bewaard. Probeer het opnieuw — als het blijft misgaan, helpt de app herstarten meestal."
       },
       "step4": {
         "title": "Hoe lang is je\ncyclus?",
@@ -324,7 +325,9 @@
       "holdToPin": "Houd een symptoom ingedrukt om vast te zetten",
       "create": "Zelf toevoegen",
       "notesTab": "Notities",
-      "notesPlaceholder": "Beschrijf je symptomen of gedachten (max. 1000 tekens)..."
+      "notesPlaceholder": "Beschrijf je symptomen of gedachten (max. 1000 tekens)...",
+      "noteSaveFailed": "Deze notitie kon niet worden bewaard. Je laatst bewaarde versie staat er nog — probeer de tekst opnieuw te typen.",
+      "symptomSaveFailed": "Deze tik kon niet worden bewaard en is teruggedraaid. Controleer de vrije ruimte op je toestel en probeer het opnieuw."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Waarom voel je je zo?"
+      },
+      "bbtChart": {
+        "coverline": "Coverline",
+        "dayAxis": "Cyclusdag",
+        "empty": "Meet een paar ochtenden je temperatuur, dan verschijnt hier de curve.",
+        "flagged": "als onbetrouwbaar gemarkeerd",
+        "noShiftYet": "In deze cyclus is nog geen temperatuurstijging bevestigd. Daarvoor zijn zes basisdagen en drie hogere nodig.",
+        "shiftFound": "Temperatuurstijging bevestigd vanaf dag {{day}} — drie metingen boven de coverline.",
+        "tapHint": "Tik op een punt om de datum en temperatuur te zien.",
+        "title": "Basale temperatuur"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Van oud naar recent",
+        "readout": "Cyclus vanaf {{date}} · {{days}} dagen",
+        "summary": "Je recente cycli naast je eigen mediaan van {{median}} dagen (spreiding ±{{sd}}).",
+        "tapHint": "Tik op een kolom om te zien wanneer die cyclus begon. Omlijnde kolommen liggen ongewoon ver van je mediaan.",
+        "title": "Cycluslengte"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Back-up exporteren",
         "importBackup": "Back-up importeren",
         "cloudSync": "Cloudsynchronisatie",
-        "ourApps": "Onze andere apps"
+        "ourApps": "Onze andere apps",
+        "health": "Apple Health",
+        "widget": "Widget op het beginscherm"
       },
       "footer": "Alle gegevens zijn versleuteld en worden alleen op dit apparaat opgeslagen",
       "resetTitle": "Alle gegevens wissen",
@@ -1275,7 +1297,11 @@
       "disableNote": "Het uitschakelen van synchronisatie verwijdert nooit iets van deze telefoon.",
       "startOver": "Het wachtwoord en de herstelcode kwijt?",
       "startOverTitle": "Deze back-up verwijderen en opnieuw beginnen?",
-      "startOverBody": "Deze back-up kan niet worden geopend zonder het wachtwoord of de herstelcode — niet door jou en niet door ons. Verwijdering vernietigt alles erin permanent en kan niet ongedaan worden gemaakt. Gegevens die al op deze telefoon staan, worden niet aangeraakt."
+      "startOverBody": "Deze back-up kan niet worden geopend zonder het wachtwoord of de herstelcode — niet door jou en niet door ons. Verwijdering vernietigt alles erin permanent en kan niet ongedaan worden gemaakt. Gegevens die al op deze telefoon staan, worden niet aangeraakt.",
+      "offline": "Geen verbinding. Je gegevens staan veilig op deze telefoon — er wordt gesynchroniseerd zodra je weer online bent.",
+      "restoreIncompleteBody_one": "Je geschiedenis is terug, op {{count}} item na dat de reservekopie niet kon afstaan — het was beschadigd. Al het andere is hersteld.",
+      "restoreIncompleteBody_other": "Je geschiedenis is terug, op {{count}} items na die de reservekopie niet kon afstaan — ze waren beschadigd. Al het andere is hersteld.",
+      "restoreIncompleteTitle": "Sommige items konden niet worden hersteld"
     },
     "ourApps": {
       "title": "Meer van ons",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Open bijna elk boek — EPUB, FB2, MOBI, PDF, DjVu, DOC en strips, meer dan 20 formaten op één plank. Voorlezen, markeringen en notities die je kunt exporteren, synchroniseren zonder account en volledige privacy — geen advertenties of trackers, je bibliotheek blijft alleen op je apparaat."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Zie hoeveel er nog rest tot de volgende beurt, niet wat die kostte: olie, filters, remvloeistof en distributieriem, elk met eigen kilometerstand en datum. Zesendertig onderdelen met gebruikelijke intervallen zitten er al in. Geen account en geen server — de historie blijft alleen op je toestel."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Gezondheidsinformatie in Eluna citeert {{count}} medische bronnen",
       "conceptionNote": "De dagspecifieke conceptiekans volgt Wilcox et al. (NEJM 1995) en de richtlijnen voor vruchtbaarheidsbewustzijn van ASRM/ACOG. Het is een schatting op basis van je vastgelegde cycli, geen anticonceptiemethode.",
       "phaseTipsNote": "De fasefysiologie en de hier beschreven effecten volgen peer-reviewed klinische referenties. Algemene welzijnstips, geen medische behandeling.",
-      "cycleStatsNote": "Normen voor cycluslengte en wat als normale variatie geldt, volgen de richtlijnen van ACOG en peer-reviewed onderzoek."
+      "cycleStatsNote": "Normen voor cycluslengte en wat als normale variatie geldt, volgen de richtlijnen van ACOG en peer-reviewed onderzoek.",
+      "bbtNote": "De coverline en de drie-dagenregel volgen de richtlijnen van StatPearls en Mayo Clinic over basale lichaamstemperatuur. Een temperatuurstijging bevestigt de eisprong achteraf; hij voorspelt die niet.",
+      "copyLink": "Link kopiëren",
+      "linkFailedTitle": "Deze link kon niet worden geopend"
+    },
+    "a11y": {
+      "addCustom": "Eigen toevoegen",
+      "addMedication": "Medicijnherinnering toevoegen",
+      "attachImage": "Afbeelding toevoegen",
+      "cancelEditing": "Bewerken annuleren",
+      "clearSearch": "Zoekopdracht wissen",
+      "close": "Sluiten",
+      "closeLog": "Dagboek sluiten",
+      "deleteDigit": "Laatste cijfer wissen",
+      "deleteReminder": "Deze herinnering verwijderen",
+      "doneLogging": "Klaar",
+      "editLogForDay": "Notities van deze dag bewerken",
+      "editPeriodDays": "Menstruatiedagen bewerken",
+      "goBack": "Terug",
+      "hidePassword": "Wachtwoord verbergen",
+      "nextMonth": "Volgende maand",
+      "nextMonthShort": "Volgende maand",
+      "openSettings": "Instellingen openen",
+      "phaseLegend": "Over de cyclusfases",
+      "pickIcon": "Dit symbool kiezen",
+      "previousMonth": "Vorige maand",
+      "previousMonthShort": "Vorige maand",
+      "rateStars": "Beoordeling {{count}} van 5",
+      "removeAttachment": "Toegevoegde afbeelding verwijderen",
+      "saveEditing": "Wijzigingen bewaren",
+      "showPassword": "Wachtwoord tonen",
+      "symptomCategory": "Deze categorie tonen",
+      "toggleReminder": "Deze herinnering aan- of uitzetten"
+    },
+    "errorBoundary": {
+      "action": "Start de app opnieuw om verder te gaan.",
+      "dataSafe": "Je gegevens zijn veilig — alleen het scherm ging mis.",
+      "hideDetails": "Details verbergen",
+      "restart": "Opnieuw starten",
+      "showDetails": "Details",
+      "title": "Er ging iets mis"
+    },
+    "health": {
+      "autoDesc": "Op de achtergrond synchroniseren wanneer je de app opent en kort nadat je iets noteert. Dezelfde regels als bij de knoppen hierboven: dagen worden alleen toegevoegd, en in Health wordt alleen vervangen wat Eluna zelf heeft geschreven.",
+      "autoTitle": "Health bijhouden",
+      "body": "Haal menstruatiedagen en ochtendtemperaturen uit Health, of publiceer die je hier bijhoudt zodat andere apps die je vertrouwt ze kunnen zien. Verder gaat er niets ergens heen, en er gebeurt niets vanzelf — alleen als je hieronder op een knop drukt.",
+      "exportBtn": "Bewaren in Health",
+      "exported": "In Health bewaard: {{days}} menstruatiedagen en {{temps}} temperaturen.",
+      "failed": "Dat lukte niet. Kijk bij Instellingen → Gezondheid → Gegevenstoegang en apparaten → Eluna en sta de categorieën toe.",
+      "footnote": "Importeren verwijdert nooit een dag die je hier hebt genoteerd, en bewaren vervangt alleen wat Eluna eerder schreef — invoer van andere apps blijft ongemoeid.",
+      "importBtn": "Importeren uit Health",
+      "imported": "Overgenomen: {{days}} menstruatiedagen en {{temps}} temperaturen.",
+      "lastSynced": "Laatst gesynchroniseerd: {{when}}",
+      "nothingNew": "In Health stond niets wat de app nog niet wist.",
+      "removeBtn": "Gegevens van Eluna uit Health verwijderen",
+      "removed": "Alles wat Eluna naar Health schreef, is verwijderd. Wat je in Health zelf hebt ingevoerd, blijft ongemoeid.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Dag {{day}}",
+      "dueToday": "Je menstruatie wordt vandaag verwacht",
+      "late_one": "{{count}} dag over tijd",
+      "late_other": "{{count}} dagen over tijd",
+      "modes": {
+        "discreet": "Discreet",
+        "discreetDesc": "Toont alleen de cyclusdag — geen fase, geen aftelling, niets wat verraadt waar de app voor is.",
+        "full": "Volledig",
+        "fullDesc": "Toont de cyclusdag en hoe lang het duurt tot je menstruatie wordt verwacht.",
+        "off": "Uit",
+        "offDesc": "Er wordt niets gepubliceerd. Een widget die al op je beginscherm staat, wordt leeg."
+      },
+      "untilPeriod_one": "Nog {{count}} dag tot je menstruatie",
+      "untilPeriod_other": "Nog {{count}} dagen tot je menstruatie"
     }
   },
   "kb": {

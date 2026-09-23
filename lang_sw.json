@@ -23,7 +23,8 @@
       "step3": {
         "title": "Hedhi yako\nhudumu kwa siku ngapi?",
         "days": "siku",
-        "nextBtn": "Endelea"
+        "nextBtn": "Endelea",
+        "saveFailed": "Tarehe yako haikuhifadhiwa. Jaribu tena — ikiendelea, kuanzisha upya programu husaidia mara nyingi."
       },
       "step4": {
         "title": "Mzunguko wako\nuna siku ngapi?",
@@ -324,7 +325,9 @@
       "holdToPin": "Bonyeza na ushikilie dalili ili kuibandika",
       "create": "Unda yako mwenyewe",
       "notesTab": "Maelezo",
-      "notesPlaceholder": "Eleza dalili au mawazo yako (hadi herufi 1000)..."
+      "notesPlaceholder": "Eleza dalili au mawazo yako (hadi herufi 1000)...",
+      "noteSaveFailed": "Dokezo hili halikuhifadhiwa. Toleo lako la mwisho lililohifadhiwa bado lipo — jaribu kuliandika tena.",
+      "symptomSaveFailed": "Mguso huu haukuhifadhiwa, kwa hiyo umetenguliwa. Angalia nafasi iliyobaki kwenye kifaa kisha jaribu tena."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
         "desc_one": "Uchambuzi unategemea mizunguko {{used}} kati ya {{total}}. Mzunguko mmoja umeondolewa kwenye utabiri kwa kuwa si wa kawaida.",
         "desc_other": "Uchambuzi unategemea mizunguko {{used}} kati ya {{total}}. Mizunguko {{excluded}} imeondolewa kwenye utabiri kwa kuwa si ya kawaida.",
         "fixBtn": "Kagua na Urekebishe"
+      },
+      "bbtChart": {
+        "coverline": "Mstari wa kufunika",
+        "dayAxis": "Siku ya mzunguko",
+        "empty": "Pima halijoto asubuhi chache, kisha mkondo utaonekana hapa.",
+        "flagged": "imetiwa alama kuwa isiyoaminika",
+        "noShiftYet": "Bado hakuna ongezeko la halijoto lililothibitishwa katika mzunguko huu. Inahitaji siku sita za msingi na tatu za juu zaidi.",
+        "shiftFound": "Ongezeko la halijoto limethibitishwa kuanzia siku ya {{day}} — vipimo vitatu juu ya mstari wa kufunika.",
+        "tapHint": "Gusa nukta ili kuona tarehe na halijoto yake.",
+        "title": "Halijoto ya msingi ya mwili"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Kutoka ya zamani hadi mpya",
+        "readout": "Mzunguko ulioanza {{date}} · siku {{days}}",
+        "summary": "Mizunguko yako ya karibuni ikilinganishwa na wastani wako wa kati wa siku {{median}} (tofauti ±{{sd}}).",
+        "tapHint": "Gusa safu ili kuona mzunguko huo ulianza lini. Safu zenye mstari wa nje ziko mbali isivyo kawaida na wastani wako.",
+        "title": "Urefu wa mzunguko"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Hamisha nakala rudufu",
         "importBackup": "Ingiza nakala rudufu",
         "cloudSync": "Ulandanishaji wa Wingu",
-        "ourApps": "Programu zetu nyingine"
+        "ourApps": "Programu zetu nyingine",
+        "health": "Apple Health",
+        "widget": "Wijeti kwenye skrini ya kwanza"
       },
       "footer": "Data zote zimesimbwa na kuhifadhiwa kwenye kifaa hiki pekee",
       "resetTitle": "Futa data zote",
@@ -1241,7 +1263,11 @@
       "disableNote": "Kuzima ulandanishaji hakufuti chochote kutoka kwenye simu hii.",
       "startOver": "Umepoteza nywila na msimbo wa kurejesha?",
       "startOverTitle": "Futa nakala hii ya akiba na uanze upya?",
-      "startOverBody": "Nakala hii ya akiba haiwezi kufunguliwa bila nywila yake au msimbo wa kurejesha — si na wewe, wala na sisi. Kuifuta huharibu kila kitu kilichomo ndani yake kudumu, na haiwezi kutenduliwa. Data ambayo tayari iko kwenye simu hii haiguswi."
+      "startOverBody": "Nakala hii ya akiba haiwezi kufunguliwa bila nywila yake au msimbo wa kurejesha — si na wewe, wala na sisi. Kuifuta huharibu kila kitu kilichomo ndani yake kudumu, na haiwezi kutenduliwa. Data ambayo tayari iko kwenye simu hii haiguswi.",
+      "offline": "Hakuna muunganisho. Data yako iko salama kwenye simu hii — itasawazishwa utakaporejea mtandaoni.",
+      "restoreIncompleteBody_one": "Historia yako imerudi, isipokuwa kipengee {{count}} ambacho nakala rudufu haikuweza kukabidhi — kilikuwa kimeharibika. Vingine vyote vimerejeshwa.",
+      "restoreIncompleteBody_other": "Historia yako imerudi, isipokuwa vipengee {{count}} ambavyo nakala rudufu haikuweza kukabidhi — vilikuwa vimeharibika. Vingine vyote vimerejeshwa.",
+      "restoreIncompleteTitle": "Baadhi ya vipengee havikuweza kurejeshwa"
     },
     "delayBanner": {
       "activeSearch": {
@@ -1287,6 +1313,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Fungua takriban kitabu chochote — EPUB, FB2, MOBI, PDF, DjVu, DOC na katuni, zaidi ya miundo 20 kwenye rafu moja. Kusoma kwa sauti, vivutio na madokezo unayoweza kuhamisha, ulandanishi bila akaunti na faragha kamili — hakuna matangazo wala vifuatiliaji, maktaba yako hubaki kwenye kifaa chako pekee."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Ona kilichobaki hadi huduma ijayo, si gharama iliyotumika: mafuta, vichujio, maji ya breki na mkanda wa muda, kila kimoja na umbali na tarehe yake. Sehemu thelathini na sita zenye vipindi vya kawaida zimejumuishwa. Hakuna akaunti wala seva — historia ya gari inabaki kwenye kifaa chako pekee."
       }
     },
     "tips": {
@@ -1314,7 +1344,10 @@
       "footer_other": "Taarifa za afya katika Eluna zinataja vyanzo {{count}} vya kitiba",
       "conceptionNote": "Uwezekano wa kutunga mimba kulingana na siku unafuata Wilcox et al. (NEJM 1995) na mwongozo wa ufahamu wa rutuba wa ASRM/ACOG. Ni makadirio kutoka kwa mizunguko uliyoirekodi — si njia ya uzazi wa mpango.",
       "phaseTipsNote": "Fiziolojia ya awamu na athari zilizoelezwa hapa zinafuata marejeo ya kitabibu yaliyopitiwa na wataalamu wenzao. Ni mapendekezo ya ustawi wa jumla, si matibabu ya kitiba.",
-      "cycleStatsNote": "Viwango vya kawaida vya urefu wa mzunguko na kile kinachohesabika kama mabadiliko ya kawaida vinafuata mwongozo wa ACOG na tafiti zilizopitiwa na wataalamu wenzao."
+      "cycleStatsNote": "Viwango vya kawaida vya urefu wa mzunguko na kile kinachohesabika kama mabadiliko ya kawaida vinafuata mwongozo wa ACOG na tafiti zilizopitiwa na wataalamu wenzao.",
+      "bbtNote": "Mstari wa kufunika na kanuni ya siku tatu vinafuata mwongozo wa StatPearls na Mayo Clinic kuhusu halijoto ya msingi ya mwili. Kupanda kwa halijoto huthibitisha udondoshaji wa yai baada ya kutokea; hakutabiri.",
+      "copyLink": "Nakili kiungo",
+      "linkFailedTitle": "Kiungo hiki hakikuweza kufunguliwa"
     },
     "about": {
       "title": "Kuhusu Programu",
@@ -1328,6 +1361,75 @@
       "license_zustand": "Zustand (MIT License)",
       "license_expo": "Expo (MIT License)",
       "license_react_navigation": "React Navigation (MIT License)"
+    },
+    "a11y": {
+      "addCustom": "Ongeza yako mwenyewe",
+      "addMedication": "Ongeza kikumbusho cha dawa",
+      "attachImage": "Ambatisha picha",
+      "cancelEditing": "Ghairi kuhariri",
+      "clearSearch": "Futa utafutaji",
+      "close": "Funga",
+      "closeLog": "Funga daftari",
+      "deleteDigit": "Futa tarakimu ya mwisho",
+      "deleteReminder": "Futa kikumbusho hiki",
+      "doneLogging": "Imekamilika",
+      "editLogForDay": "Hariri maandishi ya siku hii",
+      "editPeriodDays": "Hariri siku za hedhi",
+      "goBack": "Rudi",
+      "hidePassword": "Ficha nenosiri",
+      "nextMonth": "Mwezi ujao",
+      "nextMonthShort": "Mwezi ujao",
+      "openSettings": "Fungua mipangilio",
+      "phaseLegend": "Kuhusu hatua za mzunguko",
+      "pickIcon": "Chagua aikoni hii",
+      "previousMonth": "Mwezi uliopita",
+      "previousMonthShort": "Mwezi uliopita",
+      "rateStars": "Ukadiriaji {{count}} kati ya 5",
+      "removeAttachment": "Ondoa picha iliyoambatishwa",
+      "saveEditing": "Hifadhi mabadiliko",
+      "showPassword": "Onyesha nenosiri",
+      "symptomCategory": "Onyesha kundi hili",
+      "toggleReminder": "Washa au zima kikumbusho hiki"
+    },
+    "errorBoundary": {
+      "action": "Anzisha upya programu ili kuendelea.",
+      "dataSafe": "Maandishi yako ni salama — skrini pekee ndiyo iliyoshindwa.",
+      "hideDetails": "Ficha maelezo",
+      "restart": "Anzisha upya",
+      "showDetails": "Maelezo",
+      "title": "Kuna kitu hakikuenda sawa"
+    },
+    "health": {
+      "autoDesc": "Sawazisha chinichini unapofungua programu na muda mfupi baada ya kuandika kitu. Kanuni zile zile za vitufe vilivyo juu: siku huongezwa tu, na katika Health hubadilishwa tu kile Eluna yenyewe iliandika.",
+      "autoTitle": "Weka Health sasa hivi",
+      "body": "Leta siku za hedhi na halijoto ya kuamka kutoka Health, au chapisha zile unazoandika hapa ili programu nyingine unazoziamini ziweze kuziona. Hakuna kinachotumwa kwingineko, na hakuna kinachotokea chenyewe — ni pale tu unapobonyeza kitufe hapa chini.",
+      "exportBtn": "Hifadhi kwenye Health",
+      "exported": "Siku {{days}} za hedhi na halijoto {{temps}} zimehifadhiwa kwenye Health.",
+      "failed": "Haikufanikiwa. Angalia Mipangilio → Health → Ufikiaji wa data na vifaa → Eluna kisha ruhusu makundi.",
+      "footnote": "Kuingiza hakufuti kamwe siku uliyoandika hapa, na kuhifadhi hubadilisha tu kile Eluna iliandika awali — maandishi ya programu nyingine hayaguswi.",
+      "importBtn": "Ingiza kutoka Health",
+      "imported": "Siku {{days}} za hedhi na halijoto {{temps}} zimeingizwa.",
+      "lastSynced": "Usawazishaji wa mwisho: {{when}}",
+      "nothingNew": "Health haikuwa na chochote ambacho programu haikukijua tayari.",
+      "removeBtn": "Ondoa data ya Eluna kutoka Health",
+      "removed": "Kila kitu Eluna ilichoandika kwenye Health kimeondolewa. Ulichoweka wewe mwenyewe ndani ya Health hakijaguswa.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Siku {{day}}",
+      "dueToday": "Hedhi yako inatarajiwa leo",
+      "late_one": "Kuchelewa siku {{count}}",
+      "late_other": "Kuchelewa siku {{count}}",
+      "modes": {
+        "discreet": "Kwa busara",
+        "discreetDesc": "Huonyesha siku ya mzunguko pekee — hakuna hatua, hakuna hesabu, hakuna kinachoashiria programu hii ni ya nini.",
+        "full": "Kamili",
+        "fullDesc": "Huonyesha siku ya mzunguko na muda uliobaki hadi hedhi inayotarajiwa.",
+        "off": "Imezimwa",
+        "offDesc": "Hakuna kinachochapishwa. Wijeti iliyopo tayari kwenye skrini ya kwanza itakuwa tupu."
+      },
+      "untilPeriod_one": "Siku {{count}} hadi hedhi yako",
+      "untilPeriod_other": "Siku {{count}} hadi hedhi yako"
     }
   },
   "kb": {

@@ -23,7 +23,8 @@
       "step3": {
         "title": "Hur länge varar din\nmens?",
         "days": "dagar",
-        "nextBtn": "Nästa"
+        "nextBtn": "Nästa",
+        "saveFailed": "Datumet kunde inte sparas. Försök igen — om det fortsätter strula brukar en omstart av appen hjälpa."
       },
       "step4": {
         "title": "Hur lång är din\ncykel?",
@@ -324,7 +325,9 @@
       "holdToPin": "Håll ned ett symtom för att fästa det",
       "create": "Skapa eget",
       "notesTab": "Anteckningar",
-      "notesPlaceholder": "Beskriv dina symtom eller tankar (upp till 1000 tecken)..."
+      "notesPlaceholder": "Beskriv dina symtom eller tankar (upp till 1000 tecken)...",
+      "noteSaveFailed": "Anteckningen kunde inte sparas. Din senast sparade version finns kvar — försök skriva den igen.",
+      "symptomSaveFailed": "Den här tryckningen kunde inte sparas och ångrades. Kontrollera ledigt utrymme på enheten och försök igen."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Varför känner du så här?"
+      },
+      "bbtChart": {
+        "coverline": "Täcklinje",
+        "dayAxis": "Cykeldag",
+        "empty": "Mät temperaturen några morgnar i rad, så dyker kurvan upp här.",
+        "flagged": "markerad som osäker",
+        "noShiftYet": "Ingen temperaturhöjning är bekräftad i den här cykeln ännu. Det krävs sex basdagar plus tre högre.",
+        "shiftFound": "Temperaturhöjning bekräftad från dag {{day}} — tre värden över täcklinjen.",
+        "tapHint": "Tryck på en punkt för att se datum och temperatur.",
+        "title": "Basaltemperatur"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Från äldst till senast",
+        "readout": "Cykel från {{date}} · {{days}} dagar",
+        "summary": "Dina senaste cykler mot din egen median på {{median}} dagar (spridning ±{{sd}}).",
+        "tapHint": "Tryck på en stapel för att se när den cykeln började. Staplar med kontur ligger ovanligt långt från din median.",
+        "title": "Cykellängd"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Exportera säkerhetskopia",
         "importBackup": "Importera säkerhetskopia",
         "cloudSync": "Molnsynkronisering",
-        "ourApps": "Våra andra appar"
+        "ourApps": "Våra andra appar",
+        "health": "Apple Hälsa",
+        "widget": "Widget på hemskärmen"
       },
       "footer": "All data är krypterad och lagras endast på den här enheten",
       "resetTitle": "Återställ all data",
@@ -1275,7 +1297,11 @@
       "disableNote": "Att stänga av synkronisering tar aldrig bort något från den här telefonen.",
       "startOver": "Har du tappat både lösenordet och återställningskoden?",
       "startOverTitle": "Ta bort denna säkerhetskopia och börja om?",
-      "startOverBody": "Den här säkerhetskopian kan inte öppnas utan sitt lösenord eller sin återställningskod – varken av dig eller av oss. Om du tar bort den förstörs allt i den permanent, och det kan inte ångras. Data som redan finns på den här telefonen påverkas inte."
+      "startOverBody": "Den här säkerhetskopian kan inte öppnas utan sitt lösenord eller sin återställningskod – varken av dig eller av oss. Om du tar bort den förstörs allt i den permanent, och det kan inte ångras. Data som redan finns på den här telefonen påverkas inte.",
+      "offline": "Ingen anslutning. Dina data ligger tryggt i den här telefonen — synken sker när du är online igen.",
+      "restoreIncompleteBody_one": "Din historik är tillbaka, utom {{count}} post som säkerhetskopian inte kunde lämna ifrån sig — den var skadad. Allt annat återställdes.",
+      "restoreIncompleteBody_other": "Din historik är tillbaka, utom {{count}} poster som säkerhetskopian inte kunde lämna ifrån sig — de var skadade. Allt annat återställdes.",
+      "restoreIncompleteTitle": "Vissa poster kunde inte återställas"
     },
     "ourApps": {
       "title": "Mer från oss",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Öppna nästan vilken bok som helst — EPUB, FB2, MOBI, PDF, DjVu, DOC och serier, över 20 format i samma hylla. Uppläsning, markeringar och anteckningar du kan exportera, synk utan konto och full integritet — inga annonser eller spårare, ditt bibliotek stannar bara på din enhet."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Se hur mycket som återstår till nästa service, inte vad den kostade: olja, filter, bromsvätska och kamrem, var och en med egen mätarställning och eget datum. Trettiosex delar med vanliga intervall ingår redan. Inget konto och ingen server — historiken stannar bara i din enhet."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Hälsoinformationen i Eluna hänvisar till {{count}} medicinska källor",
       "conceptionNote": "Den dagspecifika sannolikheten för befruktning följer Wilcox et al. (NEJM 1995) och ASRM/ACOG:s vägledning om fertilitetsmedvetenhet. Det är en uppskattning baserad på dina registrerade cykler, inte en preventivmetod.",
       "phaseTipsNote": "Fasfysiologin och de effekter som beskrivs här följer referentgranskade kliniska referenser. Allmänna välmåenderåd, inte medicinsk behandling.",
-      "cycleStatsNote": "Normer för cykellängd och vad som räknas som normal variation följer ACOG:s vägledning och referentgranskad forskning."
+      "cycleStatsNote": "Normer för cykellängd och vad som räknas som normal variation följer ACOG:s vägledning och referentgranskad forskning.",
+      "bbtNote": "Täcklinjen och tredagarsregeln följer StatPearls och Mayo Clinics riktlinjer om basal kroppstemperatur. En temperaturhöjning bekräftar ägglossningen i efterhand; den förutsäger den inte.",
+      "copyLink": "Kopiera länk",
+      "linkFailedTitle": "Länken kunde inte öppnas"
+    },
+    "a11y": {
+      "addCustom": "Lägg till eget",
+      "addMedication": "Lägg till medicinpåminnelse",
+      "attachImage": "Bifoga bild",
+      "cancelEditing": "Avbryt redigering",
+      "clearSearch": "Rensa sökningen",
+      "close": "Stäng",
+      "closeLog": "Stäng dagboken",
+      "deleteDigit": "Radera sista siffran",
+      "deleteReminder": "Radera den här påminnelsen",
+      "doneLogging": "Klart",
+      "editLogForDay": "Redigera dagens anteckningar",
+      "editPeriodDays": "Redigera mensdagar",
+      "goBack": "Tillbaka",
+      "hidePassword": "Dölj lösenordet",
+      "nextMonth": "Nästa månad",
+      "nextMonthShort": "Nästa månad",
+      "openSettings": "Öppna inställningar",
+      "phaseLegend": "Om cykelns faser",
+      "pickIcon": "Välj den här ikonen",
+      "previousMonth": "Föregående månad",
+      "previousMonthShort": "Föregående månad",
+      "rateStars": "Betyg {{count}} av 5",
+      "removeAttachment": "Ta bort den bifogade bilden",
+      "saveEditing": "Spara ändringar",
+      "showPassword": "Visa lösenordet",
+      "symptomCategory": "Visa den här kategorin",
+      "toggleReminder": "Slå på eller av den här påminnelsen"
+    },
+    "errorBoundary": {
+      "action": "Starta om appen för att fortsätta.",
+      "dataSafe": "Dina anteckningar är trygga — det var bara skärmen som gick fel.",
+      "hideDetails": "Dölj detaljer",
+      "restart": "Starta om",
+      "showDetails": "Detaljer",
+      "title": "Något gick fel"
+    },
+    "health": {
+      "autoDesc": "Synka i bakgrunden när du öppnar appen och strax efter att du antecknat något. Samma regler som knapparna ovan: dagar läggs bara till, och i Hälsa ersätts bara det Eluna själv har skrivit.",
+      "autoTitle": "Håll Hälsa uppdaterad",
+      "body": "Hämta mensdagar och morgontemperaturer från Hälsa, eller publicera dem du för här så att andra appar du litar på kan se dem. Inget skickas någon annanstans, och inget händer av sig självt — bara när du trycker på en knapp nedan.",
+      "exportBtn": "Spara till Hälsa",
+      "exported": "Sparade {{days}} mensdagar och {{temps}} temperaturer till Hälsa.",
+      "failed": "Det gick inte. Kolla Inställningar → Hälsa → Dataåtkomst och enheter → Eluna och tillåt kategorierna.",
+      "footnote": "En import raderar aldrig en dag du fört in här, och en sparning ersätter bara det Eluna skrivit tidigare — andra appars poster lämnas i fred.",
+      "importBtn": "Importera från Hälsa",
+      "imported": "Hämtade {{days}} mensdagar och {{temps}} temperaturer.",
+      "lastSynced": "Senast synkad: {{when}}",
+      "nothingNew": "Hälsa hade inget som appen inte redan visste.",
+      "removeBtn": "Ta bort Elunas data från Hälsa",
+      "removed": "Allt Eluna skrivit till Hälsa har tagits bort. Det du själv fört in i Hälsa är orört.",
+      "title": "Apple Hälsa"
+    },
+    "widget": {
+      "dayHeadline": "Dag {{day}}",
+      "dueToday": "Mensen väntas i dag",
+      "late_one": "{{count}} dag försenad",
+      "late_other": "{{count}} dagar försenad",
+      "modes": {
+        "discreet": "Diskret",
+        "discreetDesc": "Visar bara cykeldagen — ingen fas, ingen nedräkning, inget som avslöjar vad appen är till för.",
+        "full": "Fullständig",
+        "fullDesc": "Visar cykeldagen och hur länge det är kvar till väntad mens.",
+        "off": "Av",
+        "offDesc": "Inget publiceras. En widget som redan ligger på hemskärmen blir tom."
+      },
+      "untilPeriod_one": "{{count}} dag kvar till mensen",
+      "untilPeriod_other": "{{count}} dagar kvar till mensen"
     }
   },
   "kb": {

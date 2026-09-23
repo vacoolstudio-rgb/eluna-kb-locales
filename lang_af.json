@@ -27,7 +27,8 @@
       "step3": {
         "title": "Hoe lank duur jou\nperiode?",
         "days": "dae",
-        "nextBtn": "Volgende"
+        "nextBtn": "Volgende",
+        "saveFailed": "Jou datum kon nie gestoor word nie. Probeer weer — as dit aanhou, help dit gewoonlik om die app te herbegin."
       },
       "step4": {
         "title": "Hoe lank is jou\nsiklus?",
@@ -328,7 +329,9 @@
       "holdToPin": "Hou simptoom om te pen",
       "create": "Skep jou eie",
       "notesTab": "Notas",
-      "notesPlaceholder": "Beskryf jou simptome of gedagtes (tot 1000 karakters)..."
+      "notesPlaceholder": "Beskryf jou simptome of gedagtes (tot 1000 karakters)...",
+      "noteSaveFailed": "Hierdie nota kon nie gestoor word nie. Jou laaste gestoorde weergawe is nog daar — probeer dit weer tik.",
+      "symptomSaveFailed": "Hierdie tik kon nie gestoor word nie en is ongedaan gemaak. Kyk na die vrye spasie op jou toestel en probeer weer."
     },
     "symptoms": {
       "categories": {
@@ -672,6 +675,23 @@
         "desc_one": "Die ontleding berus op {{used}} van {{total}} siklusse. Een siklus is as afwykend uit die voorspellings gelaat.",
         "desc_other": "Die ontleding berus op {{used}} van {{total}} siklusse. {{excluded}} siklusse is as afwykend uit die voorspellings gelaat.",
         "fixBtn": "Hersien en Herstel"
+      },
+      "bbtChart": {
+        "coverline": "Dekkingslyn",
+        "dayAxis": "Siklusdag",
+        "empty": "Meet jou temperatuur ’n paar oggende, dan verskyn die kurwe hier.",
+        "flagged": "as onbetroubaar gemerk",
+        "noShiftYet": "Nog geen temperatuurstyging in hierdie siklus bevestig nie. Dit verg ses basisdae plus drie hoër dae.",
+        "shiftFound": "Temperatuurstyging bevestig vanaf dag {{day}} — drie lesings bo die dekkingslyn.",
+        "tapHint": "Tik op ’n punt om die datum en temperatuur te sien.",
+        "title": "Basale liggaamstemperatuur"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Van oudste tot nuutste",
+        "readout": "Siklus wat op {{date}} begin het · {{days}} dae",
+        "summary": "Jou onlangse siklusse teenoor jou eie mediaan van {{median}} dae (variasie ±{{sd}}).",
+        "tapHint": "Tik op ’n kolom om te sien wanneer daardie siklus begin het. Kolomme met ’n omlyning lê ongewoon ver van jou mediaan af.",
+        "title": "Sikluslengte"
       }
     },
     "settings": {
@@ -708,7 +728,9 @@
         "exportBackup": "Voer Rugsteun uit",
         "importBackup": "Voer Rugsteun in",
         "cloudSync": "Wolksinkronisasie",
-        "ourApps": "Ons ander programme"
+        "ourApps": "Ons ander programme",
+        "health": "Apple Health",
+        "widget": "Legstuk op die tuisskerm"
       },
       "footer": "Alle data is geïnkripteer en slegs op hierdie toestel gestoor",
       "resetTitle": "Herstel alle data",
@@ -1275,7 +1297,11 @@
       "disableNote": "Om sinkronisasie af te skakel, vee nooit iets van hierdie foon uit nie.",
       "startOver": "Die wagwoord en die herstelkode verloor?",
       "startOverTitle": "Vee hierdie rugsteun uit en begin oor?",
-      "startOverBody": "Hierdie rugsteun kan nie sonder sy wagwoord of herstelkode oopgemaak word nie — nie deur jou nie, en nie deur ons nie. Om dit uit te vee, vernietig alles daarin permanent, en dit kan nie ontdaan word nie. Data wat reeds op hierdie foon is, word nie geraak nie."
+      "startOverBody": "Hierdie rugsteun kan nie sonder sy wagwoord of herstelkode oopgemaak word nie — nie deur jou nie, en nie deur ons nie. Om dit uit te vee, vernietig alles daarin permanent, en dit kan nie ontdaan word nie. Data wat reeds op hierdie foon is, word nie geraak nie.",
+      "offline": "Geen verbinding nie. Jou data is veilig op hierdie foon — dit sinkroniseer sodra jy weer aanlyn is.",
+      "restoreIncompleteBody_one": "Jou geskiedenis is terug, behalwe {{count}} inskrywing wat die rugsteun nie kon oorhandig nie — dit was beskadig. Al die res is herstel.",
+      "restoreIncompleteBody_other": "Jou geskiedenis is terug, behalwe {{count}} inskrywings wat die rugsteun nie kon oorhandig nie — hulle was beskadig. Al die res is herstel.",
+      "restoreIncompleteTitle": "Sommige inskrywings kon nie herstel word nie"
     },
     "ourApps": {
       "title": "Meer van ons",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Lees byna enige boek — EPUB, FB2, MOBI, PDF, DjVu, DOC en strokiesprente, meer as 20 formate op een rak. Voorlees, merke en notas wat jy kan uitvoer, sinkronisasie sonder ’n rekening en volle privaatheid — geen advertensies of spoorders nie, jou biblioteek bly slegs op jou toestel."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Sien hoeveel oor is tot die volgende diens, nie wat dit gekos het nie: olie, filters, remvloeistof en tydingsband, elk met sy eie afstand en datum. Ses-en-dertig onderdele met gewone tussenposes is reeds ingesluit. Geen rekening en geen bediener nie — die geskiedenis bly net op jou toestel."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Gesondheidsinligting in Eluna verwys na {{count}} mediese bronne",
       "conceptionNote": "Die dagspesifieke bevrugtingswaarskynlikheid volg Wilcox et al. (NEJM 1995) en ASRM/ACOG se vrugbaarheidsbewustheidsriglyne. Dit is 'n skatting uit jou aangetekende siklusse — nie 'n voorbehoedmiddel nie.",
       "phaseTipsNote": "Die fasefisiologie en die uitwerkings wat hier beskryf word, volg eweknie-geëvalueerde kliniese verwysings. Algemene welstandsvoorstelle, nie mediese behandeling nie.",
-      "cycleStatsNote": "Sikluslengtenorme en wat as normale variasie tel, volg ACOG-riglyne en eweknie-geëvalueerde navorsing."
+      "cycleStatsNote": "Sikluslengtenorme en wat as normale variasie tel, volg ACOG-riglyne en eweknie-geëvalueerde navorsing.",
+      "bbtNote": "Die dekkingslyn en die drie-dae-reël volg StatPearls en Mayo Clinic se riglyne oor basale liggaamstemperatuur. ’n Temperatuurstyging bevestig ovulasie nádat dit gebeur het; dit voorspel dit nie.",
+      "copyLink": "Kopieer skakel",
+      "linkFailedTitle": "Hierdie skakel kon nie oopgemaak word nie"
+    },
+    "a11y": {
+      "addCustom": "Voeg jou eie by",
+      "addMedication": "Voeg ’n medikasie-herinnering by",
+      "attachImage": "Heg ’n prent aan",
+      "cancelEditing": "Kanselleer redigering",
+      "clearSearch": "Maak soektog skoon",
+      "close": "Maak toe",
+      "closeLog": "Maak die dagboek toe",
+      "deleteDigit": "Vee laaste syfer uit",
+      "deleteReminder": "Vee hierdie herinnering uit",
+      "doneLogging": "Klaar",
+      "editLogForDay": "Wysig die inskrywings van hierdie dag",
+      "editPeriodDays": "Wysig menstruasiedae",
+      "goBack": "Terug",
+      "hidePassword": "Versteek die wagwoord",
+      "nextMonth": "Volgende maand",
+      "nextMonthShort": "Volgende maand",
+      "openSettings": "Maak instellings oop",
+      "phaseLegend": "Oor die siklusfases",
+      "pickIcon": "Kies hierdie ikoon",
+      "previousMonth": "Vorige maand",
+      "previousMonthShort": "Vorige maand",
+      "rateStars": "Gradering {{count}} uit 5",
+      "removeAttachment": "Verwyder die aangehegte prent",
+      "saveEditing": "Stoor veranderinge",
+      "showPassword": "Wys die wagwoord",
+      "symptomCategory": "Wys hierdie kategorie",
+      "toggleReminder": "Skakel hierdie herinnering aan of af"
+    },
+    "errorBoundary": {
+      "action": "Herbegin die app om voort te gaan.",
+      "dataSafe": "Jou inskrywings is veilig — net die skerm het gefaal.",
+      "hideDetails": "Versteek besonderhede",
+      "restart": "Herbegin",
+      "showDetails": "Besonderhede",
+      "title": "Iets het verkeerd geloop"
+    },
+    "health": {
+      "autoDesc": "Sinkroniseer in die agtergrond wanneer jy die app oopmaak en kort nadat jy iets aanteken. Dieselfde reëls as die knoppies hierbo: dae word net bygevoeg, en in Health word net vervang wat Eluna self geskryf het.",
+      "autoTitle": "Hou Health op datum",
+      "body": "Bring menstruasiedae en wakkerword-temperature uit Health in, of publiseer dié wat jy hier aanteken sodat ander apps wat jy vertrou dit kan sien. Niks gaan enige plek anders heen nie, en niks gebeur vanself nie — net wanneer jy ’n knoppie hieronder druk.",
+      "exportBtn": "Stoor na Health",
+      "exported": "{{days}} menstruasiedae en {{temps}} temperature in Health gestoor.",
+      "failed": "Dit het nie gewerk nie. Gaan kyk by Instellings → Health → Datatoegang en toestelle → Eluna en laat die kategorieë toe.",
+      "footnote": "Invoer vee nooit ’n dag uit wat jy hier aangeteken het nie, en stoor vervang net wat Eluna voorheen geskryf het — inskrywings van ander apps bly onaangeraak.",
+      "importBtn": "Voer in vanaf Health",
+      "imported": "{{days}} menstruasiedae en {{temps}} temperature ingevoer.",
+      "lastSynced": "Laas gesinkroniseer: {{when}}",
+      "nothingNew": "Health het niks gehad wat die app nie reeds geweet het nie.",
+      "removeBtn": "Verwyder Eluna se data uit Health",
+      "removed": "Alles wat Eluna na Health geskryf het, is verwyder. Wat jy self in Health ingevoer het, bly onaangeraak.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Dag {{day}}",
+      "dueToday": "Jou menstruasie word vandag verwag",
+      "late_one": "{{count}} dag laat",
+      "late_other": "{{count}} dae laat",
+      "modes": {
+        "discreet": "Diskreet",
+        "discreetDesc": "Wys net die siklusdag — geen fase, geen aftelling, niks wat verklap waarvoor die app is nie.",
+        "full": "Volledig",
+        "fullDesc": "Wys die siklusdag en hoe lank dit nog is tot die verwagte menstruasie.",
+        "off": "Af",
+        "offDesc": "Niks word gepubliseer nie. ’n Legstuk wat reeds op die tuisskerm is, word leeg."
+      },
+      "untilPeriod_one": "{{count}} dag tot jou menstruasie",
+      "untilPeriod_other": "{{count}} dae tot jou menstruasie"
     }
   },
   "kb": {

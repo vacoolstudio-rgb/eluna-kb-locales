@@ -23,7 +23,8 @@
       "step3": {
         "title": "Hvor lenge varer\nmenstruasjonen din?",
         "days": "dager",
-        "nextBtn": "Neste"
+        "nextBtn": "Neste",
+        "saveFailed": "Datoen kunne ikke lagres. Prøv igjen — hvis det fortsetter, pleier en omstart av appen å hjelpe."
       },
       "step4": {
         "title": "Hvor lang er\nsyklusen din?",
@@ -324,7 +325,9 @@
       "holdToPin": "Hold inne et symptom for å feste det",
       "create": "Lag din egen",
       "notesTab": "Notater",
-      "notesPlaceholder": "Beskriv symptomene eller tankene dine (opptil 1000 tegn)..."
+      "notesPlaceholder": "Beskriv symptomene eller tankene dine (opptil 1000 tegn)...",
+      "noteSaveFailed": "Notatet kunne ikke lagres. Den sist lagrede versjonen er der fortsatt — prøv å skrive det på nytt.",
+      "symptomSaveFailed": "Dette trykket kunne ikke lagres og ble angret. Sjekk ledig plass på enheten, og prøv igjen."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Hvorfor føler du det slik?"
+      },
+      "bbtChart": {
+        "coverline": "Dekkelinje",
+        "dayAxis": "Syklusdag",
+        "empty": "Mål temperaturen et par morgener, så dukker kurven opp her.",
+        "flagged": "merket som usikker",
+        "noShiftYet": "Ingen temperaturstigning er bekreftet i denne syklusen ennå. Det krever seks basisdager pluss tre høyere.",
+        "shiftFound": "Temperaturstigning bekreftet fra dag {{day}} — tre målinger over dekkelinjen.",
+        "tapHint": "Trykk på et punkt for å se dato og temperatur.",
+        "title": "Basaltemperatur"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Fra eldst til nyest",
+        "readout": "Syklus fra {{date}} · {{days}} dager",
+        "summary": "De siste syklusene dine mot din egen median på {{median}} dager (spredning ±{{sd}}).",
+        "tapHint": "Trykk på en søyle for å se når den syklusen begynte. Søyler med omriss ligger uvanlig langt fra medianen din.",
+        "title": "Sykluslengde"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Eksporter sikkerhetskopi",
         "importBackup": "Importer sikkerhetskopi",
         "cloudSync": "Skysynkronisering",
-        "ourApps": "Våre andre apper"
+        "ourApps": "Våre andre apper",
+        "health": "Apple Helse",
+        "widget": "Widget på hjemskjermen"
       },
       "footer": "Alle data er kryptert og lagres kun på denne enheten",
       "resetTitle": "Tilbakestill alle data",
@@ -1275,7 +1297,11 @@
       "disableNote": "Å slå av synkronisering sletter aldri noe fra denne telefonen.",
       "startOver": "Mistet både passordet og gjenopprettingskoden?",
       "startOverTitle": "Slette denne sikkerhetskopien og begynne på nytt?",
-      "startOverBody": "Denne sikkerhetskopien kan ikke åpnes uten passordet eller gjenopprettingskoden – verken av deg eller oss. Å slette den ødelegger alt innholdet permanent, og det kan ikke angres. Data som allerede finnes på denne telefonen, berøres ikke."
+      "startOverBody": "Denne sikkerhetskopien kan ikke åpnes uten passordet eller gjenopprettingskoden – verken av deg eller oss. Å slette den ødelegger alt innholdet permanent, og det kan ikke angres. Data som allerede finnes på denne telefonen, berøres ikke.",
+      "offline": "Ingen forbindelse. Dataene dine ligger trygt på denne telefonen — synkroniseringen skjer når du er på nett igjen.",
+      "restoreIncompleteBody_one": "Historikken din er tilbake, bortsett fra {{count}} oppføring sikkerhetskopien ikke klarte å gi fra seg — den var skadet. Alt annet ble gjenopprettet.",
+      "restoreIncompleteBody_other": "Historikken din er tilbake, bortsett fra {{count}} oppføringer sikkerhetskopien ikke klarte å gi fra seg — de var skadet. Alt annet ble gjenopprettet.",
+      "restoreIncompleteTitle": "Noen oppføringer kunne ikke gjenopprettes"
     },
     "ourApps": {
       "title": "Mer fra oss",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Åpne nesten hvilken som helst bok — EPUB, FB2, MOBI, PDF, DjVu, DOC og tegneserier, over 20 formater i én hylle. Opplesning, markeringer og notater du kan eksportere, synkronisering uten konto og fullt personvern — ingen reklame eller sporere, biblioteket ditt blir værende på enheten din."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Se hvor mye som er igjen til neste service, ikke hva den kostet: olje, filtre, bremsevæske og registerreim, hver med sin egen kilometerstand og dato. Trettiseks deler med vanlige intervaller er med fra start. Ingen konto og ingen server — historikken blir bare på enheten din."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Helseinformasjonen i Eluna siterer {{count}} medisinske kilder",
       "conceptionNote": "Den dagspesifikke sannsynligheten for unnfangelse følger Wilcox et al. (NEJM 1995) og ASRM/ACOGs veiledning om fruktbarhetsbevissthet. Det er et estimat basert på syklusene du har registrert, ikke en prevensjonsmetode.",
       "phaseTipsNote": "Fasefysiologien og effektene som beskrives her, følger fagfellevurderte kliniske referanser. Generelle råd for velvære, ikke medisinsk behandling.",
-      "cycleStatsNote": "Normer for sykluslengde og hva som regnes som normal variasjon, følger ACOGs veiledning og fagfellevurdert forskning."
+      "cycleStatsNote": "Normer for sykluslengde og hva som regnes som normal variasjon, følger ACOGs veiledning og fagfellevurdert forskning.",
+      "bbtNote": "Dekkelinjen og tredagersregelen følger retningslinjene fra StatPearls og Mayo Clinic om basal kroppstemperatur. En temperaturstigning bekrefter eggløsningen i etterkant; den forutsier den ikke.",
+      "copyLink": "Kopier lenke",
+      "linkFailedTitle": "Lenken kunne ikke åpnes"
+    },
+    "a11y": {
+      "addCustom": "Legg til ditt eget",
+      "addMedication": "Legg til medisinpåminnelse",
+      "attachImage": "Legg ved bilde",
+      "cancelEditing": "Avbryt redigering",
+      "clearSearch": "Tøm søket",
+      "close": "Lukk",
+      "closeLog": "Lukk dagboken",
+      "deleteDigit": "Slett siste siffer",
+      "deleteReminder": "Slett denne påminnelsen",
+      "doneLogging": "Ferdig",
+      "editLogForDay": "Rediger notatene for denne dagen",
+      "editPeriodDays": "Rediger menstruasjonsdager",
+      "goBack": "Tilbake",
+      "hidePassword": "Skjul passordet",
+      "nextMonth": "Neste måned",
+      "nextMonthShort": "Neste måned",
+      "openSettings": "Åpne innstillinger",
+      "phaseLegend": "Om fasene i syklusen",
+      "pickIcon": "Velg dette ikonet",
+      "previousMonth": "Forrige måned",
+      "previousMonthShort": "Forrige måned",
+      "rateStars": "Vurdering {{count}} av 5",
+      "removeAttachment": "Fjern det vedlagte bildet",
+      "saveEditing": "Lagre endringer",
+      "showPassword": "Vis passordet",
+      "symptomCategory": "Vis denne kategorien",
+      "toggleReminder": "Slå denne påminnelsen på eller av"
+    },
+    "errorBoundary": {
+      "action": "Start appen på nytt for å fortsette.",
+      "dataSafe": "Notatene dine er trygge — det var bare skjermen som sviktet.",
+      "hideDetails": "Skjul detaljer",
+      "restart": "Start på nytt",
+      "showDetails": "Detaljer",
+      "title": "Noe gikk galt"
+    },
+    "health": {
+      "autoDesc": "Synkronisér i bakgrunnen når du åpner appen, og kort etter at du noterer noe. Samme regler som knappene over: dager blir bare lagt til, og i Helse erstattes bare det Eluna selv har skrevet.",
+      "autoTitle": "Hold Helse oppdatert",
+      "body": "Hent menstruasjonsdager og morgentemperaturer fra Helse, eller publisér dem du fører her, slik at andre apper du stoler på kan se dem. Ingenting sendes noe annet sted, og ingenting skjer av seg selv — bare når du trykker på en knapp nedenfor.",
+      "exportBtn": "Lagre i Helse",
+      "exported": "Lagret {{days}} menstruasjonsdager og {{temps}} temperaturer i Helse.",
+      "failed": "Det gikk ikke. Sjekk Innstillinger → Helse → Datatilgang og enheter → Eluna, og tillat kategoriene.",
+      "footnote": "En import sletter aldri en dag du har ført inn her, og lagring erstatter bare det Eluna skrev før — notater fra andre apper røres ikke.",
+      "importBtn": "Importer fra Helse",
+      "imported": "Hentet {{days}} menstruasjonsdager og {{temps}} temperaturer.",
+      "lastSynced": "Sist synkronisert: {{when}}",
+      "nothingNew": "Helse hadde ingenting appen ikke allerede visste.",
+      "removeBtn": "Fjern Elunas data fra Helse",
+      "removed": "Alt Eluna har skrevet til Helse, er fjernet. Det du selv har lagt inn i Helse, er urørt.",
+      "title": "Apple Helse"
+    },
+    "widget": {
+      "dayHeadline": "Dag {{day}}",
+      "dueToday": "Menstruasjonen ventes i dag",
+      "late_one": "{{count}} dag forsinket",
+      "late_other": "{{count}} dager forsinket",
+      "modes": {
+        "discreet": "Diskré",
+        "discreetDesc": "Viser bare syklusdagen — ingen fase, ingen nedtelling, ingenting som røper hva appen er til for.",
+        "full": "Fullstendig",
+        "fullDesc": "Viser syklusdagen og hvor lenge det er til ventet menstruasjon.",
+        "off": "Av",
+        "offDesc": "Ingenting publiseres. En widget som allerede ligger på hjemskjermen, blir tom."
+      },
+      "untilPeriod_one": "{{count}} dag til menstruasjonen",
+      "untilPeriod_other": "{{count}} dager til menstruasjonen"
     }
   },
   "kb": {

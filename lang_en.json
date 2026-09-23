@@ -27,7 +27,8 @@
       "step3": {
         "title": "How long does your\nperiod last?",
         "days": "days",
-        "nextBtn": "Next"
+        "nextBtn": "Next",
+        "saveFailed": "Your date could not be saved. Please try again — if it keeps failing, restarting the app usually helps."
       },
       "step4": {
         "title": "How long is your\ncycle?",
@@ -328,7 +329,9 @@
       "holdToPin": "Hold symptom to pin",
       "create": "Create your own",
       "notesTab": "Notes",
-      "notesPlaceholder": "Describe your symptoms or thoughts (up to 1000 characters)..."
+      "notesPlaceholder": "Describe your symptoms or thoughts (up to 1000 characters)...",
+      "noteSaveFailed": "This note could not be saved. Your last saved version is still there — try typing it again.",
+      "symptomSaveFailed": "That tap could not be saved, so it was undone. Check your device storage and try again."
     },
     "symptoms": {
       "categories": {
@@ -672,6 +675,23 @@
         "desc_one": "Analytics are based on {{used}} out of {{total}} cycles. One cycle was excluded from predictions as anomalous.",
         "desc_other": "Analytics are based on {{used}} out of {{total}} cycles. {{excluded}} cycles were excluded from predictions as anomalous.",
         "fixBtn": "Review and Fix"
+      },
+      "bbtChart": {
+        "title": "Basal temperature",
+        "shiftFound": "A thermal shift is confirmed from day {{day}} — three readings above the coverline.",
+        "noShiftYet": "No thermal shift confirmed yet in this cycle. It takes six baseline days plus three higher ones.",
+        "coverline": "Coverline",
+        "tapHint": "Tap a point to read its date and temperature.",
+        "flagged": "marked unreliable",
+        "dayAxis": "Cycle day",
+        "empty": "Log your waking temperature for a few mornings and the curve will appear here."
+      },
+      "cycleLengthChart": {
+        "title": "Cycle length",
+        "summary": "Your recent cycles, against your own median of {{median}} days (variation ±{{sd}}).",
+        "readout": "Cycle starting {{date}} · {{days}} days",
+        "tapHint": "Tap a column to see when that cycle started. Outlined columns sit unusually far from your median.",
+        "axisCaption": "Oldest to newest"
       }
     },
     "settings": {
@@ -714,7 +734,9 @@
         "importBackup": "Import Backup",
         "cloudSync": "Cloud Sync",
         "adPrivacy": "Ad privacy",
-        "ourApps": "Our other apps"
+        "ourApps": "Our other apps",
+        "health": "Apple Health",
+        "widget": "Home screen widget"
       },
       "footer": "All data is encrypted and stored only on this device",
       "resetTitle": "Reset all data",
@@ -877,7 +899,11 @@
       "disableNote": "Turning sync off never deletes anything from this phone.",
       "startOver": "Lost the password and the recovery code?",
       "startOverTitle": "Delete this backup and start over?",
-      "startOverBody": "This backup cannot be opened without its password or recovery code — not by you, and not by us. Deleting it destroys everything inside it permanently, and it cannot be undone. Data already on this phone is not touched."
+      "startOverBody": "This backup cannot be opened without its password or recovery code — not by you, and not by us. Deleting it destroys everything inside it permanently, and it cannot be undone. Data already on this phone is not touched.",
+      "restoreIncompleteTitle": "Some entries could not be restored",
+      "restoreIncompleteBody_one": "Your history is back, except for {{count}} entry the backup could not hand over — it was damaged. Everything else was restored.",
+      "restoreIncompleteBody_other": "Your history is back, except for {{count}} entries the backup could not hand over — they were damaged. Everything else was restored.",
+      "offline": "No connection. Your data is safe on this phone — it will sync when you are back online."
     },
     "delayBanner": {
       "activeSearch": {
@@ -1027,10 +1053,14 @@
       "anomalyShort": "Too short (<21 days)",
       "anomalyLong": "Too long (>35 days)",
       "anomalyIrregular": "Irregular",
-      "attention": "Внимание",
+      "attention": "Note",
       "excludedCycles": "${stats.excludedCount} цикл(ов) исключены из расчетов средней длительности из-за аномальных показателей.",
-      "anomalyWarning": "Предупреждение: выходит за типичный диапазон (учтено в анализе)",
-      "anomalySevere": "Аномалия: превышает допустимые нормы (исключено из аналитики)"
+      "anomalyWarning": "Warning: outside the typical range (included in the analysis)",
+      "anomalySevere": "Anomaly: exceeds acceptable limits (excluded from analytics)",
+      "sourcesTitle": "Medical Sources",
+      "sourcesIntro": "The reference ranges and cycle norms used in this report are based on the following clinical sources.",
+      "excludedCycles_one": "{{count}} cycle was excluded from the average-length calculation because its values were anomalous.",
+      "excludedCycles_other": "{{count}} cycles were excluded from the average-length calculation because their values were anomalous."
     },
     "analytics": {
       "pulseTitle": "Measuring pulse...",
@@ -1340,7 +1370,110 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Read almost any book — EPUB, FB2, MOBI, PDF, DjVu, DOC and comics, over 20 formats on one shelf. Read-aloud, highlights and notes you can export, sync without an account, and full privacy — no ads, no trackers, your library stays on your device only."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "See how much is left before the next service, not what it cost: oil, filters, brake fluid and the timing belt, each with its own distance and date. Thirty-six parts with normal intervals are built in. No account and no server — your car history stays on your device only."
       }
+    },
+    "medicalSources": {
+      "title": "Medical Sources",
+      "sources": "Sources",
+      "countLabel_one": "{{count}} reference",
+      "countLabel_other": "{{count}} references",
+      "intro": "Every health explanation, phase description and cycle calculation in Eluna is based on the clinical guidelines and peer-reviewed research listed below. Tap any entry to open the original publication.",
+      "disclaimer": "Eluna is not a medical device and does not provide a diagnosis. Discuss your symptoms with a healthcare professional.",
+      "sectionGuidelines": "Clinical guidelines",
+      "sectionResearch": "Research & reviews",
+      "forecastNote": "The six-day fertile window, the ovulation estimate and the ~14-day luteal phase follow ASRM committee guidance and ACOG patient guidance; phase boundaries follow standard clinical physiology references. Predictions are statistical estimates — not a diagnosis and not a contraceptive method.",
+      "phasesNote": "Phase descriptions follow standard clinical physiology references; the fertile window follows ASRM and ACOG guidance, and premenstrual symptoms follow ACOG clinical guidance.",
+      "explanationNote": "Hormonal physiology and the symptom patterns described here follow peer-reviewed clinical reviews.",
+      "footer_one": "Health information in Eluna cites {{count}} medical source",
+      "footer_other": "Health information in Eluna cites {{count}} medical sources",
+      "conceptionNote": "The day-specific conception probability follows Wilcox et al. (NEJM 1995) and ASRM/ACOG fertility-awareness guidance. It is an estimate from your logged cycles — not a contraceptive method.",
+      "phaseTipsNote": "Phase physiology and the effects described here follow peer-reviewed clinical references. General wellbeing suggestions, not medical treatment.",
+      "cycleStatsNote": "Cycle-length norms and what counts as normal variation follow ACOG guidance and peer-reviewed research.",
+      "bbtNote": "The coverline and the three-day rule follow StatPearls and Mayo Clinic guidance on basal body temperature. A temperature rise confirms ovulation after it happens; it does not predict it.",
+      "linkFailedTitle": "This link could not be opened",
+      "copyLink": "Copy link"
+    },
+    "tips": {
+      "title": "Buy me a coffee",
+      "header": "Enjoying Eluna?",
+      "body": "Eluna is completely free — no ads, no subscription, ever. If it has earned a place on your phone, you can leave a small tip to support its development. It is entirely optional, and thank you either way. ☕",
+      "thanks": "Thank you so much! ☕ It genuinely helps keep Eluna going.",
+      "failed": "The tip could not be completed. Please try again.",
+      "storeUnavailable": "In-app purchases are not available on this device right now.",
+      "paymentPending": "Payment is processing — thank you! Your tip will go through automatically."
+    },
+    "errorBoundary": {
+      "title": "Something went wrong",
+      "dataSafe": "Your entries are safe — only the screen failed.",
+      "action": "Restart the app to continue.",
+      "restart": "Restart",
+      "showDetails": "Details",
+      "hideDetails": "Hide details"
+    },
+    "health": {
+      "title": "Apple Health",
+      "body": "Bring period days and waking temperatures in from Health, or publish the ones you log here so other apps you trust can see them. Nothing is sent anywhere else, and nothing happens on its own — only when you press a button below.",
+      "importBtn": "Import from Health",
+      "exportBtn": "Save to Health",
+      "removeBtn": "Remove Eluna's data from Health",
+      "autoTitle": "Keep Health up to date",
+      "autoDesc": "Sync in the background when you open the app and shortly after you log something. Same rules as the buttons above: days are only ever added, and only Eluna’s own entries in Health are replaced.",
+      "lastSynced": "Last synced {{when}}",
+      "imported": "Imported {{days}} period days and {{temps}} temperatures.",
+      "exported": "Saved {{days}} period days and {{temps}} temperatures to Health.",
+      "nothingNew": "Health had nothing this app did not already know.",
+      "removed": "Everything Eluna wrote to Health has been removed. Entries you made in Health itself are untouched.",
+      "failed": "That did not work. Check Settings → Health → Data Access & Devices → Eluna and make sure the categories are allowed.",
+      "footnote": "Importing never deletes a day you logged here, and saving only replaces what Eluna wrote before — entries from other apps are left alone."
+    },
+    "widget": {
+      "dayHeadline": "Day {{day}}",
+      "untilPeriod_one": "{{count}} day until your period",
+      "untilPeriod_other": "{{count}} days until your period",
+      "dueToday": "Your period is expected today",
+      "late_one": "{{count}} day late",
+      "late_other": "{{count}} days late",
+      "modes": {
+        "off": "Off",
+        "offDesc": "Nothing is published. A widget already on your home screen goes blank.",
+        "discreet": "Discreet",
+        "discreetDesc": "Shows the cycle day and nothing else — no phase, no countdown, nothing that says what the app is for.",
+        "full": "Full",
+        "fullDesc": "Shows the cycle day and how long until your period is expected."
+      }
+    },
+    "a11y": {
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "editPeriodDays": "Edit period days",
+      "cancelEditing": "Cancel editing",
+      "saveEditing": "Save changes",
+      "phaseLegend": "About the cycle phases",
+      "editLogForDay": "Edit the log for this day",
+      "clearSearch": "Clear search",
+      "close": "Close",
+      "deleteDigit": "Delete last digit",
+      "openSettings": "Open settings",
+      "closeLog": "Close the log",
+      "doneLogging": "Done",
+      "goBack": "Go back",
+      "addMedication": "Add a medication reminder",
+      "toggleReminder": "Turn this reminder on or off",
+      "removeAttachment": "Remove the attached image",
+      "attachImage": "Attach an image",
+      "pickIcon": "Choose this icon",
+      "previousMonthShort": "Previous month",
+      "nextMonthShort": "Next month",
+      "deleteReminder": "Delete this reminder",
+      "addCustom": "Add your own",
+      "showPassword": "Show the password",
+      "hidePassword": "Hide the password",
+      "rateStars": "Rate {{count}} out of 5",
+      "symptomCategory": "Show this category"
     }
   },
   "kb": {

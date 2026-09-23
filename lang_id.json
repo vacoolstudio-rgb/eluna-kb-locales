@@ -23,7 +23,8 @@
       "step3": {
         "title": "Berapa lama\nhaidmu berlangsung?",
         "days": "hari",
-        "nextBtn": "Lanjut"
+        "nextBtn": "Lanjut",
+        "saveFailed": "Tanggalmu tidak bisa disimpan. Coba lagi — kalau terus gagal, memulai ulang aplikasi biasanya membantu."
       },
       "step4": {
         "title": "Berapa lama\nsiklusmu?",
@@ -324,7 +325,9 @@
       "holdToPin": "Tekan dan tahan gejala untuk menyematkan",
       "create": "Buat sendiri",
       "notesTab": "Catatan",
-      "notesPlaceholder": "Jelaskan gejala atau pikiranmu (hingga 1000 karakter)..."
+      "notesPlaceholder": "Jelaskan gejala atau pikiranmu (hingga 1000 karakter)...",
+      "noteSaveFailed": "Catatan ini tidak bisa disimpan. Versi terakhir yang tersimpan masih ada — coba tulis lagi.",
+      "symptomSaveFailed": "Ketukan ini tidak tersimpan dan dibatalkan. Periksa ruang kosong di perangkatmu lalu coba lagi."
     },
     "symptoms": {
       "categories": {
@@ -665,6 +668,23 @@
       },
       "explanation": {
         "title": "Mengapa Anda merasa seperti ini?"
+      },
+      "bbtChart": {
+        "coverline": "Garis penutup",
+        "dayAxis": "Hari siklus",
+        "empty": "Ukur suhumu beberapa pagi, kurvanya akan muncul di sini.",
+        "flagged": "ditandai kurang dapat dipercaya",
+        "noShiftYet": "Kenaikan suhu di siklus ini belum terkonfirmasi. Perlu enam hari dasar ditambah tiga hari yang lebih tinggi.",
+        "shiftFound": "Kenaikan suhu terkonfirmasi sejak hari {{day}} — tiga pengukuran di atas garis penutup.",
+        "tapHint": "Ketuk satu titik untuk melihat tanggal dan suhunya.",
+        "title": "Suhu tubuh basal"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Dari terlama ke terbaru",
+        "readout": "Siklus mulai {{date}} · {{days}} hari",
+        "summary": "Siklus terakhirmu dibandingkan median milikmu sendiri, {{median}} hari (variasi ±{{sd}}).",
+        "tapHint": "Ketuk sebuah batang untuk melihat kapan siklus itu mulai. Batang bergaris tepi berada luar biasa jauh dari medianmu.",
+        "title": "Panjang siklus"
       }
     },
     "settings": {
@@ -701,7 +721,9 @@
         "exportBackup": "Ekspor Cadangan",
         "importBackup": "Impor Cadangan",
         "cloudSync": "Sinkronisasi Cloud",
-        "ourApps": "Aplikasi kami lainnya"
+        "ourApps": "Aplikasi kami lainnya",
+        "health": "Apple Health",
+        "widget": "Widget di layar utama"
       },
       "footer": "Semua data dienkripsi dan hanya disimpan di perangkat ini",
       "resetTitle": "Reset semua data",
@@ -1272,7 +1294,10 @@
       "disableNote": "Mematikan sinkronisasi tidak pernah menghapus apa pun dari ponsel ini.",
       "startOver": "Kehilangan kata sandi dan kode pemulihan?",
       "startOverTitle": "Hapus cadangan ini dan mulai dari awal?",
-      "startOverBody": "Cadangan ini tidak dapat dibuka tanpa kata sandi atau kode pemulihannya — tidak oleh Anda, dan tidak oleh kami. Menghapusnya akan menghancurkan semua isinya secara permanen, dan tidak dapat dibatalkan. Data yang sudah ada di ponsel ini tidak tersentuh."
+      "startOverBody": "Cadangan ini tidak dapat dibuka tanpa kata sandi atau kode pemulihannya — tidak oleh Anda, dan tidak oleh kami. Menghapusnya akan menghancurkan semua isinya secara permanen, dan tidak dapat dibatalkan. Data yang sudah ada di ponsel ini tidak tersentuh.",
+      "offline": "Tidak ada koneksi. Datamu aman di ponsel ini — akan disinkronkan begitu kamu daring lagi.",
+      "restoreIncompleteBody_other": "Riwayatmu sudah kembali, kecuali {{count}} entri yang tidak bisa diserahkan cadangan — entri itu rusak. Selebihnya dipulihkan.",
+      "restoreIncompleteTitle": "Sebagian entri tidak bisa dipulihkan"
     },
     "ourApps": {
       "title": "Lainnya dari kami",
@@ -1297,6 +1322,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Buka hampir semua buku — EPUB, FB2, MOBI, PDF, DjVu, DOC, dan komik, lebih dari 20 format dalam satu rak. Baca nyaring, sorotan dan catatan yang bisa diekspor, sinkronisasi tanpa akun, dan privasi penuh — tanpa iklan dan pelacak, perpustakaan Anda hanya tersimpan di perangkat Anda."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Lihat sisa sampai servis berikutnya, bukan biayanya: oli, filter, minyak rem, dan timing belt, masing-masing dengan jarak dan tanggalnya sendiri. Tiga puluh enam komponen dengan interval umum sudah tersedia. Tanpa akun dan tanpa server — riwayat mobil tetap di perangkat Anda saja."
       }
     },
     "tips": {
@@ -1324,7 +1353,77 @@
       "footer_other": "Informasi kesehatan di Eluna mengutip {{count}} sumber medis",
       "conceptionNote": "Probabilitas pembuahan untuk hari tertentu mengikuti Wilcox et al. (NEJM 1995) dan panduan kesadaran kesuburan ASRM/ACOG. Ini adalah perkiraan dari siklus yang Anda catat — bukan metode kontrasepsi.",
       "phaseTipsNote": "Fisiologi fase dan efek yang dijelaskan di sini mengikuti referensi klinis yang ditinjau sejawat. Saran kesejahteraan umum, bukan pengobatan medis.",
-      "cycleStatsNote": "Norma panjang siklus dan apa yang dianggap sebagai variasi normal mengikuti panduan ACOG dan penelitian yang ditinjau sejawat."
+      "cycleStatsNote": "Norma panjang siklus dan apa yang dianggap sebagai variasi normal mengikuti panduan ACOG dan penelitian yang ditinjau sejawat.",
+      "bbtNote": "Garis penutup dan aturan tiga hari mengikuti panduan StatPearls dan Mayo Clinic tentang suhu tubuh basal. Kenaikan suhu memastikan ovulasi setelah terjadi; bukan meramalkannya.",
+      "copyLink": "Salin tautan",
+      "linkFailedTitle": "Tautan ini tidak bisa dibuka"
+    },
+    "a11y": {
+      "addCustom": "Tambahkan milikmu",
+      "addMedication": "Tambahkan pengingat obat",
+      "attachImage": "Lampirkan gambar",
+      "cancelEditing": "Batalkan penyuntingan",
+      "clearSearch": "Bersihkan pencarian",
+      "close": "Tutup",
+      "closeLog": "Tutup catatan",
+      "deleteDigit": "Hapus angka terakhir",
+      "deleteReminder": "Hapus pengingat ini",
+      "doneLogging": "Selesai",
+      "editLogForDay": "Sunting catatan hari ini",
+      "editPeriodDays": "Sunting hari menstruasi",
+      "goBack": "Kembali",
+      "hidePassword": "Sembunyikan kata sandi",
+      "nextMonth": "Bulan berikutnya",
+      "nextMonthShort": "Bulan berikutnya",
+      "openSettings": "Buka pengaturan",
+      "phaseLegend": "Tentang fase siklus",
+      "pickIcon": "Pilih ikon ini",
+      "previousMonth": "Bulan sebelumnya",
+      "previousMonthShort": "Bulan sebelumnya",
+      "rateStars": "Penilaian {{count}} dari 5",
+      "removeAttachment": "Hapus gambar yang dilampirkan",
+      "saveEditing": "Simpan perubahan",
+      "showPassword": "Tampilkan kata sandi",
+      "symptomCategory": "Tampilkan kategori ini",
+      "toggleReminder": "Nyalakan atau matikan pengingat ini"
+    },
+    "errorBoundary": {
+      "action": "Mulai ulang aplikasi untuk melanjutkan.",
+      "dataSafe": "Catatanmu aman — hanya layarnya yang gagal.",
+      "hideDetails": "Sembunyikan detail",
+      "restart": "Mulai ulang",
+      "showDetails": "Detail",
+      "title": "Ada yang tidak beres"
+    },
+    "health": {
+      "autoDesc": "Sinkronkan di latar belakang saat kamu membuka aplikasi dan sesaat setelah kamu mencatat sesuatu. Aturannya sama dengan tombol di atas: hari hanya ditambahkan, dan di Health hanya yang ditulis Eluna sendiri yang diganti.",
+      "autoTitle": "Jaga Health tetap terbarui",
+      "body": "Ambil hari menstruasi dan suhu bangun tidur dari Health, atau terbitkan yang kamu catat di sini agar aplikasi lain yang kamu percaya bisa melihatnya. Tidak ada yang dikirim ke tempat lain, dan tidak ada yang terjadi sendiri — hanya saat kamu menekan tombol di bawah.",
+      "exportBtn": "Simpan ke Health",
+      "exported": "{{days}} hari menstruasi dan {{temps}} suhu tersimpan ke Health.",
+      "failed": "Belum berhasil. Periksa Pengaturan → Health → Akses Data & Perangkat → Eluna lalu izinkan kategorinya.",
+      "footnote": "Mengimpor tidak pernah menghapus hari yang kamu catat di sini, dan menyimpan hanya mengganti apa yang pernah ditulis Eluna — catatan aplikasi lain dibiarkan apa adanya.",
+      "importBtn": "Impor dari Health",
+      "imported": "{{days}} hari menstruasi dan {{temps}} suhu diimpor.",
+      "lastSynced": "Sinkronisasi terakhir: {{when}}",
+      "nothingNew": "Health tidak punya apa pun yang belum diketahui aplikasi.",
+      "removeBtn": "Hapus data Eluna dari Health",
+      "removed": "Semua yang ditulis Eluna ke Health sudah dihapus. Yang kamu isi sendiri di Health tetap utuh.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Hari {{day}}",
+      "dueToday": "Menstruasimu diperkirakan hari ini",
+      "late_other": "Terlambat {{count}} hari",
+      "modes": {
+        "discreet": "Diam-diam",
+        "discreetDesc": "Hanya menampilkan hari siklus — tanpa fase, tanpa hitung mundur, tanpa apa pun yang menunjukkan untuk apa aplikasi ini.",
+        "full": "Penuh",
+        "fullDesc": "Menampilkan hari siklus dan berapa lama lagi sampai menstruasi yang diperkirakan.",
+        "off": "Mati",
+        "offDesc": "Tidak ada yang diterbitkan. Widget yang sudah ada di layar utama akan kosong."
+      },
+      "untilPeriod_other": "{{count}} hari lagi menuju menstruasi"
     }
   },
   "kb": {

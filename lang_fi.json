@@ -23,7 +23,8 @@
       "step3": {
         "title": "Kuinka kauan\nkuukautisesi kestävät?",
         "days": "päivää",
-        "nextBtn": "Seuraava"
+        "nextBtn": "Seuraava",
+        "saveFailed": "Päivämäärää ei voitu tallentaa. Yritä uudelleen — jos se ei auta, sovelluksen uudelleenkäynnistys auttaa yleensä."
       },
       "step4": {
         "title": "Kuinka pitkä\nkiertosi on?",
@@ -324,7 +325,9 @@
       "holdToPin": "Kiinnitä oire pitämällä sitä painettuna",
       "create": "Luo oma",
       "notesTab": "Muistiinpanot",
-      "notesPlaceholder": "Kuvaile oireitasi tai ajatuksiasi (enintään 1000 merkkiä)..."
+      "notesPlaceholder": "Kuvaile oireitasi tai ajatuksiasi (enintään 1000 merkkiä)...",
+      "noteSaveFailed": "Muistiinpanoa ei voitu tallentaa. Viimeksi tallennettu versio on yhä tallessa — kirjoita teksti uudelleen.",
+      "symptomSaveFailed": "Tätä napautusta ei voitu tallentaa, ja se peruttiin. Tarkista laitteen vapaa tila ja yritä uudelleen."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Miksi tunnet näin?"
+      },
+      "bbtChart": {
+        "coverline": "Peittoviiva",
+        "dayAxis": "Kierron päivä",
+        "empty": "Mittaa lämpösi muutamana aamuna, niin käyrä ilmestyy tähän.",
+        "flagged": "merkitty epäluotettavaksi",
+        "noShiftYet": "Lämpötilan nousua ei ole vielä vahvistettu tässä kierrossa. Siihen tarvitaan kuusi perustason päivää ja kolme korkeampaa.",
+        "shiftFound": "Lämpötilan nousu vahvistettu päivästä {{day}} alkaen — kolme mittausta peittoviivan yläpuolella.",
+        "tapHint": "Napauta pistettä nähdäksesi sen päivän ja lämpötilan.",
+        "title": "Perusruumiinlämpö"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Vanhimmasta uusimpaan",
+        "readout": "Kierto alkaen {{date}} · {{days}} päivää",
+        "summary": "Viimeisimmät kiertosi verrattuna omaan mediaaniisi {{median}} päivää (vaihtelu ±{{sd}}).",
+        "tapHint": "Napauta palkkia nähdäksesi, milloin kyseinen kierto alkoi. Ääriviivoitetut palkit ovat epätavallisen kaukana mediaanistasi.",
+        "title": "Kierron pituus"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Vie varmuuskopio",
         "importBackup": "Tuo varmuuskopio",
         "cloudSync": "Pilvisynkronointi",
-        "ourApps": "Muut sovelluksemme"
+        "ourApps": "Muut sovelluksemme",
+        "health": "Apple Terveys",
+        "widget": "Koontinäytön widget"
       },
       "footer": "Kaikki tiedot on salattu ja tallennettu vain tälle laitteelle",
       "resetTitle": "Nollaa kaikki tiedot",
@@ -1275,7 +1297,11 @@
       "disableNote": "Synkronoinnin poiskytkeminen ei koskaan poista mitään tästä puhelimesta.",
       "startOver": "Menetitkö salasanan ja palautuskoodin?",
       "startOverTitle": "Poistetaanko tämä varmuuskopio ja aloitetaan alusta?",
-      "startOverBody": "Tätä varmuuskopiota ei voi avata ilman sen salasanaa tai palautuskoodia — et sinä etkä me. Sen poistaminen tuhoaa kaiken sen sisällön pysyvästi, eikä sitä voi peruuttaa. Tämä ei vaikuta tässä puhelimessa jo oleviin tietoihin."
+      "startOverBody": "Tätä varmuuskopiota ei voi avata ilman sen salasanaa tai palautuskoodia — et sinä etkä me. Sen poistaminen tuhoaa kaiken sen sisällön pysyvästi, eikä sitä voi peruuttaa. Tämä ei vaikuta tässä puhelimessa jo oleviin tietoihin.",
+      "offline": "Ei yhteyttä. Tietosi ovat turvassa tässä puhelimessa — synkronointi tapahtuu, kun olet taas verkossa.",
+      "restoreIncompleteBody_one": "Historiasi on palautettu lukuun ottamatta {{count}} merkintää, jota varmuuskopio ei pystynyt luovuttamaan — se oli vaurioitunut. Kaikki muu palautettiin.",
+      "restoreIncompleteBody_other": "Historiasi on palautettu lukuun ottamatta {{count}} merkintää, joita varmuuskopio ei pystynyt luovuttamaan — ne olivat vaurioituneet. Kaikki muu palautettiin.",
+      "restoreIncompleteTitle": "Osaa merkinnöistä ei voitu palauttaa"
     },
     "ourApps": {
       "title": "Lisää meiltä",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Avaa lähes mikä tahansa kirja — EPUB, FB2, MOBI, PDF, DjVu, DOC ja sarjakuvat, yli 20 muotoa samalla hyllyllä. Ääneen luku, korostukset ja muistiinpanot vientiä varten, synkronointi ilman tiliä ja täysi yksityisyys — ei mainoksia eikä seurantaa, kirjastosi pysyy vain laitteellasi."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Näet, paljonko seuraavaan huoltoon on jäljellä, et sitä mitä se maksoi: öljy, suodattimet, jarruneste ja jakohihna, kullakin oma matka ja päivä. Kolmekymmentäkuusi osaa tavanomaisin välein on jo mukana. Ei tiliä eikä palvelinta — historia pysyy vain omassa laitteessasi."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Elunan terveystiedot viittaavat {{count}} lääketieteelliseen lähteeseen",
       "conceptionNote": "Päiväkohtainen hedelmöittymistodennäköisyys noudattaa Wilcox et al. (NEJM 1995) -tutkimusta sekä ASRM:n/ACOG:n hedelmällisyystietoisuuden ohjeistusta. Se on arvio kirjaamistasi kierroista – ei ehkäisymenetelmä.",
       "phaseTipsNote": "Vaiheiden fysiologia ja tässä kuvatut vaikutukset noudattavat vertaisarvioituja kliinisiä lähteitä. Yleisiä hyvinvointivinkkejä, ei lääketieteellistä hoitoa.",
-      "cycleStatsNote": "Kierron pituuden normit ja se, mikä lasketaan normaaliksi vaihteluksi, noudattavat ACOG:n ohjeistusta ja vertaisarvioitua tutkimusta."
+      "cycleStatsNote": "Kierron pituuden normit ja se, mikä lasketaan normaaliksi vaihteluksi, noudattavat ACOG:n ohjeistusta ja vertaisarvioitua tutkimusta.",
+      "bbtNote": "Peittoviiva ja kolmen päivän sääntö noudattavat StatPearlsin ja Mayo Clinicin ohjeita perusruumiinlämmöstä. Lämmön nousu vahvistaa ovulaation jälkikäteen; se ei ennusta sitä.",
+      "copyLink": "Kopioi linkki",
+      "linkFailedTitle": "Linkkiä ei voitu avata"
+    },
+    "a11y": {
+      "addCustom": "Lisää oma",
+      "addMedication": "Lisää lääkemuistutus",
+      "attachImage": "Liitä kuva",
+      "cancelEditing": "Peruuta muokkaus",
+      "clearSearch": "Tyhjennä haku",
+      "close": "Sulje",
+      "closeLog": "Sulje päiväkirja",
+      "deleteDigit": "Poista viimeinen numero",
+      "deleteReminder": "Poista tämä muistutus",
+      "doneLogging": "Valmis",
+      "editLogForDay": "Muokkaa tämän päivän merkintöjä",
+      "editPeriodDays": "Muokkaa kuukautispäiviä",
+      "goBack": "Takaisin",
+      "hidePassword": "Piilota salasana",
+      "nextMonth": "Seuraava kuukausi",
+      "nextMonthShort": "Seuraava kuukausi",
+      "openSettings": "Avaa asetukset",
+      "phaseLegend": "Tietoa kierron vaiheista",
+      "pickIcon": "Valitse tämä kuvake",
+      "previousMonth": "Edellinen kuukausi",
+      "previousMonthShort": "Edellinen kuukausi",
+      "rateStars": "Arvio {{count}} / 5",
+      "removeAttachment": "Poista liitetty kuva",
+      "saveEditing": "Tallenna muutokset",
+      "showPassword": "Näytä salasana",
+      "symptomCategory": "Näytä tämä luokka",
+      "toggleReminder": "Ota tämä muistutus käyttöön tai pois"
+    },
+    "errorBoundary": {
+      "action": "Käynnistä sovellus uudelleen jatkaaksesi.",
+      "dataSafe": "Merkintäsi ovat tallessa — vain näkymä epäonnistui.",
+      "hideDetails": "Piilota tiedot",
+      "restart": "Käynnistä uudelleen",
+      "showDetails": "Tiedot",
+      "title": "Jokin meni pieleen"
+    },
+    "health": {
+      "autoDesc": "Synkronoi taustalla, kun avaat sovelluksen ja pian sen jälkeen kun kirjaat jotain. Samat säännöt kuin yllä olevilla painikkeilla: päiviä vain lisätään, ja Terveydessä korvataan vain se, minkä Eluna on itse kirjoittanut.",
+      "autoTitle": "Pidä Terveys ajan tasalla",
+      "body": "Tuo kuukautispäivät ja aamulämmöt Terveydestä tai julkaise täällä kirjaamasi, jotta muut luottamasi sovellukset näkevät ne. Mihinkään muualle ei lähetetä mitään, eikä mitään tapahdu itsestään — vain kun painat alla olevaa painiketta.",
+      "exportBtn": "Tallenna Terveyteen",
+      "exported": "Terveyteen tallennettiin {{days}} kuukautispäivää ja {{temps}} lämpötilaa.",
+      "failed": "Se ei onnistunut. Tarkista Asetukset → Terveys → Tietojen käyttö ja laitteet → Eluna ja salli luokat.",
+      "footnote": "Tuonti ei koskaan poista päivää, jonka olet kirjannut tänne, ja tallennus korvaa vain sen, minkä Eluna on aiemmin kirjoittanut — muiden sovellusten merkinnät jäävät koskematta.",
+      "importBtn": "Tuo Terveydestä",
+      "imported": "Tuotiin {{days}} kuukautispäivää ja {{temps}} lämpötilaa.",
+      "lastSynced": "Viimeksi synkronoitu: {{when}}",
+      "nothingNew": "Terveydessä ei ollut mitään, mitä sovellus ei jo tiennyt.",
+      "removeBtn": "Poista Elunan tiedot Terveydestä",
+      "removed": "Kaikki, mitä Eluna on kirjoittanut Terveyteen, on poistettu. Itse Terveyteen tekemäsi merkinnät ovat koskemattomia.",
+      "title": "Apple Terveys"
+    },
+    "widget": {
+      "dayHeadline": "Päivä {{day}}",
+      "dueToday": "Kuukautisia odotetaan tänään",
+      "late_one": "myöhässä {{count}} päivä",
+      "late_other": "myöhässä {{count}} päivää",
+      "modes": {
+        "discreet": "Huomaamaton",
+        "discreetDesc": "Näyttää vain kierron päivän — ei vaihetta, ei laskuria, ei mitään, mikä kertoisi mihin sovellus on.",
+        "full": "Täysi",
+        "fullDesc": "Näyttää kierron päivän ja kuinka kauan odotettuihin kuukautisiin on.",
+        "off": "Pois",
+        "offDesc": "Mitään ei julkaista. Koontinäytöllä jo oleva widget jää tyhjäksi."
+      },
+      "untilPeriod_one": "{{count}} päivä kuukautisiin",
+      "untilPeriod_other": "{{count}} päivää kuukautisiin"
     }
   },
   "kb": {

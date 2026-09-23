@@ -27,7 +27,8 @@
       "step3": {
         "title": "¿Cuánto dura tu\nmenstruación?",
         "days": "días",
-        "nextBtn": "Siguiente"
+        "nextBtn": "Siguiente",
+        "saveFailed": "No se pudo guardar tu fecha. Inténtalo de nuevo; si sigue fallando, reiniciar la app suele ayudar."
       },
       "step4": {
         "title": "¿Cuánto dura tu\nciclo?",
@@ -328,7 +329,9 @@
       "holdToPin": "Mantén presionado el síntoma para fijar",
       "create": "Crea el tuyo",
       "notesTab": "Notas",
-      "notesPlaceholder": "Describe tus síntomas o pensamientos (hasta 1000 caracteres)..."
+      "notesPlaceholder": "Describe tus síntomas o pensamientos (hasta 1000 caracteres)...",
+      "noteSaveFailed": "No se pudo guardar esta nota. Tu última versión guardada sigue ahí: intenta escribirla de nuevo.",
+      "symptomSaveFailed": "Ese toque no se pudo guardar y se deshizo. Revisa el espacio libre del dispositivo e inténtalo de nuevo."
     },
     "symptoms": {
       "categories": {
@@ -672,6 +675,23 @@
         "desc_one": "El análisis se basa en {{used}} de {{total}} ciclos. Un ciclo se excluyó de las previsiones por ser atípico.",
         "desc_other": "El análisis se basa en {{used}} de {{total}} ciclos. {{excluded}} ciclos se excluyeron de las previsiones por ser atípicos.",
         "fixBtn": "Revisar y Corregir"
+      },
+      "bbtChart": {
+        "coverline": "Línea de cobertura",
+        "dayAxis": "Día del ciclo",
+        "empty": "Tómate la temperatura unas cuantas mañanas y la curva aparecerá aquí.",
+        "flagged": "marcada como poco confiable",
+        "noShiftYet": "Todavía no hay un cambio térmico confirmado en este ciclo. Hacen falta seis días de base y tres más altos.",
+        "shiftFound": "Cambio térmico confirmado desde el día {{day}}: tres lecturas por encima de la línea de cobertura.",
+        "tapHint": "Toca un punto para ver su fecha y su temperatura.",
+        "title": "Temperatura basal"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "De los más antiguos a los más recientes",
+        "readout": "Ciclo desde el {{date}} · {{days}} días",
+        "summary": "Tus ciclos recientes frente a tu propia mediana de {{median}} días (variación ±{{sd}}).",
+        "tapHint": "Toca una columna para ver cuándo empezó ese ciclo. Las columnas con contorno se alejan de tu mediana más de lo habitual.",
+        "title": "Duración del ciclo"
       }
     },
     "settings": {
@@ -708,7 +728,9 @@
         "exportBackup": "Exportar Respaldo",
         "importBackup": "Importar Respaldo",
         "cloudSync": "Sincronización en la nube",
-        "ourApps": "Nuestras otras apps"
+        "ourApps": "Nuestras otras apps",
+        "health": "Apple Salud",
+        "widget": "Widget en la pantalla de inicio"
       },
       "footer": "Todos los datos están encriptados y almacenados solo en este dispositivo",
       "resetTitle": "Restablecer todos los datos",
@@ -1275,7 +1297,11 @@
       "disableNote": "Desactivar la sincronización nunca elimina nada de este teléfono.",
       "startOver": "¿Perdiste la contraseña y el código de recuperación?",
       "startOverTitle": "¿Eliminar esta copia de seguridad y empezar de nuevo?",
-      "startOverBody": "Esta copia de seguridad no se puede abrir sin su contraseña o código de recuperación: ni tú ni nosotros podemos hacerlo. Eliminarla destruye todo su contenido de forma permanente y no se puede deshacer. Los datos que ya están en este teléfono no se ven afectados."
+      "startOverBody": "Esta copia de seguridad no se puede abrir sin su contraseña o código de recuperación: ni tú ni nosotros podemos hacerlo. Eliminarla destruye todo su contenido de forma permanente y no se puede deshacer. Los datos que ya están en este teléfono no se ven afectados.",
+      "offline": "Sin conexión. Tus datos están a salvo en este teléfono: se sincronizarán cuando vuelvas a estar en línea.",
+      "restoreIncompleteBody_one": "Tu historial volvió, salvo {{count}} entrada que el respaldo no pudo entregar: estaba dañada. Todo lo demás se restauró.",
+      "restoreIncompleteBody_other": "Tu historial volvió, salvo {{count}} entradas que el respaldo no pudo entregar: estaban dañadas. Todo lo demás se restauró.",
+      "restoreIncompleteTitle": "Algunas entradas no se pudieron restaurar"
     },
     "ourApps": {
       "title": "Más de nosotros",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Abre casi cualquier libro: EPUB, FB2, MOBI, PDF, DjVu, DOC y cómics, más de 20 formatos en un solo estante. Lectura en voz alta, subrayados y notas que puedes exportar, sincronización sin cuenta y privacidad total: sin anuncios ni rastreadores, tu biblioteca se queda solo en tu dispositivo."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Vea cuánto queda hasta la próxima revisión, no lo que costó: aceite, filtros, líquido de frenos y correa de distribución, cada uno con su kilometraje y su fecha. Incluye 36 piezas con intervalos habituales. Sin cuenta ni servidor: el historial se queda solo en su dispositivo."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "La información de salud en Eluna cita {{count}} fuentes médicas",
       "conceptionNote": "La probabilidad de concepción específica por día sigue a Wilcox et al. (NEJM 1995) y las guías de conocimiento de la fertilidad de ASRM/ACOG. Es una estimación basada en los ciclos que has registrado, no un método anticonceptivo.",
       "phaseTipsNote": "La fisiología de las fases y los efectos descritos aquí siguen referencias clínicas revisadas por pares. Son sugerencias generales de bienestar, no un tratamiento médico.",
-      "cycleStatsNote": "Las normas de duración del ciclo y lo que se considera una variación normal siguen las guías de ACOG y la investigación revisada por pares."
+      "cycleStatsNote": "Las normas de duración del ciclo y lo que se considera una variación normal siguen las guías de ACOG y la investigación revisada por pares.",
+      "bbtNote": "La línea de cobertura y la regla de los tres días siguen las guías de StatPearls y la Clínica Mayo sobre la temperatura basal. Una subida de temperatura confirma la ovulación una vez ocurrida; no la predice.",
+      "copyLink": "Copiar enlace",
+      "linkFailedTitle": "No se pudo abrir este enlace"
+    },
+    "a11y": {
+      "addCustom": "Agregar el tuyo",
+      "addMedication": "Agregar recordatorio de medicamento",
+      "attachImage": "Adjuntar una imagen",
+      "cancelEditing": "Cancelar la edición",
+      "clearSearch": "Borrar la búsqueda",
+      "close": "Cerrar",
+      "closeLog": "Cerrar el registro",
+      "deleteDigit": "Borrar el último dígito",
+      "deleteReminder": "Eliminar este recordatorio",
+      "doneLogging": "Listo",
+      "editLogForDay": "Editar las notas de este día",
+      "editPeriodDays": "Editar los días de menstruación",
+      "goBack": "Atrás",
+      "hidePassword": "Ocultar la contraseña",
+      "nextMonth": "Mes siguiente",
+      "nextMonthShort": "Mes siguiente",
+      "openSettings": "Abrir configuración",
+      "phaseLegend": "Sobre las fases del ciclo",
+      "pickIcon": "Elegir este ícono",
+      "previousMonth": "Mes anterior",
+      "previousMonthShort": "Mes anterior",
+      "rateStars": "Calificación {{count}} de 5",
+      "removeAttachment": "Quitar la imagen adjunta",
+      "saveEditing": "Guardar los cambios",
+      "showPassword": "Mostrar la contraseña",
+      "symptomCategory": "Mostrar esta categoría",
+      "toggleReminder": "Activar o desactivar este recordatorio"
+    },
+    "errorBoundary": {
+      "action": "Reinicia la app para continuar.",
+      "dataSafe": "Tus registros están a salvo: solo falló la pantalla.",
+      "hideDetails": "Ocultar detalles",
+      "restart": "Reiniciar",
+      "showDetails": "Detalles",
+      "title": "Algo salió mal"
+    },
+    "health": {
+      "autoDesc": "Sincroniza en segundo plano al abrir la app y poco después de registrar algo. Las mismas reglas que los botones de arriba: los días solo se agregan y en Salud solo se reemplaza lo que escribió la propia Eluna.",
+      "autoTitle": "Mantener Salud al día",
+      "body": "Trae los días de menstruación y las temperaturas al despertar desde Salud, o publica las que anotas aquí para que otras apps de tu confianza las vean. No se envía nada a ningún otro lado y nada ocurre solo: únicamente cuando tocas un botón de abajo.",
+      "exportBtn": "Guardar en Salud",
+      "exported": "Se guardaron {{days}} días de menstruación y {{temps}} temperaturas en Salud.",
+      "failed": "No funcionó. Revisa Configuración → Salud → Acceso a datos y dispositivos → Eluna y permite las categorías.",
+      "footnote": "Importar nunca borra un día que hayas anotado aquí, y guardar solo reemplaza lo que Eluna escribió antes: las entradas de otras apps quedan igual.",
+      "importBtn": "Importar desde Salud",
+      "imported": "Se importaron {{days}} días de menstruación y {{temps}} temperaturas.",
+      "lastSynced": "Última sincronización: {{when}}",
+      "nothingNew": "Salud no tenía nada que la app no supiera ya.",
+      "removeBtn": "Quitar los datos de Eluna de Salud",
+      "removed": "Se quitó todo lo que Eluna escribió en Salud. Lo que anotaste tú misma en Salud queda intacto.",
+      "title": "Apple Salud"
+    },
+    "widget": {
+      "dayHeadline": "Día {{day}}",
+      "dueToday": "Se espera tu menstruación hoy",
+      "late_one": "{{count}} día de retraso",
+      "late_other": "{{count}} días de retraso",
+      "modes": {
+        "discreet": "Discreto",
+        "discreetDesc": "Muestra solo el día del ciclo: sin fase, sin cuenta regresiva, sin nada que diga para qué es la app.",
+        "full": "Completo",
+        "fullDesc": "Muestra el día del ciclo y cuánto falta para la menstruación prevista.",
+        "off": "Desactivado",
+        "offDesc": "No se publica nada. Un widget que ya esté en la pantalla de inicio quedará en blanco."
+      },
+      "untilPeriod_one": "{{count}} día para tu menstruación",
+      "untilPeriod_other": "{{count}} días para tu menstruación"
     }
   },
   "kb": {

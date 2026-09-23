@@ -23,7 +23,8 @@
       "step3": {
         "title": "Wie lange dauert deine\nPeriode?",
         "days": "Tage",
-        "nextBtn": "Weiter"
+        "nextBtn": "Weiter",
+        "saveFailed": "Dein Datum konnte nicht gesichert werden. Versuch es noch einmal — wenn es weiter scheitert, hilft meist ein Neustart der App."
       },
       "step4": {
         "title": "Wie lang ist dein\nZyklus?",
@@ -324,7 +325,9 @@
       "holdToPin": "Symptom gedrückt halten, um es anzuheften",
       "create": "Eigenes erstellen",
       "notesTab": "Notizen",
-      "notesPlaceholder": "Beschreibe deine Symptome oder Gedanken (bis zu 1000 Zeichen) ..."
+      "notesPlaceholder": "Beschreibe deine Symptome oder Gedanken (bis zu 1000 Zeichen) ...",
+      "noteSaveFailed": "Diese Notiz konnte nicht gesichert werden. Die zuletzt gesicherte Fassung ist noch da — versuche, den Text noch einmal einzugeben.",
+      "symptomSaveFailed": "Diese Eingabe konnte nicht gesichert werden und wurde zurückgenommen. Prüfe den freien Speicher und versuche es erneut."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Warum fühlst du dich so?"
+      },
+      "bbtChart": {
+        "coverline": "Coverline",
+        "dayAxis": "Zyklustag",
+        "empty": "Miss an ein paar Morgen deine Temperatur, dann erscheint hier die Kurve.",
+        "flagged": "als unzuverlässig markiert",
+        "noShiftYet": "In diesem Zyklus ist noch kein Temperaturanstieg bestätigt. Dafür braucht es sechs Basistage und drei höhere.",
+        "shiftFound": "Temperaturanstieg ab Tag {{day}} bestätigt — drei Messwerte über der Coverline.",
+        "tapHint": "Tippe auf einen Punkt, um Datum und Temperatur zu sehen.",
+        "title": "Basaltemperatur"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Von früher nach zuletzt",
+        "readout": "Zyklus ab {{date}} · {{days}} Tage",
+        "summary": "Deine letzten Zyklen im Vergleich zu deinem eigenen Median von {{median}} Tagen (Schwankung ±{{sd}}).",
+        "tapHint": "Tippe auf eine Säule, um zu sehen, wann dieser Zyklus begann. Umrandete Säulen liegen ungewöhnlich weit von deinem Median entfernt.",
+        "title": "Zykluslänge"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Backup exportieren",
         "importBackup": "Backup importieren",
         "cloudSync": "Cloud-Synchronisierung",
-        "ourApps": "Unsere anderen Apps"
+        "ourApps": "Unsere anderen Apps",
+        "health": "Apple Health",
+        "widget": "Widget auf dem Home-Bildschirm"
       },
       "footer": "Alle Daten sind verschlüsselt und nur auf diesem Gerät gespeichert",
       "resetTitle": "Alle Daten zurücksetzen",
@@ -1275,7 +1297,11 @@
       "disableNote": "Das Ausschalten der Synchronisierung löscht niemals etwas von diesem Telefon.",
       "startOver": "Passwort und Wiederherstellungscode verloren?",
       "startOverTitle": "Dieses Backup löschen und neu beginnen?",
-      "startOverBody": "Dieses Backup kann ohne sein Passwort oder seinen Wiederherstellungscode nicht geöffnet werden – weder von dir noch von uns. Beim Löschen wird alles darin dauerhaft zerstört und es kann nicht rückgängig gemacht werden. Bereits auf diesem Telefon vorhandene Daten bleiben unberührt."
+      "startOverBody": "Dieses Backup kann ohne sein Passwort oder seinen Wiederherstellungscode nicht geöffnet werden – weder von dir noch von uns. Beim Löschen wird alles darin dauerhaft zerstört und es kann nicht rückgängig gemacht werden. Bereits auf diesem Telefon vorhandene Daten bleiben unberührt.",
+      "offline": "Keine Verbindung. Deine Daten sind sicher auf diesem Telefon — der Abgleich läuft, sobald du wieder online bist.",
+      "restoreIncompleteBody_one": "Deine Historie ist zurück, bis auf {{count}} Eintrag, den die Sicherung nicht herausgeben konnte — er war beschädigt. Alles andere wurde wiederhergestellt.",
+      "restoreIncompleteBody_other": "Deine Historie ist zurück, bis auf {{count}} Einträge, die die Sicherung nicht herausgeben konnte — sie waren beschädigt. Alles andere wurde wiederhergestellt.",
+      "restoreIncompleteTitle": "Einige Einträge ließen sich nicht wiederherstellen"
     },
     "ourApps": {
       "title": "Mehr von uns",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Öffne fast jedes Buch — EPUB, FB2, MOBI, PDF, DjVu, DOC und Comics, über 20 Formate in einem Regal. Vorlesefunktion, Markierungen und Notizen zum Exportieren, Sync ohne Konto und volle Privatsphäre – keine Werbung, keine Tracker, deine Bibliothek bleibt nur auf deinem Gerät."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Sie sehen, wie viel bis zum nächsten Service bleibt, nicht was er gekostet hat: Öl, Filter, Bremsflüssigkeit und Zahnriemen, jeweils mit eigener Laufleistung und eigenem Datum. 36 Teile mit üblichen Intervallen sind bereits enthalten. Kein Konto und kein Server — die Historie bleibt nur auf Ihrem Gerät."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Die Gesundheitsinformationen in Eluna zitieren {{count}} medizinische Quellen",
       "conceptionNote": "Die tagesspezifische Empfängniswahrscheinlichkeit folgt Wilcox et al. (NEJM 1995) und den ASRM/ACOG-Empfehlungen zur Fruchtbarkeitswahrnehmung. Sie ist eine Schätzung auf Basis Ihrer erfassten Zyklen — keine Verhütungsmethode.",
       "phaseTipsNote": "Die Physiologie der Phasen und die hier beschriebenen Effekte folgen begutachteten klinischen Referenzen. Allgemeine Empfehlungen zum Wohlbefinden, keine medizinische Behandlung.",
-      "cycleStatsNote": "Die Normwerte für die Zykluslänge und was als normale Schwankung gilt, folgen den Empfehlungen von ACOG und begutachteten Studien."
+      "cycleStatsNote": "Die Normwerte für die Zykluslänge und was als normale Schwankung gilt, folgen den Empfehlungen von ACOG und begutachteten Studien.",
+      "bbtNote": "Coverline und Drei-Tage-Regel folgen den Leitlinien von StatPearls und der Mayo Clinic zur Basaltemperatur. Ein Temperaturanstieg bestätigt den Eisprung im Nachhinein; er sagt ihn nicht voraus.",
+      "copyLink": "Link kopieren",
+      "linkFailedTitle": "Dieser Link ließ sich nicht öffnen"
+    },
+    "a11y": {
+      "addCustom": "Eigenes hinzufügen",
+      "addMedication": "Medikamenten-Erinnerung hinzufügen",
+      "attachImage": "Bild anhängen",
+      "cancelEditing": "Bearbeiten abbrechen",
+      "clearSearch": "Suche löschen",
+      "close": "Schließen",
+      "closeLog": "Tagebuch schließen",
+      "deleteDigit": "Letzte Ziffer löschen",
+      "deleteReminder": "Diese Erinnerung löschen",
+      "doneLogging": "Fertig",
+      "editLogForDay": "Einträge dieses Tages bearbeiten",
+      "editPeriodDays": "Periodentage bearbeiten",
+      "goBack": "Zurück",
+      "hidePassword": "Passwort verbergen",
+      "nextMonth": "Nächster Monat",
+      "nextMonthShort": "Nächster Monat",
+      "openSettings": "Einstellungen öffnen",
+      "phaseLegend": "Über die Zyklusphasen",
+      "pickIcon": "Dieses Symbol wählen",
+      "previousMonth": "Vorheriger Monat",
+      "previousMonthShort": "Vorheriger Monat",
+      "rateStars": "Bewertung {{count}} von 5",
+      "removeAttachment": "Angehängtes Bild entfernen",
+      "saveEditing": "Änderungen sichern",
+      "showPassword": "Passwort anzeigen",
+      "symptomCategory": "Diese Kategorie anzeigen",
+      "toggleReminder": "Diese Erinnerung ein- oder ausschalten"
+    },
+    "errorBoundary": {
+      "action": "Starte die App neu, um fortzufahren.",
+      "dataSafe": "Deine Einträge sind sicher — nur die Anzeige ist gescheitert.",
+      "hideDetails": "Details ausblenden",
+      "restart": "Neu starten",
+      "showDetails": "Details",
+      "title": "Etwas ist schiefgelaufen"
+    },
+    "health": {
+      "autoDesc": "Im Hintergrund abgleichen, wenn du die App öffnest, und kurz nachdem du etwas einträgst. Dieselben Regeln wie bei den Tasten oben: Tage kommen nur hinzu, und in Health wird nur ersetzt, was Eluna selbst geschrieben hat.",
+      "autoTitle": "Health aktuell halten",
+      "body": "Hol dir Periodentage und Aufwachtemperaturen aus Health oder veröffentliche die, die du hier festhältst, damit andere Apps deines Vertrauens sie sehen. Sonst geht nichts irgendwohin, und nichts passiert von allein — nur wenn du unten eine Taste drückst.",
+      "exportBtn": "In Health sichern",
+      "exported": "In Health gesichert: {{days}} Periodentage und {{temps}} Temperaturen.",
+      "failed": "Das hat nicht geklappt. Prüfe Einstellungen → Health → Datenzugriff & Geräte → Eluna und erlaube die Kategorien.",
+      "footnote": "Ein Import löscht nie einen Tag, den du hier eingetragen hast, und beim Sichern wird nur ersetzt, was Eluna zuvor geschrieben hat — Einträge anderer Apps bleiben unberührt.",
+      "importBtn": "Aus Health importieren",
+      "imported": "Übernommen: {{days}} Periodentage und {{temps}} Temperaturen.",
+      "lastSynced": "Zuletzt abgeglichen: {{when}}",
+      "nothingNew": "In Health stand nichts, was die App nicht schon wusste.",
+      "removeBtn": "Elunas Daten aus Health entfernen",
+      "removed": "Alles, was Eluna in Health geschrieben hat, wurde entfernt. Was du in Health selbst eingetragen hast, bleibt unberührt.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Tag {{day}}",
+      "dueToday": "Deine Periode wird heute erwartet",
+      "late_one": "{{count}} Tag überfällig",
+      "late_other": "{{count}} Tage überfällig",
+      "modes": {
+        "discreet": "Dezent",
+        "discreetDesc": "Zeigt nur den Zyklustag — keine Phase, kein Countdown, nichts, was verrät, wofür die App da ist.",
+        "full": "Vollständig",
+        "fullDesc": "Zeigt den Zyklustag und wie lange es bis zur erwarteten Periode dauert.",
+        "off": "Aus",
+        "offDesc": "Es wird nichts veröffentlicht. Ein Widget, das schon auf dem Home-Bildschirm liegt, bleibt leer."
+      },
+      "untilPeriod_one": "Noch {{count}} Tag bis zur Periode",
+      "untilPeriod_other": "Noch {{count}} Tage bis zur Periode"
     }
   },
   "kb": {

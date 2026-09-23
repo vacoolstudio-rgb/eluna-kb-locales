@@ -23,7 +23,8 @@
       "step3": {
         "title": "Gaano katagal ang iyong\nregla?",
         "days": "araw",
-        "nextBtn": "Susunod"
+        "nextBtn": "Susunod",
+        "saveFailed": "Hindi na-save ang petsa mo. Subukang muli — kung tuloy-tuloy, kadalasang nakakatulong ang pag-restart ng app."
       },
       "step4": {
         "title": "Gaano kahaba ang iyong\ncycle?",
@@ -324,7 +325,9 @@
       "holdToPin": "Pindutin nang matagal ang sintomas para i-pin",
       "create": "Gumawa ng sarili mo",
       "notesTab": "Mga Tala",
-      "notesPlaceholder": "Ilarawan ang iyong mga sintomas o iniisip (hanggang 1000 character)..."
+      "notesPlaceholder": "Ilarawan ang iyong mga sintomas o iniisip (hanggang 1000 character)...",
+      "noteSaveFailed": "Hindi na-save ang notang ito. Nandiyan pa ang huling na-save mong bersyon — subukang isulat itong muli.",
+      "symptomSaveFailed": "Hindi na-save ang pag-tap na ito kaya ibinalik. Tingnan ang natitirang espasyo ng device at subukang muli."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Bakit ganito ang iyong nararamdaman?"
+      },
+      "bbtChart": {
+        "coverline": "Coverline",
+        "dayAxis": "Araw ng siklo",
+        "empty": "Sukatin ang temperatura mo sa ilang umaga at lilitaw dito ang kurba.",
+        "flagged": "minarkahang hindi maaasahan",
+        "noShiftYet": "Wala pang nakumpirmang pagtaas ng temperatura sa siklong ito. Kailangan ng anim na batayang araw at tatlong mas mataas.",
+        "shiftFound": "Nakumpirma ang pagtaas ng temperatura mula araw {{day}} — tatlong basa sa itaas ng coverline.",
+        "tapHint": "I-tap ang isang punto para makita ang petsa at temperatura nito.",
+        "title": "Batayang temperatura ng katawan"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Mula pinakaluma hanggang pinakabago",
+        "readout": "Siklong nagsimula {{date}} · {{days}} araw",
+        "summary": "Ang mga huli mong siklo laban sa sarili mong median na {{median}} araw (pagkakaiba ±{{sd}}).",
+        "tapHint": "I-tap ang isang haligi para makita kung kailan nagsimula ang siklong iyon. Ang mga may outline ay hindi pangkaraniwang malayo sa median mo.",
+        "title": "Haba ng siklo"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "I-export ang Backup",
         "importBackup": "I-import ang Backup",
         "cloudSync": "Cloud Sync",
-        "ourApps": "Iba pang app namin"
+        "ourApps": "Iba pang app namin",
+        "health": "Apple Health",
+        "widget": "Widget sa home screen"
       },
       "footer": "Lahat ng data ay naka-encrypt at nakaimbak lamang sa device na ito",
       "resetTitle": "I-reset ang lahat ng data",
@@ -1275,7 +1297,11 @@
       "disableNote": "Ang pag-off ng sync ay hindi kailanman nagbubura ng anuman sa teleponong ito.",
       "startOver": "Nawala ang password at ang recovery code?",
       "startOverTitle": "Burahin ang backup na ito at magsimulang muli?",
-      "startOverBody": "Hindi mabubuksan ang backup na ito nang wala ang password o recovery code nito — hindi mo man o namin. Ang pagbura nito ay permanenteng sisira sa lahat ng nasa loob nito, at hindi na maibabalik. Hindi ginagalaw ang data na nasa teleponong ito na."
+      "startOverBody": "Hindi mabubuksan ang backup na ito nang wala ang password o recovery code nito — hindi mo man o namin. Ang pagbura nito ay permanenteng sisira sa lahat ng nasa loob nito, at hindi na maibabalik. Hindi ginagalaw ang data na nasa teleponong ito na.",
+      "offline": "Walang koneksyon. Ligtas ang data mo sa teleponong ito — magsi-sync kapag online ka na muli.",
+      "restoreIncompleteBody_one": "Bumalik ang kasaysayan mo, maliban sa {{count}} talaang hindi naibigay ng backup — sira ito. Naibalik ang lahat ng iba pa.",
+      "restoreIncompleteBody_other": "Bumalik ang kasaysayan mo, maliban sa {{count}} talaang hindi naibigay ng backup — sira ang mga ito. Naibalik ang lahat ng iba pa.",
+      "restoreIncompleteTitle": "May mga talaang hindi naibalik"
     },
     "ourApps": {
       "title": "Higit pa mula sa amin",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Buksan ang halos anumang libro — EPUB, FB2, MOBI, PDF, DjVu, DOC at komiks, mahigit 20 format sa isang istante. Pagbasa nang malakas, mga highlight at notang puwedeng i-export, sync nang walang account, at ganap na privacy — walang ads o tracker, mananatili sa device mo lang ang aklatan mo."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Tingnan kung gaano pa ang natitira bago ang susunod na serbisyo, hindi kung magkano ang nagastos: langis, mga filter, brake fluid at timing belt, bawat isa may sariling distansya at petsa. Tatlumpu’t anim na bahagi na may karaniwang agwat ang kasama na. Walang account at walang server — nasa device mo lang ang kasaysayan."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Ang impormasyon sa kalusugan sa Eluna ay bumabanggit ng {{count}} na medikal na sanggunian",
       "conceptionNote": "Ang partikular sa araw na posibilidad ng paglilihi ay sumusunod sa Wilcox et al. (NEJM 1995) at gabay sa kamalayan sa pagkamayabong ng ASRM/ACOG. Ito ay isang tantiya mula sa iyong mga naitalang siklo — hindi paraan ng kontrasepsiyon.",
       "phaseTipsNote": "Ang physiology ng yugto at ang mga epektong inilarawan dito ay sumusunod sa peer-reviewed na klinikal na sanggunian. Mga pangkalahatang mungkahi para sa kagalingan, hindi medikal na paggamot.",
-      "cycleStatsNote": "Ang mga pamantayan sa haba ng siklo at kung ano ang itinuturing na normal na pagkakaiba-iba ay sumusunod sa gabay ng ACOG at peer-reviewed na pananaliksik."
+      "cycleStatsNote": "Ang mga pamantayan sa haba ng siklo at kung ano ang itinuturing na normal na pagkakaiba-iba ay sumusunod sa gabay ng ACOG at peer-reviewed na pananaliksik.",
+      "bbtNote": "Ang coverline at ang tatlong-araw na tuntunin ay sumusunod sa gabay ng StatPearls at Mayo Clinic tungkol sa batayang temperatura ng katawan. Kinukumpirma ng pagtaas ng temperatura ang obulasyon pagkatapos itong mangyari; hindi ito hinuhulaan.",
+      "copyLink": "Kopyahin ang link",
+      "linkFailedTitle": "Hindi mabuksan ang link na ito"
+    },
+    "a11y": {
+      "addCustom": "Magdagdag ng sarili mo",
+      "addMedication": "Magdagdag ng paalala sa gamot",
+      "attachImage": "Maglakip ng larawan",
+      "cancelEditing": "Kanselahin ang pag-edit",
+      "clearSearch": "I-clear ang paghahanap",
+      "close": "Isara",
+      "closeLog": "Isara ang talaan",
+      "deleteDigit": "Burahin ang huling digit",
+      "deleteReminder": "Burahin ang paalalang ito",
+      "doneLogging": "Tapos na",
+      "editLogForDay": "I-edit ang talaan ng araw na ito",
+      "editPeriodDays": "I-edit ang mga araw ng regla",
+      "goBack": "Bumalik",
+      "hidePassword": "Itago ang password",
+      "nextMonth": "Susunod na buwan",
+      "nextMonthShort": "Susunod na buwan",
+      "openSettings": "Buksan ang mga setting",
+      "phaseLegend": "Tungkol sa mga yugto ng siklo",
+      "pickIcon": "Piliin ang icon na ito",
+      "previousMonth": "Nakaraang buwan",
+      "previousMonthShort": "Nakaraang buwan",
+      "rateStars": "Marka {{count}} sa 5",
+      "removeAttachment": "Alisin ang nakalakip na larawan",
+      "saveEditing": "I-save ang mga pagbabago",
+      "showPassword": "Ipakita ang password",
+      "symptomCategory": "Ipakita ang kategoryang ito",
+      "toggleReminder": "Buksan o isara ang paalalang ito"
+    },
+    "errorBoundary": {
+      "action": "I-restart ang app para magpatuloy.",
+      "dataSafe": "Ligtas ang mga tala mo — ang screen lang ang nagkaproblema.",
+      "hideDetails": "Itago ang detalye",
+      "restart": "I-restart",
+      "showDetails": "Detalye",
+      "title": "May nagkamali"
+    },
+    "health": {
+      "autoDesc": "Mag-sync sa background kapag binubuksan mo ang app at ilang sandali matapos kang magtala. Pareho ang alituntunin sa mga button sa itaas: ang mga araw ay idinadagdag lang, at sa Health ay ang sinulat lang mismo ng Eluna ang pinapalitan.",
+      "autoTitle": "Panatilihing napapanahon ang Health",
+      "body": "Kunin ang mga araw ng regla at temperatura sa paggising mula sa Health, o ilathala ang mga tinatala mo rito para makita ng ibang app na pinagkakatiwalaan mo. Walang ipinapadala saan man, at walang nangyayaring kusa — kapag pinindot mo lang ang button sa ibaba.",
+      "exportBtn": "I-save sa Health",
+      "exported": "Na-save sa Health ang {{days}} araw ng regla at {{temps}} temperatura.",
+      "failed": "Hindi ito umubra. Tingnan ang Settings → Health → Data Access & Devices → Eluna at payagan ang mga kategorya.",
+      "footnote": "Ang pag-import ay hindi kailanman nagbubura ng araw na itinala mo rito, at ang pag-save ay pumapalit lang sa dati nang sinulat ng Eluna — hindi ginagalaw ang mga tala ng ibang app.",
+      "importBtn": "Mag-import mula sa Health",
+      "imported": "Na-import ang {{days}} araw ng regla at {{temps}} temperatura.",
+      "lastSynced": "Huling na-sync: {{when}}",
+      "nothingNew": "Walang laman sa Health na hindi pa alam ng app.",
+      "removeBtn": "Alisin ang data ng Eluna sa Health",
+      "removed": "Naalis na ang lahat ng isinulat ng Eluna sa Health. Buo pa rin ang mga inilagay mo mismo sa Health.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Araw {{day}}",
+      "dueToday": "Inaasahan ang regla mo ngayong araw",
+      "late_one": "{{count}} araw na huli",
+      "late_other": "{{count}} araw na huli",
+      "modes": {
+        "discreet": "Diskreto",
+        "discreetDesc": "Ipinapakita lang ang araw ng siklo — walang yugto, walang countdown, walang anumang nagsasabi kung para saan ang app.",
+        "full": "Buo",
+        "fullDesc": "Ipinapakita ang araw ng siklo at kung gaano pa katagal bago ang inaasahang regla.",
+        "off": "Naka-off",
+        "offDesc": "Walang inilalathala. Mababakante ang widget na nasa home screen mo na."
+      },
+      "untilPeriod_one": "{{count}} araw bago ang regla mo",
+      "untilPeriod_other": "{{count}} araw bago ang regla mo"
     }
   },
   "kb": {

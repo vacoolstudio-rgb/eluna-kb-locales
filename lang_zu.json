@@ -27,7 +27,8 @@
       "step3": {
         "title": "Ukuya esikhathini kwakho kuhlala isikhathi esingakanani?",
         "days": "izinsuku",
-        "nextBtn": "Okulandelayo"
+        "nextBtn": "Okulandelayo",
+        "saveFailed": "Usuku lwakho alukwazanga ukulondolozwa. Zama futhi — uma kuqhubeka, ukuqala kabusha uhlelo kuvame ukusiza."
       },
       "step4": {
         "title": "Umjikelezo wakho uhlala isikhathi esingakanani?",
@@ -328,7 +329,9 @@
       "holdToPin": "Bamba isimpawu ukuze unamathisele",
       "create": "Dala eyakho",
       "notesTab": "Amanothi",
-      "notesPlaceholder": "Chaza izimpawu zakho noma imicabango (kufika kubalingiswa abayi-1000)..."
+      "notesPlaceholder": "Chaza izimpawu zakho noma imicabango (kufika kubalingiswa abayi-1000)...",
+      "noteSaveFailed": "Leli nothi alikwazanga ukulondolozwa. Inguqulo yakho yokugcina elondoloziwe isekhona — zama ukuyibhala futhi.",
+      "symptomSaveFailed": "Lokhu kuthinta akulondolozwanga, ngakho kuhlehlisiwe. Hlola isikhala esikhona kudivayisi bese uzama futhi."
     },
     "symptoms": {
       "categories": {
@@ -672,6 +675,23 @@
         "desc_one": "Ukuhlaziya kusekelwe emijikelezweni engu-{{used}} kwengu-{{total}}. Umjikelezo owodwa ukhishiwe ezibikezelweni njengongajwayelekile.",
         "desc_other": "Ukuhlaziya kusekelwe emijikelezweni engu-{{used}} kwengu-{{total}}. Imijikelezo engu-{{excluded}} ikhishiwe ezibikezelweni njengengajwayelekile.",
         "fixBtn": "Bheka futhi Lungisa"
+      },
+      "bbtChart": {
+        "coverline": "Umugqa wokumboza",
+        "dayAxis": "Usuku lomjikelezo",
+        "empty": "Kala izinga lokushisa ezimpelasonto ezimbalwa, bese umugqa uzobonakala lapha.",
+        "flagged": "imakwe njengengathembekile",
+        "noShiftYet": "Akukaqinisekiswa ukukhuphuka kwezinga lokushisa kulo mjikelezo. Kudingeka izinsuku eziyisithupha eziyisisekelo nezintathu eziphakeme.",
+        "shiftFound": "Ukukhuphuka kwezinga lokushisa kuqinisekisiwe kusukela osukwini lwe-{{day}} — izilinganiso ezintathu ngaphezu komugqa wokumboza.",
+        "tapHint": "Thinta iphuzu ukuze ubone usuku nezinga lokushisa lwalo.",
+        "title": "Izinga lokushisa komzimba eliyisisekelo"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Kusukela kwezindala kuya kwezintsha",
+        "readout": "Umjikelezo oqale ngo-{{date}} · izinsuku ezingu-{{days}}",
+        "summary": "Imijikelezo yakho yakamuva uma iqhathaniswa nesilinganiso sakho esimaphakathi sezinsuku ezingu-{{median}} (umehluko ±{{sd}}).",
+        "tapHint": "Thinta ikholomu ukuze ubone ukuthi lowo mjikelezo waqala nini. Amakholomu anomugqa akude ngokungajwayelekile kwisilinganiso sakho.",
+        "title": "Ubude bomjikelezo"
       }
     },
     "settings": {
@@ -708,7 +728,9 @@
         "exportBackup": "Thumela Isipele",
         "importBackup": "Ngenisa Isipele",
         "cloudSync": "Ukuvumelanisa Kwefu",
-        "ourApps": "Ezinye izinhlelo zethu"
+        "ourApps": "Ezinye izinhlelo zethu",
+        "health": "Apple Health",
+        "widget": "Iwijethi esikrinini sasekhaya"
       },
       "footer": "Yonke idatha iyafihlwa futhi igcinwa kuphela kudivayisi le",
       "resetTitle": "Setha kabusha yonke idatha",
@@ -1275,7 +1297,11 @@
       "disableNote": "Ukuvala ukuvumelanisa akulokothi kususe lutho kule foni.",
       "startOver": "Ulahlekelwe iphasiwedi nekhodi yokutakula?",
       "startOverTitle": "Susa le khophi yokusekela bese uqala phansi?",
-      "startOverBody": "Le khophi yokusekela ayikwazi ukuvulwa ngaphandle kwephasiwedi yayo noma ikhodi yokutakula — hhayi nguwe, futhi hhayi thina. Ukuyisusa kubhubhisa konke okuphakathi kwayo unomphelo, futhi akunakuguqulwa. Idatha esivele ikule foni ayithintwa."
+      "startOverBody": "Le khophi yokusekela ayikwazi ukuvulwa ngaphandle kwephasiwedi yayo noma ikhodi yokutakula — hhayi nguwe, futhi hhayi thina. Ukuyisusa kubhubhisa konke okuphakathi kwayo unomphelo, futhi akunakuguqulwa. Idatha esivele ikule foni ayithintwa.",
+      "offline": "Akukho ukuxhumana. Idatha yakho iphephile kule foni — izovumelaniswa uma usubuyele ku-inthanethi.",
+      "restoreIncompleteBody_one": "Umlando wakho ubuyile, ngaphandle kokufakiwe okungu-{{count}} okungakwazanga ukunikezwa yibhekap — kwakulimele. Konke okunye kubuyisiwe.",
+      "restoreIncompleteBody_other": "Umlando wakho ubuyile, ngaphandle kokufakiwe okungu-{{count}} okungakwazanga ukunikezwa yibhekap — kwakulimele. Konke okunye kubuyisiwe.",
+      "restoreIncompleteTitle": "Okunye okufakiwe akukwazanga ukubuyiswa"
     },
     "ourApps": {
       "title": "Okunye okuvela kithi",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Vula cishe noma iyiphi incwadi — i-EPUB, i-FB2, i-MOBI, i-PDF, i-DjVu, i-DOC namahlaya, amafomethi angaphezu kuka-20 eshelufini elilodwa. Ukufunda ngokuzwakalayo, ukugqamisa namanothi ongawathumela ngaphandle, ukuvumelanisa ngaphandle kwe-akhawunti nobumfihlo obugcwele — akukho zikhangiso noma abalandeli, umtapo wakho wezincwadi uhlala kudivayisi yakho kuphela."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Bona ukuthi kusele kangakanani ukuze kulungiswe okulandelayo, hhayi ukuthi kubize malini: uwoyela, amafilitha, uketshezi lwebhuleki nebhande lesikhathi, ngakunye kunebanga nosuku lwakho. Izingxenye ezingamashumi amathathu nesithupha zinezikhathi ezijwayelekile. Awukho i-akhawunti neseva — umlando uhlala kudivayisi yakho kuphela."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Ulwazi lwezempilo ku-Eluna lucaphuna imithombo yezokwelapha engu-{{count}}",
       "conceptionNote": "Amathuba okukhulelwa asuku oluthile alandela u-Wilcox et al. (NEJM 1995) nesiqondiso sokuqwashisa ngokukhulelwa se-ASRM/ACOG. Kuyisilinganiso esisuselwa emijikelezweni oyirekhodile — akukhona indlela yokuvimbela ukukhulelwa.",
       "phaseTipsNote": "I-physiology yezigaba nemiphumela echazwe lapha ilandela izinkomba zomtholampilo ezihlolwe ontanga. Iziphakamiso jikelele zenhlalakahle, hhayi ukwelashwa kwezokwelapha.",
-      "cycleStatsNote": "Amazinga obude bomjikelezo nokuthi yini ebalwa njengokuhluka okujwayelekile kulandela isiqondiso se-ACOG nocwaningo oluhlolwe ontanga."
+      "cycleStatsNote": "Amazinga obude bomjikelezo nokuthi yini ebalwa njengokuhluka okujwayelekile kulandela isiqondiso se-ACOG nocwaningo oluhlolwe ontanga.",
+      "bbtNote": "Umugqa wokumboza nomthetho wezinsuku ezintathu kulandela iziqondiso ze-StatPearls ne-Mayo Clinic mayelana nezinga lokushisa komzimba eliyisisekelo. Ukukhuphuka kwezinga lokushisa kuqinisekisa ukukhishwa keqanda emva kokuba kwenzekile; akukubikezeli.",
+      "copyLink": "Kopisha isixhumanisi",
+      "linkFailedTitle": "Lesi sixhumanisi asikwazanga ukuvulwa"
+    },
+    "a11y": {
+      "addCustom": "Engeza okwakho",
+      "addMedication": "Engeza isikhumbuzo somuthi",
+      "attachImage": "Namathisela isithombe",
+      "cancelEditing": "Khansela ukuhlela",
+      "clearSearch": "Sula usesho",
+      "close": "Vala",
+      "closeLog": "Vala irekhodi",
+      "deleteDigit": "Susa udijithi wokugcina",
+      "deleteReminder": "Susa lesi sikhumbuzo",
+      "doneLogging": "Kwenziwe",
+      "editLogForDay": "Hlela amarekhodi alolu suku",
+      "editPeriodDays": "Hlela izinsuku zesikhathi",
+      "goBack": "Buyela emuva",
+      "hidePassword": "Fihla iphasiwedi",
+      "nextMonth": "Inyanga ezayo",
+      "nextMonthShort": "Inyanga ezayo",
+      "openSettings": "Vula izilungiselelo",
+      "phaseLegend": "Mayelana nezigaba zomjikelezo",
+      "pickIcon": "Khetha lesi sithonjana",
+      "previousMonth": "Inyanga edlule",
+      "previousMonthShort": "Inyanga edlule",
+      "rateStars": "Isilinganiso {{count}} kwezi-5",
+      "removeAttachment": "Susa isithombe esinamathiselwe",
+      "saveEditing": "Londoloza izinguquko",
+      "showPassword": "Bonisa iphasiwedi",
+      "symptomCategory": "Bonisa lesi sigaba",
+      "toggleReminder": "Vula noma vala lesi sikhumbuzo"
+    },
+    "errorBoundary": {
+      "action": "Qala kabusha uhlelo ukuze uqhubeke.",
+      "dataSafe": "Amarekhodi akho aphephile — kuphelele isikrini kuphela esehlulekile.",
+      "hideDetails": "Fihla imininingwane",
+      "restart": "Qala kabusha",
+      "showDetails": "Imininingwane",
+      "title": "Kukhona okungahambanga kahle"
+    },
+    "health": {
+      "autoDesc": "Vumelanisa ngemuva uma uvula uhlelo nangemva kwesikhashana ubhalile okuthile. Imithetho efanayo nezinkinobho ezingenhla: izinsuku ziyangezwa kuphela, futhi ku-Health kushintshwa kuphela lokho i-Eluna ekubhalile.",
+      "autoTitle": "Gcina i-Health isesikhathini",
+      "body": "Letha izinsuku zesikhathi namazinga okushisa okuvuka kusuka ku-Health, noma ushicilele lokho okubhala lapha ukuze amanye ama-app owathembayo abone. Akukho okuthunyelwa kwenye indawo, futhi akukho okwenzeka kukodwa — kuphela uma ucindezela inkinobho ngezansi.",
+      "exportBtn": "Londoloza ku-Health",
+      "exported": "Kulondolozwe izinsuku zesikhathi ezingu-{{days}} namazinga okushisa angu-{{temps}} ku-Health.",
+      "failed": "Akuzange kusebenze. Hlola Izilungiselelo → Health → Ukufinyelela Kwedatha Namadivayisi → Eluna bese uvumela izigaba.",
+      "footnote": "Ukungenisa akulokothi kususe usuku olubhale lapha, futhi ukulondoloza kushintsha kuphela lokho i-Eluna eyakubhala ngaphambili — amarekhodi amanye ama-app awathintwa.",
+      "importBtn": "Ngenisa kusuka ku-Health",
+      "imported": "Kungeniswe izinsuku zesikhathi ezingu-{{days}} namazinga okushisa angu-{{temps}}.",
+      "lastSynced": "Ukuvumelanisa kokugcina: {{when}}",
+      "nothingNew": "I-Health ibingenalutho uhlelo obeluvele lungalwazi.",
+      "removeBtn": "Susa idatha ye-Eluna ku-Health",
+      "removed": "Konke i-Eluna ekubhale ku-Health kususiwe. Lokho okufake wena ku-Health kusekhona.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Usuku {{day}}",
+      "dueToday": "Isikhathi sakho silindeleke namuhla",
+      "late_one": "Usuku olungu-{{count}} emuva kwesikhathi",
+      "late_other": "Izinsuku ezingu-{{count}} emuva kwesikhathi",
+      "modes": {
+        "discreet": "Ngokungananazi",
+        "discreetDesc": "Ibonisa usuku lomjikelezo kuphela — asikho isigaba, akukho ukubala, akukho okusho ukuthi uhlelo lolwani.",
+        "full": "Okugcwele",
+        "fullDesc": "Ibonisa usuku lomjikelezo nokuthi kusele isikhathi esingakanani kuze kufike isikhathi esilindelekile.",
+        "off": "Kuvaliwe",
+        "offDesc": "Akukho okushicilelwayo. Iwijethi esivele isesikrinini sasekhaya izoba yize."
+      },
+      "untilPeriod_one": "Usuku olungu-{{count}} kuze kufike isikhathi sakho",
+      "untilPeriod_other": "Izinsuku ezingu-{{count}} kuze kufike isikhathi sakho"
     }
   },
   "kb": {

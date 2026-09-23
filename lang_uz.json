@@ -27,7 +27,8 @@
       "step3": {
         "title": "Hayzingiz\nqancha davom etadi?",
         "days": "kun",
-        "nextBtn": "Keyingi"
+        "nextBtn": "Keyingi",
+        "saveFailed": "Sanangiz saqlanmadi. Qayta urinib ko‘ring — takrorlansa, odatda ilovani qayta ishga tushirish yordam beradi."
       },
       "step4": {
         "title": "Siklingiz\nqancha davom etadi?",
@@ -328,7 +329,9 @@
       "holdToPin": "Simptomni mahkamlash uchun ushlab turing",
       "create": "O'zingizni yarating",
       "notesTab": "Eslatmalar",
-      "notesPlaceholder": "Simptomlaringiz yoki fikrlaringizni tasvirlang (1000 belgigacha)..."
+      "notesPlaceholder": "Simptomlaringiz yoki fikrlaringizni tasvirlang (1000 belgigacha)...",
+      "noteSaveFailed": "Bu qaydni saqlab bo‘lmadi. Oxirgi saqlangan nusxa joyida — matnni qayta yozib ko‘ring.",
+      "symptomSaveFailed": "Bu bosish saqlanmadi va bekor qilindi. Qurilmadagi bo‘sh joyni tekshirib, qayta urinib ko‘ring."
     },
     "symptoms": {
       "categories": {
@@ -672,6 +675,23 @@
         "desc_one": "Tahlil {{total}} tsikldan {{used}} tasiga asoslangan. Bitta tsikl gʻayrioddiy deb bashoratlardan chiqarildi.",
         "desc_other": "Tahlil {{total}} tsikldan {{used}} tasiga asoslangan. {{excluded}} tsikl gʻayrioddiy deb bashoratlardan chiqarildi.",
         "fixBtn": "Ko'rib chiqish va tuzatish"
+      },
+      "bbtChart": {
+        "coverline": "Yopuvchi chiziq",
+        "dayAxis": "Sikl kuni",
+        "empty": "Bir necha tong haroratni o‘lchang — bu yerda egri chiziq paydo bo‘ladi.",
+        "flagged": "ishonchsiz deb belgilangan",
+        "noShiftYet": "Bu siklda harorat ko‘tarilishi hali tasdiqlanmagan. Olti asosiy kun va uchta balandroq kun kerak.",
+        "shiftFound": "{{day}}-kundan harorat ko‘tarilishi tasdiqlandi — yopuvchi chiziqdan yuqorida uchta o‘lchov.",
+        "tapHint": "Sana va haroratni ko‘rish uchun nuqtani bosing.",
+        "title": "Bazal tana harorati"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Eskidan yangiga",
+        "readout": "{{date}} boshlangan sikl · {{days}} kun",
+        "summary": "So‘nggi sikllaringiz o‘z medianangiz {{median}} kun bilan solishtirilgan (tebranish ±{{sd}}).",
+        "tapHint": "O‘sha sikl qachon boshlanganini ko‘rish uchun ustunni bosing. Chegarali ustunlar medianangizdan odatdagidan uzoqroq.",
+        "title": "Sikl uzunligi"
       }
     },
     "settings": {
@@ -708,7 +728,9 @@
         "exportBackup": "Zaxira nusxasini eksport qilish",
         "importBackup": "Zaxira nusxasini import qilish",
         "cloudSync": "Bulutli sinxronlash",
-        "ourApps": "Boshqa ilovalarimiz"
+        "ourApps": "Boshqa ilovalarimiz",
+        "health": "Apple Health",
+        "widget": "Asosiy ekrandagi vidjet"
       },
       "footer": "Barcha ma'lumotlar shifrlangan va faqat ushbu qurilmada saqlanadi",
       "resetTitle": "Barcha ma'lumotlarni tiklash",
@@ -1275,7 +1297,11 @@
       "disableNote": "Sinxronlashni o'chirish bu telefondan hech narsani o'chirmaydi.",
       "startOver": "Parol va tiklash kodini yo'qotdingizmi?",
       "startOverTitle": "Bu zaxira nusxasini o'chirib, qaytadan boshlaysizmi?",
-      "startOverBody": "Bu zaxira nusxasini paroli yoki tiklash kodisiz ochib bo'lmaydi — na siz, na biz. Uni o'chirish ichidagi hamma narsani butunlay yo'q qiladi va buni bekor qilib bo'lmaydi. Bu telefonda mavjud ma'lumotlarga tegilmaydi."
+      "startOverBody": "Bu zaxira nusxasini paroli yoki tiklash kodisiz ochib bo'lmaydi — na siz, na biz. Uni o'chirish ichidagi hamma narsani butunlay yo'q qiladi va buni bekor qilib bo'lmaydi. Bu telefonda mavjud ma'lumotlarga tegilmaydi.",
+      "offline": "Aloqa yo‘q. Ma’lumotlaringiz shu telefonda xavfsiz — internet qaytganda sinxronlanadi.",
+      "restoreIncompleteBody_one": "Tarixingiz qaytdi, zaxira nusxa bera olmagan {{count}} yozuvdan tashqari — u buzilgan edi. Qolgani tiklandi.",
+      "restoreIncompleteBody_other": "Tarixingiz qaytdi, zaxira nusxa bera olmagan {{count}} yozuvdan tashqari — ular buzilgan edi. Qolgani tiklandi.",
+      "restoreIncompleteTitle": "Ba’zi yozuvlarni tiklab bo‘lmadi"
     },
     "ourApps": {
       "title": "Bizdan yana",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Deyarli har qanday kitobni oching — EPUB, FB2, MOBI, PDF, DjVu, DOC va komikslar, bitta javonda 20 dan ortiq format. Ovoz chiqarib oʻqish, eksport qilinadigan belgilashlar va qaydlar, akkauntsiz sinxronlash va toʻliq maxfiylik — reklama va treker yoʻq, kutubxonangiz faqat qurilmangizda saqlanadi."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Keyingi texnik xizmatga qancha qolganini ko‘rasiz, qancha sarflanganini emas: moy, filtrlar, tormoz suyuqligi va GRM tasmasi — har birining o‘z masofasi va muddati bor. O‘ttiz oltita qism odatdagi oraliqlari bilan allaqachon ichida. Hisob yo‘q, server yo‘q — avtomobil tarixi faqat qurilmangizda qoladi."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Eluna'dagi sog'liq ma'lumotlari {{count}} ta tibbiy manbaga tayanadi",
       "conceptionNote": "Kunga xos homiladorlik ehtimoli Wilcox et al. (NEJM 1995) va ASRM/ACOG hosildorlikni bilish ko'rsatmalariga amal qiladi. Bu qayd etilgan tsikllaringizdan olingan baho — kontratseptiv usul emas.",
       "phaseTipsNote": "Faza fiziologiyasi va bu yerda tasvirlangan ta'sirlar taqriz qilingan klinik manbalarga amal qiladi. Umumiy salomatlik bo'yicha tavsiyalar, tibbiy davolash emas.",
-      "cycleStatsNote": "Tsikl uzunligi me'yorlari va nima normal o'zgarish hisoblanishi ACOG ko'rsatmalari va taqriz qilingan tadqiqotlarga amal qiladi."
+      "cycleStatsNote": "Tsikl uzunligi me'yorlari va nima normal o'zgarish hisoblanishi ACOG ko'rsatmalari va taqriz qilingan tadqiqotlarga amal qiladi.",
+      "bbtNote": "Yopuvchi chiziq va uch kun qoidasi bazal tana harorati bo‘yicha StatPearls va Mayo Clinic tavsiyalariga asoslanadi. Harorat ko‘tarilishi ovulyatsiya sodir bo‘lgach uni tasdiqlaydi; oldindan aytmaydi.",
+      "copyLink": "Havolani nusxalash",
+      "linkFailedTitle": "Bu havolani ochib bo‘lmadi"
+    },
+    "a11y": {
+      "addCustom": "O‘zingiznikini qo‘shing",
+      "addMedication": "Dori eslatmasini qo‘shish",
+      "attachImage": "Rasm biriktirish",
+      "cancelEditing": "Tahrirni bekor qilish",
+      "clearSearch": "Qidiruvni tozalash",
+      "close": "Yopish",
+      "closeLog": "Kundalikni yopish",
+      "deleteDigit": "Oxirgi raqamni o‘chirish",
+      "deleteReminder": "Bu eslatmani o‘chirish",
+      "doneLogging": "Tayyor",
+      "editLogForDay": "Shu kunning yozuvlarini tahrirlash",
+      "editPeriodDays": "Hayz kunlarini tahrirlash",
+      "goBack": "Orqaga",
+      "hidePassword": "Parolni yashirish",
+      "nextMonth": "Keyingi oy",
+      "nextMonthShort": "Keyingi oy",
+      "openSettings": "Sozlamalarni ochish",
+      "phaseLegend": "Sikl bosqichlari haqida",
+      "pickIcon": "Shu belgini tanlash",
+      "previousMonth": "Oldingi oy",
+      "previousMonthShort": "Oldingi oy",
+      "rateStars": "Baho 5 dan {{count}}",
+      "removeAttachment": "Biriktirilgan rasmni olib tashlash",
+      "saveEditing": "O‘zgarishlarni saqlash",
+      "showPassword": "Parolni ko‘rsatish",
+      "symptomCategory": "Shu turkumni ko‘rsatish",
+      "toggleReminder": "Bu eslatmani yoqish yoki o‘chirish"
+    },
+    "errorBoundary": {
+      "action": "Davom etish uchun ilovani qayta ishga tushiring.",
+      "dataSafe": "Yozuvlaringiz xavfsiz — faqat ekran ishlamay qoldi.",
+      "hideDetails": "Tafsilotlarni yashirish",
+      "restart": "Qayta ishga tushirish",
+      "showDetails": "Tafsilotlar",
+      "title": "Nimadir noto‘g‘ri ketdi"
+    },
+    "health": {
+      "autoDesc": "Ilovani ochganingizda va biror narsa yozganingizdan sal keyin fonda sinxronlash. Yuqoridagi tugmalar bilan bir xil qoida: kunlar faqat qo‘shiladi, Health’da esa faqat Eluna o‘zi yozgani almashtiriladi.",
+      "autoTitle": "Health’ni yangilab turing",
+      "body": "Hayz kunlari va uyg‘ongandagi haroratni Health’dan olib keling yoki shu yerda yozganlaringizni e’lon qiling — ishonadigan boshqa ilovalar ko‘rsin. Boshqa hech qayerga hech narsa yuborilmaydi va o‘z-o‘zidan hech narsa bo‘lmaydi — faqat quyidagi tugmani bosganingizda.",
+      "exportBtn": "Health’ga saqlash",
+      "exported": "Health’ga {{days}} hayz kuni va {{temps}} harorat saqlandi.",
+      "failed": "Bo‘lmadi. Sozlamalar → Salomatlik → Ma’lumotlarga kirish va qurilmalar → Eluna bo‘limini tekshirib, turkumlarga ruxsat bering.",
+      "footnote": "Import bu yerda belgilangan kunni hech qachon o‘chirmaydi, saqlash esa faqat Eluna ilgari yozganini almashtiradi — boshqa ilovalarning yozuvlari tegilmaydi.",
+      "importBtn": "Health’dan import qilish",
+      "imported": "{{days}} hayz kuni va {{temps}} harorat import qilindi.",
+      "lastSynced": "Oxirgi sinxronlash: {{when}}",
+      "nothingNew": "Health’da ilova bilmagan narsa yo‘q edi.",
+      "removeBtn": "Eluna ma’lumotlarini Health’dan olib tashlash",
+      "removed": "Eluna Health’ga yozgan hamma narsa olib tashlandi. Health’ga o‘zingiz kiritganlaringiz joyida.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "{{day}}-kun",
+      "dueToday": "Hayz bugun kutilmoqda",
+      "late_one": "{{count}} kun kechikish",
+      "late_other": "{{count}} kun kechikish",
+      "modes": {
+        "discreet": "Bildirmasdan",
+        "discreetDesc": "Faqat sikl kunini ko‘rsatadi — bosqich yo‘q, sanoq yo‘q, ilova nima uchunligini aytadigan hech narsa yo‘q.",
+        "full": "To‘liq",
+        "fullDesc": "Sikl kunini va kutilayotgan hayzgacha qancha qolganini ko‘rsatadi.",
+        "off": "O‘chirilgan",
+        "offDesc": "Hech narsa e’lon qilinmaydi. Asosiy ekrandagi vidjet bo‘sh bo‘lib qoladi."
+      },
+      "untilPeriod_one": "Hayzgacha {{count}} kun",
+      "untilPeriod_other": "Hayzgacha {{count}} kun"
     }
   },
   "kb": {

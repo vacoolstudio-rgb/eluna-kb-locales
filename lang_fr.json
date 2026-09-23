@@ -23,7 +23,8 @@
       "step3": {
         "title": "Combien de temps durent\nvos règles ?",
         "days": "jours",
-        "nextBtn": "Suivant"
+        "nextBtn": "Suivant",
+        "saveFailed": "Votre date n’a pas pu être enregistrée. Réessayez — si cela persiste, redémarrer l’app aide en général."
       },
       "step4": {
         "title": "Quelle est la durée de votre\ncycle ?",
@@ -324,7 +325,9 @@
       "holdToPin": "Maintenez un symptôme pour l’épingler",
       "create": "Créer le vôtre",
       "notesTab": "Notes",
-      "notesPlaceholder": "Décrivez vos symptômes ou vos pensées (jusqu’à 1000 caractères)..."
+      "notesPlaceholder": "Décrivez vos symptômes ou vos pensées (jusqu’à 1000 caractères)...",
+      "noteSaveFailed": "Cette note n’a pas pu être enregistrée. Votre dernière version enregistrée est toujours là — essayez de la saisir à nouveau.",
+      "symptomSaveFailed": "Cette sélection n’a pas pu être enregistrée et a été annulée. Vérifiez l’espace libre de votre appareil et réessayez."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Pourquoi vous sentez-vous ainsi ?"
+      },
+      "bbtChart": {
+        "coverline": "Ligne de couverture",
+        "dayAxis": "Jour du cycle",
+        "empty": "Prenez votre température quelques matins et la courbe apparaîtra ici.",
+        "flagged": "marquée peu fiable",
+        "noShiftYet": "Aucun décalage thermique confirmé dans ce cycle pour l’instant. Il faut six jours de base puis trois plus hauts.",
+        "shiftFound": "Décalage thermique confirmé à partir du jour {{day}} — trois relevés au-dessus de la ligne de couverture.",
+        "tapHint": "Touchez un point pour voir sa date et sa température.",
+        "title": "Température basale"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Du plus ancien au plus récent",
+        "readout": "Cycle débuté le {{date}} · {{days}} jours",
+        "summary": "Vos cycles récents, comparés à votre propre médiane de {{median}} jours (variation ±{{sd}}).",
+        "tapHint": "Touchez une colonne pour voir quand ce cycle a commencé. Les colonnes entourées s’écartent inhabituellement de votre médiane.",
+        "title": "Durée du cycle"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Exporter la sauvegarde",
         "importBackup": "Importer la sauvegarde",
         "cloudSync": "Synchronisation cloud",
-        "ourApps": "Nos autres applications"
+        "ourApps": "Nos autres applications",
+        "health": "Apple Santé",
+        "widget": "Widget sur l’écran d’accueil"
       },
       "footer": "Toutes les données sont chiffrées et stockées uniquement sur cet appareil",
       "resetTitle": "Réinitialiser toutes les données",
@@ -1275,7 +1297,11 @@
       "disableNote": "Désactiver la synchronisation ne supprime jamais rien de ce téléphone.",
       "startOver": "Vous avez perdu le mot de passe et le code de récupération ?",
       "startOverTitle": "Supprimer cette sauvegarde et recommencer ?",
-      "startOverBody": "Cette sauvegarde ne peut pas être ouverte sans son mot de passe ou son code de récupération — ni par vous, ni par nous. La supprimer détruit définitivement tout son contenu, et cette action est irréversible. Les données déjà présentes sur ce téléphone ne sont pas touchées."
+      "startOverBody": "Cette sauvegarde ne peut pas être ouverte sans son mot de passe ou son code de récupération — ni par vous, ni par nous. La supprimer détruit définitivement tout son contenu, et cette action est irréversible. Les données déjà présentes sur ce téléphone ne sont pas touchées.",
+      "offline": "Pas de connexion. Vos données sont en sécurité sur ce téléphone — la synchronisation se fera dès votre retour en ligne.",
+      "restoreIncompleteBody_one": "Votre historique est de retour, sauf {{count}} entrée que la sauvegarde n’a pas pu restituer : elle était endommagée. Tout le reste a été restauré.",
+      "restoreIncompleteBody_other": "Votre historique est de retour, sauf {{count}} entrées que la sauvegarde n’a pas pu restituer : elles étaient endommagées. Tout le reste a été restauré.",
+      "restoreIncompleteTitle": "Certaines entrées n’ont pas pu être restaurées"
     },
     "ourApps": {
       "title": "Plus de nos apps",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Ouvrez presque tous les livres — EPUB, FB2, MOBI, PDF, DjVu, DOC et bandes dessinées, plus de 20 formats sur une seule étagère. Lecture à voix haute, surlignages et notes exportables, synchronisation sans compte et confidentialité totale — aucune publicité ni traceur, votre bibliothèque reste uniquement sur votre appareil."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Voyez ce qu’il reste avant la prochaine révision, pas ce qu’elle a coûté : huile, filtres, liquide de frein et courroie de distribution, chacun avec son kilométrage et sa date. Trente-six pièces aux intervalles habituels sont incluses. Sans compte ni serveur — l’historique reste sur votre appareil."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Les informations de santé dans Eluna citent {{count}} sources médicales",
       "conceptionNote": "La probabilité de conception propre à chaque jour suit Wilcox et al. (NEJM 1995) et les recommandations de l'ASRM/ACOG sur la connaissance de la fertilité. Il s'agit d'une estimation basée sur vos cycles enregistrés — non d'une méthode contraceptive.",
       "phaseTipsNote": "La physiologie des phases et les effets décrits ici suivent des références cliniques évaluées par des pairs. Suggestions générales de bien-être, non un traitement médical.",
-      "cycleStatsNote": "Les normes de longueur du cycle et ce qui constitue une variation normale suivent les recommandations de l'ACOG et des études évaluées par des pairs."
+      "cycleStatsNote": "Les normes de longueur du cycle et ce qui constitue une variation normale suivent les recommandations de l'ACOG et des études évaluées par des pairs.",
+      "bbtNote": "La ligne de couverture et la règle des trois jours suivent les recommandations de StatPearls et de la Mayo Clinic sur la température basale. Une hausse de température confirme l’ovulation après coup ; elle ne la prédit pas.",
+      "copyLink": "Copier le lien",
+      "linkFailedTitle": "Ce lien n’a pas pu être ouvert"
+    },
+    "a11y": {
+      "addCustom": "Ajouter le vôtre",
+      "addMedication": "Ajouter un rappel de médicament",
+      "attachImage": "Joindre une image",
+      "cancelEditing": "Annuler la modification",
+      "clearSearch": "Effacer la recherche",
+      "close": "Fermer",
+      "closeLog": "Fermer le journal",
+      "deleteDigit": "Effacer le dernier chiffre",
+      "deleteReminder": "Supprimer ce rappel",
+      "doneLogging": "Terminé",
+      "editLogForDay": "Modifier les notes de ce jour",
+      "editPeriodDays": "Modifier les jours de règles",
+      "goBack": "Retour",
+      "hidePassword": "Masquer le mot de passe",
+      "nextMonth": "Mois suivant",
+      "nextMonthShort": "Mois suivant",
+      "openSettings": "Ouvrir les réglages",
+      "phaseLegend": "À propos des phases du cycle",
+      "pickIcon": "Choisir cette icône",
+      "previousMonth": "Mois précédent",
+      "previousMonthShort": "Mois précédent",
+      "rateStars": "Note {{count}} sur 5",
+      "removeAttachment": "Retirer l’image jointe",
+      "saveEditing": "Enregistrer les modifications",
+      "showPassword": "Afficher le mot de passe",
+      "symptomCategory": "Afficher cette catégorie",
+      "toggleReminder": "Activer ou désactiver ce rappel"
+    },
+    "errorBoundary": {
+      "action": "Redémarrez l’app pour continuer.",
+      "dataSafe": "Vos données sont intactes — seul l’affichage a échoué.",
+      "hideDetails": "Masquer les détails",
+      "restart": "Redémarrer",
+      "showDetails": "Détails",
+      "title": "Un problème est survenu"
+    },
+    "health": {
+      "autoDesc": "Synchroniser en arrière-plan à l’ouverture de l’app et peu après chaque saisie. Mêmes règles que les boutons ci-dessus : les jours sont uniquement ajoutés, et dans Santé seules les entrées écrites par Eluna sont remplacées.",
+      "autoTitle": "Garder Santé à jour",
+      "body": "Importez vos jours de règles et vos températures au réveil depuis Santé, ou publiez celles que vous notez ici pour que d’autres apps de confiance les voient. Rien n’est envoyé ailleurs, et rien ne se fait tout seul — uniquement quand vous appuyez sur un bouton ci-dessous.",
+      "exportBtn": "Enregistrer dans Santé",
+      "exported": "{{days}} jours de règles et {{temps}} températures enregistrés dans Santé.",
+      "failed": "Cela n’a pas fonctionné. Vérifiez Réglages → Santé → Accès aux données et appareils → Eluna, et autorisez les catégories.",
+      "footnote": "L’importation ne supprime jamais un jour noté ici, et l’enregistrement ne remplace que ce qu’Eluna avait écrit — les entrées des autres apps restent intactes.",
+      "importBtn": "Importer depuis Santé",
+      "imported": "{{days}} jours de règles et {{temps}} températures importés.",
+      "lastSynced": "Dernière synchronisation : {{when}}",
+      "nothingNew": "Santé n’avait rien que l’app ne sache déjà.",
+      "removeBtn": "Retirer les données d’Eluna de Santé",
+      "removed": "Tout ce qu’Eluna avait écrit dans Santé a été retiré. Ce que vous avez saisi dans Santé reste intact.",
+      "title": "Apple Santé"
+    },
+    "widget": {
+      "dayHeadline": "Jour {{day}}",
+      "dueToday": "Vos règles sont attendues aujourd’hui",
+      "late_one": "{{count}} jour de retard",
+      "late_other": "{{count}} jours de retard",
+      "modes": {
+        "discreet": "Discret",
+        "discreetDesc": "Affiche seulement le jour du cycle — aucune phase, aucun décompte, rien qui dise à quoi sert l’app.",
+        "full": "Complet",
+        "fullDesc": "Affiche le jour du cycle et le temps restant avant vos règles.",
+        "off": "Désactivé",
+        "offDesc": "Rien n’est publié. Un widget déjà posé sur votre écran d’accueil devient vide."
+      },
+      "untilPeriod_one": "{{count}} jour avant vos règles",
+      "untilPeriod_other": "{{count}} jours avant vos règles"
     }
   },
   "kb": {

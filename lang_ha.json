@@ -23,7 +23,8 @@
       "step3": {
         "title": "Kwana nawa ne\nal'adarki take yi?",
         "days": "kwanaki",
-        "nextBtn": "Na gaba"
+        "nextBtn": "Na gaba",
+        "saveFailed": "Ba a iya ajiye kwanan watanka ba. Sake gwadawa — idan ya ci gaba, sake kunna manhajar yakan taimaka."
       },
       "step4": {
         "title": "Tsawon kwanaki nawa ne\nzagayenki?",
@@ -324,7 +325,9 @@
       "holdToPin": "Riƙe alamar domin liƙawa",
       "create": "Ƙirƙiri naki",
       "notesTab": "Bayanan kula",
-      "notesPlaceholder": "Bayyana alamominki ko tunaninki (har zuwa haruffa 1000)..."
+      "notesPlaceholder": "Bayyana alamominki ko tunaninki (har zuwa haruffa 1000)...",
+      "noteSaveFailed": "Ba a iya ajiye wannan rubutu ba. Sigar ƙarshe da aka ajiye tana nan — gwada rubuta ta kuma.",
+      "symptomSaveFailed": "Ba a ajiye wannan taɓawa ba, saboda haka an janye ta. Duba sarari a na'urar ka sannan ka sake gwadawa."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Me ya sa kike jin haka?"
+      },
+      "bbtChart": {
+        "coverline": "Layin rufewa",
+        "dayAxis": "Ranar zagayowar",
+        "empty": "Auna yanayin zafinka safiya kaɗan, sannan layin zai bayyana a nan.",
+        "flagged": "an yi masa alama a matsayin mara tabbas",
+        "noShiftYet": "Har yanzu ba a tabbatar da hawan zafi a wannan zagayowar ba. Ana buƙatar kwanaki shida na tushe da uku masu sama.",
+        "shiftFound": "An tabbatar da hawan zafi tun rana {{day}} — auna uku sama da layin rufewa.",
+        "tapHint": "Taɓa wani tsinin don ganin kwanan wata da yanayin zafi.",
+        "title": "Yanayin zafin jiki na tushe"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Daga tsofaffi zuwa sababbi",
+        "readout": "Zagayowar da ta fara {{date}} · kwanaki {{days}}",
+        "summary": "Zagayowarka na baya-bayan nan idan aka kwatanta da tsakiyarka na kwanaki {{median}} (bambanci ±{{sd}}).",
+        "tapHint": "Taɓa shafi don ganin lokacin da wannan zagayowar ta fara. Shafuka masu baki suna nesa da tsakiyarka fiye da yadda aka saba.",
+        "title": "Tsawon zagayowar"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Fitar da madadin bayanai",
         "importBackup": "Shigo da madadin bayanai",
         "cloudSync": "Daidaita Girgije",
-        "ourApps": "Sauran manhajojinmu"
+        "ourApps": "Sauran manhajojinmu",
+        "health": "Apple Health",
+        "widget": "Widget a allon gida"
       },
       "footer": "An ɓoye duk bayanai kuma ana adana su ne kawai a wannan na'urar",
       "resetTitle": "Goge duk bayanai",
@@ -1275,7 +1297,11 @@
       "disableNote": "Kashe daidaitawa ba ya taɓa share komai daga wannan wayar.",
       "startOver": "Kin rasa kalmar sirri da lambar dawowa?",
       "startOverTitle": "Share wannan ajiya kuma a sake farawa?",
-      "startOverBody": "Ba za a iya buɗe wannan ajiya ba tare da kalmar sirrinta ko lambar dawowa ba — ba kai ba, ba mu ba. Share ta yana halaka duk abin da ke cikinta na dindindin, kuma ba za a iya juyar da shi ba. Ba a taɓa bayanan da ke wannan wayar ba."
+      "startOverBody": "Ba za a iya buɗe wannan ajiya ba tare da kalmar sirrinta ko lambar dawowa ba — ba kai ba, ba mu ba. Share ta yana halaka duk abin da ke cikinta na dindindin, kuma ba za a iya juyar da shi ba. Ba a taɓa bayanan da ke wannan wayar ba.",
+      "offline": "Babu haɗin yanar gizo. Bayananka suna nan lafiya a wannan wayar — za a daidaita su lokacin da ka dawo kan layi.",
+      "restoreIncompleteBody_one": "Tarihinka ya dawo, sai dai shigarwa {{count}} da madogarar ba ta iya mika ba — ta lalace. Duk sauran an dawo da su.",
+      "restoreIncompleteBody_other": "Tarihinka ya dawo, sai dai shigarwa {{count}} da madogarar ba ta iya mika ba — sun lalace. Duk sauran an dawo da su.",
+      "restoreIncompleteTitle": "Ba a iya dawo da wasu shigarwa ba"
     },
     "ourApps": {
       "title": "Ƙari daga gare mu",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Ana buɗe kusan kowane littafi — EPUB, FB2, MOBI, PDF, DjVu, DOC da littattafan zane, fiye da tsari 20 a kan shiryayye ɗaya. Karatu da murya, alamomi da bayanan da ake iya fitarwa, daidaitawa ba tare da asusu ba da cikakken sirri — babu talla ko mabiya, ɗakin karatunka yana zama a na’urarka kaɗai."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Ka ga nawa ya rage zuwa gyaran gaba, ba nawa aka kashe ba: mai, matatun, ruwan birki da bel ɗin lokaci, kowanne da nisansa da kwanan watansa. Sassa talatin da shida tare da lokutan da aka saba suna cikin manhajar. Babu asusu, babu uwar garke — tarihin motarka yana nan a na’urarka kaɗai."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Bayanan lafiya a cikin Eluna suna ambaton tushen likita {{count}}",
       "conceptionNote": "Yiwuwar daukar ciki ta takamaiman rana tana bin Wilcox et al. (NEJM 1995) da jagorancin sanin haihuwa na ASRM/ACOG. Ƙididdiga ce daga zagayowar da kika rubuta — ba hanyar hana daukar ciki ba.",
       "phaseTipsNote": "Ilimin halittar lokaci da tasirin da aka bayyana a nan suna bin nassoshin asibiti da masana suka sake dubawa. Shawarwarin lafiya na gaba ɗaya ne, ba maganin likita ba.",
-      "cycleStatsNote": "Ma'aunin tsayin zagayowar da abin da ake ƙidaya a matsayin bambancin al'ada suna bin jagorancin ACOG da bincike da masana suka sake dubawa."
+      "cycleStatsNote": "Ma'aunin tsayin zagayowar da abin da ake ƙidaya a matsayin bambancin al'ada suna bin jagorancin ACOG da bincike da masana suka sake dubawa.",
+      "bbtNote": "Layin rufewa da ƙa'idar kwana uku sun bi jagororin StatPearls da Mayo Clinic game da yanayin zafin jiki na tushe. Hawan zafi yana tabbatar da fitowar kwai bayan ta faru; ba ya hasashen ta.",
+      "copyLink": "Kwafi hanyar haɗi",
+      "linkFailedTitle": "Ba a iya buɗe wannan hanyar haɗi ba"
+    },
+    "a11y": {
+      "addCustom": "Ƙara naka",
+      "addMedication": "Ƙara tunatarwar magani",
+      "attachImage": "Haɗa hoto",
+      "cancelEditing": "Soke gyara",
+      "clearSearch": "Share bincike",
+      "close": "Rufe",
+      "closeLog": "Rufe littafin rubutu",
+      "deleteDigit": "Share lamba ta ƙarshe",
+      "deleteReminder": "Share wannan tunatarwa",
+      "doneLogging": "An gama",
+      "editLogForDay": "Gyara rubuce-rubucen wannan rana",
+      "editPeriodDays": "Gyara kwanakin al'ada",
+      "goBack": "Koma baya",
+      "hidePassword": "Ɓoye kalmar sirri",
+      "nextMonth": "Watan gaba",
+      "nextMonthShort": "Watan gaba",
+      "openSettings": "Buɗe saituna",
+      "phaseLegend": "Game da matakan zagayowar",
+      "pickIcon": "Zaɓi wannan alama",
+      "previousMonth": "Watan da ya gabata",
+      "previousMonthShort": "Watan da ya gabata",
+      "rateStars": "Ƙima {{count}} daga 5",
+      "removeAttachment": "Cire hoton da aka haɗa",
+      "saveEditing": "Ajiye canje-canje",
+      "showPassword": "Nuna kalmar sirri",
+      "symptomCategory": "Nuna wannan rukuni",
+      "toggleReminder": "Kunna ko kashe wannan tunatarwa"
+    },
+    "errorBoundary": {
+      "action": "Sake kunna manhajar don ci gaba.",
+      "dataSafe": "Rubuce-rubucenka na nan lafiya — allon kaɗai ya gaza.",
+      "hideDetails": "Ɓoye cikakkun bayanai",
+      "restart": "Sake kunnawa",
+      "showDetails": "Cikakkun bayanai",
+      "title": "Wani abu bai yi daidai ba"
+    },
+    "health": {
+      "autoDesc": "A daidaita a bayan fage lokacin da ka buɗe manhajar da kuma jim kaɗan bayan ka rubuta wani abu. Ka'idoji iri ɗaya da maɓallan da ke sama: ana ƙara kwanaki kawai, kuma a Health ana maye gurbin abin da Eluna ta rubuta kaɗai.",
+      "autoTitle": "Ka sa Health ya kasance sabo",
+      "body": "Ka kawo kwanakin al'ada da yanayin zafi na lokacin tashi daga Health, ko ka buga waɗanda kake rubutawa a nan domin sauran manhajojin da ka amince da su su gani. Ba a aika komai wani wuri ba, kuma ba abin da ke faruwa da kansa — sai idan ka danna maɓalli a ƙasa.",
+      "exportBtn": "Ajiye a Health",
+      "exported": "An ajiye kwanakin al'ada {{days}} da yanayin zafi {{temps}} a Health.",
+      "failed": "Bai yi aiki ba. Duba Saituna → Health → Samun Bayanai da Na'urori → Eluna sannan ka ba da izini ga rukunan.",
+      "footnote": "Shigowa ba ta taɓa share ranar da ka rubuta a nan ba, ajiyewa kuma na maye gurbin abin da Eluna ta rubuta a baya kaɗai — rubuce-rubucen sauran manhajoji ba a taɓa su.",
+      "importBtn": "Shigo daga Health",
+      "imported": "An shigo da kwanakin al'ada {{days}} da yanayin zafi {{temps}}.",
+      "lastSynced": "Daidaitawa ta ƙarshe: {{when}}",
+      "nothingNew": "Babu abin da Health ke da shi wanda manhajar ba ta sani ba.",
+      "removeBtn": "Cire bayanan Eluna daga Health",
+      "removed": "An cire duk abin da Eluna ta rubuta a Health. Abin da kai kanka ka shigar a Health bai canza ba.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Rana {{day}}",
+      "dueToday": "Ana sa ran al'adarka yau",
+      "late_one": "Jinkiri kwana {{count}}",
+      "late_other": "Jinkiri kwanaki {{count}}",
+      "modes": {
+        "discreet": "A hankali",
+        "discreetDesc": "Yana nuna ranar zagayowar kaɗai — babu mataki, babu ƙidaya, babu abin da ke bayyana manufar manhajar.",
+        "full": "Cikakke",
+        "fullDesc": "Yana nuna ranar zagayowar da yawan kwanakin da suka rage kafin al'adar da ake sa ran.",
+        "off": "A kashe",
+        "offDesc": "Ba a buga komai. Widget ɗin da ke kan allon gida zai zama fanko."
+      },
+      "untilPeriod_one": "Kwana {{count}} zuwa al'adarka",
+      "untilPeriod_other": "Kwanaki {{count}} zuwa al'adarka"
     }
   },
   "kb": {

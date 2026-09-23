@@ -27,7 +27,8 @@
       "step3": {
         "title": "Ako dlho trvá vaša\nmenštruácia?",
         "days": "dni",
-        "nextBtn": "Ďalej"
+        "nextBtn": "Ďalej",
+        "saveFailed": "Dátum sa nepodarilo uložiť. Skúste to znova — ak to nepomáha, zvyčajne pomôže reštart aplikácie."
       },
       "step4": {
         "title": "Ako dlhý je váš\ncyklus?",
@@ -328,7 +329,9 @@
       "holdToPin": "Podržte symptóm na pripnutie",
       "create": "Vytvorte si vlastný",
       "notesTab": "Poznámky",
-      "notesPlaceholder": "Opíšte svoje symptómy alebo myšlienky (do 1000 znakov)..."
+      "notesPlaceholder": "Opíšte svoje symptómy alebo myšlienky (do 1000 znakov)...",
+      "noteSaveFailed": "Poznámku sa nepodarilo uložiť. Posledná uložená verzia zostáva — skúste text napísať znova.",
+      "symptomSaveFailed": "Toto ťuknutie sa neuložilo a bolo vrátené späť. Skontrolujte voľné miesto v zariadení a skúste to znova."
     },
     "symptoms": {
       "categories": {
@@ -678,6 +681,23 @@
         "desc_many": "Analýza vychádza z {{used}} z {{total}} cyklov. {{excluded}} cyklu bolo z predpovedí vyradených ako neobvyklé.",
         "desc_other": "Analýza vychádza z {{used}} z {{total}} cyklov. {{excluded}} cyklov bolo z predpovedí vyradených ako neobvyklých.",
         "fixBtn": "Preskúmať a opraviť"
+      },
+      "bbtChart": {
+        "coverline": "Krycia čiara",
+        "dayAxis": "Deň cyklu",
+        "empty": "Merajte teplotu niekoľko rán po sebe a objaví sa tu krivka.",
+        "flagged": "označené ako nespoľahlivé",
+        "noShiftYet": "Teplotný skok v tomto cykle zatiaľ nie je potvrdený. Treba šesť základných dní a tri vyššie.",
+        "shiftFound": "Teplotný skok potvrdený od {{day}}. dňa — tri merania nad kryciou čiarou.",
+        "tapHint": "Ťuknutím na bod zobrazíte jeho dátum a teplotu.",
+        "title": "Bazálna teplota"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Od najstarších po najnovšie",
+        "readout": "Cyklus od {{date}} · {{days}} dní",
+        "summary": "Vaše posledné cykly oproti vášmu mediánu {{median}} dní (rozptyl ±{{sd}}).",
+        "tapHint": "Ťuknutím na stĺpec zistíte, kedy sa ten cyklus začal. Stĺpce s obrysom ležia nezvyčajne ďaleko od vášho mediánu.",
+        "title": "Dĺžka cyklu"
       }
     },
     "settings": {
@@ -714,7 +734,9 @@
         "exportBackup": "Exportovať zálohu",
         "importBackup": "Importovať zálohu",
         "cloudSync": "Synchronizácia s cloudom",
-        "ourApps": "Naše ďalšie aplikácie"
+        "ourApps": "Naše ďalšie aplikácie",
+        "health": "Apple Health",
+        "widget": "Widget na ploche"
       },
       "footer": "Všetky údaje sú šifrované a uložené iba na tomto zariadení",
       "resetTitle": "Obnoviť všetky údaje",
@@ -933,7 +955,8 @@
       "sourcesTitle": "Lekárske zdroje",
       "sourcesIntro": "Referenčné rozsahy a normy cyklu použité v tejto správe vychádzajú z nasledujúcich klinických zdrojov.",
       "excludedCycles_one": "{{count}} cyklus bol vylúčený z výpočtu priemernej dĺžky, pretože jeho hodnoty boli anomálne.",
-      "excludedCycles_other": "{{count}} cyklov bolo vylúčených z výpočtu priemernej dĺžky, pretože ich hodnoty boli anomálne."
+      "excludedCycles_other": "{{count}} cyklov bolo vylúčených z výpočtu priemernej dĺžky, pretože ich hodnoty boli anomálne.",
+      "excludedCycles_few": "{{count}} cykly boli z výpočtu priemernej dĺžky vylúčené, pretože ich hodnoty boli anomálne."
     },
     "analytics": {
       "pulseTitle": "Meranie pulzu...",
@@ -1281,7 +1304,13 @@
       "disableNote": "Vypnutie synchronizácie nikdy nič neodstráni z tohto telefónu.",
       "startOver": "Stratili ste heslo aj obnovovací kód?",
       "startOverTitle": "Odstrániť túto zálohu a začať odznova?",
-      "startOverBody": "Túto zálohu nemožno otvoriť bez hesla alebo obnovovacieho kódu — ani vy, ani my. Jej odstránením sa všetko v nej natrvalo zničí a nemožno to vrátiť späť. Dáta, ktoré už sú v tomto telefóne, sa nedotknú."
+      "startOverBody": "Túto zálohu nemožno otvoriť bez hesla alebo obnovovacieho kódu — ani vy, ani my. Jej odstránením sa všetko v nej natrvalo zničí a nemožno to vrátiť späť. Dáta, ktoré už sú v tomto telefóne, sa nedotknú.",
+      "offline": "Bez pripojenia. Vaše údaje sú v bezpečí v tomto telefóne — synchronizácia prebehne, keď budete znova online.",
+      "restoreIncompleteBody_one": "História je späť, okrem {{count}} záznamu, ktorý záloha nedokázala odovzdať — bol poškodený. Všetko ostatné bolo obnovené.",
+      "restoreIncompleteBody_few": "História je späť, okrem {{count}} záznamov, ktoré záloha nedokázala odovzdať — boli poškodené. Všetko ostatné bolo obnovené.",
+      "restoreIncompleteBody_many": "História je späť, okrem {{count}} záznamu, ktorý záloha nedokázala odovzdať — bol poškodený. Všetko ostatné bolo obnovené.",
+      "restoreIncompleteBody_other": "História je späť, okrem {{count}} záznamov, ktoré záloha nedokázala odovzdať — boli poškodené. Všetko ostatné bolo obnovené.",
+      "restoreIncompleteTitle": "Niektoré záznamy sa nepodarilo obnoviť"
     },
     "ourApps": {
       "title": "Ďalšie od nás",
@@ -1306,6 +1335,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Otvorte takmer každú knihu — EPUB, FB2, MOBI, PDF, DjVu, DOC aj komiksy, vyše 20 formátov v jednej knižnici. Čítanie nahlas, zvýraznenia a poznámky s exportom, synchronizácia bez účtu a plné súkromie — žiadne reklamy ani sledovače, vaša knižnica zostáva len vo vašom zariadení."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Uvidíte, koľko zostáva do najbližšej údržby, nie koľko stála: olej, filtre, brzdová kvapalina a rozvodový remeň, každý s vlastným nájazdom a dátumom. Tridsaťšesť dielov s bežnými intervalmi je už vnútri. Bez účtu a bez servera — história auta zostáva len vo vašom zariadení."
       }
     },
     "tips": {
@@ -1333,7 +1366,85 @@
       "footer_other": "Zdravotné informácie v aplikácii Eluna citujú {{count}} lekárskych zdrojov",
       "conceptionNote": "Pravdepodobnosť počatia špecifická pre daný deň vychádza z Wilcox et al. (NEJM 1995) a usmernení ASRM/ACOG o uvedomovaní si plodnosti. Ide o odhad z vašich zaznamenaných cyklov — nie o antikoncepčnú metódu.",
       "phaseTipsNote": "Fyziológia fázy a účinky opísané tu vychádzajú z recenzovaných klinických zdrojov. Ide o všeobecné odporúčania pre pohodu, nie o lekársku liečbu.",
-      "cycleStatsNote": "Normy dĺžky cyklu a to, čo sa považuje za normálnu variabilitu, vychádzajú z usmernení ACOG a recenzovaného výskumu."
+      "cycleStatsNote": "Normy dĺžky cyklu a to, čo sa považuje za normálnu variabilitu, vychádzajú z usmernení ACOG a recenzovaného výskumu.",
+      "bbtNote": "Krycia čiara a pravidlo troch dní vychádzajú z odporúčaní StatPearls a Mayo Clinic k bazálnej telesnej teplote. Vzostup teploty potvrdzuje ovuláciu až po tom, čo nastala; nepredpovedá ju.",
+      "copyLink": "Kopírovať odkaz",
+      "linkFailedTitle": "Tento odkaz sa nepodarilo otvoriť",
+      "countLabel_few": "{{count}} odkazy",
+      "footer_few": "Zdravotné informácie v Elune citujú {{count}} lekárske zdroje"
+    },
+    "a11y": {
+      "addCustom": "Pridať vlastné",
+      "addMedication": "Pridať pripomienku lieku",
+      "attachImage": "Priložiť obrázok",
+      "cancelEditing": "Zrušiť úpravy",
+      "clearSearch": "Vymazať hľadanie",
+      "close": "Zavrieť",
+      "closeLog": "Zavrieť denník",
+      "deleteDigit": "Zmazať poslednú číslicu",
+      "deleteReminder": "Zmazať túto pripomienku",
+      "doneLogging": "Hotovo",
+      "editLogForDay": "Upraviť záznamy z tohto dňa",
+      "editPeriodDays": "Upraviť dni menštruácie",
+      "goBack": "Späť",
+      "hidePassword": "Skryť heslo",
+      "nextMonth": "Ďalší mesiac",
+      "nextMonthShort": "Ďalší mesiac",
+      "openSettings": "Otvoriť nastavenia",
+      "phaseLegend": "O fázach cyklu",
+      "pickIcon": "Vybrať túto ikonu",
+      "previousMonth": "Predchádzajúci mesiac",
+      "previousMonthShort": "Predchádzajúci mesiac",
+      "rateStars": "Hodnotenie {{count}} z 5",
+      "removeAttachment": "Odstrániť priložený obrázok",
+      "saveEditing": "Uložiť zmeny",
+      "showPassword": "Zobraziť heslo",
+      "symptomCategory": "Zobraziť túto kategóriu",
+      "toggleReminder": "Zapnúť alebo vypnúť túto pripomienku"
+    },
+    "errorBoundary": {
+      "action": "Ak chcete pokračovať, reštartujte aplikáciu.",
+      "dataSafe": "Vaše záznamy sú v poriadku — zlyhala len obrazovka.",
+      "hideDetails": "Skryť podrobnosti",
+      "restart": "Reštartovať",
+      "showDetails": "Podrobnosti",
+      "title": "Niečo sa pokazilo"
+    },
+    "health": {
+      "autoDesc": "Synchronizovať na pozadí pri otvorení aplikácie a krátko po novom zázname. Rovnaké pravidlá ako pri tlačidlách vyššie: dni sa iba pridávajú a v Health sa nahrádzajú len záznamy samotnej Eluny.",
+      "autoTitle": "Udržiavať Health aktuálny",
+      "body": "Preneste dni menštruácie a ranné teploty z Health, alebo zverejnite tie, ktoré si vediete tu, aby ich videli ďalšie aplikácie, ktorým dôverujete. Nikam inam sa nič neposiela a nič sa nedeje samo — iba keď stlačíte tlačidlo nižšie.",
+      "exportBtn": "Uložiť do Health",
+      "exported": "Do Health uložené dni menštruácie: {{days}}, teploty: {{temps}}.",
+      "failed": "Nepodarilo sa. Skontrolujte: Nastavenia → Zdravie → Prístup k údajom a zariadenia → Eluna — a povoľte potrebné kategórie.",
+      "footnote": "Import nikdy nezmaže deň, ktorý ste si zapísali tu, a ukladanie nahrádza len to, čo predtým zapísala Eluna — záznamy iných aplikácií zostávajú nedotknuté.",
+      "importBtn": "Importovať z Health",
+      "imported": "Prenesené dni menštruácie: {{days}}, teploty: {{temps}}.",
+      "lastSynced": "Posledná synchronizácia: {{when}}",
+      "nothingNew": "V Health nebolo nič, čo by aplikácia už nepoznala.",
+      "removeBtn": "Odstrániť údaje Eluny z Health",
+      "removed": "Všetko, čo Eluna zapísala do Health, bolo odstránené. Záznamy, ktoré ste urobili priamo v Health, zostávajú nedotknuté.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "{{day}}. deň",
+      "dueToday": "Menštruácia sa čaká dnes",
+      "late_one": "meškanie {{count}} deň",
+      "late_few": "meškanie {{count}} dni",
+      "late_many": "meškanie {{count}} dňa",
+      "late_other": "meškanie {{count}} dní",
+      "modes": {
+        "discreet": "Diskrétne",
+        "discreetDesc": "Ukazuje len deň cyklu — žiadna fáza, žiadne odpočítavanie, nič, čo by prezradilo, na čo aplikácia slúži.",
+        "full": "Plne",
+        "fullDesc": "Ukazuje deň cyklu a koľko zostáva do očakávanej menštruácie.",
+        "off": "Vypnuté",
+        "offDesc": "Nič sa nezverejňuje. Widget, ktorý už na ploche máte, zostane prázdny."
+      },
+      "untilPeriod_one": "{{count}} deň do menštruácie",
+      "untilPeriod_few": "{{count}} dni do menštruácie",
+      "untilPeriod_many": "{{count}} dňa do menštruácie",
+      "untilPeriod_other": "{{count}} dní do menštruácie"
     }
   },
   "kb": {

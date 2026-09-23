@@ -23,7 +23,8 @@
       "step3": {
         "title": "Kỳ kinh của bạn\nkéo dài bao lâu?",
         "days": "ngày",
-        "nextBtn": "Tiếp theo"
+        "nextBtn": "Tiếp theo",
+        "saveFailed": "Không lưu được ngày của bạn. Hãy thử lại — nếu vẫn vậy, khởi động lại ứng dụng thường sẽ giúp."
       },
       "step4": {
         "title": "Chu kỳ của bạn\ndài bao lâu?",
@@ -324,7 +325,9 @@
       "holdToPin": "Nhấn giữ triệu chứng để ghim",
       "create": "Tạo mục riêng",
       "notesTab": "Ghi chú",
-      "notesPlaceholder": "Mô tả triệu chứng hoặc suy nghĩ của bạn (tối đa 1000 ký tự)..."
+      "notesPlaceholder": "Mô tả triệu chứng hoặc suy nghĩ của bạn (tối đa 1000 ký tự)...",
+      "noteSaveFailed": "Không lưu được ghi chú này. Bản đã lưu gần nhất vẫn còn — bạn thử nhập lại nhé.",
+      "symptomSaveFailed": "Thao tác chạm này không lưu được và đã được hoàn tác. Hãy kiểm tra dung lượng trống của máy rồi thử lại."
     },
     "symptoms": {
       "categories": {
@@ -665,6 +668,23 @@
       },
       "explanation": {
         "title": "Vì sao bạn cảm thấy như vậy?"
+      },
+      "bbtChart": {
+        "coverline": "Đường phủ",
+        "dayAxis": "Ngày của chu kỳ",
+        "empty": "Đo nhiệt độ vài buổi sáng và đường cong sẽ hiện ra ở đây.",
+        "flagged": "được đánh dấu là không đáng tin",
+        "noShiftYet": "Chu kỳ này chưa xác nhận được bước nhảy nhiệt. Cần sáu ngày nền và ba ngày cao hơn.",
+        "shiftFound": "Xác nhận bước nhảy nhiệt từ ngày {{day}} — ba lần đo trên đường phủ.",
+        "tapHint": "Chạm vào một điểm để xem ngày và nhiệt độ.",
+        "title": "Nhiệt độ cơ thể cơ bản"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Từ cũ nhất đến mới nhất",
+        "readout": "Chu kỳ bắt đầu {{date}} · {{days}} ngày",
+        "summary": "Các chu kỳ gần đây của bạn so với trung vị của chính bạn là {{median}} ngày (dao động ±{{sd}}).",
+        "tapHint": "Chạm vào một cột để xem chu kỳ đó bắt đầu khi nào. Cột có viền nằm xa trung vị của bạn hơn bình thường.",
+        "title": "Độ dài chu kỳ"
       }
     },
     "settings": {
@@ -701,7 +721,9 @@
         "exportBackup": "Xuất bản sao lưu",
         "importBackup": "Nhập bản sao lưu",
         "cloudSync": "Đồng bộ đám mây",
-        "ourApps": "Ứng dụng khác của chúng tôi"
+        "ourApps": "Ứng dụng khác của chúng tôi",
+        "health": "Apple Sức khỏe",
+        "widget": "Tiện ích trên màn hình chính"
       },
       "footer": "Mọi dữ liệu đều được mã hóa và chỉ lưu trên thiết bị này",
       "resetTitle": "Đặt lại toàn bộ dữ liệu",
@@ -1272,7 +1294,10 @@
       "disableNote": "Tắt đồng bộ không bao giờ xóa bất cứ thứ gì khỏi điện thoại này.",
       "startOver": "Mất cả mật khẩu và mã khôi phục?",
       "startOverTitle": "Xóa bản sao lưu này và bắt đầu lại?",
-      "startOverBody": "Bản sao lưu này không thể mở nếu không có mật khẩu hoặc mã khôi phục của nó — cả bạn lẫn chúng tôi đều không thể. Xóa nó sẽ hủy vĩnh viễn mọi thứ bên trong và không thể hoàn tác. Dữ liệu đã có trên điện thoại này không bị đụng đến."
+      "startOverBody": "Bản sao lưu này không thể mở nếu không có mật khẩu hoặc mã khôi phục của nó — cả bạn lẫn chúng tôi đều không thể. Xóa nó sẽ hủy vĩnh viễn mọi thứ bên trong và không thể hoàn tác. Dữ liệu đã có trên điện thoại này không bị đụng đến.",
+      "offline": "Không có kết nối. Dữ liệu của bạn vẫn an toàn trên máy này — sẽ đồng bộ khi bạn có mạng trở lại.",
+      "restoreIncompleteBody_other": "Lịch sử của bạn đã trở lại, trừ {{count}} mục mà bản sao lưu không thể trao — chúng đã hỏng. Mọi thứ còn lại đều được khôi phục.",
+      "restoreIncompleteTitle": "Một số mục không khôi phục được"
     },
     "ourApps": {
       "title": "Thêm từ chúng tôi",
@@ -1297,6 +1322,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Mở gần như mọi cuốn sách — EPUB, FB2, MOBI, PDF, DjVu, DOC và truyện tranh, hơn 20 định dạng trên cùng một kệ. Đọc thành tiếng, đánh dấu và ghi chú có thể xuất ra, đồng bộ không cần tài khoản và quyền riêng tư tuyệt đối — không quảng cáo, không trình theo dõi, thư viện chỉ nằm trên thiết bị của bạn."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Xem còn bao nhiêu đến lần bảo dưỡng tới, không phải đã tốn bao nhiêu: dầu máy, lọc, dầu phanh và dây cam, mỗi thứ có quãng đường và ngày riêng. Ba mươi sáu bộ phận với chu kỳ thông thường đã có sẵn. Không tài khoản, không máy chủ — lịch sử xe chỉ nằm trên thiết bị của bạn."
       }
     },
     "tips": {
@@ -1324,7 +1353,77 @@
       "footer_other": "Thông tin sức khỏe trong Eluna trích dẫn {{count}} nguồn y khoa",
       "conceptionNote": "Xác suất thụ thai theo từng ngày cụ thể tuân theo Wilcox et al. (NEJM 1995) và hướng dẫn nhận biết khả năng sinh sản của ASRM/ACOG. Đây là ước tính từ các chu kỳ bạn đã ghi lại, không phải là phương pháp tránh thai.",
       "phaseTipsNote": "Sinh lý học các giai đoạn và các tác động được mô tả ở đây tuân theo các tài liệu tham khảo lâm sàng được bình duyệt. Đây là các gợi ý chăm sóc sức khỏe tổng quát, không phải điều trị y tế.",
-      "cycleStatsNote": "Các chuẩn về độ dài chu kỳ và mức được coi là biến động bình thường tuân theo hướng dẫn của ACOG và nghiên cứu được bình duyệt."
+      "cycleStatsNote": "Các chuẩn về độ dài chu kỳ và mức được coi là biến động bình thường tuân theo hướng dẫn của ACOG và nghiên cứu được bình duyệt.",
+      "bbtNote": "Đường phủ và quy tắc ba ngày theo hướng dẫn của StatPearls và Mayo Clinic về nhiệt độ cơ thể cơ bản. Nhiệt độ tăng xác nhận rụng trứng sau khi nó đã xảy ra, chứ không dự báo trước.",
+      "copyLink": "Sao chép liên kết",
+      "linkFailedTitle": "Không mở được liên kết này"
+    },
+    "a11y": {
+      "addCustom": "Thêm mục của bạn",
+      "addMedication": "Thêm nhắc nhở uống thuốc",
+      "attachImage": "Đính kèm ảnh",
+      "cancelEditing": "Hủy chỉnh sửa",
+      "clearSearch": "Xóa tìm kiếm",
+      "close": "Đóng",
+      "closeLog": "Đóng nhật ký",
+      "deleteDigit": "Xóa chữ số cuối",
+      "deleteReminder": "Xóa nhắc nhở này",
+      "doneLogging": "Xong",
+      "editLogForDay": "Sửa ghi chép của ngày này",
+      "editPeriodDays": "Sửa những ngày hành kinh",
+      "goBack": "Quay lại",
+      "hidePassword": "Ẩn mật khẩu",
+      "nextMonth": "Tháng sau",
+      "nextMonthShort": "Tháng sau",
+      "openSettings": "Mở cài đặt",
+      "phaseLegend": "Về các giai đoạn của chu kỳ",
+      "pickIcon": "Chọn biểu tượng này",
+      "previousMonth": "Tháng trước",
+      "previousMonthShort": "Tháng trước",
+      "rateStars": "Đánh giá {{count}} trên 5",
+      "removeAttachment": "Gỡ ảnh đã đính kèm",
+      "saveEditing": "Lưu thay đổi",
+      "showPassword": "Hiện mật khẩu",
+      "symptomCategory": "Hiện nhóm này",
+      "toggleReminder": "Bật hoặc tắt nhắc nhở này"
+    },
+    "errorBoundary": {
+      "action": "Hãy khởi động lại ứng dụng để tiếp tục.",
+      "dataSafe": "Dữ liệu của bạn vẫn an toàn — chỉ màn hình gặp lỗi.",
+      "hideDetails": "Ẩn chi tiết",
+      "restart": "Khởi động lại",
+      "showDetails": "Chi tiết",
+      "title": "Đã xảy ra lỗi"
+    },
+    "health": {
+      "autoDesc": "Đồng bộ nền khi bạn mở ứng dụng và ngay sau khi bạn ghi điều gì đó. Cùng quy tắc với các nút ở trên: ngày chỉ được thêm vào, và trong Sức khỏe chỉ thay thế những gì chính Eluna đã ghi.",
+      "autoTitle": "Giữ Sức khỏe luôn mới",
+      "body": "Mang những ngày hành kinh và nhiệt độ lúc thức dậy từ Sức khỏe về, hoặc công bố những gì bạn ghi ở đây để các ứng dụng khác mà bạn tin tưởng có thể thấy. Không có gì được gửi đi nơi khác và không có gì tự xảy ra — chỉ khi bạn bấm nút bên dưới.",
+      "exportBtn": "Lưu vào Sức khỏe",
+      "exported": "Đã lưu {{days}} ngày hành kinh và {{temps}} nhiệt độ vào Sức khỏe.",
+      "failed": "Chưa được. Hãy kiểm tra Cài đặt → Sức khỏe → Truy cập dữ liệu và thiết bị → Eluna rồi cho phép các mục.",
+      "footnote": "Nhập vào không bao giờ xóa ngày bạn đã ghi ở đây, còn lưu ra chỉ thay thế những gì Eluna từng ghi — mục của ứng dụng khác vẫn nguyên vẹn.",
+      "importBtn": "Nhập từ Sức khỏe",
+      "imported": "Đã nhập {{days}} ngày hành kinh và {{temps}} nhiệt độ.",
+      "lastSynced": "Đồng bộ gần nhất: {{when}}",
+      "nothingNew": "Sức khỏe không có gì mà ứng dụng chưa biết.",
+      "removeBtn": "Gỡ dữ liệu của Eluna khỏi Sức khỏe",
+      "removed": "Mọi thứ Eluna ghi vào Sức khỏe đã được gỡ. Những gì bạn tự nhập trong Sức khỏe vẫn nguyên vẹn.",
+      "title": "Apple Sức khỏe"
+    },
+    "widget": {
+      "dayHeadline": "Ngày {{day}}",
+      "dueToday": "Kỳ kinh dự kiến hôm nay",
+      "late_other": "Trễ {{count}} ngày",
+      "modes": {
+        "discreet": "Kín đáo",
+        "discreetDesc": "Chỉ hiện ngày của chu kỳ — không giai đoạn, không đếm ngược, không gì tiết lộ ứng dụng dùng để làm gì.",
+        "full": "Đầy đủ",
+        "fullDesc": "Hiện ngày của chu kỳ và còn bao lâu đến kỳ kinh dự kiến.",
+        "off": "Tắt",
+        "offDesc": "Không công bố gì cả. Tiện ích đã có trên màn hình chính sẽ trống."
+      },
+      "untilPeriod_other": "Còn {{count}} ngày đến kỳ kinh"
     }
   },
   "kb": {

@@ -23,7 +23,8 @@
       "step3": {
         "title": "Hány napig tart a\nmenstruációd?",
         "days": "nap",
-        "nextBtn": "Tovább"
+        "nextBtn": "Tovább",
+        "saveFailed": "A dátumot nem sikerült menteni. Próbáld újra — ha továbbra sem megy, általában segít az alkalmazás újraindítása."
       },
       "step4": {
         "title": "Milyen hosszú a\nciklusod?",
@@ -324,7 +325,9 @@
       "holdToPin": "Tartsd nyomva a rögzítéshez",
       "create": "Saját létrehozása",
       "notesTab": "Jegyzetek",
-      "notesPlaceholder": "Írd le a tüneteidet vagy gondolataidat (legfeljebb 1000 karakter)..."
+      "notesPlaceholder": "Írd le a tüneteidet vagy gondolataidat (legfeljebb 1000 karakter)...",
+      "noteSaveFailed": "A jegyzetet nem sikerült menteni. A legutóbb mentett változat megvan — próbáld meg újra beírni.",
+      "symptomSaveFailed": "Ez a koppintás nem mentődött el, ezért visszavontuk. Ellenőrizd a készülék szabad helyét, és próbáld újra."
     },
     "symptoms": {
       "categories": {
@@ -668,6 +671,23 @@
       },
       "explanation": {
         "title": "Miért érzed így magad?"
+      },
+      "bbtChart": {
+        "coverline": "Fedővonal",
+        "dayAxis": "Ciklusnap",
+        "empty": "Mérd meg a hőmérsékleted néhány reggelen, és itt megjelenik a görbe.",
+        "flagged": "megbízhatatlannak jelölve",
+        "noShiftYet": "Ebben a ciklusban még nincs megerősített hőemelkedés. Hat alapnap és három magasabb kell hozzá.",
+        "shiftFound": "Hőemelkedés megerősítve a(z) {{day}}. naptól — három mérés a fedővonal felett.",
+        "tapHint": "Koppints egy pontra a dátum és a hőmérséklet megtekintéséhez.",
+        "title": "Bazális testhőmérséklet"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "A legrégebbitől a legújabbig",
+        "readout": "{{date}}-án kezdődött ciklus · {{days}} nap",
+        "summary": "A legutóbbi ciklusaid a saját {{median}} napos mediánodhoz mérve (szórás ±{{sd}}).",
+        "tapHint": "Koppints egy oszlopra, hogy lásd, mikor kezdődött az a ciklus. A körvonalas oszlopok szokatlanul messze esnek a mediánodtól.",
+        "title": "Ciklushossz"
       }
     },
     "settings": {
@@ -704,7 +724,9 @@
         "exportBackup": "Biztonsági mentés exportálása",
         "importBackup": "Biztonsági mentés importálása",
         "cloudSync": "Felhőszinkronizálás",
-        "ourApps": "Egyéb alkalmazásaink"
+        "ourApps": "Egyéb alkalmazásaink",
+        "health": "Apple Health",
+        "widget": "Widget a kezdőképernyőn"
       },
       "footer": "Minden adat titkosítva van, és kizárólag ezen az eszközön tárolódik",
       "resetTitle": "Összes adat törlése",
@@ -1275,7 +1297,11 @@
       "disableNote": "A szinkronizálás kikapcsolása soha nem töröl semmit erről a telefonról.",
       "startOver": "Elvesztetted a jelszót és a helyreállítási kódot is?",
       "startOverTitle": "Törlöd ezt a biztonsági mentést, és kezded elölről?",
-      "startOverBody": "Ez a biztonsági mentés nem nyitható meg a jelszava vagy helyreállítási kódja nélkül – sem általad, sem általunk. A törlése véglegesen megsemmisít mindent, ami benne van, és nem vonható vissza. A telefonon már meglévő adatokat ez nem érinti."
+      "startOverBody": "Ez a biztonsági mentés nem nyitható meg a jelszava vagy helyreállítási kódja nélkül – sem általad, sem általunk. A törlése véglegesen megsemmisít mindent, ami benne van, és nem vonható vissza. A telefonon már meglévő adatokat ez nem érinti.",
+      "offline": "Nincs kapcsolat. Az adataid biztonságban vannak ezen a telefonon — a szinkronizálás megtörténik, amint újra online leszel.",
+      "restoreIncompleteBody_one": "Az előzményeid visszatértek, kivéve {{count}} bejegyzést, amelyet a biztonsági mentés nem tudott átadni — sérült volt. Minden más helyreállt.",
+      "restoreIncompleteBody_other": "Az előzményeid visszatértek, kivéve {{count}} bejegyzést, amelyeket a biztonsági mentés nem tudott átadni — sérültek voltak. Minden más helyreállt.",
+      "restoreIncompleteTitle": "Néhány bejegyzést nem sikerült helyreállítani"
     },
     "ourApps": {
       "title": "Továbbiak tőlünk",
@@ -1300,6 +1326,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Nyiss meg szinte bármilyen könyvet — EPUB, FB2, MOBI, PDF, DjVu, DOC és képregények, több mint 20 formátum egy polcon. Felolvasás, exportálható kiemelések és jegyzetek, szinkronizálás fiók nélkül és teljes adatvédelem – nincs reklám és nincs nyomkövető, a könyvtárad csak a készülékeden marad."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Látod, mennyi van hátra a következő szervizig, nem azt, mennyibe került: olaj, szűrők, fékfolyadék és vezérműszíj, mindegyik saját futásteljesítménnyel és dátummal. Harminchat alkatrész a szokásos intervallumokkal már benne van. Fiók és szerver nélkül — az előzmények csak a készülékeden maradnak."
       }
     },
     "tips": {
@@ -1327,7 +1357,79 @@
       "footer_other": "Az Eluna egészségügyi információi {{count}} orvosi forrásra hivatkoznak",
       "conceptionNote": "A napspecifikus fogamzási valószínűség a Wilcox et al. (NEJM 1995) tanulmányt és az ASRM/ACOG termékenységtudatossági útmutatását követi. Ez a rögzített ciklusaiból származó becslés — nem fogamzásgátló módszer.",
       "phaseTipsNote": "A fázisok fiziológiája és az itt leírt hatások szakértők által lektorált klinikai forrásokat követnek. Általános jólléti javaslatok, nem orvosi kezelés.",
-      "cycleStatsNote": "A ciklushossz normái és az, hogy mi számít normális ingadozásnak, az ACOG útmutatását és szakértők által lektorált kutatásokat követnek."
+      "cycleStatsNote": "A ciklushossz normái és az, hogy mi számít normális ingadozásnak, az ACOG útmutatását és szakértők által lektorált kutatásokat követnek.",
+      "bbtNote": "A fedővonal és a háromnapos szabály a StatPearls és a Mayo Clinic bazális testhőmérsékletre vonatkozó ajánlásait követi. A hőemelkedés utólag erősíti meg az ovulációt; nem jelzi előre.",
+      "copyLink": "Hivatkozás másolása",
+      "linkFailedTitle": "Ezt a hivatkozást nem sikerült megnyitni"
+    },
+    "a11y": {
+      "addCustom": "Adj hozzá sajátot",
+      "addMedication": "Gyógyszer-emlékeztető hozzáadása",
+      "attachImage": "Kép csatolása",
+      "cancelEditing": "Szerkesztés megszakítása",
+      "clearSearch": "Keresés törlése",
+      "close": "Bezárás",
+      "closeLog": "Napló bezárása",
+      "deleteDigit": "Utolsó számjegy törlése",
+      "deleteReminder": "Emlékeztető törlése",
+      "doneLogging": "Kész",
+      "editLogForDay": "A nap bejegyzéseinek szerkesztése",
+      "editPeriodDays": "Menstruációs napok szerkesztése",
+      "goBack": "Vissza",
+      "hidePassword": "Jelszó elrejtése",
+      "nextMonth": "Következő hónap",
+      "nextMonthShort": "Következő hónap",
+      "openSettings": "Beállítások megnyitása",
+      "phaseLegend": "A ciklus fázisairól",
+      "pickIcon": "Ennek az ikonnak a választása",
+      "previousMonth": "Előző hónap",
+      "previousMonthShort": "Előző hónap",
+      "rateStars": "Értékelés: {{count}} az 5-ből",
+      "removeAttachment": "Csatolt kép eltávolítása",
+      "saveEditing": "Változtatások mentése",
+      "showPassword": "Jelszó megjelenítése",
+      "symptomCategory": "Kategória megjelenítése",
+      "toggleReminder": "Emlékeztető be- vagy kikapcsolása"
+    },
+    "errorBoundary": {
+      "action": "A folytatáshoz indítsd újra az alkalmazást.",
+      "dataSafe": "A bejegyzéseid biztonságban vannak — csak a képernyő hibázott.",
+      "hideDetails": "Részletek elrejtése",
+      "restart": "Újraindítás",
+      "showDetails": "Részletek",
+      "title": "Valami hiba történt"
+    },
+    "health": {
+      "autoDesc": "Szinkronizálás a háttérben, amikor megnyitod az alkalmazást, és nem sokkal azután, hogy rögzítesz valamit. Ugyanazok a szabályok, mint a fenti gomboknál: a napok csak hozzáadódnak, a Health-ben pedig csak az cserélődik, amit maga az Eluna írt.",
+      "autoTitle": "A Health maradjon naprakész",
+      "body": "Hozd át a menstruációs napokat és az ébredési hőmérsékleteket a Health-ből, vagy tedd közzé azokat, amiket itt vezetsz, hogy más, általad megbízhatónak tartott appok is lássák. Máshová semmi nem megy, és magától sem történik semmi — csak amikor megnyomsz egy gombot alább.",
+      "exportBtn": "Mentés a Health-be",
+      "exported": "A Health-be mentve: {{days}} menstruációs nap és {{temps}} hőmérséklet.",
+      "failed": "Nem sikerült. Nézd meg: Beállítások → Health → Adathozzáférés és eszközök → Eluna, és engedélyezd a kategóriákat.",
+      "footnote": "Az importálás soha nem töröl itt rögzített napot, a mentés pedig csak azt cseréli le, amit korábban az Eluna írt — a többi app bejegyzéseihez nem nyúl.",
+      "importBtn": "Importálás a Health-ből",
+      "imported": "Importálva: {{days}} menstruációs nap és {{temps}} hőmérséklet.",
+      "lastSynced": "Utolsó szinkronizálás: {{when}}",
+      "nothingNew": "A Health-ben nem volt semmi, amit az alkalmazás ne tudott volna már.",
+      "removeBtn": "Az Eluna adatainak eltávolítása a Health-ből",
+      "removed": "Minden, amit az Eluna a Health-be írt, eltávolítva. Amit te magad rögzítettél a Health-ben, érintetlen marad.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "{{day}}. nap",
+      "dueToday": "A menstruációd ma várható",
+      "late_one": "{{count}} nap késés",
+      "late_other": "{{count}} nap késés",
+      "modes": {
+        "discreet": "Diszkrét",
+        "discreetDesc": "Csak a ciklusnapot mutatja — se fázis, se visszaszámlálás, semmi, ami elárulná, mire való az app.",
+        "full": "Teljes",
+        "fullDesc": "A ciklusnapot mutatja, és azt, mennyi van hátra a várt menstruációig.",
+        "off": "Kikapcsolva",
+        "offDesc": "Semmi nem kerül közzétételre. A kezdőképernyőn már meglévő widget üresen marad."
+      },
+      "untilPeriod_one": "{{count}} nap a menstruációdig",
+      "untilPeriod_other": "{{count}} nap a menstruációdig"
     }
   },
   "kb": {

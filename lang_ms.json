@@ -23,7 +23,8 @@
       "step3": {
         "title": "Berapa lamakah tempoh\nhaid anda?",
         "days": "hari",
-        "nextBtn": "Seterusnya"
+        "nextBtn": "Seterusnya",
+        "saveFailed": "Tarikh anda tidak dapat disimpan. Cuba lagi — jika masih gagal, memulakan semula aplikasi biasanya membantu."
       },
       "step4": {
         "title": "Berapa panjangkah\nkitaran anda?",
@@ -324,7 +325,9 @@
       "holdToPin": "Tekan lama simptom untuk sematkan",
       "create": "Cipta sendiri",
       "notesTab": "Nota",
-      "notesPlaceholder": "Terangkan simptom atau fikiran anda (sehingga 1000 aksara)..."
+      "notesPlaceholder": "Terangkan simptom atau fikiran anda (sehingga 1000 aksara)...",
+      "noteSaveFailed": "Nota ini tidak dapat disimpan. Versi terakhir yang disimpan masih ada — cuba tulis semula.",
+      "symptomSaveFailed": "Ketikan ini tidak disimpan dan telah dibatalkan. Semak ruang kosong pada peranti anda dan cuba lagi."
     },
     "symptoms": {
       "categories": {
@@ -665,6 +668,23 @@
       },
       "explanation": {
         "title": "Mengapa anda berasa begini?"
+      },
+      "bbtChart": {
+        "coverline": "Garis penutup",
+        "dayAxis": "Hari kitaran",
+        "empty": "Ukur suhu anda beberapa pagi dan lengkungnya akan muncul di sini.",
+        "flagged": "ditanda kurang boleh dipercayai",
+        "noShiftYet": "Kenaikan suhu dalam kitaran ini belum disahkan. Perlu enam hari asas dan tiga hari yang lebih tinggi.",
+        "shiftFound": "Kenaikan suhu disahkan dari hari {{day}} — tiga bacaan di atas garis penutup.",
+        "tapHint": "Ketik satu titik untuk melihat tarikh dan suhunya.",
+        "title": "Suhu badan basal"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Daripada terlama kepada terbaharu",
+        "readout": "Kitaran bermula {{date}} · {{days}} hari",
+        "summary": "Kitaran terkini anda berbanding median anda sendiri, {{median}} hari (variasi ±{{sd}}).",
+        "tapHint": "Ketik bar untuk melihat bila kitaran itu bermula. Bar bergaris luar berada luar biasa jauh daripada median anda.",
+        "title": "Panjang kitaran"
       }
     },
     "settings": {
@@ -701,7 +721,9 @@
         "exportBackup": "Eksport Sandaran",
         "importBackup": "Import Sandaran",
         "cloudSync": "Penyegerakan Awan",
-        "ourApps": "Aplikasi kami yang lain"
+        "ourApps": "Aplikasi kami yang lain",
+        "health": "Apple Health",
+        "widget": "Widget pada skrin utama"
       },
       "footer": "Semua data disulitkan dan disimpan hanya pada peranti ini",
       "resetTitle": "Tetapkan semula semua data",
@@ -1272,7 +1294,10 @@
       "disableNote": "Mematikan penyegerakan tidak pernah memadam apa-apa daripada telefon ini.",
       "startOver": "Hilang kata laluan dan kod pemulihan?",
       "startOverTitle": "Padam sandaran ini dan mula semula?",
-      "startOverBody": "Sandaran ini tidak dapat dibuka tanpa kata laluan atau kod pemulihannya — bukan oleh anda, dan bukan oleh kami. Memadamnya memusnahkan segala-galanya di dalamnya secara kekal, dan ia tidak boleh dibatalkan. Data yang sudah ada pada telefon ini tidak tersentuh."
+      "startOverBody": "Sandaran ini tidak dapat dibuka tanpa kata laluan atau kod pemulihannya — bukan oleh anda, dan bukan oleh kami. Memadamnya memusnahkan segala-galanya di dalamnya secara kekal, dan ia tidak boleh dibatalkan. Data yang sudah ada pada telefon ini tidak tersentuh.",
+      "offline": "Tiada sambungan. Data anda selamat dalam telefon ini — penyegerakan berlaku apabila anda dalam talian semula.",
+      "restoreIncompleteBody_other": "Sejarah anda kembali, kecuali {{count}} catatan yang sandaran tidak dapat serahkan — ia rosak. Selebihnya dipulihkan.",
+      "restoreIncompleteTitle": "Sebahagian catatan tidak dapat dipulihkan"
     },
     "ourApps": {
       "title": "Lagi daripada kami",
@@ -1297,6 +1322,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Buka hampir semua buku — EPUB, FB2, MOBI, PDF, DjVu, DOC dan komik, lebih 20 format pada satu rak. Bacaan kuat, sorotan dan nota yang boleh dieksport, penyegerakan tanpa akaun, dan privasi penuh — tiada iklan atau penjejak, pustaka anda kekal pada peranti anda sahaja."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Lihat berapa lagi sebelum servis seterusnya, bukan berapa kosnya: minyak, penapis, minyak brek dan tali sawat masa, setiap satu dengan jarak dan tarikhnya sendiri. Tiga puluh enam bahagian dengan selang biasa sudah disertakan. Tiada akaun dan tiada pelayan — rekod kereta kekal dalam peranti anda sahaja."
       }
     },
     "tips": {
@@ -1324,7 +1353,77 @@
       "footer_other": "Maklumat kesihatan dalam Eluna memetik {{count}} sumber perubatan",
       "conceptionNote": "Kebarangkalian pembuahan khusus harian mengikut Wilcox et al. (NEJM 1995) dan panduan kesedaran kesuburan ASRM/ACOG. Ia merupakan anggaran daripada kitaran yang anda catatkan — bukan kaedah pencegahan kehamilan.",
       "phaseTipsNote": "Fisiologi fasa dan kesan yang dihuraikan di sini mengikut rujukan klinikal yang disemak rakan sebaya. Cadangan kesihatan umum, bukan rawatan perubatan.",
-      "cycleStatsNote": "Norma panjang kitaran dan apa yang dikira sebagai variasi normal mengikut panduan ACOG dan penyelidikan yang disemak rakan sebaya."
+      "cycleStatsNote": "Norma panjang kitaran dan apa yang dikira sebagai variasi normal mengikut panduan ACOG dan penyelidikan yang disemak rakan sebaya.",
+      "bbtNote": "Garis penutup dan peraturan tiga hari mengikut panduan StatPearls dan Mayo Clinic tentang suhu badan basal. Kenaikan suhu mengesahkan ovulasi selepas ia berlaku; bukan meramalkannya.",
+      "copyLink": "Salin pautan",
+      "linkFailedTitle": "Pautan ini tidak dapat dibuka"
+    },
+    "a11y": {
+      "addCustom": "Tambah milik anda",
+      "addMedication": "Tambah peringatan ubat",
+      "attachImage": "Lampirkan imej",
+      "cancelEditing": "Batalkan penyuntingan",
+      "clearSearch": "Kosongkan carian",
+      "close": "Tutup",
+      "closeLog": "Tutup log",
+      "deleteDigit": "Padam digit terakhir",
+      "deleteReminder": "Padam peringatan ini",
+      "doneLogging": "Selesai",
+      "editLogForDay": "Sunting catatan hari ini",
+      "editPeriodDays": "Sunting hari haid",
+      "goBack": "Kembali",
+      "hidePassword": "Sembunyikan kata laluan",
+      "nextMonth": "Bulan berikutnya",
+      "nextMonthShort": "Bulan berikutnya",
+      "openSettings": "Buka tetapan",
+      "phaseLegend": "Tentang fasa kitaran",
+      "pickIcon": "Pilih ikon ini",
+      "previousMonth": "Bulan sebelumnya",
+      "previousMonthShort": "Bulan sebelumnya",
+      "rateStars": "Penilaian {{count}} daripada 5",
+      "removeAttachment": "Buang imej yang dilampirkan",
+      "saveEditing": "Simpan perubahan",
+      "showPassword": "Tunjukkan kata laluan",
+      "symptomCategory": "Tunjukkan kategori ini",
+      "toggleReminder": "Hidupkan atau matikan peringatan ini"
+    },
+    "errorBoundary": {
+      "action": "Mulakan semula aplikasi untuk meneruskan.",
+      "dataSafe": "Catatan anda selamat — hanya skrin yang gagal.",
+      "hideDetails": "Sembunyikan butiran",
+      "restart": "Mula semula",
+      "showDetails": "Butiran",
+      "title": "Ada sesuatu yang tidak kena"
+    },
+    "health": {
+      "autoDesc": "Segerakkan di latar belakang apabila anda membuka aplikasi dan sejurus selepas anda mencatat sesuatu. Peraturan sama seperti butang di atas: hari hanya ditambah, dan dalam Health hanya catatan Eluna sendiri yang diganti.",
+      "autoTitle": "Pastikan Health sentiasa terkini",
+      "body": "Bawa masuk hari haid dan suhu ketika bangun dari Health, atau terbitkan yang anda catat di sini supaya aplikasi lain yang anda percayai dapat melihatnya. Tiada apa-apa dihantar ke tempat lain dan tiada apa-apa berlaku dengan sendirinya — hanya apabila anda menekan butang di bawah.",
+      "exportBtn": "Simpan ke Health",
+      "exported": "{{days}} hari haid dan {{temps}} suhu disimpan ke Health.",
+      "failed": "Tidak menjadi. Semak Tetapan → Health → Akses Data & Peranti → Eluna dan benarkan kategorinya.",
+      "footnote": "Pengimportan tidak pernah memadam hari yang anda catat di sini, dan simpanan hanya menggantikan apa yang pernah ditulis Eluna — catatan aplikasi lain dibiarkan.",
+      "importBtn": "Import dari Health",
+      "imported": "{{days}} hari haid dan {{temps}} suhu diimport.",
+      "lastSynced": "Penyegerakan terakhir: {{when}}",
+      "nothingNew": "Health tiada apa-apa yang aplikasi belum tahu.",
+      "removeBtn": "Buang data Eluna daripada Health",
+      "removed": "Semua yang ditulis Eluna ke Health telah dibuang. Apa yang anda isi sendiri dalam Health kekal utuh.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Hari {{day}}",
+      "dueToday": "Haid anda dijangka hari ini",
+      "late_other": "Lewat {{count}} hari",
+      "modes": {
+        "discreet": "Diskret",
+        "discreetDesc": "Menunjukkan hari kitaran sahaja — tiada fasa, tiada kiraan detik, tiada apa-apa yang mendedahkan tujuan aplikasi ini.",
+        "full": "Penuh",
+        "fullDesc": "Menunjukkan hari kitaran dan berapa lama lagi sebelum haid yang dijangka.",
+        "off": "Mati",
+        "offDesc": "Tiada apa-apa diterbitkan. Widget yang sudah ada pada skrin utama akan kosong."
+      },
+      "untilPeriod_other": "{{count}} hari lagi sebelum haid"
     }
   },
   "kb": {

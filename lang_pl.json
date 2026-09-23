@@ -23,7 +23,8 @@
       "step3": {
         "title": "Jak długo trwa\nTwoja miesiączka?",
         "days": "dni",
-        "nextBtn": "Dalej"
+        "nextBtn": "Dalej",
+        "saveFailed": "Nie udało się zapisać daty. Spróbuj ponownie — jeśli to się powtarza, zwykle pomaga ponowne uruchomienie aplikacji."
       },
       "step4": {
         "title": "Jak długi jest\nTwój cykl?",
@@ -324,7 +325,9 @@
       "holdToPin": "Przytrzymaj objaw, aby przypiąć",
       "create": "Utwórz własny",
       "notesTab": "Notatki",
-      "notesPlaceholder": "Opisz swoje objawy lub myśli (do 1000 znaków)..."
+      "notesPlaceholder": "Opisz swoje objawy lub myśli (do 1000 znaków)...",
+      "noteSaveFailed": "Nie udało się zapisać notatki. Ostatnia zapisana wersja jest na miejscu — spróbuj napisać ją jeszcze raz.",
+      "symptomSaveFailed": "To dotknięcie nie zostało zapisane i zostało cofnięte. Sprawdź miejsce na urządzeniu i spróbuj ponownie."
     },
     "symptoms": {
       "categories": {
@@ -674,6 +677,23 @@
       },
       "explanation": {
         "title": "Dlaczego tak się czujesz?"
+      },
+      "bbtChart": {
+        "coverline": "Linia pokrycia",
+        "dayAxis": "Dzień cyklu",
+        "empty": "Mierz temperaturę przez kilka poranków, a pojawi się tutaj krzywa.",
+        "flagged": "oznaczone jako niepewne",
+        "noShiftYet": "Skok termiczny w tym cyklu nie został jeszcze potwierdzony. Potrzeba sześciu dni bazowych i trzech wyższych.",
+        "shiftFound": "Skok termiczny potwierdzony od {{day}}. dnia — trzy pomiary powyżej linii pokrycia.",
+        "tapHint": "Dotknij punktu, aby zobaczyć jego datę i temperaturę.",
+        "title": "Temperatura bazowa"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "Od najstarszych do najnowszych",
+        "readout": "Cykl od {{date}} · {{days}} dni",
+        "summary": "Twoje ostatnie cykle na tle Twojej mediany {{median}} dni (rozrzut ±{{sd}}).",
+        "tapHint": "Dotknij słupka, aby zobaczyć, kiedy zaczął się ten cykl. Słupki z obwódką są nietypowo daleko od Twojej mediany.",
+        "title": "Długość cyklu"
       }
     },
     "settings": {
@@ -710,7 +730,9 @@
         "exportBackup": "Eksportuj kopię zapasową",
         "importBackup": "Importuj kopię zapasową",
         "cloudSync": "Synchronizacja w chmurze",
-        "ourApps": "Nasze pozostałe aplikacje"
+        "ourApps": "Nasze pozostałe aplikacje",
+        "health": "Apple Health",
+        "widget": "Widżet na ekranie początkowym"
       },
       "footer": "Wszystkie dane są szyfrowane i przechowywane wyłącznie na tym urządzeniu",
       "resetTitle": "Zresetuj wszystkie dane",
@@ -851,7 +873,9 @@
       "sourcesTitle": "Źródła medyczne",
       "sourcesIntro": "Zakresy referencyjne i normy cyklu użyte w tym raporcie opierają się na następujących źródłach klinicznych.",
       "excludedCycles_one": "{{count}} cykl został wykluczony z obliczenia średniej długości, ponieważ jego wartości były nieprawidłowe.",
-      "excludedCycles_other": "{{count}} cykli zostało wykluczonych z obliczenia średniej długości, ponieważ ich wartości były nieprawidłowe."
+      "excludedCycles_other": "{{count}} cykli zostało wykluczonych z obliczenia średniej długości, ponieważ ich wartości były nieprawidłowe.",
+      "excludedCycles_few": "{{count}} cykle zostały wykluczone z obliczenia średniej długości, ponieważ ich wartości były nieprawidłowe.",
+      "excludedCycles_many": "{{count}} cykli zostało wykluczonych z obliczenia średniej długości, ponieważ ich wartości były nieprawidłowe."
     },
     "analytics": {
       "pulseTitle": "Analizowanie samopoczucia...",
@@ -1281,7 +1305,13 @@
       "disableNote": "Wyłączenie synchronizacji nigdy nie usuwa niczego z tego telefonu.",
       "startOver": "Zgubiłaś hasło i kod odzyskiwania?",
       "startOverTitle": "Usunąć tę kopię zapasową i zacząć od nowa?",
-      "startOverBody": "Tej kopii zapasowej nie można otworzyć bez hasła ani kodu odzyskiwania — ani Ty, ani my nie możemy tego zrobić. Jej usunięcie trwale niszczy całą jej zawartość i nie można tego cofnąć. Dane już znajdujące się na tym telefonie nie zostaną naruszone."
+      "startOverBody": "Tej kopii zapasowej nie można otworzyć bez hasła ani kodu odzyskiwania — ani Ty, ani my nie możemy tego zrobić. Jej usunięcie trwale niszczy całą jej zawartość i nie można tego cofnąć. Dane już znajdujące się na tym telefonie nie zostaną naruszone.",
+      "offline": "Brak połączenia. Twoje dane są bezpieczne w tym telefonie — synchronizacja nastąpi, gdy wrócisz do sieci.",
+      "restoreIncompleteBody_one": "Historia wróciła, poza {{count}} wpisem, którego kopia zapasowa nie zdołała oddać — był uszkodzony. Cała reszta została przywrócona.",
+      "restoreIncompleteBody_few": "Historia wróciła, poza {{count}} wpisami, których kopia zapasowa nie zdołała oddać — były uszkodzone. Cała reszta została przywrócona.",
+      "restoreIncompleteBody_many": "Historia wróciła, poza {{count}} wpisami, których kopia zapasowa nie zdołała oddać — były uszkodzone. Cała reszta została przywrócona.",
+      "restoreIncompleteBody_other": "Historia wróciła, poza {{count}} wpisami, których kopia zapasowa nie zdołała oddać — były uszkodzone. Cała reszta została przywrócona.",
+      "restoreIncompleteTitle": "Części wpisów nie udało się przywrócić"
     },
     "ourApps": {
       "title": "Więcej od nas",
@@ -1306,6 +1336,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "Otwieraj niemal każdą książkę — EPUB, FB2, MOBI, PDF, DjVu, DOC i komiksy, ponad 20 formatów na jednej półce. Czytanie na głos, zaznaczenia i notatki z eksportem, synchronizacja bez konta i pełna prywatność — żadnych reklam ani trackerów, Twoja biblioteka zostaje tylko na Twoim urządzeniu."
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "Widzisz, ile zostało do następnego przeglądu, a nie ile kosztował: olej, filtry, płyn hamulcowy i pasek rozrządu, każdy z własnym przebiegiem i terminem. Trzydzieści sześć części ze zwykłymi interwałami jest już w środku. Bez konta i bez serwera — historia auta zostaje tylko na Twoim urządzeniu."
       }
     },
     "tips": {
@@ -1333,7 +1367,87 @@
       "footer_other": "Informacje zdrowotne w Eluna powołują się na {{count}} źródeł medycznych",
       "conceptionNote": "Prawdopodobieństwo poczęcia dla konkretnego dnia jest zgodne z Wilcox et al. (NEJM 1995) oraz wytycznymi ASRM/ACOG dotyczącymi świadomości płodności. Jest to szacunek na podstawie zarejestrowanych cykli, a nie metoda antykoncepcji.",
       "phaseTipsNote": "Fizjologia faz i opisane tutaj efekty są zgodne z recenzowanymi źródłami klinicznymi. To ogólne wskazówki dotyczące dobrego samopoczucia, a nie leczenie medyczne.",
-      "cycleStatsNote": "Normy długości cyklu i to, co uznaje się za prawidłową zmienność, są zgodne z wytycznymi ACOG i recenzowanymi badaniami."
+      "cycleStatsNote": "Normy długości cyklu i to, co uznaje się za prawidłową zmienność, są zgodne z wytycznymi ACOG i recenzowanymi badaniami.",
+      "bbtNote": "Linia pokrycia i reguła trzech dni są zgodne z wytycznymi StatPearls i Mayo Clinic dotyczącymi podstawowej temperatury ciała. Wzrost temperatury potwierdza owulację już po fakcie, a nie ją przewiduje.",
+      "copyLink": "Kopiuj link",
+      "linkFailedTitle": "Nie udało się otworzyć tego linku",
+      "countLabel_few": "{{count}} źródła",
+      "countLabel_many": "{{count}} źródeł",
+      "footer_few": "Informacje zdrowotne w Eluna powołują się na {{count}} źródła medyczne",
+      "footer_many": "Informacje zdrowotne w Eluna powołują się na {{count}} źródeł medycznych"
+    },
+    "a11y": {
+      "addCustom": "Dodaj własne",
+      "addMedication": "Dodaj przypomnienie o leku",
+      "attachImage": "Dołącz obraz",
+      "cancelEditing": "Anuluj edycję",
+      "clearSearch": "Wyczyść wyszukiwanie",
+      "close": "Zamknij",
+      "closeLog": "Zamknij dziennik",
+      "deleteDigit": "Usuń ostatnią cyfrę",
+      "deleteReminder": "Usuń to przypomnienie",
+      "doneLogging": "Gotowe",
+      "editLogForDay": "Edytuj wpisy z tego dnia",
+      "editPeriodDays": "Edytuj dni miesiączki",
+      "goBack": "Wstecz",
+      "hidePassword": "Ukryj hasło",
+      "nextMonth": "Następny miesiąc",
+      "nextMonthShort": "Następny miesiąc",
+      "openSettings": "Otwórz ustawienia",
+      "phaseLegend": "O fazach cyklu",
+      "pickIcon": "Wybierz tę ikonę",
+      "previousMonth": "Poprzedni miesiąc",
+      "previousMonthShort": "Poprzedni miesiąc",
+      "rateStars": "Ocena {{count}} na 5",
+      "removeAttachment": "Usuń dołączony obraz",
+      "saveEditing": "Zapisz zmiany",
+      "showPassword": "Pokaż hasło",
+      "symptomCategory": "Pokaż tę kategorię",
+      "toggleReminder": "Włącz lub wyłącz to przypomnienie"
+    },
+    "errorBoundary": {
+      "action": "Uruchom aplikację ponownie, aby kontynuować.",
+      "dataSafe": "Twoje wpisy są bezpieczne — zawiódł tylko ekran.",
+      "hideDetails": "Ukryj szczegóły",
+      "restart": "Uruchom ponownie",
+      "showDetails": "Szczegóły",
+      "title": "Coś poszło nie tak"
+    },
+    "health": {
+      "autoDesc": "Synchronizuj w tle przy otwarciu aplikacji i wkrótce po nowym wpisie. Zasady te same co przy przyciskach powyżej: dni są tylko dodawane, a w Health zastępowane są wyłącznie wpisy samej Eluny.",
+      "autoTitle": "Utrzymuj Health na bieżąco",
+      "body": "Przenieś dni miesiączki i poranne temperatury z Health albo opublikuj te, które zapisujesz tutaj, aby zobaczyły je inne zaufane aplikacje. Nic nie trafia nigdzie indziej i nic nie dzieje się samo — tylko po naciśnięciu przycisku poniżej.",
+      "exportBtn": "Zapisz w Health",
+      "exported": "Zapisano w Health dni miesiączki: {{days}}, temperatury: {{temps}}.",
+      "failed": "Nie udało się. Sprawdź: Ustawienia → Zdrowie → Dostęp do danych i urządzenia → Eluna — i zezwól na potrzebne kategorie.",
+      "footnote": "Import nigdy nie usuwa dnia zapisanego tutaj, a zapis zastępuje tylko to, co wcześniej zapisała Eluna — wpisy innych aplikacji pozostają nietknięte.",
+      "importBtn": "Importuj z Health",
+      "imported": "Przeniesiono dni miesiączki: {{days}}, temperatury: {{temps}}.",
+      "lastSynced": "Ostatnia synchronizacja: {{when}}",
+      "nothingNew": "W Health nie było niczego, czego aplikacja jeszcze nie wie.",
+      "removeBtn": "Usuń dane Eluny z Health",
+      "removed": "Wszystko, co Eluna zapisała w Health, zostało usunięte. Wpisy zrobione przez Ciebie w samym Health są nietknięte.",
+      "title": "Apple Health"
+    },
+    "widget": {
+      "dayHeadline": "Dzień {{day}}",
+      "dueToday": "Miesiączka spodziewana dzisiaj",
+      "late_one": "opóźnienie {{count}} dzień",
+      "late_few": "opóźnienie {{count}} dni",
+      "late_many": "opóźnienie {{count}} dni",
+      "late_other": "opóźnienie {{count}} dnia",
+      "modes": {
+        "discreet": "Dyskretnie",
+        "discreetDesc": "Pokazuje tylko dzień cyklu — bez fazy, bez odliczania, bez słowa o tym, do czego służy aplikacja.",
+        "full": "Pełny",
+        "fullDesc": "Pokazuje dzień cyklu i ile zostało do spodziewanej miesiączki.",
+        "off": "Wyłączony",
+        "offDesc": "Nic nie jest publikowane. Widżet, który już jest na ekranie, zrobi się pusty."
+      },
+      "untilPeriod_one": "{{count}} dzień do miesiączki",
+      "untilPeriod_few": "{{count}} dni do miesiączki",
+      "untilPeriod_many": "{{count}} dni do miesiączki",
+      "untilPeriod_other": "{{count}} dnia do miesiączki"
     }
   },
   "kb": {

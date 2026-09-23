@@ -23,7 +23,8 @@
       "step3": {
         "title": "你的月經通常\n持續幾天？",
         "days": "天",
-        "nextBtn": "下一步"
+        "nextBtn": "下一步",
+        "saveFailed": "日期沒能儲存。請再試一次——若一直不行，重新啟動 App 通常有幫助。"
       },
       "step4": {
         "title": "你的生理週期\n通常是幾天？",
@@ -324,7 +325,9 @@
       "holdToPin": "長按症狀即可釘選",
       "create": "建立自訂項目",
       "notesTab": "筆記",
-      "notesPlaceholder": "描述你的症狀或想法（最多 1000 字）..."
+      "notesPlaceholder": "描述你的症狀或想法（最多 1000 字）...",
+      "noteSaveFailed": "這則筆記沒能儲存。上次儲存的內容還在，可以再寫一次。",
+      "symptomSaveFailed": "這次點按沒能儲存，已復原。請檢查裝置的可用空間後再試。"
     },
     "symptoms": {
       "categories": {
@@ -665,6 +668,23 @@
       },
       "explanation": {
         "title": "你為什麼會有這種感覺？"
+      },
+      "bbtChart": {
+        "coverline": "覆蓋線",
+        "dayAxis": "週期第幾天",
+        "empty": "連續幾個早晨量一下體溫，這裡就會出現曲線。",
+        "flagged": "已標記為不可靠",
+        "noShiftYet": "本週期尚未確認體溫上升。需要六天基礎值，再加三天較高的讀數。",
+        "shiftFound": "自第 {{day}} 天起確認體溫上升——三次讀數高於覆蓋線。",
+        "tapHint": "點一下某個點即可查看日期與體溫。",
+        "title": "基礎體溫"
+      },
+      "cycleLengthChart": {
+        "axisCaption": "由早到近",
+        "readout": "{{date}} 開始的週期 · {{days}} 天",
+        "summary": "你最近的週期，與你自己的中位數 {{median}} 天相比（波動 ±{{sd}}）。",
+        "tapHint": "點一下長條可查看該週期的開始時間。有外框的長條離你的中位數異常遠。",
+        "title": "週期長度"
       }
     },
     "settings": {
@@ -701,7 +721,9 @@
         "exportBackup": "匯出備份",
         "importBackup": "匯入備份",
         "cloudSync": "雲端同步",
-        "ourApps": "我們的其他應用程式"
+        "ourApps": "我們的其他應用程式",
+        "health": "Apple 健康",
+        "widget": "主畫面小工具"
       },
       "footer": "所有資料皆已加密，且僅儲存在此裝置上",
       "resetTitle": "重設所有資料",
@@ -1272,7 +1294,10 @@
       "disableNote": "關閉同步絕不會刪除此手機上的任何資料。",
       "startOver": "遺失了密碼和復原碼？",
       "startOverTitle": "刪除此備份並重新開始？",
-      "startOverBody": "沒有密碼或復原碼，就無法開啟此備份——你不行，我們也不行。刪除它會永久摧毀其中的所有內容，且無法復原。此手機上已有的資料不受影響。"
+      "startOverBody": "沒有密碼或復原碼，就無法開啟此備份——你不行，我們也不行。刪除它會永久摧毀其中的所有內容，且無法復原。此手機上已有的資料不受影響。",
+      "offline": "沒有網路。你的資料安全地留在這支手機上——恢復連線後會自動同步。",
+      "restoreIncompleteBody_other": "歷史記錄已還原，只有 {{count}} 筆備份無法交付——它們已毀損。其餘內容都已還原。",
+      "restoreIncompleteTitle": "部分記錄無法還原"
     },
     "ourApps": {
       "title": "更多精選應用",
@@ -1297,6 +1322,10 @@
       "reader": {
         "name": "Eluna Reader: Books, EPUB PDF",
         "desc": "幾乎任何一本書都能開啟——EPUB、FB2、MOBI、PDF、DjVu、DOC 以及漫畫，20 多種格式同在一個書架。朗讀、可匯出的螢光標記與筆記、免帳號同步，全程隱私保護——沒有廣告與追蹤器，書庫只留在你的裝置上。"
+      },
+      "garage": {
+        "name": "Eluna Garage: Car Maintenance",
+        "desc": "看的是距離下次保養還剩多少，而不是花了多少：機油、濾芯、煞車油、正時皮帶，每一項都有自己的里程與日期。三十六個零件已內建常規更換週期。不用帳號，沒有伺服器——車輛紀錄只留在你的裝置上。"
       }
     },
     "tips": {
@@ -1324,7 +1353,77 @@
       "footer_other": "Eluna 中的健康資訊引用了 {{count}} 條醫學來源",
       "conceptionNote": "特定日期的受孕機率遵循 Wilcox et al. (NEJM 1995) 以及 ASRM/ACOG 的生育意識指南。這是根據您記錄的週期得出的估算，並非避孕方法。",
       "phaseTipsNote": "此處描述的階段生理學和相關影響遵循經同儕評審的臨床參考文獻。這些是一般性的健康建議，而非醫學治療。",
-      "cycleStatsNote": "週期長度標準以及何為正常波動遵循 ACOG 指南和經同儕評審的研究。"
+      "cycleStatsNote": "週期長度標準以及何為正常波動遵循 ACOG 指南和經同儕評審的研究。",
+      "bbtNote": "覆蓋線與三日法則依據 StatPearls 與梅約診所關於基礎體溫的指引。體溫上升是在排卵發生之後加以確認，而非預測。",
+      "copyLink": "拷貝連結",
+      "linkFailedTitle": "無法打開此連結"
+    },
+    "a11y": {
+      "addCustom": "新增自己的",
+      "addMedication": "新增用藥提醒",
+      "attachImage": "附加圖片",
+      "cancelEditing": "取消編輯",
+      "clearSearch": "清除搜尋",
+      "close": "關閉",
+      "closeLog": "關閉記錄",
+      "deleteDigit": "刪除最後一位",
+      "deleteReminder": "刪除此提醒",
+      "doneLogging": "完成",
+      "editLogForDay": "編輯這一天的記錄",
+      "editPeriodDays": "編輯經期日期",
+      "goBack": "返回",
+      "hidePassword": "隱藏密碼",
+      "nextMonth": "下個月",
+      "nextMonthShort": "下個月",
+      "openSettings": "打開設定",
+      "phaseLegend": "關於週期階段",
+      "pickIcon": "選擇此圖像",
+      "previousMonth": "上個月",
+      "previousMonthShort": "上個月",
+      "rateStars": "評分 {{count}} 分（滿分 5 分）",
+      "removeAttachment": "移除已附加的圖片",
+      "saveEditing": "儲存更改",
+      "showPassword": "顯示密碼",
+      "symptomCategory": "顯示此分類",
+      "toggleReminder": "開啟或關閉此提醒"
+    },
+    "errorBoundary": {
+      "action": "請重新啟動 App 後繼續。",
+      "dataSafe": "你的記錄安然無恙，出問題的只有這個畫面。",
+      "hideDetails": "隱藏詳細資訊",
+      "restart": "重新啟動",
+      "showDetails": "詳細資訊",
+      "title": "出了點問題"
+    },
+    "health": {
+      "autoDesc": "在你打開 App 時，以及記錄內容後不久，於背景同步。規則與上面的按鈕相同：日期只會新增，在「健康」中只替換 Eluna 自己寫入的內容。",
+      "autoTitle": "讓「健康」保持最新",
+      "body": "從「健康」匯入經期日期與起床體溫，或把你在這裡記錄的內容發布出去，讓你信任的其他 App 看到。不會送往別處，也不會自行發生任何事——只有你點一下下面的按鈕時才會。",
+      "exportBtn": "儲存到「健康」",
+      "exported": "已向「健康」儲存 {{days}} 個經期日期與 {{temps}} 筆體溫。",
+      "failed": "沒有成功。請檢查「設定 → 健康 → 資料取用與裝置 → Eluna」，允許相關類別。",
+      "footnote": "匯入永遠不會刪除你在這裡記錄的日期；儲存只會替換 Eluna 先前寫入的內容，其他 App 的記錄不受影響。",
+      "importBtn": "從「健康」匯入",
+      "imported": "已匯入 {{days}} 個經期日期與 {{temps}} 筆體溫。",
+      "lastSynced": "上次同步：{{when}}",
+      "nothingNew": "「健康」裡沒有 App 尚未知道的內容。",
+      "removeBtn": "從「健康」移除 Eluna 的資料",
+      "removed": "Eluna 寫入「健康」的內容已全部移除。你自己在「健康」中填寫的內容不受影響。",
+      "title": "Apple 健康"
+    },
+    "widget": {
+      "dayHeadline": "第 {{day}} 天",
+      "dueToday": "預計今天來月經",
+      "late_other": "延遲 {{count}} 天",
+      "modes": {
+        "discreet": "低調",
+        "discreetDesc": "只顯示週期第幾天——不顯示階段、不顯示倒數，也不透露 App 的用途。",
+        "full": "完整",
+        "fullDesc": "顯示週期第幾天，以及距離預計經期還有多久。",
+        "off": "關閉",
+        "offDesc": "不會發布任何內容。主畫面上已有的小工具會變成空白。"
+      },
+      "untilPeriod_other": "距離經期還有 {{count}} 天"
     }
   },
   "kb": {
